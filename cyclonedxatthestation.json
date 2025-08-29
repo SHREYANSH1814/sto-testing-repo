@@ -1,0 +1,18 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "declarations": {
+      "assessors": [{ "bom‑ref": "assessor‑1", "organization": { "name": "Assessors Inc" } }],
+      "attestations": [{
+        "summary": "Attestation summary here",
+        "assessor": "assessor‑1",
+        "signature": { "algorithm": "ES256", "value": "tqIT…" }
+      }],
+      "claims": [{
+        "bom‑ref": "claim‑1",
+        "predicate": "Developers have passed secure coding training.",
+        "signature": { "algorithm": "ES256", "value": "tqIT…" }
+      }]
+    },
+    "signature": { "algorithm": "ES256", "value": "tqIT…" }
+  }
