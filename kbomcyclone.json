@@ -1,0 +1,39 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2025-08-29T14:00:00Z",
+      "tools": [
+        {
+          "vendor": "ExampleCorp",
+          "name": "KBOM Generator",
+          "version": "1.0"
+        }
+      ],
+      "component": {
+        "type": "application",
+        "name": "vulnerable-k8s-app",
+        "version": "1.0.0"
+      }
+    },
+    "components": [
+      {
+        "type": "container",
+        "name": "nginx",
+        "version": "1.17.10",
+        "purl": "pkg:docker/nginx@1.17.10",
+        "properties": [
+          {
+            "name": "k8s.io/namespace",
+            "value": "default"
+          },
+          {
+            "name": "k8s.io/deployment",
+            "value": "vulnerable-nginx"
+          }
+        ]
+      }
+    ]
+  }
+  
