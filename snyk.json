@@ -22,7 +22,7 @@
             },
             "language": "js",
             "severity": "critical",
-            "originalSeverity": "medium",
+            "originalSeverity": "critical",
             "cvssScore": 5.3,
             "functions": [],
             "malicious": false,
