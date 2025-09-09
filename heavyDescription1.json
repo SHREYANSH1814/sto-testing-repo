@@ -25,7 +25,7 @@
       {
         "severity": 7,
         "fileName": "file2.java",
-        "issueName": "High Issue 2",
+        "issueName": "low Issue 2",
         "referenceIdentifiers": [
           {
             "id": "259",
