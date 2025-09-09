@@ -18,7 +18,7 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "high-package",
+        "packageName": "low-package-nested-json",
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
@@ -34,7 +34,7 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "low-package",
+        "packageName": "low-package-json",
         "issueDescription": "Lorem\t\t\t ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna vitae dui gravida, vitae tempor massa posuere. Integer at quam id purus vehicula fermentum nec sed leo. Curabitur volutpat magna at enim scelerisque, vitae tincidunt lacus finibus. Sed iaculis neque a diam congue, ac cursus nisi porttitor. Vestibulum ac hendrerit nulla. Cras tincidunt libero ac ante scelerisque, nec gravida est feugiat. Vestibulum congue, purus at egestas vehicula, justo ante elementum elit, nec blandit erat nulla vel nisl. Aliquam erat volutpat. Mauris a felis eget mauris tincidunt bibendum at nec nisl.\nProin nec risus sed neque rhoncus accumsan. Nulla facilisi. Suspendisse sit amet blandit nulla. Fusce porta, metus ut porta pretium, justo ante semper sem, vel malesuada justo justo id nisi. Sed ac massa non diam mattis faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ornare metus in eros malesuada, nec malesuada libero accumsan. Donec vehicula blandit enim a lacinia.\nAenean vulputate ex sit amet lorem varius dapibus. Ut eget justo sed arcu fermentum rutrum. Nulla dictum tortor sed arcu ultrices rhoncus. Pellentesque id purus vel ex sagittis luctus. Suspendisse nec imperdiet nibh. Etiam non justo at eros commodo posuere. Praesent vulputate velit at justo pharetra, ut porta nibh pretium. Morbi sollicitudin, mauris nec iaculis aliquam, tortor lorem fermentum libero, non condimentum arcu velit id libero. Fusce ac suscipit diam, nec finibus nulla. Donec tincidunt, enim id sollicitudin bibendum, leo lorem fringilla nunc, a eleifend justo mi eget nisl.",
         "status": "open"
       },
@@ -66,7 +66,7 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-2",
+        "packageName": "low-package-yaml",
         "issueDescription": null,
         "status": "open"
 
@@ -83,11 +83,48 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-23",
+        "packageName": "low-package-***",
         "issueDescription": "**Severity**: High\n**Recommendation**: Patch immediately.",
         "status": "open"
 
     },
+    {
+        "severity": 7,
+        "fileName": "file2.java",
+        "issueName": "low Issue 2",
+        "referenceIdentifiers": [
+          {
+            "id": "259",
+            "type": "cwe"
+          }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-html_xss",
+        "issueDescription": "**Severity**: High\n**Recommendation**: Patch immediately.",
+        "status": "open"
+
+    },
+
+    {
+        "severity": 7,
+        "fileName": "file2.java",
+        "issueName": "low Issue 2",
+        "referenceIdentifiers": [
+          {
+            "id": "259",
+            "type": "cwe"
+          }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-empty-string",
+        "issueDescription": "",
+        "status": "open"
+
+    }
+
+    
 
     ]
 
