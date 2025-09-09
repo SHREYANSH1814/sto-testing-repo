@@ -1,0 +1,34 @@
+{  
+     "vulnerabilities": [
+        {
+            "id": "SNYK-JS-POSTCSS-5926692",
+            "title": "Improper Input Validation",
+            "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "credit": [
+                "Unknown"
+            ],
+            "semver": {
+                "vulnerable": [
+                    "<8.4.31"
+                ]
+            },
+            "exploit": "Not Defined",
+            "fixedIn": [
+                "8.4.31"
+            ],
+            "patches": [],
+            "insights": {
+                "triageAdvice": null
+            },
+            "language": "js",
+            "severity": "critical",
+            "originalSeverity": "medium",
+            "cvssScore": 5.3,
+            "functions": [],
+            "malicious": false,
+            "isDisputed": false,
+            "moduleName": "postcss"
+            
+        }
+    ]
+ }
