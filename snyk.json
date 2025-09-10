@@ -22,13 +22,13 @@
             },
             "language": "js",
             "severity": "critical",
-            "originalSeverity": "critical",
+            "originalSeverity": "medium",
             "cvssScore": 5.3,
             "functions": [],
             "malicious": false,
             "isDisputed": false,
             "moduleName": "postcss"
-            
         }
     ]
  }
+
