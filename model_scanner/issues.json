@@ -1,0 +1,49 @@
+{
+    "summary": {
+        "total_issues_by_severity": {
+            "LOW": 0,
+            "MEDIUM": 0,
+            "HIGH": 0,
+            "CRITICAL": 3
+        },
+        "total_issues": 3,
+        "input_path": "/Users/sumeetrai/sto_plugins/packages/python/sto_plugin/scratch/harness",
+        "absolute_path": "/Users/sumeetrai/sto_plugins/packages/python/sto_plugin/scratch/harness",
+        "modelscan_version": "0.8.6",
+        "timestamp": "2025-08-19T11:42:25.260487",
+        "scanned": {
+            "total_scanned": 2,
+            "scanned_files": [
+                "pytorch_model.bin:archive/data.pkl",
+                "vulnerable_model.pkl"
+            ]
+        }
+    },
+    "issues": [
+        {
+            "description": "Use of unsafe operator 'popen' from module 'os'",
+            "operator": "popen",
+            "module": "os",
+            "source": "pytorch_model.bin:archive/data.pkl",
+            "scanner": "modelscan.scanners.PickleUnsafeOpScan",
+            "severity": "CRITICAL"
+        },
+        {
+            "description": "Use of unsafe operator 'system' from module 'os'",
+            "operator": "system",
+            "module": "os",
+            "source": "vulnerable_model.pkl",
+            "scanner": "modelscan.scanners.PickleUnsafeOpScan",
+            "severity": "CRITICAL"
+        },
+        {
+            "description": "Use of unsafe operator 'popen' from module 'os'",
+            "operator": "popen",
+            "module": "os",
+            "source": "vulnerable_model.pkl",
+            "scanner": "modelscan.scanners.PickleUnsafeOpScan",
+            "severity": "CRITICAL"
+        }
+    ],
+    "errors": []
+}
