@@ -152,59 +152,10 @@
   "remediationSteps": "Fix me fast.",
   "subproduct": "MyCustomScanTool",
   "packageName": "low-package-double-string",
-  "issueDescription": "''",
+  "issueDescription": "'abcd '",
   "status": "open"
 
-},
-{
-"severity": 7,
-"fileName": "file2.java",
-"issueName": "low-package-xss",
-"referenceIdentifiers": [
-  {
-    "id": "259",
-    "type": "cwe"
-  }
-],
-"remediationSteps": "Fix me fast.",
-"subproduct": "MyCustomScanTool",
-"packageName": "low-package-nested-double-quotes",
-"issueDescription": "\"'`<script>alert(\"XSS\")</script>\\u0000\\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\b\\t\\n\\u000b\\f\\r\\u000e\\u000f\\u0010\\u0011\\u0012\\u0013\\u0014\\u0015\\u0016\\u0017\\u0018\\u0019\\u001a\\u001b\\u001c\\u001d\\u001e\\u001f\\\\\\\\\\\"\\\"\\\"\\\"",
-"status": "open"
-},
-{
-"severity": 7,
-"fileName": "file2.java",
-"issueName": "low-package-xss",
-"referenceIdentifiers": [
-  {
-    "id": "259",
-    "type": "cwe"
-  }
-],
-"remediationSteps": "Fix me fast.",
-"subproduct": "MyCustomScanTool",
-"packageName": "low-package-nested-double-quotes-123",
-"issueDescription": "<div data-testid=\"my-test\" class=\"class1\" style=\"color: red; background: url('[http://example.com/\"));](http://example.com/\"));) background-image: url('javascript:alert(1)'\">Unmatched quotes and nested HTML <script>console.log('test)</script>",
-"status": "open"
-},
-{
-  "severity": 7,
-  "fileName": "file2.java",
-  "issueName": "low-package-xss",
-  "referenceIdentifiers": [
-    {
-      "id": "259",
-      "type": "cwe"
-    }
-  ],
-  "remediationSteps": "Fix me fast.",
-  "subproduct": "MyCustomScanTool",
-  "packageName": "low-package-nested-number",
-  "issueDescription":123,
-  "status": "open"
-  }
-
+}
 
 
 
