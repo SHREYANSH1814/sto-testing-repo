@@ -187,7 +187,26 @@
 "packageName": "low-package-nested-double-quotes-123",
 "issueDescription": "<div data-testid=\"my-test\" class=\"class1\" style=\"color: red; background: url('[http://example.com/\"));](http://example.com/\"));) background-image: url('javascript:alert(1)'\">Unmatched quotes and nested HTML <script>console.log('test)</script>",
 "status": "open"
-}
+},
+{
+  "severity": 7,
+  "fileName": "file2.java",
+  "issueName": "low-package-xss",
+  "referenceIdentifiers": [
+    {
+      "id": "259",
+      "type": "cwe"
+    }
+  ],
+  "remediationSteps": "Fix me fast.",
+  "subproduct": "MyCustomScanTool",
+  "packageName": "low-package-nested-number",
+  "issueDescription":123,
+  "status": "open"
+  }
+
+
+
 
 
 
