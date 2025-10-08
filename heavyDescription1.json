@@ -1,47 +1,15 @@
 {
-    "meta": {
-      "subproduct": "MyCustomScanner",
-      "key": [
-        "packageName"
-      ]
-    },
-    "issues": [
-      {
-        "severity": 7,
-        "fileName": "file1.java",
-        "issueName": "low-package-nested-json",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-nested-json",
-        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
-        "status": "open"
-      },
-      {
-        "severity": 7,
-        "fileName": "low-package-plain-string",
-        "issueName": "low Issue 2",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-plain-string",
-        "issueDescription": "Lorem\t\t\t ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna vitae dui gravida, vitae tempor massa posuere. Integer at quam id purus vehicula fermentum nec sed leo. Curabitur volutpat magna at enim scelerisque, vitae tincidunt lacus finibus. Sed iaculis neque a diam congue, ac cursus nisi porttitor. Vestibulum ac hendrerit nulla. Cras tincidunt libero ac ante scelerisque, nec gravida est feugiat. Vestibulum congue, purus at egestas vehicula, justo ante elementum elit, nec blandit erat nulla vel nisl. Aliquam erat volutpat. Mauris a felis eget mauris tincidunt bibendum at nec nisl.\nProin nec risus sed neque rhoncus accumsan. Nulla facilisi. Suspendisse sit amet blandit nulla. Fusce porta, metus ut porta pretium, justo ante semper sem, vel malesuada justo justo id nisi. Sed ac massa non diam mattis faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ornare metus in eros malesuada, nec malesuada libero accumsan. Donec vehicula blandit enim a lacinia.\nAenean vulputate ex sit amet lorem varius dapibus. Ut eget justo sed arcu fermentum rutrum. Nulla dictum tortor sed arcu ultrices rhoncus. Pellentesque id purus vel ex sagittis luctus. Suspendisse nec imperdiet nibh. Etiam non justo at eros commodo posuere. Praesent vulputate velit at justo pharetra, ut porta nibh pretium. Morbi sollicitudin, mauris nec iaculis aliquam, tortor lorem fermentum libero, non condimentum arcu velit id libero. Fusce ac suscipit diam, nec finibus nulla. Donec tincidunt, enim id sollicitudin bibendum, leo lorem fringilla nunc, a eleifend justo mi eget nisl.",
-        "status": "open"
-      },
+  "meta": {
+    "subproduct": "MyCustomScanner",
+    "key": [
+      "packageName"
+    ]
+  },
+  "issues": [
     {
       "severity": 7,
-      "fileName": "file2.java",
-      "issueName": "low-package-yaml",
+      "fileName": "file1.java",
+      "issueName": "low-package-nested-json",
       "referenceIdentifiers": [
         {
           "id": "259",
@@ -50,83 +18,182 @@
       ],
       "remediationSteps": "Fix me fast.",
       "subproduct": "MyCustomScanTool",
-      "packageName": "low-package-yaml",
-      "issueDescription": "missingLabels:\n  ad-domain:\n    present: false\n",
+      "packageName": "low-package-nested-json",
+      "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
       "status": "open"
     },
     {
-        "severity": 7,
-        "fileName": "file2.java",
-        "issueName": "low-package-null",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-null",
-        "issueDescription": null,
-        "status": "open"
-
+      "severity": 7,
+      "fileName": "low-package-plain-string",
+      "issueName": "low Issue 2",
+      "referenceIdentifiers": [
+        {
+          "id": "259",
+          "type": "cwe"
+        }
+      ],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "low-package-plain-string",
+      "issueDescription": "Lorem\t\t\t ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna vitae dui gravida, vitae tempor massa posuere. Integer at quam id purus vehicula fermentum nec sed leo. Curabitur volutpat magna at enim scelerisque, vitae tincidunt lacus finibus. Sed iaculis neque a diam congue, ac cursus nisi porttitor. Vestibulum ac hendrerit nulla. Cras tincidunt libero ac ante scelerisque, nec gravida est feugiat. Vestibulum congue, purus at egestas vehicula, justo ante elementum elit, nec blandit erat nulla vel nisl. Aliquam erat volutpat. Mauris a felis eget mauris tincidunt bibendum at nec nisl.\nProin nec risus sed neque rhoncus accumsan. Nulla facilisi. Suspendisse sit amet blandit nulla. Fusce porta, metus ut porta pretium, justo ante semper sem, vel malesuada justo justo id nisi. Sed ac massa non diam mattis faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ornare metus in eros malesuada, nec malesuada libero accumsan. Donec vehicula blandit enim a lacinia.\nAenean vulputate ex sit amet lorem varius dapibus. Ut eget justo sed arcu fermentum rutrum. Nulla dictum tortor sed arcu ultrices rhoncus. Pellentesque id purus vel ex sagittis luctus. Suspendisse nec imperdiet nibh. Etiam non justo at eros commodo posuere. Praesent vulputate velit at justo pharetra, ut porta nibh pretium. Morbi sollicitudin, mauris nec iaculis aliquam, tortor lorem fermentum libero, non condimentum arcu velit id libero. Fusce ac suscipit diam, nec finibus nulla. Donec tincidunt, enim id sollicitudin bibendum, leo lorem fringilla nunc, a eleifend justo mi eget nisl.",
+      "status": "open"
     },
+  {
+    "severity": 7,
+    "fileName": "file2.java",
+    "issueName": "low-package-yaml",
+    "referenceIdentifiers": [
+      {
+        "id": "259",
+        "type": "cwe"
+      }
+    ],
+    "remediationSteps": "Fix me fast.",
+    "subproduct": "MyCustomScanTool",
+    "packageName": "low-package-yaml",
+    "issueDescription": "missingLabels:\n  ad-domain:\n    present: false\n",
+    "status": "open"
+  },
+  {
+      "severity": 7,
+      "fileName": "file2.java",
+      "issueName": "low-package-null",
+      "referenceIdentifiers": [
+        {
+          "id": "259",
+          "type": "cwe"
+        }
+      ],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "low-package-null",
+      "issueDescription": null,
+      "status": "open"
+
+  },
+  {
+      "severity": 7,
+      "fileName": "file2.java",
+      "issueName": "low-package-***",
+      "referenceIdentifiers": [
+        {
+          "id": "259",
+          "type": "cwe"
+        }
+      ],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "low-package-***",
+      "issueDescription": "**Severity**: High\n**Recommendation**: Patch immediately.",
+      "status": "open"
+
+  },
+  {
+      "severity": 7,
+      "fileName": "file2.java",
+      "issueName": "low-package-empty-string",
+      "referenceIdentifiers": [
+        {
+          "id": "259",
+          "type": "cwe"
+        }
+      ],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "low-package-empty-string",
+      "issueDescription": "",
+      "status": "open"
+
+  },
+  {
+      "severity": 7,
+      "fileName": "file2.java",
+      "issueName": "low-package-xss",
+      "referenceIdentifiers": [
+        {
+          "id": "259",
+          "type": "cwe"
+        }
+      ],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "low-package-xss",
+      "issueDescription": "<script>alert('xss')</script><b>bold</b>",
+      "status": "open"
+
+  },
+  {
+    "severity": 7,
+    "fileName": "file2.java",
+    "issueName": "low-package-xss",
+    "referenceIdentifiers": [
+      {
+        "id": "259",
+        "type": "cwe"
+      }
+    ],
+    "remediationSteps": "Fix me fast.",
+    "subproduct": "MyCustomScanTool",
+    "packageName": "low-package-double-string",
+    "issueDescription": "'hello'",
+    "status": "open"
+
+},
+{
+  "severity": 7,
+  "fileName": "file2.java",
+  "issueName": "low-package-xss",
+  "referenceIdentifiers": [
     {
-        "severity": 7,
-        "fileName": "file2.java",
-        "issueName": "low-package-***",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-***",
-        "issueDescription": "**Severity**: High\n**Recommendation**: Patch immediately.",
-        "status": "open"
-
-    },
-
-
-    {
-        "severity": 7,
-        "fileName": "file2.java",
-        "issueName": "low-package-empty-string",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-empty-string",
-        "issueDescription": "",
-        "status": "open"
-
-    },
-    {
-        "severity": 7,
-        "fileName": "file2.java",
-        "issueName": "low-package-xss",
-        "referenceIdentifiers": [
-          {
-            "id": "259",
-            "type": "cwe"
-          }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "low-package-xss",
-        "issueDescription": "<script>alert('xss')</script><b>bold</b>",
-        "status": "open"
-
+      "id": "259",
+      "type": "cwe"
     }
+  ],
+  "remediationSteps": "Fix me fast.",
+  "subproduct": "MyCustomScanTool",
+  "packageName": "low-package-double-string",
+  "issueDescription": "''",
+  "status": "open"
 
-    
+},
+{
+"severity": 7,
+"fileName": "file2.java",
+"issueName": "low-package-xss",
+"referenceIdentifiers": [
+  {
+    "id": "259",
+    "type": "cwe"
+  }
+],
+"remediationSteps": "Fix me fast.",
+"subproduct": "MyCustomScanTool",
+"packageName": "low-package-nested-double-quotes",
+"issueDescription": "\"'`<script>alert(\"XSS\")</script>\\u0000\\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\b\\t\\n\\u000b\\f\\r\\u000e\\u000f\\u0010\\u0011\\u0012\\u0013\\u0014\\u0015\\u0016\\u0017\\u0018\\u0019\\u001a\\u001b\\u001c\\u001d\\u001e\\u001f" + "a".repeat(100000) + "\\\\\\\\\\\"\\\"\\\"\\\"",
+"status": "open"
+},
+{
+"severity": 7,
+"fileName": "file2.java",
+"issueName": "low-package-xss",
+"referenceIdentifiers": [
+  {
+    "id": "259",
+    "type": "cwe"
+  }
+],
+"remediationSteps": "Fix me fast.",
+"subproduct": "MyCustomScanTool",
+"packageName": "low-package-nested-double-quotes-123",
+"issueDescription": "<div data-testid=\"my-test\" class=\"class1\" style=\"color: red; background: url('[http://example.com/\"));](http://example.com/\"));) background-image: url('javascript:alert(1)'\">Unmatched quotes and nested HTML <script>console.log('test)</script>",
+"status": "open"
+}
 
-    ]
 
+
+
+
+  
+
+  ]
 }
