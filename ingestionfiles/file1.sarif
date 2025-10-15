@@ -826,6 +826,7 @@
                         ]
                     }
                 },
+                
                  {
                     "ruleId": "GHSA-jmp9-x22r-554x",
                     "level": "high",
@@ -851,52 +852,6 @@
                 },
                  {
                     "ruleId": "GHSA-jmp9-x22r-554x",
-                    "level": "high",
-                    "cveId": "CVE-2025-41249",
-                    "message": {
-                        "text": "Package org.springframework:spring-core has a vulnerability: The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions.\n\nYour application may be affected by this if you are using Spring Security's @EnableMethodSecurity\u00a0feature.\n\nYou are not affected by this if you are not using @EnableMethodSecurity\u00a0or if you do not use security annotations on methods in generic superclasses or generic interfaces.\n\nThis CVE is published in conjunction with  CVE-2025-41248 https://spring.io/security/cve-2025-41248 ."
-                    },
-                    "advisoryURL": "https://github.com/advisories/GHSA-jmp9-x22r-554x",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "org.springframework:spring-core"
-                                }
-                            }
-                        }
-                    ],
-                    "properties": {
-                        "tags": [
-                            "Framework"
-                        ]
-                    }
-                },
-                 {
-                    "ruleId": "GHSA-jmp9-x22r-554x",
-                    "level": "medium",
-                    "cveId": "CVE-2025-41249",
-                    "message": {
-                        "text": "Package org.springframework:spring-core has a vulnerability: The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions.\n\nYour application may be affected by this if you are using Spring Security's @EnableMethodSecurity\u00a0feature.\n\nYou are not affected by this if you are not using @EnableMethodSecurity\u00a0or if you do not use security annotations on methods in generic superclasses or generic interfaces.\n\nThis CVE is published in conjunction with  CVE-2025-41248 https://spring.io/security/cve-2025-41248 ."
-                    },
-                    "advisoryURL": "https://github.com/advisories/GHSA-jmp9-x22r-554x",
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "org.springframework:spring-core"
-                                }
-                            }
-                        }
-                    ],
-                    "properties": {
-                        "tags": [
-                            "Framework"
-                        ]
-                    }
-                },
-                 {
-                    "ruleId": "GHSA-jmp9-x22r-554x",
                     "level": "medium",
                     "cveId": "CVE-2025-41249",
                     "message": {
@@ -1034,6 +989,29 @@
                     }
                 },
                   {
+                    "ruleId": "GHSA-4wrc-f8pq-fpqp",
+                    "level": "critical",
+                    "cveId": "CVE-2016-1000027",
+                    "message": {
+                        "text": "Package org.springframework:spring-web has a vulnerability: Pivotal Spring Framework before 6.0.0 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required.\n\nMaintainers recommend investigating alternative components or a potential mitigating control. Version 4.2.6 and 3.2.17 contain [enhanced documentation](https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa) advising users to take precautions against unsafe Java deserialization, version 5.3.0 [deprecate the impacted classes](https://github.com/spring-projects/spring-framework/issues/25379) and version 6.0.0 [removed it entirely](https://github.com/spring-projects/spring-framework/issues/27422)."
+                    },
+                    "advisoryURL": "https://github.com/advisories/GHSA-4wrc-f8pq-fpqp",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "org.springframework:spring-web"
+                                }
+                            }
+                        }
+                    ],
+                    "properties": {
+                        "tags": [
+                            "Framework"
+                        ]
+                    }
+                },
+                 {
                     "ruleId": "GHSA-4wrc-f8pq-fpqp",
                     "level": "critical",
                     "cveId": "CVE-2016-1000027",
