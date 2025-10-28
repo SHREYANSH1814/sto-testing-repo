@@ -1,0 +1,39 @@
+{
+    "imageDigest": "sha256:24b5e21b672e3a25ffd8c0b10705995017fd09aa14d8c0a8ac71a01d7e279111",
+    "vulnerabilities": [
+        {
+            "detected_at": "2023-09-28T19:37:17+00:00",
+            "feed": "vulnerabilities",
+            "feed_group": "ubuntu:20.04",
+            "fix": "None",
+            "nvd_data": [
+                {
+                    "cvss_v2": {
+                        "base_score": 4.9,
+                        "exploitability_score": 4.4,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.4,
+                        "exploitability_score": 1.5,
+                        "impact_score": 5.9
+                    },
+                    "id": "CVE-2019-14899"
+                }
+            ],
+            "package": "linux-libc-dev-5.4.0-155.172",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_name": "linux-libc-dev",
+            "package_path": "pkgdb",
+            "package_type": "dpkg",
+            "package_version": "5.4.0-155.172",
+            "severity": "Low",
+            "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14899",
+            "vendor_data": [],
+            "vuln": "CVE-2019-14899",
+            "will_not_fix": false
+        }
+    ],
+    "vulnerability_type": "all"
+}
