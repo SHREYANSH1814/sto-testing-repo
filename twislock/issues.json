@@ -1,5 +1,14 @@
 {
-	"results": [
+
+    "meta": { "subproduct": "MyCustomScanner", "key": ["packageName"] },
+
+
+
+
+
+
+
+	"issues": [
 		{
 			"id": "sha256:f4c0503d26c8da0a04e6190c9d4f2a30f38958852b9fb80bcd2b819a7571e7f7",
 			"distro": "Debian GNU/Linux 9 (stretch)",
