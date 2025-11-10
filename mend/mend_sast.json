@@ -1,0 +1,3493 @@
+[
+    {
+        "id": "955e486b-4486-4df6-92b2-b1bf94155182",
+        "refId": "955e486b-4486-4df6-92b2-b1bf94155182",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "668d1b87-e790-4952-9189-4201cd27253b",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 8,
+            "commonId": "redirect-601",
+            "name": "Unvalidated/Open Redirect",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-redirect",
+            "sarifLevel": "",
+            "order": 11,
+            "severity": "Low",
+            "severityRating": 3.107,
+            "description": "Open Redirect vulnerability occurs when untrusted user input is passed to HTTP location redirect functions or properties. By modifying untrusted URL input to a malicious site, an attacker may successfully launch a phishing scam and steal user credentials. Because the server name in the modified link is identical to the original site, phishing attempts may have a more trustworthy appearance",
+            "recommendations": [
+                "Do not pass untrusted user input to location redirection functions or properties"
+            ],
+            "references": [
+                "https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet"
+            ],
+            "cwe": {
+                "id": "CWE-601",
+                "title": "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')",
+                "url": "https://cwe.mitre.org/data/definitions/601.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "owasp2021": {
+                "index": "A01",
+                "title": "A01: Broken Access Control",
+                "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+            },
+            "capec": {
+                "id": "194",
+                "title": "CAPEC-194: Fake the Source of Data",
+                "url": "https://capec.mitre.org/data/definitions/194.html"
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'redirect' method of 'express.Response' object could be abused to perform a Site Redirection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "Low",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "express.Response.redirect",
+            "kind": "",
+            "file": "app/routes/index.js",
+            "snippet": "return res.redirect(req.query.url);",
+            "line": 72,
+            "startLine": 68,
+            "endLine": 77,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "6b2f383a-2659-4f86-b08f-14eda08a3e18",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.redirect",
+                "sinkKind": "",
+                "sinkFile": "app/routes/index.js",
+                "sinkSnippet": "return res.redirect(req.query.url);",
+                "sinkLine": 72,
+                "inputSource": "req",
+                "inputKind": "argument",
+                "inputFlow": [
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.get(\"/learn\", isLoggedIn, (req, res) => {",
+                        "line": 70,
+                        "startLine": 66,
+                        "endLine": 75
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.redirect",
+                        "kind": "",
+                        "file": "app/routes/index.js",
+                        "snippet": "return res.redirect(req.query.url);",
+                        "line": 72,
+                        "startLine": 68,
+                        "endLine": 77
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 3.107,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 2.4856000000000003,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "GET",
+                    "endpoint": "/learn"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "0635f510-c352-4d01-8af6-fb184b637215",
+        "refId": "0635f510-c352-4d01-8af6-fb184b637215",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "a45126db-8c33-450f-b7c2-a27d18a1a542",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 22,
+            "commonId": "cookie-no-secure-614",
+            "name": "Sensitive Cookie Without Secure",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-cookie-no-secure",
+            "sarifLevel": "",
+            "order": 22,
+            "severity": "Low",
+            "severityRating": 2.558,
+            "description": "The application doesn't set the secure attribute for sensitive cookies in HTTPS sessions, which could cause the user agent to send those cookies in plaintext over an HTTP session.",
+            "recommendations": [
+                "Set secure attribute for sensitive cookies in response"
+            ],
+            "references": [
+                "https://cwe.mitre.org/data/definitions/614.html"
+            ],
+            "cwe": {
+                "id": "CWE-614",
+                "title": "CWE-614: Sensitive Cookie in HTTPS Session Without 'Secure' Attribute",
+                "url": "https://cwe.mitre.org/data/definitions/614.html"
+            },
+            "pcidss": {
+                "section": "6.5.10",
+                "title": "PCI DSS 6.5.10: Broken Authentication and Session Management"
+            },
+            "nist": {
+                "control": "",
+                "priority": "",
+                "title": "",
+                "url": ""
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "",
+                "title": ""
+            },
+            "owasp": {
+                "index": "A06",
+                "title": "A06: Security Misconfiguration",
+                "url": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "owasp2021": {
+                "index": "A05",
+                "title": "A05: Security Misconfiguration",
+                "url": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"
+            },
+            "capec": {
+                "id": "102",
+                "title": "CAPEC-102: Session Sidejacking",
+                "url": "https://capec.mitre.org/data/definitions/102.html"
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'session' method of 'express-session' uses a cookie with sensitive information, but the Secure flag is not set.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "Low",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "express-session",
+            "kind": "",
+            "file": "server.js",
+            "snippet": "app.use(session({",
+            "line": 78,
+            "startLine": 74,
+            "endLine": 83,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "b2033362-ab1d-49f5-b829-94bef051b0fb",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express-session",
+                "sinkKind": "",
+                "sinkFile": "server.js",
+                "sinkSnippet": "app.use(session({",
+                "sinkLine": 78,
+                "inputSource": "express-session",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "express-session",
+                        "kind": "function",
+                        "file": "server.js",
+                        "snippet": "app.use(session({",
+                        "line": 78,
+                        "startLine": 74,
+                        "endLine": 83
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express-session",
+                        "kind": "",
+                        "file": "server.js",
+                        "snippet": "app.use(session({",
+                        "line": 78,
+                        "startLine": 74,
+                        "endLine": 83
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 2.558,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 2.0463999999999998,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": false,
+            "endpoints": [],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "f491dea9-357c-4c71-9a92-95695ac4f8fb",
+        "refId": "f491dea9-357c-4c71-9a92-95695ac4f8fb",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "302e076e-0005-458b-a1e7-644dd617cfbb",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 18,
+            "commonId": "ssrf-918",
+            "name": "Server Side Request Forgery",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-ssrf",
+            "sarifLevel": "",
+            "order": 18,
+            "severity": "High",
+            "severityRating": 6.7,
+            "description": "Server Side Request Forgery occures when the web server receives a URL or similar request from an upstream component and retrieves the contents of this URL, but it does not sufficiently ensure that the request is being sent to the expected destination. By providing URLs to unexpected hosts or ports, attackers can make it appear that the server is sending the request, possibly bypassing access controls such as firewalls that prevent the attackers from accessing the URLs directly. The server can be used as a proxy to conduct port scanning of hosts in internal networks, use other URLs such as that can access documents on the system (using file://), or use other protocols such as gopher:// or tftp://, which may provide greater control over the contents of requests",
+            "recommendations": [
+                "Use a whitelist of allowed domains and protocols from where the web server can fetch remote resources"
+            ],
+            "references": [
+                "https://www.owasp.org/index.php/Server_Side_Request_Forgery"
+            ],
+            "cwe": {
+                "id": "CWE-918",
+                "title": "CWE-918: Server-Side Request Forgery (SSRF)",
+                "url": "https://cwe.mitre.org/data/definitions/918.html"
+            },
+            "pcidss": {
+                "section": "6.5.8",
+                "title": "PCI DSS 6.5.8: Improper Access Control"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "164.312 (a)(1)",
+                "title": "164.312 (a)(1): Standard: Access control"
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A03",
+                "title": "A03: Sensitive Data Exposure",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure"
+            },
+            "owasp2021": {
+                "index": "A10",
+                "title": "A10: Server-Side Request Forgery (SSRF)",
+                "url": "https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"
+            },
+            "capec": {
+                "id": "",
+                "title": "",
+                "url": ""
+            },
+            "sansTop25": {
+                "rank": 19,
+                "title": "CWE-918: Server-Side Request Forgery (SSRF)"
+            }
+        },
+        "description": "'get' method of 'needle' object could be abused to perform an XPATH Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "needle.get",
+            "kind": "",
+            "file": "app/routes/research.js",
+            "snippet": "return needle.get(url, (error, newResponse, body) => {",
+            "line": 16,
+            "startLine": 12,
+            "endLine": 21,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "0ebf5101-8550-43f7-97af-788633803a58",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "needle.get",
+                "sinkKind": "",
+                "sinkFile": "app/routes/research.js",
+                "sinkSnippet": "return needle.get(url, (error, newResponse, body) => {",
+                "sinkLine": 16,
+                "inputSource": "researchHandler.displayResearch",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "researchHandler.displayResearch",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.get(\"/research\", isLoggedIn, researchHandler.displayResearch);",
+                        "line": 76,
+                        "startLine": 72,
+                        "endLine": 81
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/research.js",
+                        "snippet": "this.displayResearch = (req, res) => {",
+                        "line": 12,
+                        "startLine": 8,
+                        "endLine": 17
+                    },
+                    {
+                        "name": "url",
+                        "kind": "variable",
+                        "file": "app/routes/research.js",
+                        "snippet": "const url = req.query.url + req.query.symbol;",
+                        "line": 15,
+                        "startLine": 11,
+                        "endLine": 20
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "needle.get",
+                        "kind": "",
+                        "file": "app/routes/research.js",
+                        "snippet": "return needle.get(url, (error, newResponse, body) => {",
+                        "line": 16,
+                        "startLine": 12,
+                        "endLine": 21
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 6.7,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 5.36,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "GET",
+                    "endpoint": "/research"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "08f022de-52da-49d7-98cf-7707d911cfd5",
+        "refId": "08f022de-52da-49d7-98cf-7707d911cfd5",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "c6410eb1-c693-4c82-a054-62ee8e52e85e",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 12,
+            "commonId": "nosql-inj-943",
+            "name": "NoSQL Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-nosql-inj",
+            "sarifLevel": "",
+            "order": 4,
+            "severity": "High",
+            "severityRating": 7.067,
+            "description": "NoSQL injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does"
+            ],
+            "references": [
+                "https://cwe.mitre.org/data/definitions/943.html"
+            ],
+            "cwe": {
+                "id": "CWE-943",
+                "title": "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
+                "url": "https://cwe.mitre.org/data/definitions/943.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "164.312 (a)(1)",
+                "title": "164.312 (a)(1): Standard: Access control"
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "capec": {
+                "id": "",
+                "title": "",
+                "url": ""
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'insert' method could be abused to perform a No-SQL Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "memosCol.insert",
+            "kind": "",
+            "file": "app/data/memos-dao.js",
+            "snippet": "memosCol.insert(memos, (err, result) => !err ? callback(null, result) : callback(err, null));",
+            "line": 23,
+            "startLine": 19,
+            "endLine": 28,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "e50cd733-10e5-471f-8778-6b308ec24654",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "memosCol.insert",
+                "sinkKind": "",
+                "sinkFile": "app/data/memos-dao.js",
+                "sinkSnippet": "memosCol.insert(memos, (err, result) => !err ? callback(null, result) : callback(err, null));",
+                "sinkLine": 23,
+                "inputSource": "memosHandler.addMemos",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "memosHandler.addMemos",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/memos\", isLoggedIn, memosHandler.addMemos);",
+                        "line": 67,
+                        "startLine": 63,
+                        "endLine": 72
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/memos.js",
+                        "snippet": "this.addMemos = (req, res, next) => {",
+                        "line": 11,
+                        "startLine": 7,
+                        "endLine": 16
+                    },
+                    {
+                        "name": "memosDAO.insert",
+                        "kind": "function",
+                        "file": "app/routes/memos.js",
+                        "snippet": "memosDAO.insert(req.body.memo, (err, docs) => {",
+                        "line": 13,
+                        "startLine": 9,
+                        "endLine": 18
+                    },
+                    {
+                        "name": "memo",
+                        "kind": "argument",
+                        "file": "app/data/memos-dao.js",
+                        "snippet": "this.insert = (memo, callback) => {",
+                        "line": 15,
+                        "startLine": 11,
+                        "endLine": 20
+                    },
+                    {
+                        "name": "memo",
+                        "kind": "variable",
+                        "file": "app/data/memos-dao.js",
+                        "snippet": "memo,",
+                        "line": 19,
+                        "startLine": 15,
+                        "endLine": 24
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "memosCol.insert",
+                        "kind": "",
+                        "file": "app/data/memos-dao.js",
+                        "snippet": "memosCol.insert(memos, (err, result) => !err ? callback(null, result) : callback(err, null));",
+                        "line": 23,
+                        "startLine": 19,
+                        "endLine": 28
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 7.067,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 5.653600000000001,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/memos"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "15f4e916-78cf-40c5-bc93-85b457aca6f6",
+        "refId": "15f4e916-78cf-40c5-bc93-85b457aca6f6",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "29b4d4d1-fce7-4b95-afb5-89823d913eb8",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 12,
+            "commonId": "nosql-inj-943",
+            "name": "NoSQL Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-nosql-inj",
+            "sarifLevel": "",
+            "order": 4,
+            "severity": "High",
+            "severityRating": 7.067,
+            "description": "NoSQL injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does"
+            ],
+            "references": [
+                "https://cwe.mitre.org/data/definitions/943.html"
+            ],
+            "cwe": {
+                "id": "CWE-943",
+                "title": "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
+                "url": "https://cwe.mitre.org/data/definitions/943.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "164.312 (a)(1)",
+                "title": "164.312 (a)(1): Standard: Access control"
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "capec": {
+                "id": "",
+                "title": "",
+                "url": ""
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'find' method could be abused to perform a No-SQL Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "allocationsCol.find",
+            "kind": "",
+            "file": "app/data/allocations-dao.js",
+            "snippet": "allocationsCol.find(searchCriteria()).toArray((err, allocations) => {",
+            "line": 86,
+            "startLine": 82,
+            "endLine": 91,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "01fe6036-c8aa-4ce6-8b3a-7e3f5e597ff7",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "allocationsCol.find",
+                "sinkKind": "",
+                "sinkFile": "app/data/allocations-dao.js",
+                "sinkSnippet": "allocationsCol.find(searchCriteria()).toArray((err, allocations) => {",
+                "sinkLine": 86,
+                "inputSource": "allocationsHandler.displayAllocations",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "allocationsHandler.displayAllocations",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.get(\"/allocations/:userId\", isLoggedIn, allocationsHandler.displayAllocations);",
+                        "line": 63,
+                        "startLine": 59,
+                        "endLine": 68
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/allocations.js",
+                        "snippet": "this.displayAllocations = (req, res, next) => {",
+                        "line": 11,
+                        "startLine": 7,
+                        "endLine": 16
+                    },
+                    {
+                        "name": "threshold",
+                        "kind": "variable",
+                        "file": "app/routes/allocations.js",
+                        "snippet": "threshold",
+                        "line": 20,
+                        "startLine": 16,
+                        "endLine": 25
+                    },
+                    {
+                        "name": "allocationsDAO.getByUserIdAndThreshold",
+                        "kind": "function",
+                        "file": "app/routes/allocations.js",
+                        "snippet": "allocationsDAO.getByUserIdAndThreshold(userId, threshold, (err, allocations) => {",
+                        "line": 23,
+                        "startLine": 19,
+                        "endLine": 28
+                    },
+                    {
+                        "name": "threshold",
+                        "kind": "argument",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "this.getByUserIdAndThreshold = (userId, threshold, callback) => {",
+                        "line": 57,
+                        "startLine": 53,
+                        "endLine": 62
+                    },
+                    {
+                        "name": "searchCriteria",
+                        "kind": "function",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "allocationsCol.find(searchCriteria()).toArray((err, allocations) => {",
+                        "line": 86,
+                        "startLine": 82,
+                        "endLine": 91
+                    },
+                    {
+                        "name": "threshold",
+                        "kind": "variable",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "const searchCriteria = () => {",
+                        "line": 60,
+                        "startLine": 56,
+                        "endLine": 65
+                    },
+                    {
+                        "name": "this.userId == ${parsedUserId} && this.stocks > '${threshold}",
+                        "kind": "variable",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "$where: `this.userId == ${parsedUserId} && this.stocks > '${threshold}'`",
+                        "line": 78,
+                        "startLine": 74,
+                        "endLine": 83
+                    },
+                    {
+                        "name": "this.userId == ${parsedUserId} && this.stocks > '${threshold}'",
+                        "kind": "variable",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "$where: `this.userId == ${parsedUserId} && this.stocks > '${threshold}'`",
+                        "line": 78,
+                        "startLine": 74,
+                        "endLine": 83
+                    },
+                    {
+                        "name": "$where",
+                        "kind": "variable",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "$where: `this.userId == ${parsedUserId} && this.stocks > '${threshold}'`",
+                        "line": 78,
+                        "startLine": 74,
+                        "endLine": 83
+                    },
+                    {
+                        "name": "searchCriteria()",
+                        "kind": "variable",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "allocationsCol.find(searchCriteria()).toArray((err, allocations) => {",
+                        "line": 86,
+                        "startLine": 82,
+                        "endLine": 91
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "allocationsCol.find",
+                        "kind": "",
+                        "file": "app/data/allocations-dao.js",
+                        "snippet": "allocationsCol.find(searchCriteria()).toArray((err, allocations) => {",
+                        "line": 86,
+                        "startLine": 82,
+                        "endLine": 91
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 7.923076923076923,
+                "confidenceRating": 9,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 7.067,
+        "confidenceRating": 9,
+        "ageRating": 0,
+        "rating": 5.088240000000001,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "GET",
+                    "endpoint": "/allocations/:userId"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "195abadb-fc6a-4f65-90b3-9a232fe18d89",
+        "refId": "195abadb-fc6a-4f65-90b3-9a232fe18d89",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "c45f1af1-5bbe-4648-8990-8cb5593ac42b",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 12,
+            "commonId": "nosql-inj-943",
+            "name": "NoSQL Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-nosql-inj",
+            "sarifLevel": "",
+            "order": 4,
+            "severity": "High",
+            "severityRating": 7.067,
+            "description": "NoSQL injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does"
+            ],
+            "references": [
+                "https://cwe.mitre.org/data/definitions/943.html"
+            ],
+            "cwe": {
+                "id": "CWE-943",
+                "title": "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
+                "url": "https://cwe.mitre.org/data/definitions/943.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "164.312 (a)(1)",
+                "title": "164.312 (a)(1): Standard: Access control"
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "capec": {
+                "id": "",
+                "title": "",
+                "url": ""
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'findOne' method could be abused to perform a No-SQL Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "usersCol.findOne",
+            "kind": "",
+            "file": "app/data/user-dao.js",
+            "snippet": "usersCol.findOne({",
+            "line": 104,
+            "startLine": 100,
+            "endLine": 109,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "992b523b-86ef-45d0-982f-05cc1b5f9c55",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "usersCol.findOne",
+                "sinkKind": "",
+                "sinkFile": "app/data/user-dao.js",
+                "sinkSnippet": "usersCol.findOne({",
+                "sinkLine": 104,
+                "inputSource": "sessionHandler.handleSignup",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "sessionHandler.handleSignup",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/signup\", sessionHandler.handleSignup);",
+                        "line": 38,
+                        "startLine": 34,
+                        "endLine": 43
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/session.js",
+                        "snippet": "this.handleSignup = (req, res, next) => {",
+                        "line": 189,
+                        "startLine": 185,
+                        "endLine": 194
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "variable",
+                        "file": "app/routes/session.js",
+                        "snippet": "userName,",
+                        "line": 193,
+                        "startLine": 189,
+                        "endLine": 198
+                    },
+                    {
+                        "name": "validateSignup",
+                        "kind": "function",
+                        "file": "app/routes/session.js",
+                        "snippet": "if (validateSignup(userName, firstName, lastName, password, verify, email, errors)) {",
+                        "line": 206,
+                        "startLine": 202,
+                        "endLine": 211
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "argument",
+                        "file": "app/routes/session.js",
+                        "snippet": "const validateSignup = (userName, firstName, lastName, password, verify, email, errors) => {",
+                        "line": 138,
+                        "startLine": 134,
+                        "endLine": 143
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "variable",
+                        "file": "app/routes/session.js",
+                        "snippet": "if (validateSignup(userName, firstName, lastName, password, verify, email, errors)) {",
+                        "line": 206,
+                        "startLine": 202,
+                        "endLine": 211
+                    },
+                    {
+                        "name": "userDAO.getUserByUserName",
+                        "kind": "function",
+                        "file": "app/routes/session.js",
+                        "snippet": "userDAO.getUserByUserName(userName, (err, user) => {",
+                        "line": 208,
+                        "startLine": 204,
+                        "endLine": 213
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "argument",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "this.getUserByUserName = (userName, callback) => {",
+                        "line": 103,
+                        "startLine": 99,
+                        "endLine": 108
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "variable",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "userName: userName",
+                        "line": 105,
+                        "startLine": 101,
+                        "endLine": 110
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "usersCol.findOne",
+                        "kind": "",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "usersCol.findOne({",
+                        "line": 104,
+                        "startLine": 100,
+                        "endLine": 109
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 7.923076923076923,
+                "confidenceRating": 9,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 7.067,
+        "confidenceRating": 9,
+        "ageRating": 0,
+        "rating": 5.088240000000001,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/signup"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "7a5cd131-729c-45f5-97ee-8eb8747f936c",
+        "refId": "7a5cd131-729c-45f5-97ee-8eb8747f936c",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "ff039592-5857-479f-91be-befc9de005f9",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 12,
+            "commonId": "nosql-inj-943",
+            "name": "NoSQL Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-nosql-inj",
+            "sarifLevel": "",
+            "order": 4,
+            "severity": "High",
+            "severityRating": 7.067,
+            "description": "NoSQL injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does"
+            ],
+            "references": [
+                "https://cwe.mitre.org/data/definitions/943.html"
+            ],
+            "cwe": {
+                "id": "CWE-943",
+                "title": "CWE-943: Improper Neutralization of Special Elements in Data Query Logic",
+                "url": "https://cwe.mitre.org/data/definitions/943.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "164.312 (a)(1)",
+                "title": "164.312 (a)(1): Standard: Access control"
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "capec": {
+                "id": "",
+                "title": "",
+                "url": ""
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'findOne' method could be abused to perform a No-SQL Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "usersCol.findOne",
+            "kind": "",
+            "file": "app/data/user-dao.js",
+            "snippet": "usersCol.findOne({",
+            "line": 91,
+            "startLine": 87,
+            "endLine": 96,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "ccc57a32-f85e-4021-a099-9a26da52aa57",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "usersCol.findOne",
+                "sinkKind": "",
+                "sinkFile": "app/data/user-dao.js",
+                "sinkSnippet": "usersCol.findOne({",
+                "sinkLine": 91,
+                "inputSource": "sessionHandler.handleLoginRequest",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "sessionHandler.handleLoginRequest",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/login\", sessionHandler.handleLoginRequest);",
+                        "line": 34,
+                        "startLine": 30,
+                        "endLine": 39
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/session.js",
+                        "snippet": "this.handleLoginRequest = (req, res, next) => {",
+                        "line": 53,
+                        "startLine": 49,
+                        "endLine": 58
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "variable",
+                        "file": "app/routes/session.js",
+                        "snippet": "userName,",
+                        "line": 55,
+                        "startLine": 51,
+                        "endLine": 60
+                    },
+                    {
+                        "name": "userDAO.validateLogin",
+                        "kind": "function",
+                        "file": "app/routes/session.js",
+                        "snippet": "userDAO.validateLogin(userName, password, (err, user) => {",
+                        "line": 58,
+                        "startLine": 54,
+                        "endLine": 63
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "argument",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "this.validateLogin = (userName, password, callback) => {",
+                        "line": 57,
+                        "startLine": 53,
+                        "endLine": 62
+                    },
+                    {
+                        "name": "userName",
+                        "kind": "variable",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "userName: userName",
+                        "line": 92,
+                        "startLine": 88,
+                        "endLine": 97
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "usersCol.findOne",
+                        "kind": "",
+                        "file": "app/data/user-dao.js",
+                        "snippet": "usersCol.findOne({",
+                        "line": 91,
+                        "startLine": 87,
+                        "endLine": 96
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 7.067,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 5.653600000000001,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/login"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "c6d041a6-a06f-402b-bff9-970e802361e2",
+        "refId": "c6d041a6-a06f-402b-bff9-970e802361e2",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "c4379b84-a84f-4702-92d2-071b6b8cdfa9",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 3,
+            "commonId": "code-inj-94",
+            "name": "Code Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-code-inj",
+            "sarifLevel": "",
+            "order": 2,
+            "severity": "High",
+            "severityRating": 8.2,
+            "description": "The application constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment. When the application allows a user's input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the application. Such an alteration could lead to arbitrary code execution",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Rejecting any input that does not strictly conform to specifications, or transforming it into something that does",
+                "When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules",
+                "To reduce the likelihood of code injection, stringent whitelists that limit which constructs are allowed should be used. If the code that invokes a function is dynamically constructed, then verifying that the input is alphanumeric might be insufficient"
+            ],
+            "references": [
+                "https://owasp.org/www-community/attacks/Code_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-94",
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+                "url": "https://cwe.mitre.org/data/definitions/94.html"
+            },
+            "pcidss": {
+                "section": "6.5.1",
+                "title": "PCI DSS 6.5.1: Injection Flaws"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "A03",
+                "title": "A03: Injection",
+                "url": "https://owasp.org/Top10/A03_2021-Injection/"
+            },
+            "capec": {
+                "id": "242",
+                "title": "CAPEC-242: Code Injection",
+                "url": "https://capec.mitre.org/data/definitions/242.html"
+            },
+            "sansTop25": {
+                "rank": 23,
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+            }
+        },
+        "description": "'eval' method could be abused to perform a Code Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "eval",
+            "kind": "",
+            "file": "app/routes/contributions.js",
+            "snippet": "const preTax = eval(req.body.preTax);",
+            "line": 32,
+            "startLine": 28,
+            "endLine": 37,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "ef053246-82e2-4466-a771-a620171aa406",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "eval",
+                "sinkKind": "",
+                "sinkFile": "app/routes/contributions.js",
+                "sinkSnippet": "const preTax = eval(req.body.preTax);",
+                "sinkLine": 32,
+                "inputSource": "contributionsHandler.handleContributionsUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "contributionsHandler.handleContributionsUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/contributions\", isLoggedIn, contributionsHandler.handleContributionsUpdate);",
+                        "line": 52,
+                        "startLine": 48,
+                        "endLine": 57
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "this.handleContributionsUpdate = (req, res, next) => {",
+                        "line": 28,
+                        "startLine": 24,
+                        "endLine": 33
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "eval",
+                        "kind": "",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "const preTax = eval(req.body.preTax);",
+                        "line": 32,
+                        "startLine": 28,
+                        "endLine": 37
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 8.2,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 6.56,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/contributions"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "fe53fda3-a924-4f5e-8317-7b21f2da9cab",
+        "refId": "fe53fda3-a924-4f5e-8317-7b21f2da9cab",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "6a4b8894-daf8-4afa-85fa-3316ea3e815d",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 3,
+            "commonId": "code-inj-94",
+            "name": "Code Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-code-inj",
+            "sarifLevel": "",
+            "order": 2,
+            "severity": "High",
+            "severityRating": 8.2,
+            "description": "The application constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment. When the application allows a user's input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the application. Such an alteration could lead to arbitrary code execution",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Rejecting any input that does not strictly conform to specifications, or transforming it into something that does",
+                "When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules",
+                "To reduce the likelihood of code injection, stringent whitelists that limit which constructs are allowed should be used. If the code that invokes a function is dynamically constructed, then verifying that the input is alphanumeric might be insufficient"
+            ],
+            "references": [
+                "https://owasp.org/www-community/attacks/Code_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-94",
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+                "url": "https://cwe.mitre.org/data/definitions/94.html"
+            },
+            "pcidss": {
+                "section": "6.5.1",
+                "title": "PCI DSS 6.5.1: Injection Flaws"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "A03",
+                "title": "A03: Injection",
+                "url": "https://owasp.org/Top10/A03_2021-Injection/"
+            },
+            "capec": {
+                "id": "242",
+                "title": "CAPEC-242: Code Injection",
+                "url": "https://capec.mitre.org/data/definitions/242.html"
+            },
+            "sansTop25": {
+                "rank": 23,
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+            }
+        },
+        "description": "'eval' method could be abused to perform a Code Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "eval",
+            "kind": "",
+            "file": "app/routes/contributions.js",
+            "snippet": "const afterTax = eval(req.body.afterTax);",
+            "line": 33,
+            "startLine": 29,
+            "endLine": 38,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "d312a9a9-1c28-46af-b59e-0b4646d32e15",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "eval",
+                "sinkKind": "",
+                "sinkFile": "app/routes/contributions.js",
+                "sinkSnippet": "const afterTax = eval(req.body.afterTax);",
+                "sinkLine": 33,
+                "inputSource": "contributionsHandler.handleContributionsUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "contributionsHandler.handleContributionsUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/contributions\", isLoggedIn, contributionsHandler.handleContributionsUpdate);",
+                        "line": 52,
+                        "startLine": 48,
+                        "endLine": 57
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "this.handleContributionsUpdate = (req, res, next) => {",
+                        "line": 28,
+                        "startLine": 24,
+                        "endLine": 33
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "eval",
+                        "kind": "",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "const afterTax = eval(req.body.afterTax);",
+                        "line": 33,
+                        "startLine": 29,
+                        "endLine": 38
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 8.2,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 6.56,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/contributions"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "5c4a4881-05eb-4662-9f7a-4f3a1d857cb6",
+        "refId": "5c4a4881-05eb-4662-9f7a-4f3a1d857cb6",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "f4d6847f-08ba-44f1-8684-411499a5f5ae",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 3,
+            "commonId": "code-inj-94",
+            "name": "Code Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-code-inj",
+            "sarifLevel": "",
+            "order": 2,
+            "severity": "High",
+            "severityRating": 8.2,
+            "description": "The application constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment. When the application allows a user's input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the application. Such an alteration could lead to arbitrary code execution",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Rejecting any input that does not strictly conform to specifications, or transforming it into something that does",
+                "When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules",
+                "To reduce the likelihood of code injection, stringent whitelists that limit which constructs are allowed should be used. If the code that invokes a function is dynamically constructed, then verifying that the input is alphanumeric might be insufficient"
+            ],
+            "references": [
+                "https://owasp.org/www-community/attacks/Code_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-94",
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+                "url": "https://cwe.mitre.org/data/definitions/94.html"
+            },
+            "pcidss": {
+                "section": "6.5.1",
+                "title": "PCI DSS 6.5.1: Injection Flaws"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "A03",
+                "title": "A03: Injection",
+                "url": "https://owasp.org/Top10/A03_2021-Injection/"
+            },
+            "capec": {
+                "id": "242",
+                "title": "CAPEC-242: Code Injection",
+                "url": "https://capec.mitre.org/data/definitions/242.html"
+            },
+            "sansTop25": {
+                "rank": 23,
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+            }
+        },
+        "description": "'eval' method could be abused to perform a Code Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "eval",
+            "kind": "",
+            "file": "app/routes/contributions.js",
+            "snippet": "const roth = eval(req.body.roth);",
+            "line": 34,
+            "startLine": 30,
+            "endLine": 39,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "71431a55-092a-4d81-9b63-dc23c1916a3f",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "eval",
+                "sinkKind": "",
+                "sinkFile": "app/routes/contributions.js",
+                "sinkSnippet": "const roth = eval(req.body.roth);",
+                "sinkLine": 34,
+                "inputSource": "contributionsHandler.handleContributionsUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "contributionsHandler.handleContributionsUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/contributions\", isLoggedIn, contributionsHandler.handleContributionsUpdate);",
+                        "line": 52,
+                        "startLine": 48,
+                        "endLine": 57
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "this.handleContributionsUpdate = (req, res, next) => {",
+                        "line": 28,
+                        "startLine": 24,
+                        "endLine": 33
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "eval",
+                        "kind": "",
+                        "file": "app/routes/contributions.js",
+                        "snippet": "const roth = eval(req.body.roth);",
+                        "line": 34,
+                        "startLine": 30,
+                        "endLine": 39
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 8.2,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 6.56,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/contributions"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "55af26fc-40b4-417f-b425-6ecb0107134d",
+        "refId": "55af26fc-40b4-417f-b425-6ecb0107134d",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "ca4d935c-5c8b-4087-86a1-4de8a021911d",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 3,
+            "commonId": "code-inj-94",
+            "name": "Code Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-code-inj",
+            "sarifLevel": "",
+            "order": 2,
+            "severity": "High",
+            "severityRating": 8.2,
+            "description": "The application constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment. When the application allows a user's input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the application. Such an alteration could lead to arbitrary code execution",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Rejecting any input that does not strictly conform to specifications, or transforming it into something that does",
+                "When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules",
+                "To reduce the likelihood of code injection, stringent whitelists that limit which constructs are allowed should be used. If the code that invokes a function is dynamically constructed, then verifying that the input is alphanumeric might be insufficient"
+            ],
+            "references": [
+                "https://owasp.org/www-community/attacks/Code_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-94",
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+                "url": "https://cwe.mitre.org/data/definitions/94.html"
+            },
+            "pcidss": {
+                "section": "6.5.1",
+                "title": "PCI DSS 6.5.1: Injection Flaws"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "A03",
+                "title": "A03: Injection",
+                "url": "https://owasp.org/Top10/A03_2021-Injection/"
+            },
+            "capec": {
+                "id": "242",
+                "title": "CAPEC-242: Code Injection",
+                "url": "https://capec.mitre.org/data/definitions/242.html"
+            },
+            "sansTop25": {
+                "rank": 23,
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+            }
+        },
+        "description": "'render' method of 'express.Response' object could be abused to perform a Code Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "express.Response.render",
+            "kind": "",
+            "file": "app/routes/profile.js",
+            "snippet": "return res.render(\"profile\", {",
+            "line": 65,
+            "startLine": 61,
+            "endLine": 70,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "1495b073-05f0-47d6-addd-1ce238fcbf02",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "address",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "address,",
+                        "line": 47,
+                        "startLine": 43,
+                        "endLine": 52
+                    },
+                    {
+                        "name": "address",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "address,",
+                        "line": 71,
+                        "startLine": 67,
+                        "endLine": 76
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "61d32dbc-995c-43b6-9b3c-f0bd7594032f",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "bankAcc",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "bankAcc,",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "bankAcc",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "bankAcc,",
+                        "line": 72,
+                        "startLine": 68,
+                        "endLine": 77
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "c10806d5-709d-4857-9c75-e1e5832c135d",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "bankRouting",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "bankRouting",
+                        "line": 49,
+                        "startLine": 45,
+                        "endLine": 54
+                    },
+                    {
+                        "name": "bankRouting",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "bankRouting,",
+                        "line": 73,
+                        "startLine": 69,
+                        "endLine": 78
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "65db758e-a1ed-49a9-9f86-5cfd27c6ac50",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "dob",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "dob,",
+                        "line": 46,
+                        "startLine": 42,
+                        "endLine": 51
+                    },
+                    {
+                        "name": "dob",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "dob,",
+                        "line": 70,
+                        "startLine": 66,
+                        "endLine": 75
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "048cf4a9-0500-4a02-ac0c-561c9fc33b2e",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "firstName",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "firstName,",
+                        "line": 43,
+                        "startLine": 39,
+                        "endLine": 48
+                    },
+                    {
+                        "name": "firstNameSafeString",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "const firstNameSafeString = firstName;",
+                        "line": 64,
+                        "startLine": 60,
+                        "endLine": 69
+                    },
+                    {
+                        "name": "firstNameSafeString",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "firstNameSafeString,",
+                        "line": 67,
+                        "startLine": 63,
+                        "endLine": 72
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "115a2d33-48c9-4c58-9232-033c2be448f3",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "lastName",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "lastName,",
+                        "line": 44,
+                        "startLine": 40,
+                        "endLine": 49
+                    },
+                    {
+                        "name": "lastName",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "lastName,",
+                        "line": 68,
+                        "startLine": 64,
+                        "endLine": 73
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            },
+            {
+                "id": "e66cde83-e41e-4f2a-8664-ea93c17c892b",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "express.Response.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "return res.render(\"profile\", {",
+                "sinkLine": 65,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "ssn",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "ssn,",
+                        "line": 45,
+                        "startLine": 41,
+                        "endLine": 50
+                    },
+                    {
+                        "name": "ssn",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "ssn,",
+                        "line": 69,
+                        "startLine": 65,
+                        "endLine": 74
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "express.Response.render",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "return res.render(\"profile\", {",
+                        "line": 65,
+                        "startLine": 61,
+                        "endLine": 70
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 8.2,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 6.56,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/profile"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "b8485dd5-bf92-4158-b1bf-b81d1502223b",
+        "refId": "b8485dd5-bf92-4158-b1bf-b81d1502223b",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "7fc1762d-ef46-4504-94b7-ad72d5fcae01",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 3,
+            "commonId": "code-inj-94",
+            "name": "Code Injection",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-code-inj",
+            "sarifLevel": "",
+            "order": 2,
+            "severity": "High",
+            "severityRating": 8.2,
+            "description": "The application constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment. When the application allows a user's input to contain code syntax, it might be possible for an attacker to craft the code in such a way that it will alter the intended control flow of the application. Such an alteration could lead to arbitrary code execution",
+            "recommendations": [
+                "Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Rejecting any input that does not strictly conform to specifications, or transforming it into something that does",
+                "When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules",
+                "To reduce the likelihood of code injection, stringent whitelists that limit which constructs are allowed should be used. If the code that invokes a function is dynamically constructed, then verifying that the input is alphanumeric might be insufficient"
+            ],
+            "references": [
+                "https://owasp.org/www-community/attacks/Code_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-94",
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+                "url": "https://cwe.mitre.org/data/definitions/94.html"
+            },
+            "pcidss": {
+                "section": "6.5.1",
+                "title": "PCI DSS 6.5.1: Injection Flaws"
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "A01",
+                "title": "A01: Injection",
+                "url": "https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection"
+            },
+            "owasp2021": {
+                "index": "A03",
+                "title": "A03: Injection",
+                "url": "https://owasp.org/Top10/A03_2021-Injection/"
+            },
+            "capec": {
+                "id": "242",
+                "title": "CAPEC-242: Code Injection",
+                "url": "https://capec.mitre.org/data/definitions/242.html"
+            },
+            "sansTop25": {
+                "rank": 23,
+                "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+            }
+        },
+        "description": "'render' method could be abused to perform a Code Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "High",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "res.render",
+            "kind": "",
+            "file": "app/routes/error.js",
+            "snippet": "res.render(\"error-template\", {",
+            "line": 10,
+            "startLine": 6,
+            "endLine": 15,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "f39e2dfe-f551-43c0-aaf6-82d5dedc0f1b",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "res.render",
+                "sinkKind": "",
+                "sinkFile": "app/routes/error.js",
+                "sinkSnippet": "res.render(\"error-template\", {",
+                "sinkLine": 10,
+                "inputSource": "ErrorHandler",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "ErrorHandler",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.use(ErrorHandler);",
+                        "line": 82,
+                        "startLine": 78,
+                        "endLine": 86
+                    },
+                    {
+                        "name": "err",
+                        "kind": "argument",
+                        "file": "app/routes/error.js",
+                        "snippet": "const errorHandler = (err, req, res,next) => {",
+                        "line": 3,
+                        "startLine": 1,
+                        "endLine": 10
+                    },
+                    {
+                        "name": "error",
+                        "kind": "variable",
+                        "file": "app/routes/error.js",
+                        "snippet": "error: err",
+                        "line": 11,
+                        "startLine": 7,
+                        "endLine": 16
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "res.render",
+                        "kind": "",
+                        "file": "app/routes/error.js",
+                        "snippet": "res.render(\"error-template\", {",
+                        "line": 10,
+                        "startLine": 6,
+                        "endLine": 15
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 8.2,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 6.56,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": false,
+            "endpoints": [],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "0ed6282c-02f4-4b52-87c3-33e3652aadef",
+        "refId": "0ed6282c-02f4-4b52-87c3-33e3652aadef",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "8fc74069-302e-44be-9d4b-3e88fba7d5da",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 11,
+            "commonId": "regex-dos-1333",
+            "name": "Regex Denial of Service (ReDoS)",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-regex-dos",
+            "sarifLevel": "",
+            "order": 10,
+            "severity": "Low",
+            "severityRating": 2.34,
+            "description": "Regular expression Denial of Service (ReDoS) is a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach extreme situations that cause them to work very slowly (exponentially related to input size). An attacker can then cause a program using a Regular Expression to enter these extreme situations and then hang for a very long time, affecting the availability of the application",
+            "recommendations": [
+                "Do not pass untrusted user input to functions that perform regular expression searches"
+            ],
+            "references": [
+                "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+            ],
+            "cwe": {
+                "id": "CWE-1333",
+                "title": "CWE-1333: Inefficient Regular Expression Complexity",
+                "url": "https://cwe.mitre.org/data/definitions/1333.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SC-5",
+                "priority": "P1",
+                "title": "SC-5: Denial of Service Protection",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SC-5"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "10.b",
+                "title": "10.b: Input Data Validation (Level 1 Implementation)"
+            },
+            "owasp": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "owasp2021": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "capec": {
+                "id": "492",
+                "title": "CAPEC-492: Regular Expression Exponential Blowup",
+                "url": "https://capec.mitre.org/data/definitions/492.html"
+            },
+            "sansTop25": {
+                "rank": 20,
+                "title": "CWE-1333: Inefficient Regular Expression Complexity"
+            }
+        },
+        "description": "'test' method of 'RegExpLiteral' object could be abused to perform a RegEx Denial of Service attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "Low",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "RegExpLiteral.test",
+            "kind": "",
+            "file": "app/routes/profile.js",
+            "snippet": "const testComplyWithRequirements = regexPattern.test(bankRouting);",
+            "line": 61,
+            "startLine": 57,
+            "endLine": 66,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "99c4aab7-9418-4e9d-bc6d-964e9c16f930",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "RegExpLiteral.test",
+                "sinkKind": "",
+                "sinkFile": "app/routes/profile.js",
+                "sinkSnippet": "const testComplyWithRequirements = regexPattern.test(bankRouting);",
+                "sinkLine": 61,
+                "inputSource": "profileHandler.handleProfileUpdate",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "profileHandler.handleProfileUpdate",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.post(\"/profile\", isLoggedIn, profileHandler.handleProfileUpdate);",
+                        "line": 48,
+                        "startLine": 44,
+                        "endLine": 53
+                    },
+                    {
+                        "name": "req",
+                        "kind": "argument",
+                        "file": "app/routes/profile.js",
+                        "snippet": "this.handleProfileUpdate = (req, res, next) => {",
+                        "line": 40,
+                        "startLine": 36,
+                        "endLine": 45
+                    },
+                    {
+                        "name": "bankRouting",
+                        "kind": "variable",
+                        "file": "app/routes/profile.js",
+                        "snippet": "bankRouting",
+                        "line": 49,
+                        "startLine": 45,
+                        "endLine": 54
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "RegExpLiteral.test",
+                        "kind": "",
+                        "file": "app/routes/profile.js",
+                        "snippet": "const testComplyWithRequirements = regexPattern.test(bankRouting);",
+                        "line": 61,
+                        "startLine": 57,
+                        "endLine": 66
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 2.34,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 1.8719999999999999,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "POST",
+                    "endpoint": "/profile"
+                }
+            ],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "a552cbef-3431-49ae-b0c3-bf7357336a0f",
+        "refId": "a552cbef-3431-49ae-b0c3-bf7357336a0f",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "d7321bbc-b875-4a67-88cf-a25d41f7577a",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 10,
+            "commonId": "log-forge-117",
+            "name": "Log Forging",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-log-forge",
+            "sarifLevel": "",
+            "order": 12,
+            "severity": "Low",
+            "severityRating": 3.097,
+            "description": "Log Forging vulnerability occurs when an application either does not neutralize (sanitize) or it incorrectly neutralizes output that is written to logs. This can allow an attacker to forge log entries or inject malicious content into log records",
+            "recommendations": [
+                "Validating and encoding all input that could be outputed in the log file"
+            ],
+            "references": [
+                "https://www.owasp.org/index.php/Log_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-117",
+                "title": "CWE-117: Improper Output Neutralization for Logs",
+                "url": "https://cwe.mitre.org/data/definitions/117.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "",
+                "title": ""
+            },
+            "owasp": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "owasp2021": {
+                "index": "A09",
+                "title": "A09: Security Logging and Monitoring Failures",
+                "url": "https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/"
+            },
+            "capec": {
+                "id": "93",
+                "title": "CAPEC-93: Log Injection-Tampering-Forging",
+                "url": "https://capec.mitre.org/data/definitions/93.html"
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'error' method could be abused to perform a Log Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "Low",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "console.error",
+            "kind": "",
+            "file": "app/routes/error.js",
+            "snippet": "console.error(err.message);",
+            "line": 7,
+            "startLine": 3,
+            "endLine": 12,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "4bef3306-af0a-49b3-98bb-6b7d760121d6",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "console.error",
+                "sinkKind": "",
+                "sinkFile": "app/routes/error.js",
+                "sinkSnippet": "console.error(err.message);",
+                "sinkLine": 7,
+                "inputSource": "ErrorHandler",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "ErrorHandler",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.use(ErrorHandler);",
+                        "line": 82,
+                        "startLine": 78,
+                        "endLine": 86
+                    },
+                    {
+                        "name": "err",
+                        "kind": "argument",
+                        "file": "app/routes/error.js",
+                        "snippet": "const errorHandler = (err, req, res,next) => {",
+                        "line": 3,
+                        "startLine": 1,
+                        "endLine": 10
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "console.error",
+                        "kind": "",
+                        "file": "app/routes/error.js",
+                        "snippet": "console.error(err.message);",
+                        "line": 7,
+                        "startLine": 3,
+                        "endLine": 12
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 3.097,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 2.4776000000000002,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": false,
+            "endpoints": [],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    },
+    {
+        "id": "646acbe4-93e1-4728-ba2e-6f5881c1db8e",
+        "refId": "646acbe4-93e1-4728-ba2e-6f5881c1db8e",
+        "scanId": "1578c013-61ae-47de-bf85-9e29f843e43d",
+        "snapshotId": "a2143d6d-bc85-4549-b6d1-c1e50a630c8c",
+        "projectId": "c936e8a7-9512-45bc-a9a4-23de35411c42",
+        "appId": "bfc7cb9f-1dd8-45a1-aea3-37dba09576bb",
+        "type": {
+            "id": 10,
+            "commonId": "log-forge-117",
+            "name": "Log Forging",
+            "driver": "mend/sast",
+            "engineId": 108,
+            "language": "JavaScript / TypeScript*",
+            "sarif": "js-log-forge",
+            "sarifLevel": "",
+            "order": 12,
+            "severity": "Low",
+            "severityRating": 3.097,
+            "description": "Log Forging vulnerability occurs when an application either does not neutralize (sanitize) or it incorrectly neutralizes output that is written to logs. This can allow an attacker to forge log entries or inject malicious content into log records",
+            "recommendations": [
+                "Validating and encoding all input that could be outputed in the log file"
+            ],
+            "references": [
+                "https://www.owasp.org/index.php/Log_Injection"
+            ],
+            "cwe": {
+                "id": "CWE-117",
+                "title": "CWE-117: Improper Output Neutralization for Logs",
+                "url": "https://cwe.mitre.org/data/definitions/117.html"
+            },
+            "pcidss": {
+                "section": "",
+                "title": ""
+            },
+            "nist": {
+                "control": "SI-10",
+                "priority": "P1",
+                "title": "SI-10: Information Input Validation",
+                "url": "https://nvd.nist.gov/800-53/Rev5/control/SI-10"
+            },
+            "hipaa": {
+                "control": "",
+                "title": ""
+            },
+            "hitrust": {
+                "control": "",
+                "title": ""
+            },
+            "owasp": {
+                "index": "",
+                "title": "",
+                "url": ""
+            },
+            "owasp2021": {
+                "index": "A09",
+                "title": "A09: Security Logging and Monitoring Failures",
+                "url": "https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/"
+            },
+            "capec": {
+                "id": "93",
+                "title": "CAPEC-93: Log Injection-Tampering-Forging",
+                "url": "https://capec.mitre.org/data/definitions/93.html"
+            },
+            "sansTop25": {
+                "rank": 0,
+                "title": ""
+            }
+        },
+        "description": "'error' method could be abused to perform a Log Injection attack.",
+        "createdTime": "2025-10-13T18:55:55.646Z",
+        "isNew": true,
+        "severity": "Low",
+        "baseline": true,
+        "hasRemediation": false,
+        "suppressed": false,
+        "suppressionRequested": false,
+        "suppressionRejected": false,
+        "suppressedBy": "",
+        "suppressionTime": "0001-01-01T00:00:00Z",
+        "suppressionMessage": "",
+        "suppressionRequestComment": "",
+        "reviewed": false,
+        "IssueStatus": 0,
+        "sharedStep": {
+            "name": "console.error",
+            "kind": "",
+            "file": "app/routes/error.js",
+            "snippet": "console.error(err.stack);",
+            "line": 8,
+            "startLine": 4,
+            "endLine": 13,
+            "lineBlame": {
+                "commitId": "",
+                "file": "",
+                "line": 0
+            }
+        },
+        "dataFlows": [
+            {
+                "id": "5af5951a-98bb-432f-860d-4b985415a4dc",
+                "createdTime": "2025-10-13T18:55:55.646Z",
+                "sink": "console.error",
+                "sinkKind": "",
+                "sinkFile": "app/routes/error.js",
+                "sinkSnippet": "console.error(err.stack);",
+                "sinkLine": 8,
+                "inputSource": "ErrorHandler",
+                "inputKind": "function",
+                "inputFlow": [
+                    {
+                        "name": "ErrorHandler",
+                        "kind": "function",
+                        "file": "app/routes/index.js",
+                        "snippet": "app.use(ErrorHandler);",
+                        "line": 82,
+                        "startLine": 78,
+                        "endLine": 86
+                    },
+                    {
+                        "name": "err",
+                        "kind": "argument",
+                        "file": "app/routes/error.js",
+                        "snippet": "const errorHandler = (err, req, res,next) => {",
+                        "line": 3,
+                        "startLine": 1,
+                        "endLine": 10
+                    }
+                ],
+                "functionCalls": [
+                    {
+                        "name": "console.error",
+                        "kind": "",
+                        "file": "app/routes/error.js",
+                        "snippet": "console.error(err.stack);",
+                        "line": 8,
+                        "startLine": 4,
+                        "endLine": 13
+                    }
+                ],
+                "filter": {
+                    "isFiltered": false,
+                    "filterTypes": []
+                },
+                "isNew": true,
+                "rating": 8.76923076923077,
+                "confidenceRating": 10,
+                "ageRating": 2
+            }
+        ],
+        "severityRating": 3.097,
+        "confidenceRating": 10,
+        "ageRating": 0,
+        "rating": 2.4776000000000002,
+        "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": false,
+            "endpoints": [],
+            "isExploitable": false
+        },
+        "almIssues": {
+            "jira": {
+                "issueId": "",
+                "project": ""
+            },
+            "azure": {
+                "workItemId": 0,
+                "project": ""
+            },
+            "jiraPlatform": {
+                "internalStatus": "",
+                "issueStatus": "",
+                "issueKey": "",
+                "publicLink": "",
+                "createdTime": "0001-01-01T00:00:00Z",
+                "createdBy": "",
+                "createdByName": "",
+                "errorMessage": ""
+            }
+        },
+        "comments": [],
+        "workflowViolationsCount": 0,
+        "workflowViolations": [],
+        "correlatedDastFindingUuids": []
+    }
+]
