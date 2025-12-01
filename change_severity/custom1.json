@@ -23,7 +23,7 @@
         "status": "open"
       },
        {
-        "severity": 7,
+        "severity": 6,
         "fileName": "file2.java",
         "issueName": "low-package-nested-json",
         "referenceIdentifiers": [
@@ -103,7 +103,7 @@
         "status": "open"
       },
        {
-        "severity": 7,
+        "severity": 6,
         "fileName": "file2.java",
         "issueName": "low-package-nested-json",
         "referenceIdentifiers": [
