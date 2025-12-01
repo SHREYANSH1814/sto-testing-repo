@@ -23,7 +23,7 @@
         "status": "open"
       },
        {
-        "severity": 6,
+        "severity": 8,
         "fileName": "file2.java",
         "issueName": "low-package-nested-json",
         "referenceIdentifiers": [
@@ -89,7 +89,7 @@
       {
         "severity": 9,
         "fileName": "file1.java",
-        "issueName": "low-package-nested-json",
+        "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
           {
             "id": "259",
@@ -103,9 +103,9 @@
         "status": "open"
       },
        {
-        "severity": 6,
+        "severity": 8,
         "fileName": "file2.java",
-        "issueName": "low-package-nested-json",
+        "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
           {
             "id": "259",
@@ -121,7 +121,7 @@
        {
         "severity": 4,
         "fileName": "file3.java",
-        "issueName": "low-package-nested-json",
+        "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
           {
             "id": "259",
@@ -137,7 +137,7 @@
        {
         "severity": 0.1,
         "fileName": "file4.java",
-        "issueName": "low-package-nested-json",
+        "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
           {
             "id": "259",
@@ -153,7 +153,7 @@
        {
         "severity": -1.0,
         "fileName": "file5.java",
-        "issueName": "low-package-nested-json",
+        "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
           {
             "id": "259",
