@@ -1,0 +1,46 @@
+{
+    "meta": {
+      "subproduct": "MyCustomScanner",
+      "key": [
+        "packageName"
+      ]
+    },
+    "issues": [
+       {
+        "severity": 4,
+        "fileName": "file3.java",
+        "issueName": "low-package-nested-json",
+        "referenceIdentifiers": [
+            {
+                "id":"cve",
+                "type":"CVE-1999-0009"
+              },
+            {
+                "id":"cve",
+                "type":"CVE-2025-9997"
+              },
+            {
+                "id":"cve",
+                "type":"CVE-2025-9998"
+              }, 
+               
+          {
+            "id":"cve",
+            "type":"CVE-2013-0089"
+          },
+              {
+                "id":"cve",
+                "type":"CVE-2025-9999"
+              } 
+
+
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      }
+    ]
+  }
+  
