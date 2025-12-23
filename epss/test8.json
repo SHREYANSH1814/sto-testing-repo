@@ -13,7 +13,7 @@
         "referenceIdentifiers": [
           {
             "id":"2005-0817",
-            "type":"cve"
+            "type":"cve-shreyansh"
           }
         ],
         "remediationSteps": "Fix me fast.",
