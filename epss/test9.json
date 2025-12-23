@@ -1,0 +1,10 @@
+{
+    "meta": {
+      "subproduct": "MyCustomScanner",
+      "key": [
+        "packageName"
+      ]
+    },
+    "issues": [
+    ]
+  }
