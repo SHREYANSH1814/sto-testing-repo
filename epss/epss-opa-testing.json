@@ -23,11 +23,11 @@
         "status": "open"
       },
        {
-        "severity": 10,
+        "severity": 5,
         "fileName": "file2.java",
         "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
-            {
+          {
                 "id":"2005-0817",
                 "type":"cve"
               }
@@ -39,7 +39,7 @@
         "status": "open"
       },
        {
-        "severity": 10,
+        "severity": 5,
         "fileName": "file3.java",
         "issueName": "low-package-nested-json-1",
         "referenceIdentifiers": [
