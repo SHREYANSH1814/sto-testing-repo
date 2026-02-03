@@ -127,7 +127,7 @@
        {
         "severity": 7,
         "fileName": "file8.java",
-        "issueName": "low-package-nested-json-6",
+        "issueName": "low-package-nested-json-8",
         "referenceIdentifiers": [
           {
                 "id":"2025-62958",
