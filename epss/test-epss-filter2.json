@@ -1,0 +1,181 @@
+{
+    "meta": {
+      "subproduct": "MyCustomScanner",
+      "key": [
+        "packageName"
+      ]
+    },
+    "issues": [
+       {
+        "severity": 10,
+        "fileName": "file1.java",
+        "issueName": "low-package-nested-json-11",
+        "referenceIdentifiers": [
+            {
+                "id":"2017-1130",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-11",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+      {
+        "severity": 10,
+        "fileName": "file2.java",
+        "issueName": "low-package-nested-json-12",
+        "referenceIdentifiers": [
+            {
+                "id":"2005-0817",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-12",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+
+       {
+        "severity": 10,
+        "fileName": "file3.java",
+        "issueName": "low-package-nested-json-13",
+        "referenceIdentifiers": [
+            {
+                "id":"2005-4155",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-13",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+      {
+        "severity": 10,
+        "fileName": "file4.java",
+        "issueName": "low-package-nested-json-14",
+        "referenceIdentifiers": [
+            {
+                "id":"2005-4174",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-14",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+       {
+        "severity": 10,
+        "fileName": "file5.java",
+        "issueName": "low-package-nested-json-15",
+        "referenceIdentifiers": [
+          {
+                "id":"1999-0002",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-15",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+       {
+        "severity": 10,
+        "fileName": "file6.java",
+        "issueName": "low-package-nested-json-16",
+        "referenceIdentifiers": [
+            {
+                "id":"1999-0003",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-16",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+
+
+
+
+
+        {
+        "severity": 10,
+        "fileName": "file7.java",
+        "issueName": "low-package-nested-json-17",
+        "referenceIdentifiers": [
+            {
+                "id":"2026-25253",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-17",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+       {
+        "severity": 10,
+        "fileName": "file8.java",
+        "issueName": "low-package-nested-json-18",
+        "referenceIdentifiers": [
+          {
+                "id":"2025-62958",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-18",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+       {
+        "severity": 10,
+        "fileName": "file9.java",
+        "issueName": "low-package-nested-json-19",
+        "referenceIdentifiers": [
+            {
+                "id":"2025-62958",
+                "type":"cve1"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-19",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+
+
+
+        {
+        "severity": 10,
+        "fileName": "file10.java",
+        "issueName": "low-package-nested-json-20",
+        "referenceIdentifiers": [
+            {
+                "id":"2017-1130",
+                "type":"cve1"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-20",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      }
+  
+    ]
+  }
+  
