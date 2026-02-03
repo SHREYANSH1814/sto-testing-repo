@@ -38,13 +38,14 @@
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
+
        {
         "severity": 7,
         "fileName": "file3.java",
         "issueName": "low-package-nested-json-3",
         "referenceIdentifiers": [
-          {
-                "id":"1999-0002",
+            {
+                "id":"2005-4155",
                 "type":"cve"
               }
         ],
@@ -54,13 +55,13 @@
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
-       {
+      {
         "severity": 7,
         "fileName": "file4.java",
         "issueName": "low-package-nested-json-4",
         "referenceIdentifiers": [
             {
-                "id":"1999-0003",
+                "id":"2005-4174",
                 "type":"cve"
               }
         ],
@@ -70,14 +71,13 @@
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
-
-        {
+       {
         "severity": 7,
         "fileName": "file5.java",
-        "issueName": "low-package-nested-json-5",
+        "issueName": "low-package-nested-json-3",
         "referenceIdentifiers": [
-            {
-                "id":"2026-25253",
+          {
+                "id":"1999-0002",
                 "type":"cve"
               }
         ],
@@ -92,8 +92,8 @@
         "fileName": "file6.java",
         "issueName": "low-package-nested-json-6",
         "referenceIdentifiers": [
-          {
-                "id":"2025-62958",
+            {
+                "id":"1999-0003",
                 "type":"cve"
               }
         ],
@@ -103,14 +103,19 @@
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
-       {
+
+
+
+
+
+        {
         "severity": 7,
         "fileName": "file7.java",
         "issueName": "low-package-nested-json-7",
         "referenceIdentifiers": [
             {
-                "id":"2025-62958",
-                "type":"cve1"
+                "id":"2026-25253",
+                "type":"cve"
               }
         ],
         "remediationSteps": "Fix me fast.",
@@ -119,13 +124,45 @@
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
         "status": "open"
       },
+       {
+        "severity": 7,
+        "fileName": "file8.java",
+        "issueName": "low-package-nested-json-6",
+        "referenceIdentifiers": [
+          {
+                "id":"2025-62958",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-8",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
+       {
+        "severity": 7,
+        "fileName": "file9.java",
+        "issueName": "low-package-nested-json-9",
+        "referenceIdentifiers": [
+            {
+                "id":"2025-62958",
+                "type":"cve1"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json-9",
+        "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
+        "status": "open"
+      },
 
 
 
         {
         "severity": 7,
-        "fileName": "file8.java",
-        "issueName": "low-package-nested-json-8",
+        "fileName": "file10.java",
+        "issueName": "low-package-nested-json-10",
         "referenceIdentifiers": [
             {
                 "id":"2017-1130",
