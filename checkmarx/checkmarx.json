@@ -1,0 +1,149 @@
+{
+    "CxOSALibraries":[{
+        "id" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "name" : "jquery",
+        "version" : "1.10.2",
+        "newestVersion" : "3.7.1",
+        "newestVersionReleaseDate" : "2023-08-28T13:39:23.083",
+        "numberOfVersionsSinceLastUpdate" : 37,
+        "confidenceLevel" : 100,
+        "criticalUniqueVulnerabilityCount" : 0,
+        "highUniqueVulnerabilityCount" : 1,
+        "mediumUniqueVulnerabilityCount" : 5,
+        "lowUniqueVulnerabilityCount" : 0
+    }],
+    "CxOSASummary":{
+        "totalLibraries" : 1,
+        "highVulnerabilityLibraries" : 1,
+        "mediumVulnerabilityLibraries" : 0,
+        "lowVulnerabilityLibraries" : 0,
+        "nonVulnerableLibraries" : 0,
+        "vulnerableAndUpdated" : 0,
+        "vulnerableAndOutdated" : 1,
+        "vulnerabilityScore" : "High",
+        "totalHighVulnerabilities" : 1,
+        "totalMediumVulnerabilities" : 5,
+        "totalLowVulnerabilities" : 0
+    },
+    "CxOSAVulnerabilities":[{
+        "id" : "05CFD243FE447F66567EBA19ABD63C7919728B81",
+        "cveName" : "CVE-2020-11023",
+        "score" : 6.1,
+        "severity" : {
+          "name" : "Medium",
+          "id" : 1
+        },
+        "publishDate" : "2020-04-29T15:45:00",
+        "url" : "https://nvd.nist.gov/vuln/detail/CVE-2020-11023",
+        "description" : "In jQuery versions 1.0.3 through 3.4.1, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This vulnerability also affects jquery-rails versions through 4.3.5.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+      }, {
+        "id" : "3E42FE1AA246C602B3FAE2C412D396A16C1AC43D",
+        "cveName" : "CVE-2015-9251",
+        "score" : 6.1,
+        "severity" : {
+          "name" : "Medium",
+          "id" : 1
+        },
+        "publishDate" : "2018-01-18T23:29:00",
+        "url" : "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+        "description" : "jQuery before 3.0.0-beta1 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+      }, {
+        "id" : "CB9CF24CF55B7CFD211A98626C9CCF2CD22EB52D",
+        "cveName" : "CVE-2019-11358",
+        "score" : 6.1,
+        "severity" : {
+          "name" : "Medium",
+          "id" : 1
+        },
+        "publishDate" : "2019-04-20T00:29:00",
+        "url" : "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+        "description" : "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+      }, {
+        "id" : "46348F7353E29E246FF9E84672D160B09F78D111",
+        "cveName" : "CVE-2020-11022",
+        "score" : 6.1,
+        "severity" : {
+          "name" : "Medium",
+          "id" : 1
+        },
+        "publishDate" : "2020-04-29T22:15:00",
+        "url" : "https://nvd.nist.gov/vuln/detail/CVE-2020-11022",
+        "description" : "In jQuery versions before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+      }, {
+        "id" : "5C55EF8579F13ADED40DB40206C8A2223361B59E",
+        "cveName" : "Cxf0b588a3-5c6f",
+        "score" : 6.1,
+        "severity" : {
+          "name" : "Medium",
+          "id" : 1
+        },
+        "publishDate" : "2012-06-25T12:52:00",
+        "url" : "https://bugs.jquery.com/ticket/11974",
+        "description" : "The package `jQuery` before 1.12.0, between 1.12.2 and 2.1.4 and between 2.2.2 and 2.2.4 is vulnerable to `XSS`. The function `jQuery.parseHTML()` in the file `src/core/parseHTML.js` doesn't stop scripts or inline event handlers from being executed immediately, which could result in XSS as the attacker could embed malicious scripts in the HTML (img nodes with embedded src url's which are pre-loaded when the page is requested) which would get executed immediately in the victim's browser even without user's intervention.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+      }, {
+        "id" : "5D097DFA33B9138C6E3DF53E4F1902C26F5F26F4",
+        "cveName" : "CVE-2016-10707",
+        "score" : 7.5,
+        "severity" : {
+          "name" : "High",
+          "id" : 2
+        },
+        "publishDate" : "2018-01-18T23:29:00",
+        "url" : "https://nvd.nist.gov/vuln/detail/CVE-2016-10707",
+        "description" : "Versions prior to 3.0.0 in jQuery are vulnerable to Denial of Service (DoS) due to removing a logic that lowercased attribute names. Any attribute getter using a mixed-cased name for boolean attributes goes into an infinite recursion, exceeding the stack call limit.",
+        "recommendations" : "Upgrade to 3.5.0",
+        "sourceFileName" : "",
+        "libraryId" : "15508C89B781BB4FF2E0FA43D6B83172AB7338DE",
+        "state" : {
+          "id" : 1,
+          "actionType" : "Regular",
+          "name" : "TO_VERIFY"
+        },
+        "commentsAmount" : 0
+    }]
+}
