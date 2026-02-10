@@ -1,0 +1,17 @@
+{
+  "meta": { "subproduct": "MyCustomScanner", "key": ["packageName"] },
+  "issues": [
+    {
+      "severity": 7,
+      "fileName": "file1.java",
+      "issueName": "High Issue 1",
+      "referenceIdentifiers": [{ "id": "259", "type": "cwe" }],
+      "remediationSteps": "Fix me fast.",
+      "subproduct": "MyCustomScanTool",
+      "packageName": "high-package",
+      "issueDescription": "Lorem ipsum...",
+      "status": "open",
+      "Tags":"shreyansh"
+    }
+  ]
+}
