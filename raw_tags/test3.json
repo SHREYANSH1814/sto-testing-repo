@@ -418,6 +418,7 @@
             "flows": [],
             "status": "OPEN",
             "message": "Raw Tag is boolean",
+            "tags":true,
             "effort": "15min",
             "debt": "15min",
             "author": "",
