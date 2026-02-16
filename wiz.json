@@ -64,6 +64,7 @@
                     {
                         "name": "CVE-2011-3374",
                         "severity": "Medium",
+                        "originalSeverity":"Critical",
                         "fixedVersion": null,
                         "fileRemediation": null,
                         "source": "https://security-tracker.debian.org/tracker/CVE-2011-3374",
