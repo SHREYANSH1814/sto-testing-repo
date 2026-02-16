@@ -63,7 +63,7 @@
                 "vulnerabilities": [
                     {
                         "name": "CVE-2011-3374",
-                        "severity": "CRITICAL",
+                        "severity": "Medium",
                         "fixedVersion": null,
                         "fileRemediation": null,
                         "source": "https://security-tracker.debian.org/tracker/CVE-2011-3374",
@@ -128,61 +128,6 @@
                 "layerMetadata": null,
                 "failedPolicyMatches": []
             }
-        ],
-        "dataFindings": [],
-        "vulnerableSBOMArtifactsByNameVersion": null,
-        "hostConfiguration": {
-            "hostConfigurationFrameworks": [],
-            "hostConfigurationFindings": [],
-            "analytics": null
-        },
-        "failedPolicyMatches": [],
-        "analytics": {
-            "vulnerabilities": {
-                "infoCount": 6,
-                "lowCount": 94,
-                "mediumCount": 47,
-                "highCount": 4,
-                "criticalCount": 0,
-                "unfixedCount": 121,
-                "totalCount": 151
-            },
-            "secrets": {
-                "privateKeyCount": 0,
-                "publicKeyCount": 0,
-                "passwordCount": 3,
-                "certificateCount": 0,
-                "cloudKeyCount": 0,
-                "sshAuthorizedKeyCount": 0,
-                "dbConnectionStringCount": 0,
-                "gitCredentialCount": 0,
-                "presignedURLCount": 0,
-                "saasAPIKeyCount": 0,
-                "infoCount": 0,
-                "lowCount": 0,
-                "mediumCount": 3,
-                "highCount": 0,
-                "criticalCount": 0,
-                "totalCount": 3
-            },
-            "hostConfiguration": null,
-            "malware": {
-                "infoCount": 0,
-                "lowCount": 0,
-                "mediumCount": 0,
-                "highCount": 0,
-                "criticalCount": 0,
-                "totalCount": 0
-            },
-            "softwareSupplyChain": null,
-            "sast": null,
-            "filesScannedCount": 4389,
-            "directoriesScannedCount": 642
-        },
-        "sbomOutput": "",
-        "malwares": [],
-        "softwareSupplyChain": [],
-        "sast": null
-    },
-    "reportUrl": "https://app.wiz.io/findings/cicd-scans#~%2528cicd_scan~%25278001f0b6-d040-4eca-93d6-ce9e0a07ef65%252A2c2025-06-30T16%2525%25252A3a12%2525%25252A3a32.892409829Z%2527%2529"
+        ]
+    }
 }
