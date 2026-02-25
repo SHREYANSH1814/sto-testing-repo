@@ -1,0 +1,41 @@
+{
+    "meta": {
+      "subproduct": "MyCustomScanner",
+      "key": [
+        "packageName"
+      ]
+    },
+    "issues": [
+       {
+        "severity": 9,
+        "fileName": "file3.java",
+        "issueName": "low-package-nested-json",
+        "referenceIdentifiers": [
+            {
+                "id":"cve",
+                "type":"CVE-1999-0009"
+              },
+            {
+                "id":"cve",
+                "type":"CVE-2025-9997"
+              },
+            {
+                "id":"cve",
+                "type":"CVE-2025-9998"
+              }, 
+              {
+                "id":"cve",
+                "type":"CVE-2025-9999"
+              } 
+
+
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "low-package-nested-json",
+        "issueDescription": "description 2",
+        "status": "open"
+      }
+    ]
+  }
+  
