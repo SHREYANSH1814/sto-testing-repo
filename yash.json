@@ -11,7 +11,7 @@
         {
             "resource": {
                 "format": "rpm",
-                "name": "kernel-headers",
+                "name": "kernel-headers-1",
                 "version": "4.18.0-553.89.1.el8_10",
                 "layer_digest": "sha256:974b4723f6a806aea3048dca6b5b34a9ada082cff6a80c96308825f417bd1048"
             },
