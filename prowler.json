@@ -1,4 +1,7 @@
-[{
+{
+  "Findings": 
+  
+  [{
     "SchemaVersion": "2018-10-08",
     "Id": "prowler-rds_instance_minor_version_upgrade_enabled-ACCOUNT_ID-eu-west-1-b1ade474a",
     "ProductArn": "arn:aws:securityhub:eu-west-1::product/prowler/prowler",
@@ -61,3 +64,5 @@
         }
     }
 }]
+
+}
