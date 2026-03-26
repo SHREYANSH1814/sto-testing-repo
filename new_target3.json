@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "MyCustomScanner"
+  },
+  "issues": [
+    {
+      "packageName": "package target2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 6 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 6 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 6 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 6 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 6 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 8 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 8 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 8 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 8 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 8 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 9 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 9 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 9 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 9 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2005-0817"
+        }
+      ]
+    },
+    {
+      "packageName": "package target2 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 9 for target2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    }
+  ]
+}
