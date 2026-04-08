@@ -26,7 +26,7 @@
         "status": "open"
       },
         {
-        "severity": 7,
+        "severity": 10,
         "fileName": "file4.java",
         "issueName": "issue2",
         "referenceIdentifiers": [
