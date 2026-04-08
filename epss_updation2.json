@@ -8,23 +8,6 @@
       ]
     },
     "issues": [
-    
-            {
-        "severity": 7,
-        "fileName": "file3.java",
-        "issueName": "issue4",
-        "referenceIdentifiers": [
-           {
-                "id":"2024-3400",
-                "type":"cve"
-              }
-        ],
-        "remediationSteps": "Fix me fast.",
-        "subproduct": "MyCustomScanTool",
-        "packageName": "package4",
-        "issueDescription": "new target2",
-        "status": "open"
-      },
         {
         "severity": 7,
         "fileName": "file4.java",
