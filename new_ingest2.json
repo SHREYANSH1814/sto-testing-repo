@@ -1,0 +1,49 @@
+{
+    "meta": {
+      "subproduct": "MyCustomScanner",
+      "key": [
+        "packageName",
+        "issueName"
+        
+      ]
+    },
+    "issues": [
+    
+            {
+        "severity": 7,
+        "fileName": "file3.java",
+        "issueName": "issue1",
+        "referenceIdentifiers": [
+            {
+                "id":"2005-4155",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "package1",
+        "issueDescription": "new target2",
+        "status": "open"
+      },
+        {
+        "severity": 7,
+        "fileName": "file4.java",
+        "issueName": "issue2",
+        "referenceIdentifiers": [
+            {
+                "id":"2005-4155",
+                "type":"cve"
+              }
+        ],
+        "remediationSteps": "Fix me fast.",
+        "subproduct": "MyCustomScanTool",
+        "packageName": "package2",
+        "issueDescription": "new target2",
+        "status": "open"
+      }
+      
+
+      
+    ]
+  }
+  
