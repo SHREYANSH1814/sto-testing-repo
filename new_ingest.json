@@ -39,7 +39,18 @@
         "subproduct": "MyCustomScanTool",
         "packageName": "package2",
         "issueDescription": "[{\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance\", \"searchKey\": \"resource[default].labels\"}, {\"missingLabels\": {\"ad-domain\": {\"allowed\": [\"corpdev\", \"corpstage\", \"custstage\", \"corp\", \"cust\"], \"present\": false, \"value\": \"missing\"}, \"ephemeral\": {\"allowed\": [\"true\", \"false\"], \"present\": false, \"value\": \"missing\"}, \"sub-product\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}, \"usp\": {\"allowed\": [], \"present\": false, \"value\": \"missing\"}}, \"resourceName\": \"default\", \"resourceType\": \"google_compute_instance_template\", \"searchKey\": \"resource[default].labels\"}]",
-        "status": "open"
+        "status": "open",
+         "riskFactors": {
+            "probability": "high",
+            "hasEndpoints": true,
+            "endpoints": [
+                {
+                    "method": "GET",
+                    "endpoint": "/learn"
+                }
+            ],
+            "isExploitable": false
+        }
       }
       
 
