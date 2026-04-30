@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "MyCustomScanner"
+  },
+  "issues": [
+    {
+      "packageName": "package shreyansh/repo2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for shreyansh/repo2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 0,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package shreyansh/repo2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for shreyansh/repo2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package shreyansh/repo2 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for shreyansh/repo2",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    }
+  ]
+}
