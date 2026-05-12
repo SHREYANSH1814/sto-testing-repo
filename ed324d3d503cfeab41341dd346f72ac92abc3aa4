@@ -1,0 +1,38 @@
+new_ingest3.json
+  human 15,24,31,40
+---
+{
+  "attestations": [
+    {
+      "entries": [
+        {
+          "accepted_lines": 4,
+          "added_lines": 4,
+          "deleted_lines": 0,
+          "hash": "human",
+          "lines": "15,24,31,40",
+          "overridden_lines": 0
+        }
+      ],
+      "file": "new_ingest3.json"
+    }
+  ],
+  "base_commit_sha": "eab6ba40933addbb257ef874b09ac5f0192d3ad9",
+  "branch": "main",
+  "commit_sha": "ed324d3d503cfeab41341dd346f72ac92abc3aa4",
+  "commit_time": "2026-05-12T11:09:57+05:30",
+  "commit_type": "direct_commit",
+  "git_ai_version": "1.4.4",
+  "prompts": {
+    "human": {
+      "accepted_lines": 4,
+      "agent_id": null,
+      "human_author": "SHREYANSH1814 <shreyansh.gupta@traceable.ai>",
+      "overriden_lines": 0,
+      "total_additions": 4,
+      "total_deletions": 0
+    }
+  },
+  "repo": "git@github.com:SHREYANSH1814/sto-testing-repo.git",
+  "schema_version": "authorship/3.0.0"
+}
