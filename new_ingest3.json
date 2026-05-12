@@ -12,7 +12,7 @@
             {
         "severity": 7,
         "fileName": "file3.java",
-        "issueName": "issue3",
+        "issueName": "issue1",
         "referenceIdentifiers": [
            {
                 "id":"2024-3400",
@@ -21,14 +21,14 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "package3",
+        "packageName": "package1",
         "issueDescription": "new target2",
         "status": "open"
       },
         {
         "severity": 7,
         "fileName": "file4.java",
-        "issueName": "issue3",
+        "issueName": "issue2",
         "referenceIdentifiers": [
             {
                 "id":"2005-4155",
@@ -37,7 +37,7 @@
         ],
         "remediationSteps": "Fix me fast.",
         "subproduct": "MyCustomScanTool",
-        "packageName": "package3",
+        "packageName": "package2",
         "issueDescription": "new target2",
         "status": "open"
       }
