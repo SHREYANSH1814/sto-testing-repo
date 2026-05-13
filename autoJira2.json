@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "MyCustomScanner"
+  },
+  "issues": [
+     {
+      "packageName": "package1 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 1 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+     {
+      "packageName": "package2 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 2 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "package3 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 3 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 5,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+       {
+      "packageName": "package3 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 7 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+     {
+      "packageName": "package4 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 4 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 2,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+     "packageName": "package5 shreyansh/repo3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Issue 5 for shreyansh/repo1",
+      "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 0,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "CVE",
+          "id": "2017-1130"
+        }
+      ]
+    }
+    
+  ]
+}
