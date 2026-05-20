@@ -226,7 +226,7 @@
         "xdm.vulnerability.has_a_fix": false,
         "xdm.vulnerability.intelligence_id": "213743d1-e178-590b-b9a7-b183d0c42d0b",
         "xdm.vulnerability.publish_date": "1970-01-21T09:38:52.800000Z",
-        "xdm.vulnerability.severity": "NONE",
+        "xdm.vulnerability.severity": "UNKNOWN",
         "xdm.vulnerability.status": null
       }
     },
