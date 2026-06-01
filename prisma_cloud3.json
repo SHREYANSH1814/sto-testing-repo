@@ -4662,7 +4662,7 @@
           "packageName": "libtasn1-6",
           "packageVersion": "4.16.0-2ubuntu0.1",
           "packageType": "package",
-          "gracePeriodDays": 10,
+          "gracePeriodDays": -10,
           "layerTime": 0,
           "templates": null,
           "twistlock": false,
