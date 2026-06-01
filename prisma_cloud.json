@@ -4467,6 +4467,121 @@
       ],
       "allCompliance": {},
       "vulnerabilities": [
+
+         {
+          "text": "",
+          "id": 44,
+          "severity": "info",
+          "cvss": 0,
+          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "cve": "CVE-2025-13151",
+          "cause": "",
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": "",
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": "",
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-13151",
+          "type": "image",
+          "packageName": "libtasn1-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+          "gracePeriodDays": -2147483699,
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": "",
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        },
+
+
+         {
+          "text": "",
+          "id": 45,
+          "severity": "low",
+          "cvss": 3,
+          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "cve": "CVE-2025-13151",
+          "cause": "",
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": "",
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": "",
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-13151",
+          "type": "image",
+          "packageName": "libtasn1-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+          "gracePeriodDays": -4,
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": "",
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        },
+
+
+
+
         {
           "text": "",
           "id": 46,
@@ -4498,7 +4613,6 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": 93,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4521,6 +4635,65 @@
             }
           ]
         },
+
+
+        {
+          "text": "",
+          "id": 48,
+          "severity": "high",
+          "cvss": 7.5,
+          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "cve": "CVE-2025-13151",
+          "cause": "",
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": "",
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": "",
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-13151",
+          "type": "image",
+          "packageName": "libtasn1-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "gracePeriodDays": 2147483650,
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": "",
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        },
+
+
+
           {
           "text": "",
           "id": 47,
