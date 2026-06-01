@@ -4552,7 +4552,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": 93,
+          "gracePeriodDays": 102,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4614,7 +4614,7 @@
           "cri": false,
           "published": 1769757375,
           "fixDate": 1770826689,
-          "gracePeriodDays": 93,
+          "gracePeriodDays": null,
           "applicableRules": [
             "<2.2.9-1ubuntu0.8+esm1"
           ],
