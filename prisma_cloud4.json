@@ -5037,7 +5037,7 @@
 
            {
           "text": "",
-          "id": 53,
+          "id": 54,
           "severity": "medium",
           "cvss": 10,
           "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
@@ -5057,7 +5057,7 @@
           },
           "link": "https://ubuntu.com/security/CVE-2025-131512",
           "type": "image",
-          "packageName": "libtasn3-6",
+          "packageName": "libtasn4-6",
           "packageVersion": "4.16.0-2ubuntu0.1",
           "packageType": "package",
           "layerTime": 0,
