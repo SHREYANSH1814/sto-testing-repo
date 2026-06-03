@@ -4499,7 +4499,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": -3650,
+          "gracePeriodDays": 3650,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4613,7 +4613,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-            "gracePeriodDays": -10,
+            "gracePeriodDays": 10,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4663,7 +4663,7 @@
           "packageName": "libtasn1-6",
           "packageVersion": "4.16.0-2ubuntu0.1",
           "packageType": "package",
-          "gracePeriodDays": -10,
+          "gracePeriodDays": 10,
           "layerTime": 0,
           "templates": null,
           "twistlock": false,
@@ -4726,7 +4726,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": -10,
+          "gracePeriodDays": 10,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4896,7 +4896,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-            "gracePeriodDays": 0,
+            "gracePeriodDays": -20,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4946,7 +4946,7 @@
           "packageName": "libtasn2-6",
           "packageVersion": "4.16.0-2ubuntu0.1",
           "packageType": "package",
-          "gracePeriodDays": -10,
+          "gracePeriodDays": 10,
           "layerTime": 0,
           "templates": null,
           "twistlock": false,
@@ -5009,7 +5009,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": -10,
+          "gracePeriodDays": 10,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
