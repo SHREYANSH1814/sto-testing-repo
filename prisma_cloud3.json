@@ -4613,6 +4613,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
+            "gracePeriodDays": -10,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4725,7 +4726,7 @@
           "cri": false,
           "published": 1767824143,
           "fixDate": 1770852731,
-          "gracePeriodDays": 3650,
+          "gracePeriodDays": -10,
           "applicableRules": [
             "<4.16.0-2ubuntu0.1+esm1"
           ],
@@ -4747,73 +4748,6 @@
               "source": "Ubuntu"
             }
           ]
-        },
-
-
-
-
-
-
-
-
-
-          {
-          "text": "",
-          "id": 46,
-          "severity": "medium",
-          "cvss": 6.9,
-          "status": "fixed in 2.2.9-1ubuntu0.8+esm1",
-          "cve": "CVE-2026-25210",
-          "cause": "",
-          "description": "In libexpat before 2.7.4, the doContent function does not properly determine the buffer size bufSize because there is no integer overflow check for tag buffer reallocation.",
-          "title": "",
-          "vecStr": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "exploit": "",
-          "riskFactors": {
-            "Attack complexity: low": {},
-            "DoS - High": {},
-            "Has fix": {},
-            "Medium severity": {},
-            "Recent vulnerability": {}
-          },
-          "link": "https://ubuntu.com/security/CVE-2026-25210",
-          "type": "image",
-          "packageName": "expat",
-          "packageVersion": "2.2.9-1ubuntu0.8",
-          "packageType": "package",
-          "layerTime": 0,
-          "templates": null,
-          "twistlock": false,
-          "cri": false,
-          "published": 1769757375,
-          "fixDate": 1770826689,
-          "gracePeriodDays": null,
-          "applicableRules": [
-            "<2.2.9-1ubuntu0.8+esm1"
-          ],
-          "discovered": "2026-05-29T06:13:08Z",
-          "binaryPkgs": [
-            "libexpat1"
-          ],
-          "functionLayer": "",
-          "wildfireMalware": {},
-          "secret": {},
-          "vulnerabilityDataSources": [
-            {
-              "attribute": "CVSS",
-              "source": "Ubuntu"
-            },
-            {
-              "attribute": "Severity",
-              "source": "Ubuntu"
-            },
-            {
-              "attribute": "Link",
-              "source": "Ubuntu"
-            }
-
-          ]
-
         }
       ]
     }
