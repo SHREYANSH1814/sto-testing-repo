@@ -3280,7 +3280,7 @@
               "version": "2025b-0ubuntu0.20.04",
               "name": "tzdata",
               "cveCount": 0,
-              "license": "",
+              "license": null,
               "layerTime": 1745419685,
               "purl": "pkg:deb/ubuntu/tzdata@2025b-0ubuntu0.20.04",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3484,7 +3484,7 @@
                 "libdebconfclient0"
               ],
               "cveCount": 0,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/cdebconf@0.251ubuntu1",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3513,7 +3513,7 @@
                 "libncursesw6"
               ],
               "cveCount": 436,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/ncurses@6.2-0ubuntu2.1",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3653,7 +3653,7 @@
                 "libdb5.3"
               ],
               "cveCount": 19,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/db5.3@5.3.28+dfsg1-0.6ubuntu2",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3679,7 +3679,7 @@
                 "libldap-2.4-2"
               ],
               "cveCount": 817,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/openldap@2.4.49+dfsg-2ubuntu1.10",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3704,7 +3704,7 @@
                 "openssl"
               ],
               "cveCount": 4680,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.24",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3852,7 +3852,7 @@
                 "libcrypt1"
               ],
               "cveCount": 5,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/libxcrypt@1:4.4.10-10ubuntu4",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3904,7 +3904,7 @@
                 "libpcre2-8-0"
               ],
               "cveCount": 136,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/pcre2@10.34-7ubuntu0.1",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3918,7 +3918,7 @@
                 "fontconfig"
               ],
               "cveCount": 34,
-              "license": "",
+              "license": null,
               "layerTime": 1745419685,
               "purl": "pkg:deb/ubuntu/fontconfig@2.13.1-2ubuntu3",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -3962,7 +3962,7 @@
                 "libpcre3"
               ],
               "cveCount": 135,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/pcre3@2:8.39-12ubuntu0.1",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -4086,7 +4086,7 @@
                 "zlib1g"
               ],
               "cveCount": 222,
-              "license": "",
+              "license": null,
               "layerTime": 0,
               "purl": "pkg:deb/ubuntu/zlib@1:1.2.11.dfsg-2ubuntu1.5",
               "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
@@ -4292,7 +4292,7 @@
               "name": "jrt-fs",
               "path": "/opt/java/openjdk/lib/jrt-fs.jar",
               "cveCount": 0,
-              "license": "",
+              "license": null,
               "layerTime": 1745419685,
               "jarIdentifier": "Oracle Corporation",
               "purl": "pkg:maven/jrt-fs@11.0.27"
@@ -4315,7 +4315,7 @@
       "redHatNonRPMImage": false,
       "foundSecrets": null,
       "secretScanMetrics": {},
-      "additionalDistroReleaseData": "",
+      "additionalDistroReleaseData": null,
       "image": {
         "entrypoint": [
           "/__cacert_entrypoint.sh",
@@ -4432,23 +4432,23 @@
       "id": "sha256:9bc2bb1aed85522729cf6888b8712330e6fa457ec8b0ae2d4380f62e18c01ee9",
       "complianceIssues": [
         {
-          "text": "",
+          "text": null,
           "id": 41,
           "severity": "high",
           "cvss": 0,
-          "status": "",
-          "cve": "",
-          "cause": "",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
+          "cve": null,
+          "cause": null,
           "description": "It is a good practice to run the container as a non-root user, if possible. Though user\nnamespace mapping is now available, if a user is already defined in the container image, the\ncontainer is run as that user by default and specific user namespace remapping is not\nrequired",
           "title": "(CIS_Docker_v1.5.0 - 4.1) Image should be created with a non-root user",
-          "vecStr": "",
-          "exploit": "",
+          "vecStr": null,
+          "exploit": null,
           "riskFactors": null,
-          "link": "",
+          "link": null,
           "type": "image",
-          "packageName": "",
-          "packageVersion": "",
-          "packageType": "",
+          "packageName": null,
+          "packageVersion": null,
+          "packageType": null,
           "layerTime": 0,
           "templates": [
             "PCI",
@@ -4459,7 +4459,7 @@
           "published": 0,
           "fixDate": 0,
           "discovered": "0001-01-01T00:00:00Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": null
@@ -4469,17 +4469,17 @@
       "vulnerabilities": [
 
          {
-          "text": "",
+          "text": null,
           "id": 44,
           "severity": "info",
           "cvss": 0,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13151",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4504,7 +4504,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4525,17 +4525,17 @@
 
 
          {
-          "text": "",
+          "text": null,
           "id": 45,
           "severity": "low",
           "cvss": 3,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13151",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4550,6 +4550,7 @@
           "packageVersion": "4.16.0-2ubuntu0.1",
           "packageType": "package",
           "layerTime": 0,
+
           "templates": null,
           "twistlock": false,
           "cri": false,
@@ -4560,7 +4561,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4583,17 +4584,17 @@
 
 
         {
-          "text": "",
+          "text": null,
           "id": 46,
           "severity": "medium",
           "cvss": 7.5,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13151",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4618,7 +4619,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4639,17 +4640,17 @@
 
 
         {
-          "text": "",
+          "text": null,
           "id": 48,
           "severity": "high",
           "cvss": 7.5,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13151",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4674,7 +4675,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4696,17 +4697,17 @@
 
 
           {
-          "text": "",
+          "text": null,
           "id": 47,
           "severity": "medium",
           "cvss": 10,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4731,7 +4732,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4752,17 +4753,17 @@
 
 
          {
-          "text": "",
+          "text": null,
           "id": 48,
           "severity": "info",
           "cvss": 0,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4787,7 +4788,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4808,17 +4809,17 @@
 
 
          {
-          "text": "",
+          "text": null,
           "id": 49,
           "severity": "low",
           "cvss": 3,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4843,7 +4844,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4866,17 +4867,17 @@
 
 
         {
-          "text": "",
+          "text": null,
           "id": 50,
           "severity": "medium",
           "cvss": 7.5,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4901,7 +4902,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4922,17 +4923,17 @@
 
 
         {
-          "text": "",
+          "text": null,
           "id": 51,
           "severity": "high",
           "cvss": 7.5,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -4957,7 +4958,7 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
@@ -4979,17 +4980,17 @@
 
 
           {
-          "text": "",
+          "text": null,
           "id": 52,
           "severity": "medium",
           "cvss": 10,
-          "status": "fixed in 4.16.0-2ubuntu0.1+esm1",
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
           "cve": "CVE-2025-13152",
-          "cause": "",
+          "cause": null,
           "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
-          "title": "",
+          "title": null,
           "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "exploit": "",
+          "exploit": null,
           "riskFactors": {
             "Attack complexity: low": {},
             "Attack vector: network": {},
@@ -5014,7 +5015,63 @@
             "<4.16.0-2ubuntu0.1+esm1"
           ],
           "discovered": "2026-05-29T06:13:08Z",
-          "functionLayer": "",
+          "functionLayer": null,
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        },
+        
+
+           {
+          "text": null,
+          "id": 54,
+          "severity": "medium",
+          "cvss": 10,
+          "status": "fixed in 3.9.1, 3.8.7, 3.7.10, 3.6.15, 3.5.18, 3.4.20, 3.3.22, 3.2.25, 3.1.28, 3.0.30, 2.9.12, 2.8.14, 2.7.16, 2.6.19, 2.5.21, 2.4.23, 2.3.26, 2.2.28, 2.1.30, 2.0.32, 1.9.11, 1.8.13, 1.7.15, 1.6.17, 1.5.19, 1.4.21, 1.3.23, 1.2.25, 1.1.27, 1.0.29, 0.39.8, 0.38.10, 0.37.12, 0.36.14, 0.35.16, 0.34.18, 0.33.20, 0.32.22, 0.31.24, 0.30.26",
+          "cve": "CVE-2025-13152",
+          "cause": null,
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": null,
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": null,
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-131512",
+          "type": "image",
+          "packageName": "libtasn4-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": null,
           "wildfireMalware": {},
           "secret": {},
           "vulnerabilityDataSources": [
