@@ -1,0 +1,4600 @@
+[
+  {
+    "_id": "6a192e7a274c498dd502bea1",
+    "entityInfo": {
+      "_id": "sha256:9bc2bb1aed85522729cf6888b8712330e6fa457ec8b0ae2d4380f62e18c01ee9",
+      "type": "ciImage",
+      "hostname": "f054fa2eb28e",
+      "scanTime": "2026-05-29T06:13:10.368Z",
+      "binaries": [
+        {
+          "name": "jaotc",
+          "path": "/opt/java/openjdk/bin/jaotc",
+          "md5": "6c57978d608a58bf63e3a9c5e04849d9",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jar",
+          "path": "/opt/java/openjdk/bin/jar",
+          "md5": "18d632fa57efc07f966b52fc2bbb8953",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jarsigner",
+          "path": "/opt/java/openjdk/bin/jarsigner",
+          "md5": "d2e125ea2dcc34773839d2dd74151d7e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "java",
+          "path": "/opt/java/openjdk/bin/java",
+          "md5": "5609629323f8669ac9cce7b19862f2ff",
+          "version": "11.0.27",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "javac",
+          "path": "/opt/java/openjdk/bin/javac",
+          "md5": "9022dcf107c6212a64eff81d2ad6a308",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "javadoc",
+          "path": "/opt/java/openjdk/bin/javadoc",
+          "md5": "8c84ba71abce767357db828c25da2dca",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "javap",
+          "path": "/opt/java/openjdk/bin/javap",
+          "md5": "d177078ac8b1330abec47a68c0346091",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jcmd",
+          "path": "/opt/java/openjdk/bin/jcmd",
+          "md5": "2e72035a773055a2ce9d0da3c3c59359",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jconsole",
+          "path": "/opt/java/openjdk/bin/jconsole",
+          "md5": "5e6741b8c3d78299c9cbac4c532de70a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jdb",
+          "path": "/opt/java/openjdk/bin/jdb",
+          "md5": "b545950237fd93c6dfd15c9c325923ca",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jdeprscan",
+          "path": "/opt/java/openjdk/bin/jdeprscan",
+          "md5": "6f51d590c7e451a49c192f067b00afa4",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jdeps",
+          "path": "/opt/java/openjdk/bin/jdeps",
+          "md5": "db549453a4bab8c7b23a1073f3bbbb22",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jfr",
+          "path": "/opt/java/openjdk/bin/jfr",
+          "md5": "3ef920c471e827bb777761df9dd47eee",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jhsdb",
+          "path": "/opt/java/openjdk/bin/jhsdb",
+          "md5": "a681e0b8256c755a3f12ae1a81245e02",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jimage",
+          "path": "/opt/java/openjdk/bin/jimage",
+          "md5": "3efc6a96bf0f492db6a2a6976aedb3a8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jinfo",
+          "path": "/opt/java/openjdk/bin/jinfo",
+          "md5": "f9a0c7e31e05678255a57337648af82c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jjs",
+          "path": "/opt/java/openjdk/bin/jjs",
+          "md5": "f2e621ebe65a5c9da3cdca6bbd84859d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jlink",
+          "path": "/opt/java/openjdk/bin/jlink",
+          "md5": "92d3119d391aab73af30b231340bf729",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jmap",
+          "path": "/opt/java/openjdk/bin/jmap",
+          "md5": "e194bc08fa2e3cc675f566bec38afc37",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jmod",
+          "path": "/opt/java/openjdk/bin/jmod",
+          "md5": "42f41f1e51da538cb1abb16546a3e99d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jps",
+          "path": "/opt/java/openjdk/bin/jps",
+          "md5": "c58e6b3087e08c1e96d34c8a66433c4c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jrunscript",
+          "path": "/opt/java/openjdk/bin/jrunscript",
+          "md5": "c02e88e8ad8fd18c0241e53cb6a9c759",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jshell",
+          "path": "/opt/java/openjdk/bin/jshell",
+          "md5": "7080e5d1103aa5d595f81d2883d5ecc4",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jstack",
+          "path": "/opt/java/openjdk/bin/jstack",
+          "md5": "e398c62dcde2d4bc50b442732568a122",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jstat",
+          "path": "/opt/java/openjdk/bin/jstat",
+          "md5": "130de758b0efeba227bf3b0da4c89cc1",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jstatd",
+          "path": "/opt/java/openjdk/bin/jstatd",
+          "md5": "f5aeb78758b308cf2991f56c13f57556",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "keytool",
+          "path": "/opt/java/openjdk/bin/keytool",
+          "md5": "4511cb63e32922544afe39ddce347df8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pack200",
+          "path": "/opt/java/openjdk/bin/pack200",
+          "md5": "81597b52ae0485f8e50fb9f0a26b992a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "rmic",
+          "path": "/opt/java/openjdk/bin/rmic",
+          "md5": "7062dce1cd3c15f544df318307621da5",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "rmid",
+          "path": "/opt/java/openjdk/bin/rmid",
+          "md5": "5b170525db9a86da97e762161e539579",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "rmiregistry",
+          "path": "/opt/java/openjdk/bin/rmiregistry",
+          "md5": "f06e2a4e4312ed50e343738d2d658bd3",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "serialver",
+          "path": "/opt/java/openjdk/bin/serialver",
+          "md5": "ea7eab9993026385c3181dac85748851",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "unpack200",
+          "path": "/opt/java/openjdk/bin/unpack200",
+          "md5": "2d83796bafdcfe0f9a7c64506260e22d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jexec",
+          "path": "/opt/java/openjdk/lib/jexec",
+          "md5": "f4929d9041e4cd73a769d283a1b50757",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "jspawnhelper",
+          "path": "/opt/java/openjdk/lib/jspawnhelper",
+          "md5": "0cef23632c8dbcd3f6c423257fa55423",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "[",
+          "path": "/usr/bin/[",
+          "md5": "1caf884c376c2222a3c62eea3a44f378",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "addpart",
+          "path": "/usr/bin/addpart",
+          "md5": "bc8c70aa9c28306a5a80f557fe2e8e78",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt",
+          "path": "/usr/bin/apt",
+          "md5": "40980a494e0f2ebf66e57435b8f77ab3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-cache",
+          "path": "/usr/bin/apt-cache",
+          "md5": "3ad9f27f5f4214ee3abe66892a1d8b6e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-cdrom",
+          "path": "/usr/bin/apt-cdrom",
+          "md5": "e36605013066ffae5d8b0373223b957c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-config",
+          "path": "/usr/bin/apt-config",
+          "md5": "5be7fdac2893d79de810215001bc6c0b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-get",
+          "path": "/usr/bin/apt-get",
+          "md5": "f1370b16878308f6d90d3662071e82db",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-mark",
+          "path": "/usr/bin/apt-mark",
+          "md5": "ed279022a1ffbdfba985a4d2689aa070",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "arch",
+          "path": "/usr/bin/arch",
+          "md5": "f4c4422846307b6d8372d921656be88a",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "b2sum",
+          "path": "/usr/bin/b2sum",
+          "md5": "b212a636370161349f864df1de75c645",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "base32",
+          "path": "/usr/bin/base32",
+          "md5": "90a677c6cd03ec0fe16a2d2b375401b3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "base64",
+          "path": "/usr/bin/base64",
+          "md5": "b8b8056dd68a1438ae13307855806ed0",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "basename",
+          "path": "/usr/bin/basename",
+          "md5": "b80e1464a3f5b608597fcbe70c555351",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "bash",
+          "path": "/usr/bin/bash",
+          "md5": "34e4337b63494f33ad7eefa49ae204d4",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "bunzip2",
+          "path": "/usr/bin/bunzip2",
+          "md5": "6c395d8d42d658f6b23566392ed608eb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "bzcat",
+          "path": "/usr/bin/bzcat",
+          "md5": "6c395d8d42d658f6b23566392ed608eb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "bzip2",
+          "path": "/usr/bin/bzip2",
+          "md5": "6c395d8d42d658f6b23566392ed608eb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "bzip2recover",
+          "path": "/usr/bin/bzip2recover",
+          "md5": "fe15c59c6bc9a6b15b0bd344a163ff1f",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "cat",
+          "path": "/usr/bin/cat",
+          "md5": "2d27ac1b5284f9c5e543b4804346ba9e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "chage",
+          "path": "/usr/bin/chage",
+          "md5": "41baa0b6c3d2efdc85baafa1f1b67ea9",
+          "cveCount": 0,
+          "fileMode": 4194797
+        },
+        {
+          "name": "chattr",
+          "path": "/usr/bin/chattr",
+          "md5": "2481b85cecd3e85727aac52d34134087",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chcon",
+          "path": "/usr/bin/chcon",
+          "md5": "8526438728545deeacd0687cbecd718e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chfn",
+          "path": "/usr/bin/chfn",
+          "md5": "82802178913ab4feb8798a9453ef74e1",
+          "cveCount": 0,
+          "fileMode": 8389101
+        },
+        {
+          "name": "chgrp",
+          "path": "/usr/bin/chgrp",
+          "md5": "a7f31ce6b46517cac80aa7c212e51a34",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "chmod",
+          "path": "/usr/bin/chmod",
+          "md5": "5de9fdc7eba3cb682d4d171c1e645f74",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "choom",
+          "path": "/usr/bin/choom",
+          "md5": "ae01781cff1076cbeeb52da35dcbc8c0",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chown",
+          "path": "/usr/bin/chown",
+          "md5": "36c44491863713cc4cd689da8b6bf66b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "chrt",
+          "path": "/usr/bin/chrt",
+          "md5": "7b519006bfe5eb840d72edf258237c2c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chsh",
+          "path": "/usr/bin/chsh",
+          "md5": "39362d3de54bf22adcc9e96e11c20c47",
+          "cveCount": 0,
+          "fileMode": 8389101
+        },
+        {
+          "name": "cksum",
+          "path": "/usr/bin/cksum",
+          "md5": "6a9543ac8c2185ad5e840d8b0c2c26e5",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "clear",
+          "path": "/usr/bin/clear",
+          "md5": "de19c5593ae7109a3d75fd2a3cf14fa8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "clear_console",
+          "path": "/usr/bin/clear_console",
+          "md5": "e68136f8a86af28823a30ad0b367aff1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cmp",
+          "path": "/usr/bin/cmp",
+          "md5": "35110a743fea7bcb586715ab455f479d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "comm",
+          "path": "/usr/bin/comm",
+          "md5": "8aa269ab541c78c0d2203a6ee2a339ab",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cp",
+          "path": "/usr/bin/cp",
+          "md5": "fceb0543926867046c4ee4f03226cab9",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "csplit",
+          "path": "/usr/bin/csplit",
+          "md5": "4fb3a9bb83630cc90d514016764af479",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "curl",
+          "path": "/usr/bin/curl",
+          "md5": "c1e15a4c42a2600485321101810bd063",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cut",
+          "path": "/usr/bin/cut",
+          "md5": "fce2fc7bc7502e9b5c3154dba50ae526",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dash",
+          "path": "/usr/bin/dash",
+          "md5": "e81bd2050bc52b8befd70f43bcbf2bc4",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "date",
+          "path": "/usr/bin/date",
+          "md5": "e50177ab95745c7b3b69e40d51693f01",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "dd",
+          "path": "/usr/bin/dd",
+          "md5": "65826a423e7cb506c43a5c115386fe0b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "delpart",
+          "path": "/usr/bin/delpart",
+          "md5": "d1ec558c09f1fdaafcab088edda65436",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "df",
+          "path": "/usr/bin/df",
+          "md5": "48d45fa4319da5b9b990244856f12795",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "diff",
+          "path": "/usr/bin/diff",
+          "md5": "c2214881aac8e22338e83fcea73c6dca",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "diff3",
+          "path": "/usr/bin/diff3",
+          "md5": "884add8906f6e4699d47a86c2a6f78cd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dir",
+          "path": "/usr/bin/dir",
+          "md5": "6c3b55716b0a65138b505fdf56b298d6",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "dircolors",
+          "path": "/usr/bin/dircolors",
+          "md5": "cce7ac275bb9077888c23ca22350eed9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dirmngr",
+          "path": "/usr/bin/dirmngr",
+          "md5": "44f8ad24f7bb54f95618d913fa0f2739",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dirmngr-client",
+          "path": "/usr/bin/dirmngr-client",
+          "md5": "c900ca5013c4a4bc32233589e03bc8f5",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dirname",
+          "path": "/usr/bin/dirname",
+          "md5": "1541381b1b1280998c7ab9cab5cb4ce8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dmesg",
+          "path": "/usr/bin/dmesg",
+          "md5": "15ad693db6c8ebf922eafaa9d407675e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg",
+          "path": "/usr/bin/dpkg",
+          "md5": "257632bc0bd54aa2e19bc318669ae2e8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-deb",
+          "path": "/usr/bin/dpkg-deb",
+          "md5": "425fe82da55ebbf9ed7f02fec05eadd3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-divert",
+          "path": "/usr/bin/dpkg-divert",
+          "md5": "d7acc6bf0789bd6bba7a2fe9686b20d8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-query",
+          "path": "/usr/bin/dpkg-query",
+          "md5": "8b6c691189c0cb882f9d7f2e4df202e8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-split",
+          "path": "/usr/bin/dpkg-split",
+          "md5": "f4f509f618452cc0ca6a1d784cb1bacf",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-statoverride",
+          "path": "/usr/bin/dpkg-statoverride",
+          "md5": "973f98d3f2aafd65f7b68ada63c30a9f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dpkg-trigger",
+          "path": "/usr/bin/dpkg-trigger",
+          "md5": "c36dc87da2fd8707436c0267586ac518",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "du",
+          "path": "/usr/bin/du",
+          "md5": "1c8410da0a8cc2d9ccc66c75dd03b6f8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "echo",
+          "path": "/usr/bin/echo",
+          "md5": "de5d375e67e9993aa335f2fea7fa8104",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "env",
+          "path": "/usr/bin/env",
+          "md5": "aa7af49f290c80433139c57ef0ad71bd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "expand",
+          "path": "/usr/bin/expand",
+          "md5": "ca343cb6d49d78432bc3bc9a67ae81bc",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "expiry",
+          "path": "/usr/bin/expiry",
+          "md5": "ecde715a23c18eb763bc18efad96357a",
+          "cveCount": 0,
+          "fileMode": 4194797
+        },
+        {
+          "name": "expr",
+          "path": "/usr/bin/expr",
+          "md5": "2b2d9e2885ac7c09eaaceecd4a3e22df",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "factor",
+          "path": "/usr/bin/factor",
+          "md5": "66e56abe90e2ff86ab6a2638e58cca55",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "faillog",
+          "path": "/usr/bin/faillog",
+          "md5": "10cf5e893d7fd6f4129cf36d28ed7af1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fallocate",
+          "path": "/usr/bin/fallocate",
+          "md5": "26fb49787e944b9326929a79da3e2a75",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "false",
+          "path": "/usr/bin/false",
+          "md5": "e846fc7444893a18faac88899f98b13a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-cache",
+          "path": "/usr/bin/fc-cache",
+          "md5": "f41e1b7687708538a2fcf2b6e3316c41",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-cat",
+          "path": "/usr/bin/fc-cat",
+          "md5": "7cc0bb2a8352fc6fe4a4b39678795813",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-conflist",
+          "path": "/usr/bin/fc-conflist",
+          "md5": "74da0055099a1a3a64c13831817a24f8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-list",
+          "path": "/usr/bin/fc-list",
+          "md5": "bd2d8db80574ee24a5e0395c6d40d0df",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-match",
+          "path": "/usr/bin/fc-match",
+          "md5": "8dfcd8593600952c3557e864cf70e080",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-pattern",
+          "path": "/usr/bin/fc-pattern",
+          "md5": "a9920b7aeb494780140d5cc4ddf519bd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-query",
+          "path": "/usr/bin/fc-query",
+          "md5": "ef3e59be198de75d2a87daacfb83c4ea",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-scan",
+          "path": "/usr/bin/fc-scan",
+          "md5": "9d19ccde124fd9e175423b6ec96f7084",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fc-validate",
+          "path": "/usr/bin/fc-validate",
+          "md5": "0330fad1a2bb156191addd262e5cb021",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fincore",
+          "path": "/usr/bin/fincore",
+          "md5": "609ed6760a0183e7c029fa1d99a13baa",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "find",
+          "path": "/usr/bin/find",
+          "md5": "f8be3a7ddf65b0d966e28f7d9584af63",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "findmnt",
+          "path": "/usr/bin/findmnt",
+          "md5": "bed2f36d024ffb14e6928b420beca5aa",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "flock",
+          "path": "/usr/bin/flock",
+          "md5": "15742f3fc94266e247b8648a89601a15",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fmt",
+          "path": "/usr/bin/fmt",
+          "md5": "8dd049bc691f781060fd3dac7653bc71",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fold",
+          "path": "/usr/bin/fold",
+          "md5": "088c88e8c7a3d60a52a000236e96995d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "free",
+          "path": "/usr/bin/free",
+          "md5": "c0a3ccbd6f333127658d04180ae4a1a4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "getconf",
+          "path": "/usr/bin/getconf",
+          "md5": "1e8a30942544df1e6441b73b16d7afcd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "getent",
+          "path": "/usr/bin/getent",
+          "md5": "40074c78f0f8b0835442b7c4d505f7c4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "getopt",
+          "path": "/usr/bin/getopt",
+          "md5": "e31b776aaa3fc182d135c7e008349ab7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpasswd",
+          "path": "/usr/bin/gpasswd",
+          "md5": "4a2ecb9c685a6e0ef6798a5f4065be06",
+          "cveCount": 0,
+          "fileMode": 8389101
+        },
+        {
+          "name": "gpg",
+          "path": "/usr/bin/gpg",
+          "md5": "b1207f96a48bac4ad734ec346905a77e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-agent",
+          "path": "/usr/bin/gpg-agent",
+          "md5": "cadf0cdd3a8752dd2c095e7dc17ecaac",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-connect-agent",
+          "path": "/usr/bin/gpg-connect-agent",
+          "md5": "c7215ccdd7df3586915ebcec49679ba5",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-wks-server",
+          "path": "/usr/bin/gpg-wks-server",
+          "md5": "082981ec3b70116dcc124936e3394cee",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgcompose",
+          "path": "/usr/bin/gpgcompose",
+          "md5": "ade4111e18f14d2c26dee4cacff2d9b7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgconf",
+          "path": "/usr/bin/gpgconf",
+          "md5": "457836d778d697ebf6907d0647fc203b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgparsemail",
+          "path": "/usr/bin/gpgparsemail",
+          "md5": "55f75467eb559bcda54716e7656fd433",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgsm",
+          "path": "/usr/bin/gpgsm",
+          "md5": "409a239af4d07c25c141114ee18b8527",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgsplit",
+          "path": "/usr/bin/gpgsplit",
+          "md5": "f7a675c3598fbbeef12bd3c6fb158c9f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgtar",
+          "path": "/usr/bin/gpgtar",
+          "md5": "6d40b0c0d91f497bf0d6ce90c906dd64",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgv",
+          "path": "/usr/bin/gpgv",
+          "md5": "28a56fc208d80b93b14465420864eefa",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "grep",
+          "path": "/usr/bin/grep",
+          "md5": "8570ed9a67b5236d21aea7dc0dd5f7d7",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "groups",
+          "path": "/usr/bin/groups",
+          "md5": "6e8e23572b3bd83a7736e4b6dad2eec9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gzip",
+          "path": "/usr/bin/gzip",
+          "md5": "ad8d28771111c2c8f36b8417e95a3af0",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "head",
+          "path": "/usr/bin/head",
+          "md5": "86158a082c6c594fe0410aba50a48722",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "hostid",
+          "path": "/usr/bin/hostid",
+          "md5": "56fc53be6e15a9d6b264dc8473a14722",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "hostname",
+          "path": "/usr/bin/hostname",
+          "md5": "23bb0d6ced6d57d54e54485456f7cff0",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "iconv",
+          "path": "/usr/bin/iconv",
+          "md5": "e69a119d9ca8a86257114ed834b5eec0",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "id",
+          "path": "/usr/bin/id",
+          "md5": "210bcc123b5f384c6a2997375e3b37c8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "infocmp",
+          "path": "/usr/bin/infocmp",
+          "md5": "455e27bf8b31f4aa09dd50a80793d520",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "install",
+          "path": "/usr/bin/install",
+          "md5": "9cf265c9ffcc7d0f3850a8a6f0554da9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ionice",
+          "path": "/usr/bin/ionice",
+          "md5": "16b57670c7f6deeedbafc8dabd3cc464",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ipcmk",
+          "path": "/usr/bin/ipcmk",
+          "md5": "5b8b95515d6a6fcb081e7a8925e2a703",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ipcrm",
+          "path": "/usr/bin/ipcrm",
+          "md5": "53149fcedb46798f35410ddd4f18bc55",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ipcs",
+          "path": "/usr/bin/ipcs",
+          "md5": "eec884a12ac42fc090cbef92170d00da",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ischroot",
+          "path": "/usr/bin/ischroot",
+          "md5": "73e59b056adcb54d3ced2fb809836382",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "join",
+          "path": "/usr/bin/join",
+          "md5": "0fbb6fb605a1f0d815a1e758f272498a",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "kbxutil",
+          "path": "/usr/bin/kbxutil",
+          "md5": "35aecccb20df900615a14773a172441a",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "kill",
+          "path": "/usr/bin/kill",
+          "md5": "6a291eb464e395f7bff27a76187a7251",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "last",
+          "path": "/usr/bin/last",
+          "md5": "eadc3df973ef634416eda2c279aa5c9b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lastlog",
+          "path": "/usr/bin/lastlog",
+          "md5": "8ec024acb8de9581b9390e0a88c30c4d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "link",
+          "path": "/usr/bin/link",
+          "md5": "3b947749404187fed94aac752bd54003",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ln",
+          "path": "/usr/bin/ln",
+          "md5": "9c5a4a0aff4b2dde72adbf8d112c4cf3",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "locale",
+          "path": "/usr/bin/locale",
+          "md5": "9ca7a6c5f49f9ff1efeec13ab813b703",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "locale-check",
+          "path": "/usr/bin/locale-check",
+          "md5": "a8f0ecb9460035153e1d325d0afab974",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "localedef",
+          "path": "/usr/bin/localedef",
+          "md5": "4eee8fb886237dfca311272eb2b02095",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "logger",
+          "path": "/usr/bin/logger",
+          "md5": "5f5fbbf6f3b54eb51e25958eecc3822e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "login",
+          "path": "/usr/bin/login",
+          "md5": "a4a24430d74834f6c44196905f1c5b12",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "logname",
+          "path": "/usr/bin/logname",
+          "md5": "a156534fdf4ba24124464ca09d80740c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ls",
+          "path": "/usr/bin/ls",
+          "md5": "60a09e3b7f8042261dd2eb698007f737",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "lsattr",
+          "path": "/usr/bin/lsattr",
+          "md5": "ab8cba346f3aa3153e2336d44664dbc6",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lsblk",
+          "path": "/usr/bin/lsblk",
+          "md5": "4c6497473c419032a10db71a7e73bddd",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "lscpu",
+          "path": "/usr/bin/lscpu",
+          "md5": "e8ee7eb4e3943d759d8f34adec878e17",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lsipc",
+          "path": "/usr/bin/lsipc",
+          "md5": "f575ff4a9744af0bd3525b1ddf33f1c8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lslocks",
+          "path": "/usr/bin/lslocks",
+          "md5": "8da30b436473faf69f3d64eddb8bb6b3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lslogins",
+          "path": "/usr/bin/lslogins",
+          "md5": "9c276d35948c5581da63e8cc05ab6201",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lsmem",
+          "path": "/usr/bin/lsmem",
+          "md5": "ae7e9b14d18a87f8a0ff0e731810dad2",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "lsns",
+          "path": "/usr/bin/lsns",
+          "md5": "627e14554bbcd34a020421e5a36a5ee4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mawk",
+          "path": "/usr/bin/mawk",
+          "md5": "371eec66da0b9f0439ea7164a023084c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mcookie",
+          "path": "/usr/bin/mcookie",
+          "md5": "ce0cc4c8968171e1913840d42f5ad140",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "md5sum",
+          "path": "/usr/bin/md5sum",
+          "md5": "a55bfff084554f3afaf1792248553a61",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mesg",
+          "path": "/usr/bin/mesg",
+          "md5": "071e9a5fb838a2e066d23008c26c0586",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mkdir",
+          "path": "/usr/bin/mkdir",
+          "md5": "ca899d64dfd6d70c25e7bbf18dbc0db3",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkfifo",
+          "path": "/usr/bin/mkfifo",
+          "md5": "7fdd88f9010d3e43348c2fa73ca384de",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mknod",
+          "path": "/usr/bin/mknod",
+          "md5": "a7a3c48b78f82a0f0682835079a7e0f8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mktemp",
+          "path": "/usr/bin/mktemp",
+          "md5": "d1096534bd889031979fe79181d7f4c9",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "more",
+          "path": "/usr/bin/more",
+          "md5": "83af6d89095bc66fc7e652012d0ff7af",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mount",
+          "path": "/usr/bin/mount",
+          "md5": "7d9e93dfa210cc49a626cfd5095fc38a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 8389101
+        },
+        {
+          "name": "mountpoint",
+          "path": "/usr/bin/mountpoint",
+          "md5": "378c9f8e26386deb3a447e571de3a6d5",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mv",
+          "path": "/usr/bin/mv",
+          "md5": "3299cbf99101e9bdb56a92f5e22d450e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "namei",
+          "path": "/usr/bin/namei",
+          "md5": "d5444c09a681466ec30b23527a27cbad",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "newgrp",
+          "path": "/usr/bin/newgrp",
+          "md5": "f071e7524af382638503edcd00de9b5d",
+          "cveCount": 0,
+          "fileMode": 8389101
+        },
+        {
+          "name": "nice",
+          "path": "/usr/bin/nice",
+          "md5": "94369b3e39a3045ee210c6daa3116e65",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "nl",
+          "path": "/usr/bin/nl",
+          "md5": "2bcb5a6ce176a006555fd6b869269e9d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "nohup",
+          "path": "/usr/bin/nohup",
+          "md5": "ff659966e31ee3cdcd0c485536ca3def",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "nproc",
+          "path": "/usr/bin/nproc",
+          "md5": "9a74d2241b7ab4a6253779dc9c0c26f7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "nsenter",
+          "path": "/usr/bin/nsenter",
+          "md5": "7ff3ac8ca59b0507d1caf91bdfd5e24b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "numfmt",
+          "path": "/usr/bin/numfmt",
+          "md5": "57c5f6cdb65c9999ca917953511bdf52",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "od",
+          "path": "/usr/bin/od",
+          "md5": "a904061368f06d8141343bdae564dc85",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "openssl",
+          "path": "/usr/bin/openssl",
+          "md5": "fcdfbc71248704e5af0c61d1b4118151",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "p11-kit",
+          "path": "/usr/bin/p11-kit",
+          "md5": "b1af8ca1ed2ec1f6b4d51a85842b50ac",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "partx",
+          "path": "/usr/bin/partx",
+          "md5": "d33a09772ae2d28edb891ee0c9b832f8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "passwd",
+          "path": "/usr/bin/passwd",
+          "md5": "be4ae500a7be65700eef828731e0732e",
+          "cveCount": 0,
+          "fileMode": 8389101
+        },
+        {
+          "name": "paste",
+          "path": "/usr/bin/paste",
+          "md5": "16915855f5de58672186d7c0357db518",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pathchk",
+          "path": "/usr/bin/pathchk",
+          "md5": "2dfffb3d4afb02a731c33dcd5ec5707f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "perl",
+          "path": "/usr/bin/perl",
+          "md5": "435d2f1b25d747691da4cc599a05f8d7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "perl5.30.0",
+          "path": "/usr/bin/perl5.30.0",
+          "md5": "435d2f1b25d747691da4cc599a05f8d7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pgrep",
+          "path": "/usr/bin/pgrep",
+          "md5": "6f2d33ba67c4de566859c6e534ff40e7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pinentry-curses",
+          "path": "/usr/bin/pinentry-curses",
+          "md5": "7199e08092f859f91536214aa9ed3496",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pinky",
+          "path": "/usr/bin/pinky",
+          "md5": "5a9da97f6c4b084cda1b080f9e1a4294",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pldd",
+          "path": "/usr/bin/pldd",
+          "md5": "81c3fbdf03d54b93925abd634fb3107c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pmap",
+          "path": "/usr/bin/pmap",
+          "md5": "7609ffce5c44b67c2e3402a0ecd85ce1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pr",
+          "path": "/usr/bin/pr",
+          "md5": "e10938cb00301e76d3b8a589720a32c3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "printenv",
+          "path": "/usr/bin/printenv",
+          "md5": "f0ad596beab31de7585b7eff455e0821",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "printf",
+          "path": "/usr/bin/printf",
+          "md5": "f70c3f6998797d7628754e5a9b7e20a4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "prlimit",
+          "path": "/usr/bin/prlimit",
+          "md5": "09058443a4450cd93c81c146eb904843",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ps",
+          "path": "/usr/bin/ps",
+          "md5": "d846aa7e1a83ae28cf08cee395fa06d7",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "ptx",
+          "path": "/usr/bin/ptx",
+          "md5": "cb128d3ccf0afd067f775ca03ea1362b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pwd",
+          "path": "/usr/bin/pwd",
+          "md5": "f4d1596616264bfd51e1aa5dcb0c9d3d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pwdx",
+          "path": "/usr/bin/pwdx",
+          "md5": "61f86e816de9a6a3a1cc44436e21d813",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "readlink",
+          "path": "/usr/bin/readlink",
+          "md5": "967296f4e279b9a5a33963d36f2ae3e1",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "realpath",
+          "path": "/usr/bin/realpath",
+          "md5": "64bc32a908a9ec940b08d52d9580a200",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rename.ul",
+          "path": "/usr/bin/rename.ul",
+          "md5": "4010d45c32072c0a3420cff0905b7565",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "renice",
+          "path": "/usr/bin/renice",
+          "md5": "eeef6e2aa70013b0a4b56d4efd246e65",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "resizepart",
+          "path": "/usr/bin/resizepart",
+          "md5": "2f6b7672e9f1b3e9247e774ba81cd6f9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rev",
+          "path": "/usr/bin/rev",
+          "md5": "ace4048152317abce8116771a52c56d6",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rm",
+          "path": "/usr/bin/rm",
+          "md5": "6e60fe1f6b4daa067521045a09757907",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "rmdir",
+          "path": "/usr/bin/rmdir",
+          "md5": "65b6d064d0106abd409e19cabe71e762",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "run-parts",
+          "path": "/usr/bin/run-parts",
+          "md5": "f94a21cd9843b5533056f75248d8e931",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "runcon",
+          "path": "/usr/bin/runcon",
+          "md5": "81bb888c32b22e32d1eb4c07a6760e75",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "script",
+          "path": "/usr/bin/script",
+          "md5": "b578413dbd47339351b98a0fc16ad694",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "scriptreplay",
+          "path": "/usr/bin/scriptreplay",
+          "md5": "0a73057d9d72fa8a549db2fbf3beeb4f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sdiff",
+          "path": "/usr/bin/sdiff",
+          "md5": "a719538366695c582a499e01e4be78f1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sed",
+          "path": "/usr/bin/sed",
+          "md5": "4321b2a062434c563879b79643f5f71d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "seq",
+          "path": "/usr/bin/seq",
+          "md5": "4a7218566d94dcf47e36a88e8bb3e96c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "setarch",
+          "path": "/usr/bin/setarch",
+          "md5": "08eeec869b3d1a24bc9e6be183aafb86",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "setpriv",
+          "path": "/usr/bin/setpriv",
+          "md5": "d2e1804df2d707fbc17bb21a37fbb399",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "setsid",
+          "path": "/usr/bin/setsid",
+          "md5": "8131da905eff38fec5d9c5fb122c605d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "setterm",
+          "path": "/usr/bin/setterm",
+          "md5": "18f477c8bd6466860bf8a206cdf61d29",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sha1sum",
+          "path": "/usr/bin/sha1sum",
+          "md5": "82d49f17b7563e30f0df4f755905244b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sha224sum",
+          "path": "/usr/bin/sha224sum",
+          "md5": "d7990032cb6def7c06e374bcd8a53e00",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sha256sum",
+          "path": "/usr/bin/sha256sum",
+          "md5": "0f5e40705b3f9f98e4c3463adc429b26",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sha384sum",
+          "path": "/usr/bin/sha384sum",
+          "md5": "70f5cf08c6cdc79142623bb84a336773",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sha512sum",
+          "path": "/usr/bin/sha512sum",
+          "md5": "a220f39b1e9aa43ca6b9c26708ce14cb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "shred",
+          "path": "/usr/bin/shred",
+          "md5": "84e7cce485b92b82823063e7c413508c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "shuf",
+          "path": "/usr/bin/shuf",
+          "md5": "e44600754e22c21292ccb295cb074bba",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "skill",
+          "path": "/usr/bin/skill",
+          "md5": "6a291eb464e395f7bff27a76187a7251",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "slabtop",
+          "path": "/usr/bin/slabtop",
+          "md5": "d9b947b57d9aa9b3a9d7a6d383fcb45b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sleep",
+          "path": "/usr/bin/sleep",
+          "md5": "3f116b2747d8de675ac9e7f3a5ae1d14",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "sort",
+          "path": "/usr/bin/sort",
+          "md5": "11ba3c2b29d94ffbbc37a125f44b6308",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "split",
+          "path": "/usr/bin/split",
+          "md5": "3344957534187c778051aa30cf801a85",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "stat",
+          "path": "/usr/bin/stat",
+          "md5": "dfe46bcf80693ac16ba8449720bb4f0b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "stdbuf",
+          "path": "/usr/bin/stdbuf",
+          "md5": "1fcfaf0a315c0cbf3e2625d88d13c267",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "stty",
+          "path": "/usr/bin/stty",
+          "md5": "0fe286b4ab1752f332bd1cd402e06e8e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "su",
+          "path": "/usr/bin/su",
+          "md5": "2472c9c9b3fc950248246b875518374c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 8389101
+        },
+        {
+          "name": "sum",
+          "path": "/usr/bin/sum",
+          "md5": "8805e0d20b0c648b19961d6dfef822a6",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "symcryptrun",
+          "path": "/usr/bin/symcryptrun",
+          "md5": "cb366ea336490f516a36121364ec0882",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sync",
+          "path": "/usr/bin/sync",
+          "md5": "43b47ad6886be68b85e56f187a5771db",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "tabs",
+          "path": "/usr/bin/tabs",
+          "md5": "0c4f26c99f181802abd5c923bd8e34fb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tac",
+          "path": "/usr/bin/tac",
+          "md5": "fa281c1a932750c04901e1e31ac2d33d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tail",
+          "path": "/usr/bin/tail",
+          "md5": "7c98e49f0a585ac0cc86b6f0f54621ad",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tar",
+          "path": "/usr/bin/tar",
+          "md5": "d44b146f3b4858a4ef2c797d1e682fa0",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "taskset",
+          "path": "/usr/bin/taskset",
+          "md5": "03db8873b0710ce1cb4cbfd9ba820db7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tee",
+          "path": "/usr/bin/tee",
+          "md5": "4154c24e15770ecdb7c6c3384449ecb4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tempfile",
+          "path": "/usr/bin/tempfile",
+          "md5": "47f07de62de6d022d3dc9f3baaec0545",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "test",
+          "path": "/usr/bin/test",
+          "md5": "4a055178a87a3f2f71fe7f58b1447231",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tic",
+          "path": "/usr/bin/tic",
+          "md5": "2659b49c2598445d773790ae4bedec48",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "timeout",
+          "path": "/usr/bin/timeout",
+          "md5": "f08a6754623ed0647db3f55ed5b5d2be",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tload",
+          "path": "/usr/bin/tload",
+          "md5": "c822d6099c37ff2c839f0fc2acce1b0e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "toe",
+          "path": "/usr/bin/toe",
+          "md5": "aceaeb87c9836a4a8c51151f3874b9ae",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "top",
+          "path": "/usr/bin/top",
+          "md5": "8607e70b2179e7d7f731b9bb1d1a902b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "touch",
+          "path": "/usr/bin/touch",
+          "md5": "c82234c56ae3ea9e7ca0916ad8ccf210",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "tput",
+          "path": "/usr/bin/tput",
+          "md5": "bc67af99fc1d7586302fb526d3ff4301",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tr",
+          "path": "/usr/bin/tr",
+          "md5": "29335111ee735130cb9451734e6d19cb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "true",
+          "path": "/usr/bin/true",
+          "md5": "367cce38c356c8ae8835fa657512dd1b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "truncate",
+          "path": "/usr/bin/truncate",
+          "md5": "04faff8926f78a037cb7431f5223c286",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "trust",
+          "path": "/usr/bin/trust",
+          "md5": "568a58ab9979758000447235f80155ea",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tset",
+          "path": "/usr/bin/tset",
+          "md5": "92a39f3339f89b6e429051d22459dabd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tsort",
+          "path": "/usr/bin/tsort",
+          "md5": "1da690af63322bebd54506b2f45cd9db",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "tty",
+          "path": "/usr/bin/tty",
+          "md5": "d599ad06e17b71b3ecd63e092fb4fa31",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "umount",
+          "path": "/usr/bin/umount",
+          "md5": "1dd0368d6886aecd9b6a157ca1ace112",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 8389101
+        },
+        {
+          "name": "uname",
+          "path": "/usr/bin/uname",
+          "md5": "1d4262c3f16252d414ba16386c2c77db",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "unexpand",
+          "path": "/usr/bin/unexpand",
+          "md5": "379793357d6c5843117764c9de380770",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "uniq",
+          "path": "/usr/bin/uniq",
+          "md5": "759fd2d461dbd032902638ce2c81464b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "unlink",
+          "path": "/usr/bin/unlink",
+          "md5": "d00077882c6b45233bd9d890aa31d5b2",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "unshare",
+          "path": "/usr/bin/unshare",
+          "md5": "93f8de06db787425d78403337d98e7ec",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "update-alternatives",
+          "path": "/usr/bin/update-alternatives",
+          "md5": "c2267b08caa710a21fca90258fc91ade",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "uptime",
+          "path": "/usr/bin/uptime",
+          "md5": "1871cc4eb26ed198904a25bd3f9ea80e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "users",
+          "path": "/usr/bin/users",
+          "md5": "b623e257effc4260cb6b27141fde1ccb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "utmpdump",
+          "path": "/usr/bin/utmpdump",
+          "md5": "1c12b10d5f80db68ff63dadaedecd19b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "vdir",
+          "path": "/usr/bin/vdir",
+          "md5": "8e2a45259917cc30519af36ed62f0bf1",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "vmstat",
+          "path": "/usr/bin/vmstat",
+          "md5": "b475ad4c5cd00a001373c6c905dbffea",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "w.procps",
+          "path": "/usr/bin/w.procps",
+          "md5": "f79b46802a89e840a25734a9ffaf018d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wall",
+          "path": "/usr/bin/wall",
+          "md5": "edaf41ac70ce9fee22c16f26eed5aec5",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "watch",
+          "path": "/usr/bin/watch",
+          "md5": "8f404c81b9c3cce9439c155ef81566a9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "watchgnupg",
+          "path": "/usr/bin/watchgnupg",
+          "md5": "615b864669824d45dd93d72352aec66f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wc",
+          "path": "/usr/bin/wc",
+          "md5": "57931a7ff198e4a14e15bcba779c8b46",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wdctl",
+          "path": "/usr/bin/wdctl",
+          "md5": "5c8c9551c65bd8138a8bdc0b69e5aaa2",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "wget",
+          "path": "/usr/bin/wget",
+          "md5": "e9990bbbe941064dc6d2574b375d7fda",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "whereis",
+          "path": "/usr/bin/whereis",
+          "md5": "a7ab32ffa6952f27b9e13a90dea9f692",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "who",
+          "path": "/usr/bin/who",
+          "md5": "d0a778bcd79c31d4a4e0611a7c47311f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "whoami",
+          "path": "/usr/bin/whoami",
+          "md5": "47ce5f7139e3b5c3d113b1c99143873c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "xargs",
+          "path": "/usr/bin/xargs",
+          "md5": "071e95ebba3506e8db1badf7c9f34bd5",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "yes",
+          "path": "/usr/bin/yes",
+          "md5": "1d3049f7d7fcd1babfe86f662cf310d2",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "zdump",
+          "path": "/usr/bin/zdump",
+          "md5": "0a6739ca6cc103422f61688aab2f127b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "apt-helper",
+          "path": "/usr/lib/apt/apt-helper",
+          "md5": "450bc875870ffcf5d1ae123630a4bbec",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cdrom",
+          "path": "/usr/lib/apt/methods/cdrom",
+          "md5": "7e90e0c3929e10187391ef88405fa3e0",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "copy",
+          "path": "/usr/lib/apt/methods/copy",
+          "md5": "ea843962d9ee952b51cb3295840e53a1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "file",
+          "path": "/usr/lib/apt/methods/file",
+          "md5": "37dffdf8a99a181b14d498e16b61f4e7",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ftp",
+          "path": "/usr/lib/apt/methods/ftp",
+          "md5": "31d2a64712af4d0e8f121d90d7c64735",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpgv",
+          "path": "/usr/lib/apt/methods/gpgv",
+          "md5": "1c737c8774a93873e324ea1e3800c6b9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "http",
+          "path": "/usr/lib/apt/methods/http",
+          "md5": "4167e8f66f67af896e77dfa4fcaaea03",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mirror",
+          "path": "/usr/lib/apt/methods/mirror",
+          "md5": "2d7bffecaafb33ac0a175ca976cfe9ff",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rred",
+          "path": "/usr/lib/apt/methods/rred",
+          "md5": "cfda3712f41da07f70bc2141dec08433",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rsh",
+          "path": "/usr/lib/apt/methods/rsh",
+          "md5": "9d6c1a3326d14270ecf0f80ceb351177",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "store",
+          "path": "/usr/lib/apt/methods/store",
+          "md5": "6b49ff738c8578706f16873452a7240b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dump",
+          "path": "/usr/lib/apt/solvers/dump",
+          "md5": "47ff6275225a08528daed2d7636e8cc8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "dirmngr_ldap",
+          "path": "/usr/lib/gnupg/dirmngr_ldap",
+          "md5": "f03de520d37a82f51e08aa0b20648d66",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-check-pattern",
+          "path": "/usr/lib/gnupg/gpg-check-pattern",
+          "md5": "be74c90b76c5b46072c4666195441ece",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-preset-passphrase",
+          "path": "/usr/lib/gnupg/gpg-preset-passphrase",
+          "md5": "dd766fc431cc3ca2bc1db7464c10baea",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-protect-tool",
+          "path": "/usr/lib/gnupg/gpg-protect-tool",
+          "md5": "dc35b3e0c3fb19ddfc12f5eb89508d89",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "gpg-wks-client",
+          "path": "/usr/lib/gnupg/gpg-wks-client",
+          "md5": "3411d73d6770a9a82e430e5a2726363f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "p11-kit-remote",
+          "path": "/usr/libexec/p11-kit/p11-kit-remote",
+          "md5": "6f9312bdb9497a2de854c36ed369a463",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "p11-kit-server",
+          "path": "/usr/libexec/p11-kit/p11-kit-server",
+          "md5": "a3931461cea622498974ccc993b692ca",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "agetty",
+          "path": "/usr/sbin/agetty",
+          "md5": "9eefd5b2a8e1458732f79fd3560e6a02",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "badblocks",
+          "path": "/usr/sbin/badblocks",
+          "md5": "1dfdf54e8ad85bf45b6294f864c1134e",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "blkdiscard",
+          "path": "/usr/sbin/blkdiscard",
+          "md5": "6d0099e539482955bcb827eaf978a5b0",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "blkid",
+          "path": "/usr/sbin/blkid",
+          "md5": "c48811c6303432f91e6db352f4f2d179",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "blkzone",
+          "path": "/usr/sbin/blkzone",
+          "md5": "67846cd280a35feab0a245d5a8d11723",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "blockdev",
+          "path": "/usr/sbin/blockdev",
+          "md5": "fd262d64bf73bdd1b18e60cfaff2c37f",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "cfdisk",
+          "path": "/usr/sbin/cfdisk",
+          "md5": "368f09e8be4bb85920862c392252686d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "chcpu",
+          "path": "/usr/sbin/chcpu",
+          "md5": "8ba0b8a7dfbc09cdc35088cc4fa5c40a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "chgpasswd",
+          "path": "/usr/sbin/chgpasswd",
+          "md5": "68f418196537246ed9451fe645270b9d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chmem",
+          "path": "/usr/sbin/chmem",
+          "md5": "e1ca43eb814b6f90296d67d61dca45d8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chpasswd",
+          "path": "/usr/sbin/chpasswd",
+          "md5": "2cb57f5982a1ffb5f942559153b5ccc2",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chroot",
+          "path": "/usr/sbin/chroot",
+          "md5": "521c86d2fa25891dc5ec917d01a9f747",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cppw",
+          "path": "/usr/sbin/cppw",
+          "md5": "a20b66aefc5e7639238aef3adad05a3f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ctrlaltdel",
+          "path": "/usr/sbin/ctrlaltdel",
+          "md5": "1021bf9c7ae765d892742ee9e9a6bbfb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "debugfs",
+          "path": "/usr/sbin/debugfs",
+          "md5": "250d3d5cd1b3727095b52a576a3554fe",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "dumpe2fs",
+          "path": "/usr/sbin/dumpe2fs",
+          "md5": "0b4a0bed24575361bb68ef8789958fe6",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "e2freefrag",
+          "path": "/usr/sbin/e2freefrag",
+          "md5": "60fd846436c074e0449548d4dc1f6d2a",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "e2fsck",
+          "path": "/usr/sbin/e2fsck",
+          "md5": "d68a39e4067bc4d60f1f797cf9eaddf9",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "e2image",
+          "path": "/usr/sbin/e2image",
+          "md5": "9775cd027c8ae989335d337a26df8e7b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "e2undo",
+          "path": "/usr/sbin/e2undo",
+          "md5": "46224ff4595f423c3fb62407349f6faa",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "e4crypt",
+          "path": "/usr/sbin/e4crypt",
+          "md5": "e1eb4434e8403daf650e786bc3beef78",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "e4defrag",
+          "path": "/usr/sbin/e4defrag",
+          "md5": "60b5a6cbc602f088036e57e4bef5623a",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "faillock",
+          "path": "/usr/sbin/faillock",
+          "md5": "e45f5e26426a9e21198dddc1150c1ec8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fdformat",
+          "path": "/usr/sbin/fdformat",
+          "md5": "52a01e278122f7b5dbd0457b07b909bd",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "fdisk",
+          "path": "/usr/sbin/fdisk",
+          "md5": "1be6dc0d9021ac1426e884e1a1bd798a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "filefrag",
+          "path": "/usr/sbin/filefrag",
+          "md5": "faf94b8aa5bc86d40db175eb3d7853c8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "findfs",
+          "path": "/usr/sbin/findfs",
+          "md5": "4e17a04516aeb53475b24fdbc262fc3f",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fsck",
+          "path": "/usr/sbin/fsck",
+          "md5": "06d4c95e44513a3e01646197b2419a55",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fsck.cramfs",
+          "path": "/usr/sbin/fsck.cramfs",
+          "md5": "3aba5a6db1ba83aa06260a21e2dcdb9c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fsck.minix",
+          "path": "/usr/sbin/fsck.minix",
+          "md5": "81b0c9119331e287128104dc629c94b6",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fsfreeze",
+          "path": "/usr/sbin/fsfreeze",
+          "md5": "637301c64e070e1203e10e1a04f379ac",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fstab-decode",
+          "path": "/usr/sbin/fstab-decode",
+          "md5": "c0009e17b209ad62b6f329d879b02679",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "fstrim",
+          "path": "/usr/sbin/fstrim",
+          "md5": "3f63a59623d27c28f807b716ab13712a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "groupadd",
+          "path": "/usr/sbin/groupadd",
+          "md5": "0dbaac6be84f3247a735e6701c3b2f55",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "groupdel",
+          "path": "/usr/sbin/groupdel",
+          "md5": "0cd6309a57af9c736a6341be129cf6e4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "groupmems",
+          "path": "/usr/sbin/groupmems",
+          "md5": "ecac7e05e75d011447f91625711681bb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "groupmod",
+          "path": "/usr/sbin/groupmod",
+          "md5": "fb8647500c06c2ecae929edfa579dbe3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "grpck",
+          "path": "/usr/sbin/grpck",
+          "md5": "769ea0bb40fe350ddfff726de6cc7623",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "grpconv",
+          "path": "/usr/sbin/grpconv",
+          "md5": "c3441442b5958ffe3044b79bc916c7b6",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "grpunconv",
+          "path": "/usr/sbin/grpunconv",
+          "md5": "8ed03fdeb0e0d0ea6e173dcf9dfd3418",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "hwclock",
+          "path": "/usr/sbin/hwclock",
+          "md5": "b8e97076786dde32fd429350173cfa08",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "iconvconfig",
+          "path": "/usr/sbin/iconvconfig",
+          "md5": "c22569cb33d24f87c7d64e625d7ab37b",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "isosize",
+          "path": "/usr/sbin/isosize",
+          "md5": "bea6b41d5832ce7ae9fca6e7a6c383fb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "killall5",
+          "path": "/usr/sbin/killall5",
+          "md5": "0767d7f90a332e697667b75dd777fb7b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "ldattach",
+          "path": "/usr/sbin/ldattach",
+          "md5": "df4a982a19234f528e93aa53b35ba6bb",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ldconfig.real",
+          "path": "/usr/sbin/ldconfig.real",
+          "md5": "c64c642892c77703e6765f28af369e8a",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "logsave",
+          "path": "/usr/sbin/logsave",
+          "md5": "3a3a3607b5348c3d1b70ff07c41d411f",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "losetup",
+          "path": "/usr/sbin/losetup",
+          "md5": "de49b8349e76211b93ac38637d9b70d3",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mke2fs",
+          "path": "/usr/sbin/mke2fs",
+          "md5": "ce058236e245741da397c131f0df9179",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkfs",
+          "path": "/usr/sbin/mkfs",
+          "md5": "66600a79a9fee1145dfa4ddbc1279851",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkfs.bfs",
+          "path": "/usr/sbin/mkfs.bfs",
+          "md5": "c397f1c563e49574e9d54d614699bbdb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkfs.cramfs",
+          "path": "/usr/sbin/mkfs.cramfs",
+          "md5": "17e8764dbaed906f0e2bb83daa1ca250",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkfs.minix",
+          "path": "/usr/sbin/mkfs.minix",
+          "md5": "6bbb782a057500d24eb5472c9e38d24b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mkhomedir_helper",
+          "path": "/usr/sbin/mkhomedir_helper",
+          "md5": "3055031d5815887c9f27ef91026dbba7",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "mklost+found",
+          "path": "/usr/sbin/mklost+found",
+          "md5": "7e18f44110a50b31eea9d7d3adb64712",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mkswap",
+          "path": "/usr/sbin/mkswap",
+          "md5": "875ed1a13340c7ddae5b09601b827cbb",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "newusers",
+          "path": "/usr/sbin/newusers",
+          "md5": "407b908333f8d94c103c090c50f800ae",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "nologin",
+          "path": "/usr/sbin/nologin",
+          "md5": "ce5b4dd0940b970517a3bd4ce828cdd4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pam_extrausers_chkpwd",
+          "path": "/usr/sbin/pam_extrausers_chkpwd",
+          "md5": "624969c0b8cfbfbd3b39b30912e87f9d",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 4194797
+        },
+        {
+          "name": "pam_extrausers_update",
+          "path": "/usr/sbin/pam_extrausers_update",
+          "md5": "426280759df5171e55d58913f3648d2c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pam_tally",
+          "path": "/usr/sbin/pam_tally",
+          "md5": "c300fd52fe6cb730e7ac3904d7ea0738",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pam_tally2",
+          "path": "/usr/sbin/pam_tally2",
+          "md5": "331bfc8ec76d1c9d9f8b39d6129e27d8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pam_timestamp_check",
+          "path": "/usr/sbin/pam_timestamp_check",
+          "md5": "04059198227cf6bc842fb95649df595d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pivot_root",
+          "path": "/usr/sbin/pivot_root",
+          "md5": "2ca71786f08b333673c671771d152162",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "pwck",
+          "path": "/usr/sbin/pwck",
+          "md5": "545c0ed1386283705a7bcb862d87976f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pwconv",
+          "path": "/usr/sbin/pwconv",
+          "md5": "ea2999d9cb2ca454f30d27ff89cc943d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "pwunconv",
+          "path": "/usr/sbin/pwunconv",
+          "md5": "9ca01c802ce565adcf99b20de29ac38c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "raw",
+          "path": "/usr/sbin/raw",
+          "md5": "faafbe59883eacdc8069270a6f968560",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "readprofile",
+          "path": "/usr/sbin/readprofile",
+          "md5": "05744ecd9ec0c6e8ac9cf0cdef0f165c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "resize2fs",
+          "path": "/usr/sbin/resize2fs",
+          "md5": "811bae8054c44190b8afafcbfce2b945",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "rmt-tar",
+          "path": "/usr/sbin/rmt-tar",
+          "md5": "d38dc737acaa302cdf5958c45658fe16",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rtcwake",
+          "path": "/usr/sbin/rtcwake",
+          "md5": "74ea8bc661afb0218cd6ba6f83c8267c",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "runuser",
+          "path": "/usr/sbin/runuser",
+          "md5": "18dfeefbc63477c2bfa8255d6900041b",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "sfdisk",
+          "path": "/usr/sbin/sfdisk",
+          "md5": "1eac6037cd2d403a56c2730c1d81f9f9",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "start-stop-daemon",
+          "path": "/usr/sbin/start-stop-daemon",
+          "md5": "43cd1eeea697989e5283d02c8860b55c",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "sulogin",
+          "path": "/usr/sbin/sulogin",
+          "md5": "ce2ae36e900b4f6fc88c109b47b328d0",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "swaplabel",
+          "path": "/usr/sbin/swaplabel",
+          "md5": "0863b60b8d01884f21dba39e9fe3e553",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "swapoff",
+          "path": "/usr/sbin/swapoff",
+          "md5": "6cfe78f6d4640098cb15e017c079fd37",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "swapon",
+          "path": "/usr/sbin/swapon",
+          "md5": "2e61d1d2c271df7cdd854aaf23708bc8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "switch_root",
+          "path": "/usr/sbin/switch_root",
+          "md5": "d705935430d6fe5909728c37b2ccaa60",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "sysctl",
+          "path": "/usr/sbin/sysctl",
+          "md5": "04b2cc5b6736687705959a5b23342bec",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "tune2fs",
+          "path": "/usr/sbin/tune2fs",
+          "md5": "ca4045deda7b47cfd53a3b269fceaef8",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "unix_chkpwd",
+          "path": "/usr/sbin/unix_chkpwd",
+          "md5": "8c5619efda363c9b6f8d4baca6dc948f",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 4194797
+        },
+        {
+          "name": "unix_update",
+          "path": "/usr/sbin/unix_update",
+          "md5": "032f428cb0eeb9883f18cd8c3fe97858",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "update-passwd",
+          "path": "/usr/sbin/update-passwd",
+          "md5": "ce878eca9dc44320cd219139ddaa4dce",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "useradd",
+          "path": "/usr/sbin/useradd",
+          "md5": "41d6684b4ed5bf46f69ce8b971a00123",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "userdel",
+          "path": "/usr/sbin/userdel",
+          "md5": "95817e63bbb66929adc2692907985d74",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "usermod",
+          "path": "/usr/sbin/usermod",
+          "md5": "3f8421a1c95a92b556521353d88e066f",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "vipw",
+          "path": "/usr/sbin/vipw",
+          "md5": "4a33e937f68ac696491d1e39adb8b071",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wipefs",
+          "path": "/usr/sbin/wipefs",
+          "md5": "5859383b9d0a87fc9a197a7a4e278543",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "zic",
+          "path": "/usr/sbin/zic",
+          "md5": "c30da4cebe91f4b5f6f8649996044402",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "zramctl",
+          "path": "/usr/sbin/zramctl",
+          "md5": "0c4644a79ab69206c513bdb549c517a3",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        },
+        {
+          "name": "bash.preinst",
+          "path": "/var/lib/dpkg/info/bash.preinst",
+          "md5": "cfa463a70d1b245f0949c35b3d3ba449",
+          "cveCount": 0,
+          "missingPkg": true,
+          "fileMode": 493
+        }
+      ],
+      "Secrets": [],
+      "startupBinaries": [
+        {
+          "name": "curl",
+          "path": "/usr/bin/curl",
+          "md5": "c1e15a4c42a2600485321101810bd063",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wget",
+          "path": "/usr/bin/wget",
+          "md5": "e9990bbbe941064dc6d2574b375d7fda",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "p11-kit",
+          "path": "/usr/bin/p11-kit",
+          "md5": "b1af8ca1ed2ec1f6b4d51a85842b50ac",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "echo",
+          "path": "/usr/bin/echo",
+          "md5": "de5d375e67e9993aa335f2fea7fa8104",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "rm",
+          "path": "/usr/bin/rm",
+          "md5": "6e60fe1f6b4daa067521045a09757907",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "jshell",
+          "path": "/opt/java/openjdk/bin/jshell",
+          "md5": "7080e5d1103aa5d595f81d2883d5ecc4",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "javac",
+          "path": "/opt/java/openjdk/bin/javac",
+          "md5": "9022dcf107c6212a64eff81d2ad6a308",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "java",
+          "path": "/opt/java/openjdk/bin/java",
+          "md5": "5609629323f8669ac9cce7b19862f2ff",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mktemp",
+          "path": "/usr/bin/mktemp",
+          "md5": "d1096534bd889031979fe79181d7f4c9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cp",
+          "path": "/usr/bin/cp",
+          "md5": "fceb0543926867046c4ee4f03226cab9",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "trust",
+          "path": "/usr/bin/trust",
+          "md5": "568a58ab9979758000447235f80155ea",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "keytool",
+          "path": "/opt/java/openjdk/bin/keytool",
+          "md5": "4511cb63e32922544afe39ddce347df8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "basename",
+          "path": "/usr/bin/basename",
+          "md5": "b80e1464a3f5b608597fcbe70c555351",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "csplit",
+          "path": "/usr/bin/csplit",
+          "md5": "4fb3a9bb83630cc90d514016764af479",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "openssl",
+          "path": "/usr/bin/openssl",
+          "md5": "fcdfbc71248704e5af0c61d1b4118151",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sed",
+          "path": "/usr/bin/sed",
+          "md5": "4321b2a062434c563879b79643f5f71d",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "id",
+          "path": "/usr/bin/id",
+          "md5": "210bcc123b5f384c6a2997375e3b37c8",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ls",
+          "path": "/usr/bin/ls",
+          "md5": "60a09e3b7f8042261dd2eb698007f737",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "test",
+          "path": "/usr/bin/test",
+          "md5": "4a055178a87a3f2f71fe7f58b1447231",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "readlink",
+          "path": "/usr/bin/readlink",
+          "md5": "967296f4e279b9a5a33963d36f2ae3e1",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "ln",
+          "path": "/usr/bin/ln",
+          "md5": "9c5a4a0aff4b2dde72adbf8d112c4cf3",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "find",
+          "path": "/usr/bin/find",
+          "md5": "f8be3a7ddf65b0d966e28f7d9584af63",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "sort",
+          "path": "/usr/bin/sort",
+          "md5": "11ba3c2b29d94ffbbc37a125f44b6308",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "wc",
+          "path": "/usr/bin/wc",
+          "md5": "57931a7ff198e4a14e15bcba779c8b46",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "chmod",
+          "path": "/usr/bin/chmod",
+          "md5": "5de9fdc7eba3cb682d4d171c1e645f74",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "mv",
+          "path": "/usr/bin/mv",
+          "md5": "3299cbf99101e9bdb56a92f5e22d450e",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "run-parts",
+          "path": "/usr/bin/run-parts",
+          "md5": "f94a21cd9843b5533056f75248d8e931",
+          "cveCount": 0,
+          "fileMode": 493
+        },
+        {
+          "name": "cat",
+          "path": "/usr/bin/cat",
+          "md5": "2d27ac1b5284f9c5e543b4804346ba9e",
+          "cveCount": 0,
+          "fileMode": 493
+        }
+      ],
+      "osDistro": "ubuntu",
+      "osDistroVersion": "20.04",
+      "osDistroRelease": "focal",
+      "distro": "Ubuntu 20.04.6 LTS",
+      "packages": [
+        {
+          "pkgsType": "package",
+          "pkgs": [
+            {
+              "version": "4.7.0-1ubuntu1",
+              "name": "findutils",
+              "cveCount": 5,
+              "license": "GPL-3",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/findutils@4.7.0-1ubuntu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.0.12+nmu1",
+              "name": "sensible-utils",
+              "cveCount": 7,
+              "license": "GPL-2+",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/sensible-utils@0.0.12+nmu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.5.10.2-6",
+              "name": "dash",
+              "cveCount": 18,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/dash@0.5.10.2-6",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "8.30-3ubuntu2",
+              "name": "coreutils",
+              "cveCount": 108,
+              "license": "GPL-3",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/coreutils@8.30-3ubuntu2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "5.0-6ubuntu1.2",
+              "name": "bash",
+              "cveCount": 158,
+              "license": "GPL-3",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/bash@5.0-6ubuntu1.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2025b-0ubuntu0.20.04",
+              "name": "tzdata",
+              "cveCount": 0,
+              "license": null,
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/tzdata@2025b-0ubuntu0.20.04",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.5.73",
+              "name": "debconf",
+              "cveCount": 0,
+              "license": "BSD-2-clause",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/debconf@1.5.73",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.30+dfsg-7ubuntu0.20.04.4",
+              "name": "tar",
+              "cveCount": 314,
+              "license": "GPL-3",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/tar@1.30+dfsg-7ubuntu0.20.04.4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2020.02.11.4",
+              "name": "ubuntu-keyring",
+              "cveCount": 0,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/ubuntu-keyring@2020.02.11.4",
+              "author": "Dimitri John Ledkov <dimitri.ledkov@canonical.com>"
+            },
+            {
+              "version": "3.118ubuntu2",
+              "name": "adduser",
+              "cveCount": 0,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/adduser@3.118ubuntu2",
+              "author": "Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.4-1",
+              "name": "grep",
+              "cveCount": 15,
+              "license": "GPL-3+",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/grep@3.4-1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.10-0ubuntu4.1",
+              "name": "gzip",
+              "cveCount": 118,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/gzip@1.10-0ubuntu4.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "4.9.1",
+              "name": "debianutils",
+              "cveCount": 0,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/debianutils@4.9.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "20240203~20.04.1",
+              "name": "ca-certificates",
+              "cveCount": 22,
+              "license": "GPL-2+",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/ca-certificates@20240203~20.04.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "4.7-1",
+              "name": "sed",
+              "cveCount": 9,
+              "license": "GPL-3",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/sed@4.7-1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.3.4.20200120-2",
+              "name": "mawk",
+              "cveCount": 3,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/mawk@1.3.4.20200120-2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.0038+nmu1",
+              "name": "ucf",
+              "cveCount": 0,
+              "license": "GPL-2",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/ucf@3.0038+nmu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.8.5-5ubuntu1.1",
+              "name": "libgcrypt20",
+              "cveCount": 143,
+              "license": "LGPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libgcrypt20@1.8.5-5ubuntu1.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.57",
+              "name": "init-system-helpers",
+              "cveCount": 0,
+              "license": "BSD-3-clause",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/init-system-helpers@1.57",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.20.3-1ubuntu2.1",
+              "name": "wget",
+              "cveCount": 321,
+              "license": "GPL-3",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/wget@1.20.3-1ubuntu2.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.23",
+              "name": "hostname",
+              "cveCount": 0,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/hostname@3.23",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.5.47",
+              "name": "base-passwd",
+              "cveCount": 0,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/base-passwd@3.5.47",
+              "author": "Colin Watson <cjwatson@debian.org>"
+            },
+            {
+              "version": "1:3.7-3",
+              "name": "diffutils",
+              "cveCount": 0,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/diffutils@1:3.7-3",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "4.16.0-2ubuntu0.1",
+              "name": "libtasn1-6",
+              "cveCount": 118,
+              "license": "LGPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libtasn1-6@4.16.0-2ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "11ubuntu5.8",
+              "name": "base-files",
+              "cveCount": 1,
+              "license": "GPL",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/base-files@11ubuntu5.8",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.19.7ubuntu3.2",
+              "name": "dpkg",
+              "cveCount": 151,
+              "license": "GPL-2+",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/dpkg@1.19.7ubuntu3.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.2.9-1ubuntu0.8",
+              "name": "expat",
+              "binaryPkgs": [
+                "libexpat1"
+              ],
+              "cveCount": 1332,
+              "license": "MIT",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/expat@2.2.9-1ubuntu0.8",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.251ubuntu1",
+              "name": "cdebconf",
+              "binaryPkgs": [
+                "libdebconfclient0"
+              ],
+              "cveCount": 0,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/cdebconf@0.251ubuntu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.0.10",
+              "name": "apt",
+              "binaryPkgs": [
+                "libapt-pkg6.0",
+                "apt"
+              ],
+              "cveCount": 131,
+              "license": "GPLv2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/apt@2.0.10",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "6.2-0ubuntu2.1",
+              "name": "ncurses",
+              "binaryPkgs": [
+                "libncurses6",
+                "ncurses-base",
+                "libtinfo6",
+                "ncurses-bin",
+                "libncursesw6"
+              ],
+              "cveCount": 436,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/ncurses@6.2-0ubuntu2.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "7.7.0+dfsg-1ubuntu1.4",
+              "name": "heimdal",
+              "binaryPkgs": [
+                "libheimbase1-heimdal",
+                "libroken18-heimdal",
+                "libgssapi3-heimdal",
+                "libwind0-heimdal",
+                "libhcrypto4-heimdal",
+                "libhx509-5-heimdal",
+                "libasn1-8-heimdal",
+                "libkrb5-26-heimdal",
+                "libheimntlm0-heimdal"
+              ],
+              "cveCount": 379,
+              "license": "BSD-3-clause",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/heimdal@7.7.0+dfsg-1ubuntu1.4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.6-1",
+              "name": "npth",
+              "binaryPkgs": [
+                "libnpth0"
+              ],
+              "cveCount": 0,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/npth@1.6-1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.2.19-3ubuntu2.4",
+              "name": "gnupg2",
+              "binaryPkgs": [
+                "dirmngr",
+                "gnupg",
+                "gpgconf",
+                "gnupg-utils",
+                "gpgsm",
+                "gnupg-l10n",
+                "gpg-wks-client",
+                "gpgv",
+                "gpg-wks-server",
+                "gpg",
+                "gpg-agent"
+              ],
+              "cveCount": 274,
+              "license": "GPL-3+",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/gnupg2@2.2.19-3ubuntu2.4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.0.8-2",
+              "name": "bzip2",
+              "binaryPkgs": [
+                "libbz2-1.0",
+                "bzip2"
+              ],
+              "cveCount": 92,
+              "license": "BSD-variant",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/bzip2@1.0.8-2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.31.1-4ubuntu0.6",
+              "name": "sqlite3",
+              "binaryPkgs": [
+                "libsqlite3-0"
+              ],
+              "cveCount": 437,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/sqlite3@3.31.1-4ubuntu0.6",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.0-1build2",
+              "name": "libsemanage",
+              "binaryPkgs": [
+                "libsemanage1",
+                "libsemanage-common"
+              ],
+              "cveCount": 0,
+              "license": "LGPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libsemanage@3.0-1build2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.6.13-2ubuntu1.12",
+              "name": "gnutls28",
+              "binaryPkgs": [
+                "libgnutls30"
+              ],
+              "cveCount": 613,
+              "license": "LGPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/gnutls28@3.6.13-2ubuntu1.12",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.10.1-2ubuntu0.4",
+              "name": "freetype",
+              "binaryPkgs": [
+                "libfreetype6"
+              ],
+              "cveCount": 1088,
+              "license": "GPL-2+ or FTL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/freetype@2.10.1-2ubuntu0.4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.2.0-2",
+              "name": "libidn2",
+              "binaryPkgs": [
+                "libidn2-0"
+              ],
+              "cveCount": 41,
+              "license": "GPL-3+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libidn2@2.2.0-2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "5.3.28+dfsg1-0.6ubuntu2",
+              "name": "db5.3",
+              "binaryPkgs": [
+                "libdb5.3"
+              ],
+              "cveCount": 19,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/db5.3@5.3.28+dfsg1-0.6ubuntu2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2:3.3.16-1ubuntu2.4",
+              "name": "procps",
+              "binaryPkgs": [
+                "libprocps8",
+                "procps"
+              ],
+              "cveCount": 76,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/procps@2:3.3.16-1ubuntu2.4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.4.49+dfsg-2ubuntu1.10",
+              "name": "openldap",
+              "binaryPkgs": [
+                "libldap-common",
+                "libldap-2.4-2"
+              ],
+              "cveCount": 817,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/openldap@2.4.49+dfsg-2ubuntu1.10",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "11.1.0ubuntu2",
+              "name": "lsb",
+              "binaryPkgs": [
+                "lsb-base"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/lsb@11.1.0ubuntu2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.1.1f-1ubuntu2.24",
+              "name": "openssl",
+              "binaryPkgs": [
+                "libssl1.1",
+                "openssl"
+              ],
+              "cveCount": 4680,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/openssl@1.1.1f-1ubuntu2.24",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.37-1",
+              "name": "fonts-dejavu",
+              "binaryPkgs": [
+                "fonts-dejavu-core"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2+",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/fonts-dejavu@2.37-1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.5.1-1ubuntu1~20.04.2",
+              "name": "libseccomp",
+              "binaryPkgs": [
+                "libseccomp2"
+              ],
+              "cveCount": 29,
+              "license": "LGPL-2.1",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libseccomp@2.5.1-1ubuntu1~20.04.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.0.7-6ubuntu0.1",
+              "name": "brotli",
+              "binaryPkgs": [
+                "libbrotli1"
+              ],
+              "cveCount": 62,
+              "license": "MIT",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/brotli@1.0.7-6ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.5.1+really3.5.1-2ubuntu0.2",
+              "name": "nettle",
+              "binaryPkgs": [
+                "libnettle7",
+                "libhogweed5"
+              ],
+              "cveCount": 128,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/nettle@3.5.1+really3.5.1-2ubuntu0.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.17-6ubuntu4.9",
+              "name": "krb5",
+              "binaryPkgs": [
+                "libkrb5-3",
+                "libgssapi-krb5-2",
+                "libk5crypto3",
+                "libkrb5support0"
+              ],
+              "cveCount": 1429,
+              "license": "GPL-2",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/krb5@1.17-6ubuntu4.9",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.7.9-2.1build1",
+              "name": "libcap-ng",
+              "binaryPkgs": [
+                "libcap-ng0"
+              ],
+              "cveCount": 6,
+              "license": "LGPL-2.1",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libcap-ng@0.7.9-2.1build1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.0-1ubuntu0.1",
+              "name": "libsepol",
+              "binaryPkgs": [
+                "libsepol1"
+              ],
+              "cveCount": 70,
+              "license": "LGPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libsepol@3.0-1ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "5.30.0-9ubuntu0.5",
+              "name": "perl",
+              "binaryPkgs": [
+                "perl-base"
+              ],
+              "cveCount": 1059,
+              "license": "GPL-1+ or Artistic",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/perl@5.30.0-9ubuntu0.5",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.5.3-7ubuntu2",
+              "name": "libassuan",
+              "binaryPkgs": [
+                "libassuan0"
+              ],
+              "cveCount": 0,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libassuan@2.5.3-7ubuntu2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.37-1",
+              "name": "libgpg-error",
+              "binaryPkgs": [
+                "libgpg-error0"
+              ],
+              "cveCount": 0,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libgpg-error@1.37-1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.3-4",
+              "name": "libffi",
+              "binaryPkgs": [
+                "libffi7"
+              ],
+              "cveCount": 6,
+              "license": "GPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libffi@3.3-4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1:4.4.10-10ubuntu4",
+              "name": "libxcrypt",
+              "binaryPkgs": [
+                "libcrypt1"
+              ],
+              "cveCount": 5,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libxcrypt@1:4.4.10-10ubuntu4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.9.3-2ubuntu2.5",
+              "name": "libssh",
+              "binaryPkgs": [
+                "libssh-4"
+              ],
+              "cveCount": 871,
+              "license": "LGPL-2.1+~OpenSSL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libssh@0.9.3-2ubuntu2.5",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.3.1-5ubuntu4.7",
+              "name": "pam",
+              "binaryPkgs": [
+                "libpam-modules",
+                "libpam0g",
+                "libpam-modules-bin",
+                "libpam-runtime"
+              ],
+              "cveCount": 241,
+              "license": "GPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/pam@1.3.1-5ubuntu4.7",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "245.4-4ubuntu3.24",
+              "name": "systemd",
+              "binaryPkgs": [
+                "libudev1",
+                "libsystemd0"
+              ],
+              "cveCount": 647,
+              "license": "LGPL-2.1+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/systemd@245.4-4ubuntu3.24",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "10.34-7ubuntu0.1",
+              "name": "pcre2",
+              "binaryPkgs": [
+                "libpcre2-8-0"
+              ],
+              "cveCount": 136,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/pcre2@10.34-7ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.13.1-2ubuntu3",
+              "name": "fontconfig",
+              "binaryPkgs": [
+                "fontconfig-config",
+                "libfontconfig1",
+                "fontconfig"
+              ],
+              "cveCount": 34,
+              "license": null,
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/fontconfig@2.13.1-2ubuntu3",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "3.0-1build2",
+              "name": "libselinux",
+              "binaryPkgs": [
+                "libselinux1"
+              ],
+              "cveCount": 3,
+              "license": "LGPL-2.1",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libselinux@3.0-1build2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.34-0.1ubuntu9.6",
+              "name": "util-linux",
+              "binaryPkgs": [
+                "libmount1",
+                "libsmartcols1",
+                "bsdutils",
+                "fdisk",
+                "mount",
+                "libfdisk1",
+                "libuuid1",
+                "libblkid1",
+                "util-linux"
+              ],
+              "cveCount": 297,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/util-linux@2.34-0.1ubuntu9.6",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2:8.39-12ubuntu0.1",
+              "name": "pcre3",
+              "binaryPkgs": [
+                "libpcre3"
+              ],
+              "cveCount": 135,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/pcre3@2:8.39-12ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1:2.4.48-5",
+              "name": "attr",
+              "binaryPkgs": [
+                "libattr1"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/attr@1:2.4.48-5",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.21.0-1ubuntu1",
+              "name": "libpsl",
+              "binaryPkgs": [
+                "libpsl5"
+              ],
+              "cveCount": 0,
+              "license": "MIT",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libpsl@0.21.0-1ubuntu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1:4.8.1-1ubuntu5.20.04.5",
+              "name": "shadow",
+              "binaryPkgs": [
+                "login",
+                "passwd"
+              ],
+              "cveCount": 201,
+              "license": "GPL-2",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/shadow@1:4.8.1-1ubuntu5.20.04.5",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.6-6ubuntu1.1",
+              "name": "keyutils",
+              "binaryPkgs": [
+                "libkeyutils1"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/keyutils@1.6-6ubuntu1.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.1.0-3build1",
+              "name": "pinentry",
+              "binaryPkgs": [
+                "pinentry-curses"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2+",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/pinentry@1.1.0-3build1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.2.53-6",
+              "name": "acl",
+              "binaryPkgs": [
+                "libacl1"
+              ],
+              "cveCount": 5,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/acl@2.2.53-6",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.40.0-1ubuntu0.3",
+              "name": "nghttp2",
+              "binaryPkgs": [
+                "libnghttp2-14"
+              ],
+              "cveCount": 298,
+              "license": "MIT",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/nghttp2@1.40.0-1ubuntu0.3",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "7.68.0-1ubuntu2.25",
+              "name": "curl",
+              "binaryPkgs": [
+                "libcurl4",
+                "curl"
+              ],
+              "cveCount": 4444,
+              "license": "BSD-3-Clause",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/curl@7.68.0-1ubuntu2.25",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "10.5.0-1ubuntu1~20.04",
+              "name": "gcc-10",
+              "binaryPkgs": [
+                "gcc-10-base",
+                "libgcc-s1",
+                "libstdc++6"
+              ],
+              "cveCount": 2,
+              "license": "GPL",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/gcc-10@10.5.0-1ubuntu1~20.04",
+              "author": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1:1.2.11.dfsg-2ubuntu1.5",
+              "name": "zlib",
+              "binaryPkgs": [
+                "zlib1g"
+              ],
+              "cveCount": 222,
+              "license": null,
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/zlib@1:1.2.11.dfsg-2ubuntu1.5",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.6.37-2",
+              "name": "libpng1.6",
+              "binaryPkgs": [
+                "libpng16-16"
+              ],
+              "cveCount": 280,
+              "license": "GPL-2+ or BSD-like-with-advertising-clause",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libpng1.6@1.6.37-2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.9.2-2ubuntu0.20.04.1",
+              "name": "lz4",
+              "binaryPkgs": [
+                "liblz4-1"
+              ],
+              "cveCount": 74,
+              "license": "BSD-2-clause",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/lz4@1.9.2-2ubuntu0.20.04.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.96-2.1ubuntu1",
+              "name": "sysvinit",
+              "binaryPkgs": [
+                "sysvinit-utils"
+              ],
+              "cveCount": 0,
+              "license": "GPL-2+",
+              "layerTime": 1744109205,
+              "purl": "pkg:deb/ubuntu/sysvinit@2.96-2.1ubuntu1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1:2.8.5-2ubuntu6",
+              "name": "audit",
+              "binaryPkgs": [
+                "libaudit-common",
+                "libaudit1"
+              ],
+              "cveCount": 13,
+              "license": "GPL-2",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/audit@1:2.8.5-2ubuntu6",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.1.27+dfsg-2ubuntu0.1",
+              "name": "cyrus-sasl2",
+              "binaryPkgs": [
+                "libsasl2-2",
+                "libsasl2-modules-db"
+              ],
+              "cveCount": 56,
+              "license": "BSD-4-clause",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/cyrus-sasl2@2.1.27+dfsg-2ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "8.0-4",
+              "name": "readline",
+              "binaryPkgs": [
+                "libreadline8",
+                "readline-common"
+              ],
+              "cveCount": 3,
+              "license": "GPL-3",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/readline@8.0-4",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.31-0ubuntu9.17",
+              "name": "glibc",
+              "binaryPkgs": [
+                "libc-bin",
+                "locales",
+                "libc6"
+              ],
+              "cveCount": 1820,
+              "license": "LGPL-2.1",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/glibc@2.31-0ubuntu9.17",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2.4+20151223.gitfa8646d.1-2build1",
+              "name": "rtmpdump",
+              "binaryPkgs": [
+                "librtmp1"
+              ],
+              "cveCount": 21,
+              "license": "GPL-2",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/rtmpdump@2.4+20151223.gitfa8646d.1-2build1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "2:6.2.0+dfsg-4ubuntu0.1",
+              "name": "gmp",
+              "binaryPkgs": [
+                "libgmp10"
+              ],
+              "cveCount": 41,
+              "license": "LGPL-3",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/gmp@2:6.2.0+dfsg-4ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.4.4+dfsg-3ubuntu0.1",
+              "name": "libzstd",
+              "binaryPkgs": [
+                "libzstd1"
+              ],
+              "cveCount": 35,
+              "license": "BSD-3-clause and GPL-2",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libzstd@1.4.4+dfsg-3ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.23.20-1ubuntu0.1",
+              "name": "p11-kit",
+              "binaryPkgs": [
+                "libp11-kit0",
+                "p11-kit-modules",
+                "p11-kit"
+              ],
+              "cveCount": 99,
+              "license": "BSD-3-Clause",
+              "layerTime": 1745419685,
+              "purl": "pkg:deb/ubuntu/p11-kit@0.23.20-1ubuntu0.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.45.5-2ubuntu1.2",
+              "name": "e2fsprogs",
+              "binaryPkgs": [
+                "logsave",
+                "libss2",
+                "libcom-err2",
+                "libext2fs2",
+                "e2fsprogs"
+              ],
+              "cveCount": 120,
+              "license": "GPL-2",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/e2fsprogs@1.45.5-2ubuntu1.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "1.3.5-2ubuntu0.20.04.2",
+              "name": "libksba",
+              "binaryPkgs": [
+                "libksba8"
+              ],
+              "cveCount": 167,
+              "license": "GPL-3",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libksba@1.3.5-2ubuntu0.20.04.2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "0.9.10-2",
+              "name": "libunistring",
+              "binaryPkgs": [
+                "libunistring2"
+              ],
+              "cveCount": 0,
+              "license": "LGPL-3+ or GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/libunistring@0.9.10-2",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            },
+            {
+              "version": "5.2.4-1ubuntu1.1",
+              "name": "xz-utils",
+              "binaryPkgs": [
+                "liblzma5"
+              ],
+              "cveCount": 34,
+              "license": "GPL-2+",
+              "layerTime": 0,
+              "purl": "pkg:deb/ubuntu/xz-utils@5.2.4-1ubuntu1.1",
+              "author": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>"
+            }
+          ]
+        },
+        {
+          "pkgsType": "jar",
+          "pkgs": [
+            {
+              "version": "11.0.27",
+              "name": "jrt-fs",
+              "path": "/opt/java/openjdk/lib/jrt-fs.jar",
+              "cveCount": 0,
+              "license": null,
+              "layerTime": 1745419685,
+              "jarIdentifier": "Oracle Corporation",
+              "purl": "pkg:maven/jrt-fs@11.0.27"
+            }
+          ]
+        }
+      ],
+      "files": [],
+      "packageManager": true,
+      "applications": [
+        {
+          "name": "java",
+          "version": "11.0.27",
+          "path": "/opt/java/openjdk/bin/java",
+          "layerTime": 1745419685,
+          "knownVulnerabilities": 472
+        }
+      ],
+      "isARM64": false,
+      "redHatNonRPMImage": false,
+      "foundSecrets": null,
+      "secretScanMetrics": {},
+      "additionalDistroReleaseData": null,
+      "image": {
+        "entrypoint": [
+          "/__cacert_entrypoint.sh",
+          "jshell"
+        ],
+        "created": "2025-04-23T14:48:05Z"
+      },
+      "history": [
+        {
+          "created": 1744109203,
+          "instruction": "ARG RELEASE",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1744109203,
+          "instruction": "ARG LAUNCHPAD_BUILD_ARCH",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1744109203,
+          "instruction": "LABEL org.opencontainers.image.ref.name=ubuntu",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1744109203,
+          "instruction": "LABEL org.opencontainers.image.version=20.04",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1744109205,
+          "instruction": "ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / ",
+          "sizeBytes": 74645504,
+          "id": "<missing>",
+          "emptyLayer": false
+        },
+        {
+          "created": 1744109205,
+          "instruction": "CMD [\"/bin/bash\"]",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1745419685,
+          "instruction": "ENV JAVA_HOME=/opt/java/openjdk",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1745419685,
+          "instruction": "ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1745419685,
+          "instruction": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1745419685,
+          "instruction": "RUN /bin/sh -c set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit",
+          "sizeBytes": 60063744,
+          "id": "<missing>",
+          "emptyLayer": false
+        },
+        {
+          "created": 1745419685,
+          "instruction": "ENV JAVA_VERSION=jdk-11.0.27+6",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "created": 1745419685,
+          "instruction": "RUN /bin/sh -c set -eux;     ARCH=\"$(dpkg --print-architecture)\";     case \"${ARCH}\" in        amd64)          ESUM='dc6136eaa8c1898cbf8973bb1e203e1f653f4c9166be0f5bebe0b02c5f3b5ae3';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_x64_linux_hotspot_11.0.27_6.tar.gz';          ;;        arm64)          ESUM='4decd2e5caf4667144091cf723458b14148dc990730b3ecb34bba5eb1aa4ad5d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.27_6.tar.gz';          ;;        armhf)          ESUM='5eb00b18e37757775e6f46c706eae38d9e91be49de5712987801cba8ffd77767';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_arm_linux_hotspot_11.0.27_6.tar.gz';          ;;        ppc64el)          ESUM='9407ecef765ec681fb187f084f1e029001abd5baf7a13b32067e9cbdfb140130';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.27_6.tar.gz';          ;;        s390x)          ESUM='89df8583779b880f21b6cf29ddd9438961e2b1a092f416d05255fd6cd7f0e9fe';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.27_6.tar.gz';          ;;        *)          echo \"Unsupported arch: ${ARCH}\";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME=\"$(mktemp -d)\";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf \"${GNUPGHOME}\" /tmp/openjdk.tar.gz.sig;     echo \"${ESUM} */tmp/openjdk.tar.gz\" | sha256sum -c -;     mkdir -p \"$JAVA_HOME\";     tar --extract         --file /tmp/openjdk.tar.gz         --directory \"$JAVA_HOME\"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find \"$JAVA_HOME/lib\" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit",
+          "sizeBytes": 276238336,
+          "id": "<missing>",
+          "emptyLayer": false
+        },
+        {
+          "created": 1745419685,
+          "instruction": "RUN /bin/sh -c set -eux;     echo \"Verifying install ...\";     fileEncoding=\"$(echo 'System.out.println(System.getProperty(\"file.encoding\"))' | jshell -s -)\"; [ \"$fileEncoding\" = 'UTF-8' ]; rm -rf ~/.java;     echo \"javac --version\"; javac --version;     echo \"java --version\"; java --version;     echo \"Complete.\" # buildkit",
+          "sizeBytes": 12288,
+          "id": "<missing>",
+          "emptyLayer": false
+        },
+        {
+          "created": 1745419685,
+          "instruction": "COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit",
+          "sizeBytes": 12288,
+          "id": "<missing>",
+          "emptyLayer": false
+        },
+        {
+          "created": 1745419685,
+          "instruction": "ENTRYPOINT [\"/__cacert_entrypoint.sh\"]",
+          "id": "<missing>",
+          "emptyLayer": true
+        },
+        {
+          "tags": [
+            "eclipse-temurin:11-jdk-focal"
+          ],
+          "created": 1745419685,
+          "instruction": "CMD [\"jshell\"]",
+          "id": "sha256:9bc2bb1aed85522729cf6888b8712330e6fa457ec8b0ae2d4380f62e18c01ee9",
+          "emptyLayer": true
+        }
+      ],
+      "id": "sha256:9bc2bb1aed85522729cf6888b8712330e6fa457ec8b0ae2d4380f62e18c01ee9",
+      "complianceIssues": [
+        {
+          "text": null,
+          "id": 41,
+          "severity": "high",
+          "cvss": 0,
+          "status": "shreyansh is good",
+          "cve": null,
+          "cause": null,
+          "description": "It is a good practice to run the container as a non-root user, if possible. Though user\nnamespace mapping is now available, if a user is already defined in the container image, the\ncontainer is run as that user by default and specific user namespace remapping is not\nrequired",
+          "title": "(CIS_Docker_v1.5.0 - 4.1) Image should be created with a non-root user",
+          "vecStr": null,
+          "exploit": null,
+          "riskFactors": null,
+          "link": null,
+          "type": "image",
+          "packageName": null,
+          "packageVersion": null,
+          "packageType": null,
+          "layerTime": 0,
+          "templates": [
+            "PCI",
+            "DISA STIG"
+          ],
+          "twistlock": false,
+          "cri": false,
+          "published": 0,
+          "fixDate": 0,
+          "discovered": "0001-01-01T00:00:00Z",
+          "functionLayer": null,
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": null
+        }
+      ],
+      "allCompliance": {},
+      "vulnerabilities": [
+
+         {
+          "text": null,
+          "id": 44,
+          "severity": "info",
+          "cvss": 0,
+          "status": "shreyansh is good",
+          "cve": "CVE-2025-13151",
+          "cause": null,
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": null,
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": null,
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-13151",
+          "type": "image",
+          "packageName": "libtasn1-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+          "gracePeriodDays": 3650,
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": null,
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        },
+          {
+          "text": null,
+          "id": 45,
+          "severity": "info",
+          "cvss": 0,
+          "status": "shreyansh is good",
+          "cve": "CVE-2025-62958",
+          "cause": null,
+          "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string.",
+          "title": null,
+          "vecStr": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "exploit": null,
+          "riskFactors": {
+            "Attack complexity: low": {},
+            "Attack vector: network": {},
+            "DoS - High": {},
+            "Has fix": {},
+            "Medium severity": {},
+            "Recent vulnerability": {}
+          },
+          "link": "https://ubuntu.com/security/CVE-2025-13151",
+          "type": "image",
+          "packageName": "libtasn1-6",
+          "packageVersion": "4.16.0-2ubuntu0.1",
+          "packageType": "package",
+          "layerTime": 0,
+          "templates": null,
+          "twistlock": false,
+          "cri": false,
+          "published": 1767824143,
+          "fixDate": 1770852731,
+          "gracePeriodDays": 3650,
+          "applicableRules": [
+            "<4.16.0-2ubuntu0.1+esm1"
+          ],
+          "discovered": "2026-05-29T06:13:08Z",
+          "functionLayer": null,
+          "wildfireMalware": {},
+          "secret": {},
+          "vulnerabilityDataSources": [
+            {
+              "attribute": "CVSS",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Severity",
+              "source": "Ubuntu"
+            },
+            {
+              "attribute": "Link",
+              "source": "Ubuntu"
+            }
+          ]
+        }
+
+        
+
+
+        
+
+
+
+
+        
+
+
+
+
+      ]
+    }
+  }
+]
+    
+    
+  
+    
