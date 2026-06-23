@@ -21,8 +21,8 @@
                 "triageAdvice": null
             },
             "language": "js",
-            "severity": "critical",
-            "originalSeverity": "medium",
+            "severity": "low",
+            "originalSeverity": "Critical",
             "cvssScore": 5.3,
             "functions": [],
             "malicious": false,
