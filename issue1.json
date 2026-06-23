@@ -7,9 +7,9 @@
   },
   "issues": [
      {
-      "packageName": "package shreyansh/repo1 3",
+      "packageName": "package shreyansh/repo1",
       "subproduct": "MyCustomScanTool",
-      "issueName": "Issue 3 for shreyansh/repo1",
+      "issueName": "Issue 1 for shreyansh/repo1",
       "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
       "fileName": "file1.java",
       "remediationSteps": "Fix me fast.",
@@ -24,9 +24,9 @@
       ]
     },
      {
-      "packageName": "package shreyansh/repo1 4",
+      "packageName": "package shreyansh/repo1",
       "subproduct": "MyCustomScanTool",
-      "issueName": "Issue 4 for shreyansh/repo1",
+      "issueName": "Issue 2 for shreyansh/repo1",
       "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
       "fileName": "file1.java",
       "remediationSteps": "Fix me fast.",
@@ -41,9 +41,9 @@
       ]
     },
     {
-      "packageName": "package shreyansh/repo1 5",
+      "packageName": "package shreyansh/repo1",
       "subproduct": "MyCustomScanTool",
-      "issueName": "Issue 5 for shreyansh/repo1",
+      "issueName": "Issue 3 for shreyansh/repo1",
       "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
       "fileName": "file1.java",
       "remediationSteps": "Fix me fast.",
