@@ -96,7 +96,7 @@
             "comments": {},
             "vulnerabilityDetails": {
                 "cweId": "CWE-77",
-                "cvssScore": 9.8,
+                "cvssScore": 5.2,
                 "cveName": "CVE-2017-16042",
                 "cvss": {
                     "version": 3,
@@ -188,7 +188,7 @@
             "comments": {},
             "vulnerabilityDetails": {
                 "cweId": "CWE-331",
-                "cvssScore": 9.8,
+                "cvssScore": 0,
                 "cveName": "CVE-2018-1000620",
                 "cvss": {
                     "version": 3,
