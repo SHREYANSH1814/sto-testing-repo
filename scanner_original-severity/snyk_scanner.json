@@ -1,0 +1,2112 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42364"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:40:19.539631Z",
+      "disclosureTime": "2023-11-27T23:15:07.313000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:40:19.547124Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:40:19.547249Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/busybox@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/busybox@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/busybox",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42365"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:41:21.219900Z",
+      "disclosureTime": "2023-11-27T23:15:07.373000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:41:21.224797Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:41:21.224914Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/busybox@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/busybox@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/busybox",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42364"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:40:19.539631Z",
+      "disclosureTime": "2023-11-27T23:15:07.313000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:40:19.547124Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:40:19.547249Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "alpine-baselayout/alpine-baselayout@3.6.5-r0",
+        "busybox/busybox-binsh@1.36.1-r28",
+        "busybox/busybox@1.36.1-r28"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "busybox/busybox",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42365"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:41:21.219900Z",
+      "disclosureTime": "2023-11-27T23:15:07.373000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:41:21.224797Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:41:21.224914Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "alpine-baselayout/alpine-baselayout@3.6.5-r0",
+        "busybox/busybox-binsh@1.36.1-r28",
+        "busybox/busybox@1.36.1-r28"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "busybox/busybox",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42364"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:40:19.539631Z",
+      "disclosureTime": "2023-11-27T23:15:07.313000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:40:19.547124Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:40:19.547249Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/busybox-binsh@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/busybox-binsh@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/busybox-binsh",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42365"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:41:21.219900Z",
+      "disclosureTime": "2023-11-27T23:15:07.373000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:41:21.224797Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:41:21.224914Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/busybox-binsh@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/busybox-binsh@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/busybox-binsh",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42364"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:40:19.539631Z",
+      "disclosureTime": "2023-11-27T23:15:07.313000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:40:19.547124Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:40:19.547249Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "alpine-baselayout/alpine-baselayout@3.6.5-r0",
+        "busybox/busybox-binsh@1.36.1-r28"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "busybox/busybox-binsh",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42365"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:41:21.219900Z",
+      "disclosureTime": "2023-11-27T23:15:07.373000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:41:21.224797Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:41:21.224914Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "alpine-baselayout/alpine-baselayout@3.6.5-r0",
+        "busybox/busybox-binsh@1.36.1-r28"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "busybox/busybox-binsh",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.963143Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.442583Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42364"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:40:19.539631Z",
+      "disclosureTime": "2023-11-27T23:15:07.313000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:40:19.547124Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:40:19.547249Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/ssl_client@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/ssl_client@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/ssl_client",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.36.1-r29"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.36.1-r29"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [
+        {
+          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
+          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.995245Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:54:07.438378Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
+      "epssDetails": {
+        "percentile": "0.12726",
+        "probability": "0.00044",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-42365"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "busybox",
+      "creationTime": "2024-06-10T14:41:21.219900Z",
+      "disclosureTime": "2023-11-27T23:15:07.373000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-10T14:41:21.224797Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-06-10T14:41:21.224914Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/ssl_client@1.36.1-r28"
+      ],
+      "upgradePath": [
+        false,
+        "busybox/ssl_client@1.36.1-r29"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "busybox/ssl_client",
+      "version": "1.36.1-r28",
+      "nearestFixedInVersion": "1.36.1-r29"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "openssl/libcrypto3@3.3.0-r2"
+      ],
+      "upgradePath": [
+        false,
+        "openssl/libcrypto3@3.3.0-r3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "apk-tools/apk-tools@2.14.4-r0",
+        "openssl/libcrypto3@3.3.0-r2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/ssl_client@1.36.1-r28",
+        "openssl/libcrypto3@3.3.0-r2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "apk-tools/apk-tools@2.14.4-r0",
+        "openssl/libssl3@3.3.0-r2",
+        "openssl/libcrypto3@3.3.0-r2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "openssl/libssl3@3.3.0-r2"
+      ],
+      "upgradePath": [
+        false,
+        "openssl/libssl3@3.3.0-r3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "apk-tools/apk-tools@2.14.4-r0",
+        "openssl/libssl3@3.3.0-r2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    },
+    {
+      "id": "SNYK-ALPINE320-OPENSSL-7218988",
+      "cpes": [],
+      "title": "CVE-2024-4741",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.3.0-r3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.3.0-r3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "isDisputed": false,
+      "references": [],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "cvssV3BaseScore": 5.6,
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-30T14:20:07.477260Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-14T11:02:04.419061Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Alpine:3.20` `openssl` to version 3.3.0-r3 or higher.\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-4741"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2024-06-07T15:23:55.928450Z",
+      "disclosureTime": null,
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "alpine:3.20",
+      "publicationTime": "2024-06-07T15:23:55.936519Z",
+      "severityBasedOn": "Default",
+      "modificationTime": "2024-06-14T11:02:04.419061Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|alpine@latest",
+        "busybox/ssl_client@1.36.1-r28",
+        "openssl/libssl3@3.3.0-r2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl3",
+      "version": "3.3.0-r2",
+      "nearestFixedInVersion": "3.3.0-r3"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 14,
+  "org": "harness-nfr-shared",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "apk",
+  "projectId": "40317982-c5d1-4096-8393-c7438f869bd7",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {},
+  "summary": "17 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 3,
+  "projectName": "alpine",
+  "platform": "linux/arm64",
+  "hasUnknownVersions": false,
+  "path": "alpine:latest"
+}
