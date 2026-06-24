@@ -79,7 +79,6 @@
                 "triageAdvice": null
             },
             "language": "js",
-            "severity": null,
             "originalSeverity": "Medium",
             "cvssScore": 8,
             "functions": [],
