@@ -59,7 +59,7 @@
             "moduleName": "postcss"
         },
                 {
-            "id": "SNYK-JS-POSTCSS-5926693",
+            "id": "SNYK-JS-POSTCSS-592669312",
             "title": "Improper Input Validation 2 ",
             "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
             "credit": [
