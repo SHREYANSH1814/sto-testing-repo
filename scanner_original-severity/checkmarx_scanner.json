@@ -28,7 +28,7 @@
     "CxOSAVulnerabilities":[{
         "id" : "05CFD243FE447F66567EBA19ABD63C7919728B81",
         "cveName" : "CVE-2020-11023",
-        "score" : 6.1,
+        "score" : 9.8,
         "severity" : {
           "name" : "Medium",
           "id" : 1
@@ -49,7 +49,7 @@
       {
         "id" : "05CFD243FE447F66567EBA19ABD63C7919728B8",
         "cveName" : "CVE-2020-11023",
-        "score" : 6.1,
+        "score" : 9.8,
         "severity" : {
           "name" : "Info",
           "id" : 2
