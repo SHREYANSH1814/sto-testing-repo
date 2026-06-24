@@ -25,7 +25,7 @@
                         "impact_score": 2.9
                     },
                     "cvss_v3": {
-                        "base_score": 5.5,
+                        "base_score": 9.5,
                         "exploitability_score": 1.8,
                         "impact_score": 3.6
                     }
@@ -38,7 +38,7 @@
         },
          {
             "vuln": "CVE-2019-12975",
-            "severity": "Medium",
+            "severity": "High",
             "url": "https://security-tracker.debian.org/tracker/CVE-2019-12975",
             "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
             "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
@@ -59,7 +59,7 @@
                         "impact_score": 2.9
                     },
                     "cvss_v3": {
-                        "base_score": 5.5,
+                        "base_score": 5.2,
                         "exploitability_score": 1.8,
                         "impact_score": 3.6
                     }
@@ -72,7 +72,7 @@
         },
          {
             "vuln": "CVE-2019-12975",
-            "severity": "Medium",
+            "severity": "Info",
             "url": "https://security-tracker.debian.org/tracker/CVE-2019-12975",
             "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
             "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
@@ -93,7 +93,7 @@
                         "impact_score": 2.9
                     },
                     "cvss_v3": {
-                        "base_score": 5.5,
+                        "base_score": 0,
                         "exploitability_score": 1.8,
                         "impact_score": 3.6
                     }
