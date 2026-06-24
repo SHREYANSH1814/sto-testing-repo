@@ -1,375 +1,62 @@
-{
-  "vulnerabilities": [
-    {
-      "id": "SNYK-ALPINE320-BUSYBOX-7233533",
-      "cpes": [],
-      "title": "Use After Free",
-      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-      "credit": [
-        ""
-      ],
-      "semver": {
-        "vulnerable": [
-          "<1.36.1-r29"
-        ]
-      },
-      "exploit": "Not Defined",
-      "fixedIn": [
-        "1.36.1-r29"
-      ],
-      "patches": [],
-      "insights": {
-        "triageAdvice": null
-      },
-      "language": "linux",
-      "severity": "medium",
-      "cvssScore": 5.5,
-      "malicious": false,
-      "isDisputed": false,
-      "references": [
+{  
+     "vulnerabilities": [
         {
-          "url": "https://bugs.busybox.net/show_bug.cgi?id=15868",
-          "title": "https://bugs.busybox.net/show_bug.cgi?id=15868"
-        }
-      ],
-      "cvssDetails": [
-        {
-          "assigner": "Red Hat",
-          "severity": "high",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "cvssV3BaseScore": 7.8,
-          "modificationTime": "2024-03-11T09:54:07.442583Z"
+            "id": "SNYK-JS-POSTCSS-5926692",
+            "title": "Improper Input Validation",
+            "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "credit": [
+                "Unknown"
+            ],
+            "semver": {
+                "vulnerable": [
+                    "<8.4.31"
+                ]
+            },
+            "exploit": "Not Defined",
+            "fixedIn": [
+                "8.4.31"
+            ],
+            "patches": [],
+            "insights": {
+                "triageAdvice": null
+            },
+            "language": "js",
+            "severity": "medium",
+            "originalSeverity": "Critical",
+            "cvssScore": 5.3,
+            "functions": [],
+            "malicious": false,
+            "isDisputed": false,
+            "moduleName": "postcss"
         },
         {
-          "assigner": "NVD",
-          "severity": "medium",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "cvssV3BaseScore": 5.5,
-          "modificationTime": "2024-03-11T09:54:07.963143Z"
+            "id": "SNYK-JS-POSTCSS-5926693",
+            "title": "Improper Input Validation",
+            "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "credit": [
+                "Unknown"
+            ],
+            "semver": {
+                "vulnerable": [
+                    "<8.4.31"
+                ]
+            },
+            "exploit": "Not Defined",
+            "fixedIn": [
+                "8.4.31"
+            ],
+            "patches": [],
+            "insights": {
+                "triageAdvice": null
+            },
+            "language": "js",
+            "severity": "medium",
+            "originalSeverity": "Critical",
+            "cvssScore": 5.3,
+            "functions": [],
+            "malicious": false,
+            "isDisputed": false,
+            "moduleName": "postcss"
         }
-      ],
-      "cvssSources": [
-        {
-          "type": "primary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "assigner": "NVD",
-          "severity": "medium",
-          "baseScore": 5.5,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.963143Z"
-        },
-        {
-          "type": "secondary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "assigner": "Red Hat",
-          "severity": "high",
-          "baseScore": 7.8,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.442583Z"
-        }
-      ],
-      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15868](https://bugs.busybox.net/show_bug.cgi?id=15868)\n",
-      "epssDetails": {
-        "percentile": "0.12726",
-        "probability": "0.00044",
-        "modelVersion": "v2023.03.01"
-      },
-      "identifiers": {
-        "CVE": [
-          "CVE-2023-42364"
-        ],
-        "CWE": [
-          "CWE-416"
-        ],
-        "ALTERNATIVE": []
-      },
-      "nvdSeverity": "medium",
-      "packageName": "busybox",
-      "creationTime": "2024-06-10T14:40:19.539631Z",
-      "disclosureTime": "2023-11-27T23:15:07.313000Z",
-      "exploitDetails": {
-        "sources": [],
-        "maturityLevels": [
-          {
-            "type": "secondary",
-            "level": "Not Defined",
-            "format": "CVSSv3"
-          },
-          {
-            "type": "primary",
-            "level": "Not Defined",
-            "format": "CVSSv4"
-          }
-        ]
-      },
-      "packageManager": "alpine:3.20",
-      "publicationTime": "2024-06-10T14:40:19.547124Z",
-      "severityBasedOn": "CVSS",
-      "modificationTime": "2024-06-10T14:40:19.547249Z",
-      "socialTrendAlert": false,
-      "relativeImportance": null,
-      "severityWithCritical": "medium",
-      "from": [
-        "docker-image|alpine@latest",
-        "busybox/busybox@1.36.1-r28"
-      ],
-      "upgradePath": [
-        false,
-        "busybox/busybox@1.36.1-r29"
-      ],
-      "isUpgradable": true,
-      "isPatchable": false,
-      "name": "busybox/busybox",
-      "version": "1.36.1-r28",
-      "nearestFixedInVersion": "1.36.1-r29"
-    },
-    {
-      "id": "SNYK-ALPINE320-BUSYBOX-7233586",
-      "cpes": [],
-      "title": "Use After Free",
-      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-      "credit": [
-        ""
-      ],
-      "semver": {
-        "vulnerable": [
-          "<1.36.1-r29"
-        ]
-      },
-      "exploit": "Not Defined",
-      "fixedIn": [
-        "1.36.1-r29"
-      ],
-      "patches": [],
-      "insights": {
-        "triageAdvice": null
-      },
-      "language": "linux",
-      "severity": "medium",
-      "cvssScore": 5.5,
-      "malicious": false,
-      "isDisputed": false,
-      "references": [
-        {
-          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
-          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
-        }
-      ],
-      "cvssDetails": [
-        {
-          "assigner": "Red Hat",
-          "severity": "high",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "cvssV3BaseScore": 7.8,
-          "modificationTime": "2024-03-11T09:54:07.438378Z"
-        },
-        {
-          "assigner": "NVD",
-          "severity": "medium",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "cvssV3BaseScore": 5.5,
-          "modificationTime": "2024-03-11T09:54:07.995245Z"
-        }
-      ],
-      "cvssSources": [
-        {
-          "type": "primary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "assigner": "NVD",
-          "severity": "medium",
-          "baseScore": 5.5,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.995245Z"
-        },
-        {
-          "type": "secondary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "assigner": "Red Hat",
-          "severity": "high",
-          "baseScore": 7.8,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.438378Z"
-        }
-      ],
-      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
-      "epssDetails": {
-        "percentile": "0.12726",
-        "probability": "0.00044",
-        "modelVersion": "v2023.03.01"
-      },
-      "identifiers": {
-        "CVE": [
-          "CVE-2023-42365"
-        ],
-        "CWE": [
-          "CWE-416"
-        ],
-        "ALTERNATIVE": []
-      },
-      "nvdSeverity": "medium",
-      "packageName": "busybox",
-      "creationTime": "2024-06-10T14:41:21.219900Z",
-      "disclosureTime": "2023-11-27T23:15:07.373000Z",
-      "exploitDetails": {
-        "sources": [],
-        "maturityLevels": [
-          {
-            "type": "secondary",
-            "level": "Not Defined",
-            "format": "CVSSv3"
-          },
-          {
-            "type": "primary",
-            "level": "Not Defined",
-            "format": "CVSSv4"
-          }
-        ]
-      },
-      "packageManager": "alpine:3.20",
-      "publicationTime": "2024-06-10T14:41:21.224797Z",
-      "severityBasedOn": "CVSS",
-      "modificationTime": "2024-06-10T14:41:21.224914Z",
-      "socialTrendAlert": false,
-      "relativeImportance": null,
-      "severityWithCritical": "medium",
-      "from": [
-        "docker-image|alpine@latest",
-        "busybox/busybox@1.36.1-r28"
-      ],
-      "upgradePath": [
-        false,
-        "busybox/busybox@1.36.1-r29"
-      ],
-      "isUpgradable": true,
-      "isPatchable": false,
-      "name": "busybox/busybox",
-      "version": "1.36.1-r28",
-      "nearestFixedInVersion": "1.36.1-r29"
-    },
-     {
-      "id": "SNYK-ALPINE320-BUSYBOX-1-7233586",
-      "cpes": [],
-      "title": "Use After Free",
-      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-      "credit": [
-        ""
-      ],
-      "semver": {
-        "vulnerable": [
-          "<1.36.1-r29"
-        ]
-      },
-      "exploit": "Not Defined",
-      "fixedIn": [
-        "1.36.1-r29"
-      ],
-      "patches": [],
-      "insights": {
-        "triageAdvice": null
-      },
-      "language": "linux",
-      "severity": "medium",
-      "cvssScore": 5.5,
-      "malicious": false,
-      "isDisputed": false,
-      "references": [
-        {
-          "url": "https://bugs.busybox.net/show_bug.cgi?id=15871",
-          "title": "https://bugs.busybox.net/show_bug.cgi?id=15871"
-        }
-      ],
-      "cvssDetails": [
-        {
-          "assigner": "Red Hat",
-          "severity": "high",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "cvssV3BaseScore": 7.8,
-          "modificationTime": "2024-03-11T09:54:07.438378Z"
-        },
-        {
-          "assigner": "NVD",
-          "severity": "medium",
-          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "cvssV3BaseScore": 5.5,
-          "modificationTime": "2024-03-11T09:54:07.995245Z"
-        }
-      ],
-      "cvssSources": [
-        {
-          "type": "primary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-          "assigner": "NVD",
-          "severity": "medium",
-          "baseScore": 5.5,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.995245Z"
-        },
-        {
-          "type": "secondary",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "assigner": "Red Hat",
-          "severity": "high",
-          "baseScore": 7.8,
-          "cvssVersion": "3.1",
-          "modificationTime": "2024-03-11T09:54:07.438378Z"
-        }
-      ],
-      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `busybox` package and not the `busybox` package as distributed by `Alpine`._\n_See `How to fix?` for `Alpine:3.20` relevant fixed versions and status._\n\nA use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.\n## Remediation\nUpgrade `Alpine:3.20` `busybox` to version 1.36.1-r29 or higher.\n## References\n- [https://bugs.busybox.net/show_bug.cgi?id=15871](https://bugs.busybox.net/show_bug.cgi?id=15871)\n",
-      "epssDetails": {
-        "percentile": "0.12726",
-        "probability": "0.00044",
-        "modelVersion": "v2023.03.01"
-      },
-      "identifiers": {
-        "CVE": [
-          "CVE-2023-42365"
-        ],
-        "CWE": [
-          "CWE-416"
-        ],
-        "ALTERNATIVE": []
-      },
-      "nvdSeverity": "medium",
-      "packageName": "busybox",
-      "creationTime": "2024-06-10T14:41:21.219900Z",
-      "disclosureTime": "2023-11-27T23:15:07.373000Z",
-      "exploitDetails": {
-        "sources": [],
-        "maturityLevels": [
-          {
-            "type": "secondary",
-            "level": "Not Defined",
-            "format": "CVSSv3"
-          },
-          {
-            "type": "primary",
-            "level": "Not Defined",
-            "format": "CVSSv4"
-          }
-        ]
-      },
-      "packageManager": "alpine:3.20",
-      "publicationTime": "2024-06-10T14:41:21.224797Z",
-      "severityBasedOn": "CVSS",
-      "modificationTime": "2024-06-10T14:41:21.224914Z",
-      "socialTrendAlert": false,
-      "relativeImportance": null,
-      "severityWithCritical": "medium",
-      "from": [
-        "docker-image|alpine@latest",
-        "busybox/busybox@1.36.1-r28"
-      ],
-      "upgradePath": [
-        false,
-        "busybox/busybox@1.36.1-r29"
-      ],
-      "isUpgradable": true,
-      "isPatchable": false,
-      "name": "busybox/busybox",
-      "version": "1.36.1-r28",
-      "nearestFixedInVersion": "1.36.1-r29"
-    }
-]
-   
-  
-}
+    ]
+ }
