@@ -118,7 +118,7 @@
             "similarityId": "CVE-2017-16042",
             "status": "RECURRENT",
             "state": "TO_VERIFY",
-            "severity": "CRITICAL",
+            "severity": "LOW",
             "created": "2025-01-24T11:23:59Z",
             "firstFoundAt": "2025-01-20T08:08:07Z",
             "foundAt": "2025-01-24T11:23:59Z",
@@ -206,7 +206,7 @@
             "comments": {},
             "vulnerabilityDetails": {
                 "cweId": "CWE-77",
-                "cvssScore": 5.2,
+                "cvssScore": 7.5,
                 "cveName": "CVE-2017-16042",
                 "cvss": {
                     "version": 3,
