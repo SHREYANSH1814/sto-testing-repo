@@ -50,8 +50,8 @@
                 "triageAdvice": null
             },
             "language": "js",
-            "severity": null,
-            "originalSeverity": "Critical",
+            "severity": "Medium",
+            "originalSeverity": "High",
             "cvssScore": 5.3,
             "functions": [],
             "malicious": false,
@@ -78,9 +78,10 @@
             "insights": {
                 "triageAdvice": null
             },
+            "severity": "Low",
             "language": "js",
-            "originalSeverity": "Medium",
-            "cvssScore": 8,
+            "originalSeverity": null,
+            "cvssScore": 10,
             "functions": [],
             "malicious": false,
             "isDisputed": false,
