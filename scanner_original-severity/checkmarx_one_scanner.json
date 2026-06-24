@@ -1,0 +1,1813 @@
+{
+    "results": [
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2017-16042",
+            "similarityId": "CVE-2017-16042",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "Growl adds growl notification support to nodejs. Growl before 1.10.0 does not properly sanitize input before passing it to exec, allowing for arbitrary command execution.",
+            "descriptionHTML": "\u003cp\u003eGrowl adds growl notification support to nodejs. Growl before 1.10.0 does not properly sanitize input before passing it to exec, allowing for arbitrary command execution.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/146"
+                    },
+                    {
+                        "type": "Issue",
+                        "url": "https://github.com/tj/node-growl/issues/60"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/tj/node-growl/pull/62"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/tj/node-growl/pull/61"
+                    },
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/tj/node-growl/commit/d71177d5331c9de4658aca62e0ac921f178b0669"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-qh2h-chj9-jffq"
+                    }
+                ],
+                "packageIdentifier": "Npm-growl-1.9.2",
+                "scaPackageData": {
+                    "id": "Npm-growl-1.9.2",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2017-16042",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-mocha-2.5.3",
+                                "name": "mocha",
+                                "version": "2.5.3",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-growl-1.9.2",
+                                "name": "growl",
+                                "version": "1.9.2"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-mocha-test-0.12.7",
+                                "name": "grunt-mocha-test",
+                                "version": "0.12.7",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-mocha-2.5.3",
+                                "name": "mocha",
+                                "version": "2.5.3"
+                            },
+                            {
+                                "id": "Npm-growl-1.9.2",
+                                "name": "growl",
+                                "version": "1.9.2"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "1.10.0"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-77",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2017-16042",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2018-1000620",
+            "similarityId": "CVE-2018-1000620",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "Eran Hammer cryptiles version up to 3.1.2 and 4.0.0 - 4.1.1 contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method, that can result in an attacker more likely to be able to brute force something that was supposed to be random.",
+            "descriptionHTML": "\u003cp\u003eEran Hammer cryptiles version up to 3.1.2 and 4.0.0 - 4.1.1 contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method, that can result in an attacker more likely to be able to brute force something that was supposed to be random.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/hapijs/cryptiles/commit/9332d4263a32b84e76bf538d7470d01ea63fa047"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-rq8g-5pc5-wrhr"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/1464"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/720"
+                    }
+                ],
+                "packageIdentifier": "Npm-cryptiles-0.2.2",
+                "scaPackageData": {
+                    "id": "Npm-cryptiles-0.2.2",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2018-1000620",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-zaproxy-0.2.0",
+                                "name": "zaproxy",
+                                "version": "0.2.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-request-2.36.0",
+                                "name": "request",
+                                "version": "2.36.0"
+                            },
+                            {
+                                "id": "Npm-hawk-1.0.0",
+                                "name": "hawk",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-cryptiles-0.2.2",
+                                "name": "cryptiles",
+                                "version": "0.2.2"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "3.1.3"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-331",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2018-1000620",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2018-1000620",
+            "similarityId": "CVE-2018-1000620",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "Eran Hammer cryptiles version up to 3.1.2 and 4.0.0 - 4.1.1 contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method, that can result in an attacker more likely to be able to brute force something that was supposed to be random.",
+            "descriptionHTML": "\u003cp\u003eEran Hammer cryptiles version up to 3.1.2 and 4.0.0 - 4.1.1 contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method, that can result in an attacker more likely to be able to brute force something that was supposed to be random.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/hapijs/cryptiles/commit/9332d4263a32b84e76bf538d7470d01ea63fa047"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-rq8g-5pc5-wrhr"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/1464"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/720"
+                    }
+                ],
+                "packageIdentifier": "Npm-cryptiles-2.0.5",
+                "scaPackageData": {
+                    "id": "Npm-cryptiles-2.0.5",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2018-1000620",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-grunt-if-0.2.0",
+                                "name": "grunt-if",
+                                "version": "0.2.0"
+                            },
+                            {
+                                "id": "Npm-grunt-contrib-nodeunit-1.0.0",
+                                "name": "grunt-contrib-nodeunit",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-nodeunit-0.9.5",
+                                "name": "nodeunit",
+                                "version": "0.9.5"
+                            },
+                            {
+                                "id": "Npm-tap-7.1.2",
+                                "name": "tap",
+                                "version": "7.1.2"
+                            },
+                            {
+                                "id": "Npm-coveralls-2.13.3",
+                                "name": "coveralls",
+                                "version": "2.13.3"
+                            },
+                            {
+                                "id": "Npm-request-2.79.0",
+                                "name": "request",
+                                "version": "2.79.0"
+                            },
+                            {
+                                "id": "Npm-hawk-3.1.3",
+                                "name": "hawk",
+                                "version": "3.1.3"
+                            },
+                            {
+                                "id": "Npm-cryptiles-2.0.5",
+                                "name": "cryptiles",
+                                "version": "2.0.5"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-npm-install-0.3.1",
+                                "name": "grunt-npm-install",
+                                "version": "0.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-npm-3.10.10",
+                                "name": "npm",
+                                "version": "3.10.10"
+                            },
+                            {
+                                "id": "Npm-request-2.75.0",
+                                "name": "request",
+                                "version": "2.75.0"
+                            },
+                            {
+                                "id": "Npm-hawk-3.1.3",
+                                "name": "hawk",
+                                "version": "3.1.3"
+                            },
+                            {
+                                "id": "Npm-cryptiles-2.0.5",
+                                "name": "cryptiles",
+                                "version": "2.0.5"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-retire-0.3.12",
+                                "name": "grunt-retire",
+                                "version": "0.3.12",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-request-2.67.0",
+                                "name": "request",
+                                "version": "2.67.0"
+                            },
+                            {
+                                "id": "Npm-hawk-3.1.3",
+                                "name": "hawk",
+                                "version": "3.1.3"
+                            },
+                            {
+                                "id": "Npm-cryptiles-2.0.5",
+                                "name": "cryptiles",
+                                "version": "2.0.5"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "3.1.3"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-331",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2018-1000620",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2018-16492",
+            "similarityId": "CVE-2018-16492",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "A prototype pollution vulnerability was found in module extend \u003c2.0.2, ~\u003c3.0.2 that allows an attacker to inject arbitrary properties onto Object.prototype.",
+            "descriptionHTML": "\u003cp\u003eA prototype pollution vulnerability was found in module extend \u0026lt;2.0.2, ~\u0026lt;3.0.2 that allows an attacker to inject arbitrary properties onto Object.prototype.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/996"
+                    },
+                    {
+                        "type": "Disclosure",
+                        "url": "https://hackerone.com/reports/381185"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/justmoon/node-extend/pull/48"
+                    },
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/justmoon/node-extend/commit/0e68e71d93507fcc391e398bc84abd0666b28190"
+                    }
+                ],
+                "packageIdentifier": "Npm-extend-3.0.0",
+                "scaPackageData": {
+                    "id": "Npm-extend-3.0.0",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2018-16492",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-grunt-npm-install-0.3.1",
+                                "name": "grunt-npm-install",
+                                "version": "0.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-npm-3.10.10",
+                                "name": "npm",
+                                "version": "3.10.10"
+                            },
+                            {
+                                "id": "Npm-request-2.75.0",
+                                "name": "request",
+                                "version": "2.75.0"
+                            },
+                            {
+                                "id": "Npm-extend-3.0.0",
+                                "name": "extend",
+                                "version": "3.0.0"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "3.0.2"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2018-16492",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10744",
+            "similarityId": "CVE-2019-10744",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "A Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function 'defaultsDeep' allows a malicious user to modify the prototype of Object via '{constructor: {prototype: {...}}}' causing the addition or modification of an existing property that will exist on all objects.",
+            "descriptionHTML": "\u003cp\u003eA Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function ‘defaultsDeep’ allows a malicious user to modify the prototype of Object via ‘{constructor: {prototype: {…}}}’ causing the addition or modification of an existing property that will exist on all objects.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Disclosure",
+                        "url": "https://snyk.io/blog/snyk-research-team-discovers-severe-prototype-pollution-security-vulnerabilities-affecting-all-versions-of-lodash/"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/lodash/lodash/pull/4336"
+                    },
+                    {
+                        "comment": "lodash and lodash.defaultsdeep",
+                        "type": "Commit",
+                        "url": "https://github.com/lodash/lodash/commit/1f8ea07746963a535385a5befc19fa687a627d2b"
+                    },
+                    {
+                        "comment": "@sailshq/lodash",
+                        "type": "Commit",
+                        "url": "https://github.com/sailshq/lodash/commit/a6214449f29dc9cfc63e26172e6c70dd5ed082b4"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695"
+                    }
+                ],
+                "packageIdentifier": "Npm-lodash-2.4.2",
+                "scaPackageData": {
+                    "id": "Npm-lodash-2.4.2",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10744",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-zaproxy-0.2.0",
+                                "name": "zaproxy",
+                                "version": "0.2.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-lodash-2.4.2",
+                                "name": "lodash",
+                                "version": "2.4.2"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "4.17.21"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.1,
+                "cveName": "CVE-2019-10744",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "NONE",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10744",
+            "similarityId": "CVE-2019-10744",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "A Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function 'defaultsDeep' allows a malicious user to modify the prototype of Object via '{constructor: {prototype: {...}}}' causing the addition or modification of an existing property that will exist on all objects.",
+            "descriptionHTML": "\u003cp\u003eA Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function ‘defaultsDeep’ allows a malicious user to modify the prototype of Object via ‘{constructor: {prototype: {…}}}’ causing the addition or modification of an existing property that will exist on all objects.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Disclosure",
+                        "url": "https://snyk.io/blog/snyk-research-team-discovers-severe-prototype-pollution-security-vulnerabilities-affecting-all-versions-of-lodash/"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/lodash/lodash/pull/4336"
+                    },
+                    {
+                        "comment": "lodash and lodash.defaultsdeep",
+                        "type": "Commit",
+                        "url": "https://github.com/lodash/lodash/commit/1f8ea07746963a535385a5befc19fa687a627d2b"
+                    },
+                    {
+                        "comment": "@sailshq/lodash",
+                        "type": "Commit",
+                        "url": "https://github.com/sailshq/lodash/commit/a6214449f29dc9cfc63e26172e6c70dd5ed082b4"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695"
+                    }
+                ],
+                "packageIdentifier": "Npm-lodash-4.13.1",
+                "scaPackageData": {
+                    "id": "Npm-lodash-4.13.1",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10744",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-grunt-if-0.2.0",
+                                "name": "grunt-if",
+                                "version": "0.2.0"
+                            },
+                            {
+                                "id": "Npm-grunt-contrib-nodeunit-1.0.0",
+                                "name": "grunt-contrib-nodeunit",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-nodeunit-0.9.5",
+                                "name": "nodeunit",
+                                "version": "0.9.5"
+                            },
+                            {
+                                "id": "Npm-tap-7.1.2",
+                                "name": "tap",
+                                "version": "7.1.2"
+                            },
+                            {
+                                "id": "Npm-nyc-7.1.0",
+                                "name": "nyc",
+                                "version": "7.1.0"
+                            },
+                            {
+                                "id": "Npm-istanbul-lib-instrument-1.1.0-alpha.4",
+                                "name": "istanbul-lib-instrument",
+                                "version": "1.1.0-alpha.4"
+                            },
+                            {
+                                "id": "Npm-babel-generator-6.11.4",
+                                "name": "babel-generator",
+                                "version": "6.11.4"
+                            },
+                            {
+                                "id": "Npm-lodash-4.13.1",
+                                "name": "lodash",
+                                "version": "4.13.1"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "4.17.21"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.1,
+                "cveName": "CVE-2019-10744",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "NONE",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10744",
+            "similarityId": "CVE-2019-10744",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "A Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function 'defaultsDeep' allows a malicious user to modify the prototype of Object via '{constructor: {prototype: {...}}}' causing the addition or modification of an existing property that will exist on all objects.",
+            "descriptionHTML": "\u003cp\u003eA Prototype Pollution vulnerability was discovered in lodash prior to 4.17.12, in lodash.defaultsdeep prior to 4.6.1, and in @sailshq/lodash prior to 3.10.4. The function ‘defaultsDeep’ allows a malicious user to modify the prototype of Object via ‘{constructor: {prototype: {…}}}’ causing the addition or modification of an existing property that will exist on all objects.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Disclosure",
+                        "url": "https://snyk.io/blog/snyk-research-team-discovers-severe-prototype-pollution-security-vulnerabilities-affecting-all-versions-of-lodash/"
+                    },
+                    {
+                        "type": "Pull request",
+                        "url": "https://github.com/lodash/lodash/pull/4336"
+                    },
+                    {
+                        "comment": "lodash and lodash.defaultsdeep",
+                        "type": "Commit",
+                        "url": "https://github.com/lodash/lodash/commit/1f8ea07746963a535385a5befc19fa687a627d2b"
+                    },
+                    {
+                        "comment": "@sailshq/lodash",
+                        "type": "Commit",
+                        "url": "https://github.com/sailshq/lodash/commit/a6214449f29dc9cfc63e26172e6c70dd5ed082b4"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695"
+                    }
+                ],
+                "packageIdentifier": "Npm-lodash-4.17.11",
+                "scaPackageData": {
+                    "id": "Npm-lodash-4.17.11",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10744",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-async-2.6.1",
+                                "name": "async",
+                                "version": "2.6.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-cypress-3.3.1",
+                                "name": "cypress",
+                                "version": "3.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-log-2.0.0",
+                                "name": "grunt-legacy-log",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-concurrent-2.3.1",
+                                "name": "grunt-concurrent",
+                                "version": "2.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-log-2.0.0",
+                                "name": "grunt-legacy-log",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-contrib-watch-1.1.0",
+                                "name": "grunt-contrib-watch",
+                                "version": "1.1.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-if-0.2.0",
+                                "name": "grunt-if",
+                                "version": "0.2.0"
+                            },
+                            {
+                                "id": "Npm-grunt-contrib-jshint-1.1.0",
+                                "name": "grunt-contrib-jshint",
+                                "version": "1.1.0"
+                            },
+                            {
+                                "id": "Npm-jshint-2.9.7",
+                                "name": "jshint",
+                                "version": "2.9.7"
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-jsbeautifier-0.2.13",
+                                "name": "grunt-jsbeautifier",
+                                "version": "0.2.13",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-npm-install-0.3.1",
+                                "name": "grunt-npm-install",
+                                "version": "0.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-log-2.0.0",
+                                "name": "grunt-legacy-log",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-retire-0.3.12",
+                                "name": "grunt-retire",
+                                "version": "0.3.12",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-log-2.0.0",
+                                "name": "grunt-legacy-log",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-lodash-4.17.11",
+                                "name": "lodash",
+                                "version": "4.17.11"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "4.17.21"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.1,
+                "cveName": "CVE-2019-10744",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "NONE",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10746",
+            "similarityId": "CVE-2019-10746",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "mixin-deep is vulnerable to Prototype Pollution in versions before 1.3.2 and version 2.0.0. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+            "descriptionHTML": "\u003cp\u003emixin-deep is vulnerable to Prototype Pollution in versions before 1.3.2 and version 2.0.0. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Mail Thread",
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BFNIVG2XYFPZJY3DYYBJASZ7ZMKBMIJT/"
+                    },
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-fhjf-83wg-r2j9"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/1013"
+                    }
+                ],
+                "packageIdentifier": "Npm-mixin-deep-1.3.1",
+                "scaPackageData": {
+                    "id": "Npm-mixin-deep-1.3.1",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10746",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-forever-2.0.0",
+                                "name": "forever",
+                                "version": "2.0.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-forever-monitor-2.0.0",
+                                "name": "forever-monitor",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.8",
+                                "name": "chokidar",
+                                "version": "2.1.8"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-mixin-deep-1.3.1",
+                                "name": "mixin-deep",
+                                "version": "1.3.1"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-cli-1.3.2",
+                                "name": "grunt-cli",
+                                "version": "1.3.2",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-liftoff-2.5.0",
+                                "name": "liftoff",
+                                "version": "2.5.0"
+                            },
+                            {
+                                "id": "Npm-findup-sync-2.0.0",
+                                "name": "findup-sync",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-micromatch-3.1.10",
+                                "name": "micromatch",
+                                "version": "3.1.10"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-mixin-deep-1.3.1",
+                                "name": "mixin-deep",
+                                "version": "1.3.1"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-nodemon-1.19.1",
+                                "name": "nodemon",
+                                "version": "1.19.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.6",
+                                "name": "chokidar",
+                                "version": "2.1.6"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-mixin-deep-1.3.1",
+                                "name": "mixin-deep",
+                                "version": "1.3.1"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "1.3.2"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2019-10746",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10747",
+            "similarityId": "CVE-2019-10747",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "set-value is vulnerable to Prototype Pollution before 2.0.1 and 3.x before 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and _proto_ payloads.",
+            "descriptionHTML": "\u003cp\u003eset-value is vulnerable to Prototype Pollution before 2.0.1 and 3.x before 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and \u003cem\u003eproto\u003c/em\u003e payloads.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/1012"
+                    },
+                    {
+                        "comment": "2.0.x",
+                        "type": "Commit",
+                        "url": "https://github.com/jonschlinkert/set-value/commit/cb12f14955dde6e61829d70d1851bfea6a3c31ad"
+                    },
+                    {
+                        "comment": "3.0.x",
+                        "type": "Commit",
+                        "url": "https://github.com/jonschlinkert/set-value/commit/95e9d9923f8a8b4a01da1ea138fcc39ec7b6b15f"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-4g88-fppr-53pp"
+                    }
+                ],
+                "packageIdentifier": "Npm-set-value-2.0.0",
+                "scaPackageData": {
+                    "id": "Npm-set-value-2.0.0",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10747",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-forever-2.0.0",
+                                "name": "forever",
+                                "version": "2.0.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-forever-monitor-2.0.0",
+                                "name": "forever-monitor",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.8",
+                                "name": "chokidar",
+                                "version": "2.1.8"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-set-value-2.0.0",
+                                "name": "set-value",
+                                "version": "2.0.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-cli-1.3.2",
+                                "name": "grunt-cli",
+                                "version": "1.3.2",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-liftoff-2.5.0",
+                                "name": "liftoff",
+                                "version": "2.5.0"
+                            },
+                            {
+                                "id": "Npm-findup-sync-2.0.0",
+                                "name": "findup-sync",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-micromatch-3.1.10",
+                                "name": "micromatch",
+                                "version": "3.1.10"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-set-value-2.0.0",
+                                "name": "set-value",
+                                "version": "2.0.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-nodemon-1.19.1",
+                                "name": "nodemon",
+                                "version": "1.19.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.6",
+                                "name": "chokidar",
+                                "version": "2.1.6"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-set-value-2.0.0",
+                                "name": "set-value",
+                                "version": "2.0.0"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "2.0.1"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-400",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2019-10747",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-10747",
+            "similarityId": "CVE-2019-10747",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "set-value is vulnerable to Prototype Pollution before 2.0.1 and 3.x before 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and _proto_ payloads.",
+            "descriptionHTML": "\u003cp\u003eset-value is vulnerable to Prototype Pollution before 2.0.1 and 3.x before 3.0.1. The function mixin-deep could be tricked into adding or modifying properties of Object.prototype using any of the constructor, prototype and \u003cem\u003eproto\u003c/em\u003e payloads.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Advisory",
+                        "url": "https://www.npmjs.com/advisories/1012"
+                    },
+                    {
+                        "comment": "2.0.x",
+                        "type": "Commit",
+                        "url": "https://github.com/jonschlinkert/set-value/commit/cb12f14955dde6e61829d70d1851bfea6a3c31ad"
+                    },
+                    {
+                        "comment": "3.0.x",
+                        "type": "Commit",
+                        "url": "https://github.com/jonschlinkert/set-value/commit/95e9d9923f8a8b4a01da1ea138fcc39ec7b6b15f"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-4g88-fppr-53pp"
+                    }
+                ],
+                "packageIdentifier": "Npm-set-value-0.4.3",
+                "scaPackageData": {
+                    "id": "Npm-set-value-0.4.3",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-10747",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-forever-2.0.0",
+                                "name": "forever",
+                                "version": "2.0.0",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-forever-monitor-2.0.0",
+                                "name": "forever-monitor",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.8",
+                                "name": "chokidar",
+                                "version": "2.1.8"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-union-value-1.0.0",
+                                "name": "union-value",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-set-value-0.4.3",
+                                "name": "set-value",
+                                "version": "0.4.3"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-cli-1.3.2",
+                                "name": "grunt-cli",
+                                "version": "1.3.2",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-liftoff-2.5.0",
+                                "name": "liftoff",
+                                "version": "2.5.0"
+                            },
+                            {
+                                "id": "Npm-findup-sync-2.0.0",
+                                "name": "findup-sync",
+                                "version": "2.0.0"
+                            },
+                            {
+                                "id": "Npm-micromatch-3.1.10",
+                                "name": "micromatch",
+                                "version": "3.1.10"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-union-value-1.0.0",
+                                "name": "union-value",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-set-value-0.4.3",
+                                "name": "set-value",
+                                "version": "0.4.3"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-nodemon-1.19.1",
+                                "name": "nodemon",
+                                "version": "1.19.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-chokidar-2.1.6",
+                                "name": "chokidar",
+                                "version": "2.1.6"
+                            },
+                            {
+                                "id": "Npm-braces-2.3.2",
+                                "name": "braces",
+                                "version": "2.3.2"
+                            },
+                            {
+                                "id": "Npm-snapdragon-0.8.2",
+                                "name": "snapdragon",
+                                "version": "0.8.2"
+                            },
+                            {
+                                "id": "Npm-base-0.11.2",
+                                "name": "base",
+                                "version": "0.11.2"
+                            },
+                            {
+                                "id": "Npm-cache-base-1.0.1",
+                                "name": "cache-base",
+                                "version": "1.0.1"
+                            },
+                            {
+                                "id": "Npm-union-value-1.0.0",
+                                "name": "union-value",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-set-value-0.4.3",
+                                "name": "set-value",
+                                "version": "0.4.3"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "2.0.1"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-400",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2019-10747",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2019-19919",
+            "similarityId": "CVE-2019-19919",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object's \"__proto__\" and \"__defineGetter__\" properties, which may allow an attacker to execute arbitrary code through crafted payloads.",
+            "descriptionHTML": "\u003cp\u003eVersions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object‘s “\u003cstrong\u003eproto\u003c/strong\u003e” and “\u003cstrong\u003edefineGetter\u003c/strong\u003e” properties, which may allow an attacker to execute arbitrary code through crafted payloads.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Issue",
+                        "url": "https://github.com/wycats/handlebars.js/issues/1558"
+                    },
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/wycats/handlebars.js/commit/2078c72"
+                    },
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-w457-6q6x-cgp9"
+                    }
+                ],
+                "packageIdentifier": "Npm-handlebars-4.0.5",
+                "scaPackageData": {
+                    "id": "Npm-handlebars-4.0.5",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2019-19919",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-grunt-if-0.2.0",
+                                "name": "grunt-if",
+                                "version": "0.2.0"
+                            },
+                            {
+                                "id": "Npm-grunt-contrib-nodeunit-1.0.0",
+                                "name": "grunt-contrib-nodeunit",
+                                "version": "1.0.0"
+                            },
+                            {
+                                "id": "Npm-nodeunit-0.9.5",
+                                "name": "nodeunit",
+                                "version": "0.9.5"
+                            },
+                            {
+                                "id": "Npm-tap-7.1.2",
+                                "name": "tap",
+                                "version": "7.1.2"
+                            },
+                            {
+                                "id": "Npm-nyc-7.1.0",
+                                "name": "nyc",
+                                "version": "7.1.0"
+                            },
+                            {
+                                "id": "Npm-istanbul-reports-1.0.0-alpha.8",
+                                "name": "istanbul-reports",
+                                "version": "1.0.0-alpha.8"
+                            },
+                            {
+                                "id": "Npm-handlebars-4.0.5",
+                                "name": "handlebars",
+                                "version": "4.0.5"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "4.7.7"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2019-19919",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        },
+        {
+            "type": "sca",
+            "scaType": "Vulnerability",
+            "label": "sca",
+            "id": "CVE-2020-28282",
+            "similarityId": "CVE-2020-28282",
+            "status": "RECURRENT",
+            "state": "TO_VERIFY",
+            "severity": "CRITICAL",
+            "created": "2025-01-24T11:23:59Z",
+            "firstFoundAt": "2025-01-20T08:08:07Z",
+            "foundAt": "2025-01-24T11:23:59Z",
+            "firstScanId": "bc20cf6e-afc8-43de-853a-d1df8e2f3f66",
+            "description": "Prototype pollution vulnerability in 'getobject' version 0.1.0 allows an attacker to cause a denial of service and may lead to remote code execution.",
+            "descriptionHTML": "\u003cp\u003ePrototype pollution vulnerability in ‘getobject’ version 0.1.0 allows an attacker to cause a denial of service and may lead to remote code execution.\u003c/p\u003e\n",
+            "data": {
+                "packageData": [
+                    {
+                        "type": "Advisory",
+                        "url": "https://github.com/advisories/GHSA-957j-59c2-j692"
+                    },
+                    {
+                        "type": "Commit",
+                        "url": "https://github.com/cowboy/node-getobject/commit/84071748fa407caa8f824e0d0b9c1cde9ec56633"
+                    }
+                ],
+                "packageIdentifier": "Npm-getobject-0.1.0",
+                "scaPackageData": {
+                    "id": "Npm-getobject-0.1.0",
+                    "fixLink": "https://devhub.checkmarx.com/cve-details/CVE-2020-28282",
+                    "locations": [
+                        "NodeGoat/package.json"
+                    ],
+                    "dependencyPaths": [
+                        [
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-concurrent-2.3.1",
+                                "name": "grunt-concurrent",
+                                "version": "2.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-if-0.2.0",
+                                "name": "grunt-if",
+                                "version": "0.2.0"
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-jsbeautifier-0.2.13",
+                                "name": "grunt-jsbeautifier",
+                                "version": "0.2.13",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-npm-install-0.3.1",
+                                "name": "grunt-npm-install",
+                                "version": "0.3.1",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Npm-grunt-retire-0.3.12",
+                                "name": "grunt-retire",
+                                "version": "0.3.12",
+                                "locations": [
+                                    "NodeGoat/package.json"
+                                ]
+                            },
+                            {
+                                "id": "Npm-grunt-1.0.3",
+                                "name": "grunt",
+                                "version": "1.0.3"
+                            },
+                            {
+                                "id": "Npm-grunt-legacy-util-1.1.1",
+                                "name": "grunt-legacy-util",
+                                "version": "1.1.1"
+                            },
+                            {
+                                "id": "Npm-getobject-0.1.0",
+                                "name": "getobject",
+                                "version": "0.1.0"
+                            }
+                        ]
+                    ],
+                    "outdated": true,
+                    "supportsQuickFix": false,
+                    "isDirectDependency": false,
+                    "typeOfDependency": "Transitive Dependency"
+                },
+                "recommendedVersion": "1.0.0"
+            },
+            "comments": {},
+            "vulnerabilityDetails": {
+                "cweId": "CWE-1321",
+                "cvssScore": 9.8,
+                "cveName": "CVE-2020-28282",
+                "cvss": {
+                    "version": 3,
+                    "attackVector": "NETWORK",
+                    "availability": "HIGH",
+                    "confidentiality": "HIGH",
+                    "attackComplexity": "LOW",
+                    "scope": "UNCHANGED",
+                    "privilegesRequired": "NONE",
+                    "userInteraction": "NONE"
+                }
+            }
+        }
+    ],
+    "totalCount": 371,
+    "scanID": "f1bd8e51-c36a-40ea-a035-ffbe30e45108"
+}
