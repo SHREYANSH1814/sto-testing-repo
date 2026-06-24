@@ -21,9 +21,9 @@
                 "triageAdvice": null
             },
             "language": "js",
-            "severity": "medium",
+            "severity": null,
             "originalSeverity": "Critical",
-            "cvssScore": 5.3,
+            "cvssScore": 0.1,
             "functions": [],
             "malicious": false,
             "isDisputed": false,
@@ -50,9 +50,38 @@
                 "triageAdvice": null
             },
             "language": "js",
-            "severity": "medium",
+            "severity": "low",
             "originalSeverity": "Critical",
-            "cvssScore": 5.3,
+            "cvssScore": 3,
+            "functions": [],
+            "malicious": false,
+            "isDisputed": false,
+            "moduleName": "postcss"
+        },
+                {
+            "id": "SNYK-JS-POSTCSS-5926693",
+            "title": "Improper Input Validation 2 ",
+            "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "credit": [
+                "Unknown"
+            ],
+            "semver": {
+                "vulnerable": [
+                    "<8.4.31"
+                ]
+            },
+            "exploit": "Not Defined",
+            "fixedIn": [
+                "8.4.31"
+            ],
+            "patches": [],
+            "insights": {
+                "triageAdvice": null
+            },
+            "language": "js",
+            "severity": null,
+            "originalSeverity": "Critical",
+            "cvssScore": 2,
             "functions": [],
             "malicious": false,
             "isDisputed": false,
