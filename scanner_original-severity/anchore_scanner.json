@@ -1,0 +1,454 @@
+{
+    "image_digest": "sha256:cd603bd05f0ce964ae5e0ca1d4d45a1379eb8ec08081e7ae8bb31a83289eef4c",
+    "vulnerability_type": "all",
+    "vulnerabilities": [
+        {
+            "vuln": "CVE-2019-12975",
+            "severity": "Medium",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-12975",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
+            "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
+            "package_name": "libmagickwand-dev",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-12975",
+                    "cvss_v2": {
+                        "base_score": 4.3,
+                        "exploitability_score": 8.6,
+                        "impact_score": 2.9
+                    },
+                    "cvss_v3": {
+                        "base_score": 5.5,
+                        "exploitability_score": 1.8,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2019-13305",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-13305",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
+            "package": "libmagickcore-6.q16-6-extra-8:6.9.10.23+dfsg-2.1",
+            "package_name": "libmagickcore-6.q16-6-extra",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-13305",
+                    "cvss_v2": {
+                        "base_score": 6.8,
+                        "exploitability_score": 8.6,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.8,
+                        "exploitability_score": 1.8,
+                        "impact_score": 5.9
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2019-12978",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-12978",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
+            "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
+            "package_name": "libmagickwand-dev",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-12978",
+                    "cvss_v2": {
+                        "base_score": 6.8,
+                        "exploitability_score": 8.6,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.8,
+                        "exploitability_score": 1.8,
+                        "impact_score": 5.9
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2021-23336",
+            "severity": "Medium",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2021-23336",
+            "fix": "2.7.16-2+deb10u3",
+            "package": "python2.7-2.7.16-2+deb10u1",
+            "package_name": "python2.7",
+            "package_version": "2.7.16-2+deb10u1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2021-23336",
+                    "cvss_v2": {
+                        "base_score": 4.0,
+                        "exploitability_score": 4.9,
+                        "impact_score": 4.9
+                    },
+                    "cvss_v3": {
+                        "base_score": 5.9,
+                        "exploitability_score": 1.6,
+                        "impact_score": 4.2
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2019-12976",
+            "severity": "Medium",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-12976",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
+            "package": "imagemagick-8:6.9.10.23+dfsg-2.1",
+            "package_name": "imagemagick",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-12976",
+                    "cvss_v2": {
+                        "base_score": 4.3,
+                        "exploitability_score": 8.6,
+                        "impact_score": 2.9
+                    },
+                    "cvss_v3": {
+                        "base_score": 5.5,
+                        "exploitability_score": 1.8,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2021-20176",
+            "severity": "Medium",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2021-20176",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u5",
+            "package": "imagemagick-6.q16-8:6.9.10.23+dfsg-2.1",
+            "package_name": "imagemagick-6.q16",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2021-20176",
+                    "cvss_v2": {
+                        "base_score": 4.3,
+                        "exploitability_score": 8.6,
+                        "impact_score": 2.9
+                    },
+                    "cvss_v3": {
+                        "base_score": 5.5,
+                        "exploitability_score": 1.8,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2021-2372",
+            "severity": "Medium",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2021-2372",
+            "fix": "1:10.3.31-0+deb10u1",
+            "package": "mariadb-common-1:10.3.22-0+deb10u1",
+            "package_name": "mariadb-common",
+            "package_version": "1:10.3.22-0+deb10u1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2021-2372",
+                    "cvss_v2": {
+                        "base_score": 3.5,
+                        "exploitability_score": 6.8,
+                        "impact_score": 2.9
+                    },
+                    "cvss_v3": {
+                        "base_score": 4.4,
+                        "exploitability_score": 0.7,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2022-22826",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2022-22826",
+            "fix": "2.2.6-2+deb10u2",
+            "package": "libexpat1-2.2.6-2+deb10u1",
+            "package_name": "libexpat1",
+            "package_version": "2.2.6-2+deb10u1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2022-22826",
+                    "cvss_v2": {
+                        "base_score": 6.8,
+                        "exploitability_score": 8.6,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 8.8,
+                        "exploitability_score": 2.8,
+                        "impact_score": 5.9
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2023-25652",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2023-25652",
+            "fix": "1:2.20.1-2+deb10u9",
+            "package": "git-man-1:2.20.1-2+deb10u1",
+            "package_name": "git-man",
+            "package_version": "1:2.20.1-2+deb10u1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2023-25652",
+                    "cvss_v2": {
+                        "base_score": -1.0,
+                        "exploitability_score": -1.0,
+                        "impact_score": -1.0
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.5,
+                        "exploitability_score": 3.9,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2024-06-27T01:30:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2019-1010023",
+            "severity": "Negligible",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-1010023",
+            "fix": "None",
+            "package": "libc-bin-2.28-10",
+            "package_name": "libc-bin",
+            "package_version": "2.28-10",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-1010023",
+                    "cvss_v2": {
+                        "base_score": 6.8,
+                        "exploitability_score": 8.6,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 8.8,
+                        "exploitability_score": 2.8,
+                        "impact_score": 5.9
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2019-12979",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2019-12979",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
+            "package": "libmagickcore-dev-8:6.9.10.23+dfsg-2.1",
+            "package_name": "libmagickcore-dev",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2019-12979",
+                    "cvss_v2": {
+                        "base_score": 6.8,
+                        "exploitability_score": 8.6,
+                        "impact_score": 6.4
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.8,
+                        "exploitability_score": 1.8,
+                        "impact_score": 5.9
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-09-22T01:23:51Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        },
+        {
+            "vuln": "CVE-2021-40211",
+            "severity": "High",
+            "url": "https://security-tracker.debian.org/tracker/CVE-2021-40211",
+            "fix": "8:6.9.10.23+dfsg-2.1+deb10u5",
+            "package": "libmagickwand-6.q16-6-8:6.9.10.23+dfsg-2.1",
+            "package_name": "libmagickwand-6.q16-6",
+            "package_version": "8:6.9.10.23+dfsg-2.1",
+            "package_type": "dpkg",
+            "package_cpe": "None",
+            "package_cpe23": "None",
+            "package_path": "pkgdb",
+            "feed": "vulnerabilities",
+            "feed_group": "debian:10",
+            "nvd_data": [
+                {
+                    "id": "CVE-2021-40211",
+                    "cvss_v2": {
+                        "base_score": -1.0,
+                        "exploitability_score": -1.0,
+                        "impact_score": -1.0
+                    },
+                    "cvss_v3": {
+                        "base_score": 7.5,
+                        "exploitability_score": 3.9,
+                        "impact_score": 3.6
+                    }
+                }
+            ],
+            "vendor_data": [],
+            "will_not_fix": false,
+            "fix_observed_at": "2023-10-11T01:24:08Z",
+            "detected_at": "2024-10-01T16:56:23Z"
+        }
+    ],
+    "policyEvaluations": {
+        "policy_id": "2c53a13c-1765-11e8-82ef-23527761d060",
+        "image_digest": "sha256:cd603bd05f0ce964ae5e0ca1d4d45a1379eb8ec08081e7ae8bb31a83289eef4c",
+        "evaluated_tag": "docker.io/owasp/railsgoat:latest",
+        "evaluations": [
+            {
+                "comparison_image_digest": "",
+                "evaluation_time": "2024-10-01T19:21:35Z",
+                "evaluation_problems": [],
+                "status": "fail",
+                "final_action": "stop",
+                "final_action_reason": "policy_evaluation",
+                "image_allowlisted": false,
+                "matched_allowlisted_images_rule": null,
+                "image_denylisted": false,
+                "matched_denylisted_images_rule": null,
+                "image_mapped_to_rule": true,
+                "matched_mapping_rule": {
+                    "id": "c4f9bf74-dc38-4ddf-b5cf-00e9c0074611",
+                    "name": "default",
+                    "registry": "*",
+                    "repository": "*",
+                    "image": {
+                        "type": "tag",
+                        "value": "*"
+                    },
+                    "description": "",
+                    "rule_set_ids": [
+                        "48e6f7d6-1765-11e8-b5f9-8b6f228548b6"
+                    ],
+                    "allowlist_ids": [
+                        "37fd763e-1765-11e8-add4-3b16c029ac5c"
+                    ]
+                },
+                "number_of_findings": 2647,
+                "details": null
+            }
+        ],
+        "name": "Default bundle",
+        "description": "Default bundle"
+    }
+}
