@@ -94,7 +94,6 @@
             "id": "CVE-2020-7774",
             "similarityId": "CVE-2020-7774",
             "status": "RECURRENT",
-            "state": null,
             "severity": "Medium",
             "created": "2025-01-24T11:24:01Z",
             "firstFoundAt": "2025-01-20T08:08:09Z",
