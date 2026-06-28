@@ -16,6 +16,7 @@
             "package_path": "pkgdb",
             "feed": "vulnerabilities",
             "feed_group": "debian:10",
+            "status": "None",
             "nvd_data": [
                 {
                     "id": "CVE-2019-12975",
