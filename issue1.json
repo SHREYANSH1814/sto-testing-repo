@@ -53,6 +53,9 @@
       "severity": 10,
       "status": "open",
       "newStatus":"shreyansh",
+      "comment":"This is a test comment",
+      "commentBy":"shreyansh",
+      "commentAt":"2025-10-15T12:00:00Z",
 
       "referenceIdentifiers": [
         
