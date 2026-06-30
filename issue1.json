@@ -16,6 +16,7 @@
       "risk": "low",
       "severity": 5,
       "status": "open",
+      
       "referenceIdentifiers": [
         {
           "type": "CVE",
@@ -32,7 +33,8 @@
       "remediationSteps": "Fix me fast.",
       "risk": "low",
       "severity": 8,
-      "status": "open",
+      "status": "closed",
+      "newStatus":"shreyansh",
       "referenceIdentifiers": [
         {
           "type": "CVE",
@@ -50,6 +52,8 @@
       "risk": "low",
       "severity": 10,
       "status": "open",
+      "newStatus":"shreyansh",
+
       "referenceIdentifiers": [
         {
           "type": "CVE",
