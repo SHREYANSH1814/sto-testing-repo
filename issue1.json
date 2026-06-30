@@ -55,13 +55,14 @@
       "newStatus":"shreyansh",
 
       "referenceIdentifiers": [
-        {
-          "type": "CVE",
-          "id": "2017-1130"
-        },
+        
          {
           "type": "CVE",
           "id": "2017-1131"
+        },
+        {
+          "type": "CVE",
+          "id": "2017-1130"
         }
       ]
     }
