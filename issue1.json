@@ -45,7 +45,7 @@
     {
       "packageName": "package shreyansh/repo1",
       "subproduct": "MyCustomScanTool",
-      "issueName": "Issue 3 for shreyansh/repo1",
+      "issueName": "Issue 4 for shreyansh/repo1",
       "issueDescription": "ntfs_attr_find in the ntfs.ko filesystem driver in the Linux kernel 4.15.0 allows attackers to trigger a stack-based out-of-bounds write and cause a denial of service (kernel oops or panic) or possibly have unspecified other impact via a crafted ntfs filesystem.",
       "fileName": "file1.java",
       "remediationSteps": "Fix me fast.",
@@ -58,6 +58,10 @@
         {
           "type": "CVE",
           "id": "2017-1130"
+        },
+         {
+          "type": "CVE",
+          "id": "2017-1131"
         }
       ]
     }
