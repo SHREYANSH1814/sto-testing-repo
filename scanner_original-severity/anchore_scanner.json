@@ -87,7 +87,7 @@
             "feed_group": "debian:10",
             "nvd_data": [
                 {
-                    "id": "CVE-2019-12975",
+                    "id": "CVE-2019-1297678",
                     "cvss_v2": {
                         "base_score": 4.3,
                         "exploitability_score": 8.6,
@@ -111,3 +111,4 @@
         "name": "Default bundle",
         "description": "Default bundle"
     }
+
