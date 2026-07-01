@@ -96,7 +96,7 @@
                     "cvss_v3": {
                         "base_score": 0,
                         "exploitability_score": 1.2456,
-                        "impact_score": 3.6
+                        "impact_score": 3.6764543
                     }
                 }
             ],
