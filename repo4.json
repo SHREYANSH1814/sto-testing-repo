@@ -1,0 +1,860 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "MyCustomScanner"
+  },
+  "issues": [
+    {
+      "packageName": "package target1 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 1 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 1 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 1 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 1 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 1",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 1 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 2 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 2 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 2 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 2 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 2",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 2 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file2.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 3 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 3 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 3 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 3 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 3",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 3 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file3.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 4 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 4 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 4 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 4 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 4",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 4 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file4.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 5 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 5 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 5 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 5 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 5",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 5 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file5.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 6 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 6 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 6 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 6 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 6",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 6 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file6.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 7 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 7 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 7 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 7 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 7",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 7 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file7.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 8 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 8 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 8 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 8 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 8",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 8 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file8.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 9 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 9 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 9 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 9 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 9",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 9 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file9.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 10",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 10 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file10.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 10",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Low Issue 10 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file10.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 10",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Medium Issue 10 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file10.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 10",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "High  Issue 10 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file10.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "package target1 10",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Critical Issue 10 for target1",
+      "issueDescription": "Lorem ipsum...",
+      "fileName": "file10.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    }
+  ]
+}
