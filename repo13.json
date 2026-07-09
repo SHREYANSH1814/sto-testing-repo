@@ -414,40 +414,6 @@
           "id": "259"
         }
       ]
-    },
-     {
-      "packageName": "package target13 6",
-      "subproduct": "MyCustomScanTool",
-      "issueName": "Low Issue 1 for target13",
-      "issueDescription": "Lorem ipsum...",
-      "fileName": "file1.java",
-      "remediationSteps": "Fix me fast.",
-      "risk": "low",
-      "severity": 3,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "259"
-        }
-      ]
-    }, 
-     {
-      "packageName": "package target13 6",
-      "subproduct": "MyCustomScanTool",
-      "issueName": "Medium Issue 1 for target13",
-      "issueDescription": "Lorem ipsum...",
-      "fileName": "file4.java",
-      "remediationSteps": "Fix me fast.",
-      "risk": "medium",
-      "severity": 4,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "259"
-        }
-      ]
     }
   ]
 }
