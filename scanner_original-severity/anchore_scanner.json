@@ -38,7 +38,7 @@
         },
          {
             "vuln": "CVE-2019-12975",
-            "severity": "Critical",
+            "severity": "Low",
             "url": "https://security-tracker.debian.org/tracker/CVE-2019-12975",
             "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
             "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
@@ -72,7 +72,7 @@
         },
          {
             "vuln": "CVE-2019-12975",
-            "severity": "Info",
+            "severity": "Low",
             "url": "https://security-tracker.debian.org/tracker/CVE-2019-12975",
             "fix": "8:6.9.10.23+dfsg-2.1+deb10u1",
             "package": "libmagickwand-dev-8:6.9.10.23+dfsg-2.1",
