@@ -1,0 +1,32 @@
+name: Harness STO Security Scan
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Harness STO Scan
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ secrets.HARNESS_ORG_ID }}
+          harness-project-id: ${{ secrets.HARNESS_PROJECT_ID }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          target-type: repository
+
+          workspace: .
+
+          fail-on-severity: HIGH
+          show-summary: true
