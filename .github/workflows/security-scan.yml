@@ -1,11 +1,21 @@
 name: Harness STO Security Scan
 
 on:
-  push:
-    branches:
-      - main
-
-  pull_request:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
 
 jobs:
   security-scan:
@@ -19,8 +29,9 @@ jobs:
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ secrets.HARNESS_ORG_ID }}
-          harness-project-id: ${{ secrets.HARNESS_PROJECT_ID }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
 
           scanner: bandit
           scan-mode: orchestration
