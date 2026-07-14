@@ -1,34 +1,154 @@
-{  
-     "vulnerabilities": [
-        {
-            "id": "SNYK-JS-POSTCSS-5926692",
-            "title": "Improper Input Validation",
-            "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
-            "credit": [
-                "Unknown"
-            ],
-            "semver": {
-                "vulnerable": [
-                    "<8.4.31"
-                ]
-            },
-            "exploit": "Not Defined",
-            "fixedIn": [
-                "8.4.31"
-            ],
-            "patches": [],
-            "insights": {
-                "triageAdvice": null
-            },
-            "language": "js",
-            "severity": "low",
-            "originalSeverity": "Critical",
-            "cvssScore": 5.3,
-            "functions": [],
-            "malicious": false,
-            "isDisputed": false,
-            "moduleName": "postcss"
-        }
-    ]
- }
-
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JS-POSTCSS-5926692",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": ["Unknown"],
+      "semver": {
+        "vulnerable": ["<8.4.31"]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": ["8.4.31"],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "postcss",
+      "version": "7.0.36",
+      "packageName": "postcss",
+      "from": ["myapp@1.0.0", "tailwindcss@2.2.19", "postcss@7.0.36"],
+      "upgradePath": ["myapp@1.0.0", "tailwindcss@3.0.0", "postcss@8.4.31"],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "postcss",
+      "parentDepType": "prod"
+    },
+    {
+      "id": "SNYK-JS-POSTCSS-5926692",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": ["Unknown"],
+      "semver": {
+        "vulnerable": ["<8.4.31"]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": ["8.4.31"],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "postcss",
+      "version": "8.4.5",
+      "packageName": "postcss",
+      "from": ["myapp@1.0.0", "autoprefixer@10.4.2", "postcss@8.4.5"],
+      "upgradePath": ["myapp@1.0.0", "autoprefixer@10.4.14", "postcss@8.4.31"],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "postcss",
+      "parentDepType": "prod"
+    },
+    {
+      "id": "SNYK-JS-POSTCSS-5926692",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": ["Unknown"],
+      "semver": {
+        "vulnerable": ["<8.4.31"]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": ["8.4.31"],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "postcss",
+      "version": "8.4.30",
+      "packageName": "postcss",
+      "from": ["myapp@1.0.0", "cssnano@5.1.15", "postcss@8.4.30"],
+      "upgradePath": ["myapp@1.0.0", "cssnano@6.0.0", "postcss@8.4.31"],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "postcss",
+      "parentDepType": "dev"
+    },
+    {
+      "id": "SNYK-JS-POSTCSS-5926692",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": ["Unknown"],
+      "semver": {
+        "vulnerable": ["<8.4.31"]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": ["8.4.31"],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "postcss",
+      "version": "7.0.21",
+      "packageName": "postcss",
+      "from": ["myapp@1.0.0", "webpack@4.46.0", "postcss-loader@3.0.0", "postcss@7.0.21"],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "postcss",
+      "parentDepType": "prod"
+    },
+    {
+      "id": "SNYK-JS-POSTCSS-5926692",
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": ["Unknown"],
+      "semver": {
+        "vulnerable": ["<8.4.31"]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": ["8.4.31"],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "postcss",
+      "version": "8.2.1",
+      "packageName": "postcss",
+      "from": ["myapp@1.0.0", "styled-components@5.3.6", "postcss@8.2.1"],
+      "upgradePath": ["myapp@1.0.0", "styled-components@6.0.0", "postcss@8.4.31"],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "postcss",
+      "parentDepType": "prod"
+    }
+  ]
+}
