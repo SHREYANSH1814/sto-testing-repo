@@ -19,8 +19,8 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "CVE",
-          "id": "2020-7768"
+          "type": "cve",
+          "id": "2017-1130"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "CVE",
-          "id": "2020-7768"
+          "type": "cve",
+          "id": "2017-1130"
         }
       ]
     },
@@ -53,8 +53,8 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "CVE",
-          "id": "2020-7768"
+          "type": "cve",
+          "id": "2017-1130"
         }
       ]
     },
@@ -71,7 +71,7 @@
       "referenceIdentifiers": [
         {
           "type": "CVE",
-          "id": "2023-36884"
+          "id": "2017-1130"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "CVE",
+          "type": "cve",
           "id": "2024-99999"
         }
 
