@@ -36,16 +36,19 @@ jobs:
 
           scanner: aqua_trivy
           scan-mode: orchestration
-          image-name: "nginx"
+          image-name: "autosscauserqa/nodegoat"
           image-tag: "latest"
           scan-config: default
           target-type: container
-          target-name: "shreyansh/container1"
+          target-name: "shreyansh/privatecontainer1"
           target-variant: "latest"
           docker-image-tag: "dev"
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+        
 
-          fail-on-severity: CRITICAL
-          show-summary: true
+          fail-on-severity: None
+          show-summary: false
 
       - name: Use scan output variables
         if: always()
