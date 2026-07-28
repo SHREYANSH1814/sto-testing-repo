@@ -1,4 +1,4 @@
-name: Harness STO Security Scan
+name: Aqua Trivy Orchestration Security Scan
 
 on:
   workflow_dispatch:
