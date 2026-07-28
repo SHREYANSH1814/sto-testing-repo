@@ -26,6 +26,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Harness STO Scan
+        id: sto-scan
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
@@ -35,10 +36,31 @@ jobs:
 
           scanner: aqua_trivy
           scan-mode: orchestration
-          image-name: "nginx"  
+          image-name: "nginx"
           image-tag: "latest"
           scan-config: default
           target-type: container
 
           fail-on-severity: NONE
           show-summary: true
+
+      - name: Use scan output variables
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables ====="
+          echo "Scan ID: ${{ steps.sto-scan.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan.outputs.low }}"
+          echo "Output File Path: ${{ steps.sto-scan.outputs.output-file-path }}"
+
+      - name: Archive scan output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results
+          path: ${{ steps.sto-scan.outputs.output-file-path }}
+          retention-days: 1
