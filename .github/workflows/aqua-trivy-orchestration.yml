@@ -46,7 +46,7 @@ jobs:
           image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
           image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
           image-domain: "jfrog"
-        
+          image-type: "jfrog_artifactory"
 
           fail-on-severity: None
           show-summary: True
