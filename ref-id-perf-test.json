@@ -17,36 +17,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "ghsa",
-          "id": "dzja-kfdp-2zzk"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "v5vf-jp76-9vtj"
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
-          "type": "cwe",
-          "id": "250"
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         }
       ]
     },
@@ -61,36 +49,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "sctc-kmsb-aaw2"
-        },
-        {
-          "type": "ghsa",
-          "id": "njww-bnk8-w5z3"
-        },
-        {
           "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
         }
       ]
     },
@@ -105,36 +81,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "ghsa",
-          "id": "r4af-998z-2cdw"
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "rkxb-f8bz-a7m9"
+          "id": "jtmv-kq38-a485"
         },
         {
-          "type": "cve",
-          "id": "2021-10000"
+          "type": "cwe",
+          "id": "94"
         }
       ]
     },
@@ -150,35 +114,23 @@
       "referenceIdentifiers": [
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "dqpx-47d6-ywvv"
+          "id": "cpqp-4nj9-faxp"
         },
         {
           "type": "cve",
-          "id": "2019-10000"
+          "id": "2020-10000"
         },
         {
           "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "jahe-pxa5-fa5q"
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         }
       ]
     },
@@ -193,36 +145,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
           "type": "ghsa",
-          "id": "kaek-fksk-e3e7"
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "c2tm-4kd9-d98p"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10004"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -237,36 +177,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "d7fj-hszw-cqak"
-        },
-        {
-          "type": "ghsa",
-          "id": "smsd-4vvp-4mhb"
+          "type": "cve",
+          "id": "2022-10002"
         },
         {
           "type": "cve",
-          "id": "2025-10002"
+          "id": "2023-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2020-10000"
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
         }
       ]
     },
@@ -281,36 +209,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "qf3n-qah5-a3px"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "vcce-6hdn-4a6t"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -326,35 +242,23 @@
       "referenceIdentifiers": [
         {
           "type": "ghsa",
-          "id": "sme2-4zhb-hk6m"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "h7d6-yxxk-g5cz"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
-          "id": "2019-10004"
+          "id": "2025-10000"
         },
         {
-          "type": "ghsa",
-          "id": "ck7p-dw8a-3ade"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
         }
       ]
     },
@@ -370,35 +274,23 @@
       "referenceIdentifiers": [
         {
           "type": "cve",
-          "id": "2024-10002"
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "43d6-me59-jyka"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10000"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "779c-2zf2-wce7"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -413,36 +305,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "qzb8-nq6n-7vj8"
-        },
-        {
-          "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
           "type": "cve",
           "id": "2024-10002"
         },
         {
           "type": "ghsa",
-          "id": "22xv-d5k5-wmc5"
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2024-10004"
+          "id": "2022-10000"
         }
       ]
     },
@@ -457,36 +337,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "ghsa",
-          "id": "dzja-kfdp-2zzk"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "v5vf-jp76-9vtj"
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
-          "type": "cwe",
-          "id": "250"
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         }
       ]
     },
@@ -501,36 +369,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "sctc-kmsb-aaw2"
-        },
-        {
-          "type": "ghsa",
-          "id": "njww-bnk8-w5z3"
-        },
-        {
           "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
         }
       ]
     },
@@ -545,36 +401,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "ghsa",
-          "id": "r4af-998z-2cdw"
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "rkxb-f8bz-a7m9"
+          "id": "jtmv-kq38-a485"
         },
         {
-          "type": "cve",
-          "id": "2021-10000"
+          "type": "cwe",
+          "id": "94"
         }
       ]
     },
@@ -590,35 +434,23 @@
       "referenceIdentifiers": [
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "dqpx-47d6-ywvv"
+          "id": "cpqp-4nj9-faxp"
         },
         {
           "type": "cve",
-          "id": "2019-10000"
+          "id": "2020-10000"
         },
         {
           "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "jahe-pxa5-fa5q"
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         }
       ]
     },
@@ -633,36 +465,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
           "type": "ghsa",
-          "id": "kaek-fksk-e3e7"
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "c2tm-4kd9-d98p"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10004"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -677,36 +497,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "d7fj-hszw-cqak"
-        },
-        {
-          "type": "ghsa",
-          "id": "smsd-4vvp-4mhb"
+          "type": "cve",
+          "id": "2022-10002"
         },
         {
           "type": "cve",
-          "id": "2025-10002"
+          "id": "2023-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2020-10000"
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
         }
       ]
     },
@@ -721,36 +529,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "qf3n-qah5-a3px"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "vcce-6hdn-4a6t"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -766,35 +562,23 @@
       "referenceIdentifiers": [
         {
           "type": "ghsa",
-          "id": "sme2-4zhb-hk6m"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "h7d6-yxxk-g5cz"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
-          "id": "2019-10004"
+          "id": "2025-10000"
         },
         {
-          "type": "ghsa",
-          "id": "ck7p-dw8a-3ade"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
         }
       ]
     },
@@ -810,35 +594,23 @@
       "referenceIdentifiers": [
         {
           "type": "cve",
-          "id": "2024-10002"
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "43d6-me59-jyka"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10000"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "779c-2zf2-wce7"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -853,36 +625,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "qzb8-nq6n-7vj8"
-        },
-        {
-          "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
           "type": "cve",
           "id": "2024-10002"
         },
         {
           "type": "ghsa",
-          "id": "22xv-d5k5-wmc5"
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2024-10004"
+          "id": "2022-10000"
         }
       ]
     },
@@ -897,36 +657,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "ghsa",
-          "id": "dzja-kfdp-2zzk"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "v5vf-jp76-9vtj"
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
-          "type": "cwe",
-          "id": "250"
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         }
       ]
     },
@@ -941,36 +689,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "sctc-kmsb-aaw2"
-        },
-        {
-          "type": "ghsa",
-          "id": "njww-bnk8-w5z3"
-        },
-        {
           "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
         }
       ]
     },
@@ -985,36 +721,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "ghsa",
-          "id": "r4af-998z-2cdw"
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "rkxb-f8bz-a7m9"
+          "id": "jtmv-kq38-a485"
         },
         {
-          "type": "cve",
-          "id": "2021-10000"
+          "type": "cwe",
+          "id": "94"
         }
       ]
     },
@@ -1030,35 +754,23 @@
       "referenceIdentifiers": [
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "dqpx-47d6-ywvv"
+          "id": "cpqp-4nj9-faxp"
         },
         {
           "type": "cve",
-          "id": "2019-10000"
+          "id": "2020-10000"
         },
         {
           "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "jahe-pxa5-fa5q"
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         }
       ]
     },
@@ -1073,36 +785,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
           "type": "ghsa",
-          "id": "kaek-fksk-e3e7"
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "c2tm-4kd9-d98p"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10004"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1117,36 +817,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "d7fj-hszw-cqak"
-        },
-        {
-          "type": "ghsa",
-          "id": "smsd-4vvp-4mhb"
+          "type": "cve",
+          "id": "2022-10002"
         },
         {
           "type": "cve",
-          "id": "2025-10002"
+          "id": "2023-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2020-10000"
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
         }
       ]
     },
@@ -1161,36 +849,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "qf3n-qah5-a3px"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "vcce-6hdn-4a6t"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1206,35 +882,23 @@
       "referenceIdentifiers": [
         {
           "type": "ghsa",
-          "id": "sme2-4zhb-hk6m"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "h7d6-yxxk-g5cz"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
-          "id": "2019-10004"
+          "id": "2025-10000"
         },
         {
-          "type": "ghsa",
-          "id": "ck7p-dw8a-3ade"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
         }
       ]
     },
@@ -1250,35 +914,23 @@
       "referenceIdentifiers": [
         {
           "type": "cve",
-          "id": "2024-10002"
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "43d6-me59-jyka"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10000"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "779c-2zf2-wce7"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1293,36 +945,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "qzb8-nq6n-7vj8"
-        },
-        {
-          "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
           "type": "cve",
           "id": "2024-10002"
         },
         {
           "type": "ghsa",
-          "id": "22xv-d5k5-wmc5"
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2024-10004"
+          "id": "2022-10000"
         }
       ]
     },
@@ -1337,36 +977,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "ghsa",
-          "id": "dzja-kfdp-2zzk"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "v5vf-jp76-9vtj"
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
-          "type": "cwe",
-          "id": "250"
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         }
       ]
     },
@@ -1381,36 +1009,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "sctc-kmsb-aaw2"
-        },
-        {
-          "type": "ghsa",
-          "id": "njww-bnk8-w5z3"
-        },
-        {
           "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
         }
       ]
     },
@@ -1425,36 +1041,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "ghsa",
-          "id": "r4af-998z-2cdw"
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "rkxb-f8bz-a7m9"
+          "id": "jtmv-kq38-a485"
         },
         {
-          "type": "cve",
-          "id": "2021-10000"
+          "type": "cwe",
+          "id": "94"
         }
       ]
     },
@@ -1470,35 +1074,23 @@
       "referenceIdentifiers": [
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "dqpx-47d6-ywvv"
+          "id": "cpqp-4nj9-faxp"
         },
         {
           "type": "cve",
-          "id": "2019-10000"
+          "id": "2020-10000"
         },
         {
           "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "jahe-pxa5-fa5q"
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         }
       ]
     },
@@ -1513,36 +1105,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
           "type": "ghsa",
-          "id": "kaek-fksk-e3e7"
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "c2tm-4kd9-d98p"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10004"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1557,36 +1137,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "d7fj-hszw-cqak"
-        },
-        {
-          "type": "ghsa",
-          "id": "smsd-4vvp-4mhb"
+          "type": "cve",
+          "id": "2022-10002"
         },
         {
           "type": "cve",
-          "id": "2025-10002"
+          "id": "2023-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2020-10000"
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
         }
       ]
     },
@@ -1601,36 +1169,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "qf3n-qah5-a3px"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "vcce-6hdn-4a6t"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1646,35 +1202,23 @@
       "referenceIdentifiers": [
         {
           "type": "ghsa",
-          "id": "sme2-4zhb-hk6m"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "h7d6-yxxk-g5cz"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
-          "id": "2019-10004"
+          "id": "2025-10000"
         },
         {
-          "type": "ghsa",
-          "id": "ck7p-dw8a-3ade"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
         }
       ]
     },
@@ -1690,35 +1234,23 @@
       "referenceIdentifiers": [
         {
           "type": "cve",
-          "id": "2024-10002"
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "43d6-me59-jyka"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10000"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "779c-2zf2-wce7"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1733,36 +1265,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "qzb8-nq6n-7vj8"
-        },
-        {
-          "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
           "type": "cve",
           "id": "2024-10002"
         },
         {
           "type": "ghsa",
-          "id": "22xv-d5k5-wmc5"
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2024-10004"
+          "id": "2022-10000"
         }
       ]
     },
@@ -1777,36 +1297,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "ghsa",
-          "id": "dzja-kfdp-2zzk"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "v5vf-jp76-9vtj"
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
-          "type": "cwe",
-          "id": "250"
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         }
       ]
     },
@@ -1821,36 +1329,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "sctc-kmsb-aaw2"
-        },
-        {
-          "type": "ghsa",
-          "id": "njww-bnk8-w5z3"
-        },
-        {
           "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
         }
       ]
     },
@@ -1865,36 +1361,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "ghsa",
-          "id": "r4af-998z-2cdw"
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2024-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "rkxb-f8bz-a7m9"
+          "id": "jtmv-kq38-a485"
         },
         {
-          "type": "cve",
-          "id": "2021-10000"
+          "type": "cwe",
+          "id": "94"
         }
       ]
     },
@@ -1910,35 +1394,23 @@
       "referenceIdentifiers": [
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "ghsa",
-          "id": "dqpx-47d6-ywvv"
+          "id": "cpqp-4nj9-faxp"
         },
         {
           "type": "cve",
-          "id": "2019-10000"
+          "id": "2020-10000"
         },
         {
           "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "jahe-pxa5-fa5q"
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "2021-10002"
         }
       ]
     },
@@ -1953,36 +1425,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
           "type": "ghsa",
-          "id": "kaek-fksk-e3e7"
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "c2tm-4kd9-d98p"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2025-10004"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -1997,36 +1457,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "ghsa",
-          "id": "d7fj-hszw-cqak"
-        },
-        {
-          "type": "ghsa",
-          "id": "smsd-4vvp-4mhb"
+          "type": "cve",
+          "id": "2022-10002"
         },
         {
           "type": "cve",
-          "id": "2025-10002"
+          "id": "2023-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2020-10000"
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
         }
       ]
     },
@@ -2041,36 +1489,24 @@
       "status": "open",
       "referenceIdentifiers": [
         {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "qf3n-qah5-a3px"
-        },
-        {
-          "type": "cwe",
-          "id": "119"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10002"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2020-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "vcce-6hdn-4a6t"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -2086,35 +1522,23 @@
       "referenceIdentifiers": [
         {
           "type": "ghsa",
-          "id": "sme2-4zhb-hk6m"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10000"
-        },
-        {
-          "type": "cve",
-          "id": "2019-10002"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
+          "id": "h7d6-yxxk-g5cz"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
-          "id": "2019-10004"
+          "id": "2025-10000"
         },
         {
-          "type": "ghsa",
-          "id": "ck7p-dw8a-3ade"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
         }
       ]
     },
@@ -2130,35 +1554,23 @@
       "referenceIdentifiers": [
         {
           "type": "cve",
-          "id": "2024-10002"
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
         },
         {
           "type": "cwe",
-          "id": "119"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
-        },
-        {
-          "type": "ghsa",
-          "id": "43d6-me59-jyka"
-        },
-        {
-          "type": "cve",
-          "id": "2022-10000"
-        },
-        {
-          "type": "cwe",
-          "id": "250"
-        },
-        {
-          "type": "cve",
-          "id": "2023-10004"
-        },
-        {
-          "type": "ghsa",
-          "id": "779c-2zf2-wce7"
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -2173,20 +1585,268 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cwe",
-          "id": "119"
+          "type": "cve",
+          "id": "2024-10002"
         },
         {
           "type": "ghsa",
-          "id": "qzb8-nq6n-7vj8"
+          "id": "nfh5-8ck8-84m8"
         },
         {
           "type": "snyk",
-          "id": "JAVA-NUMPY-400007"
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cwe",
-          "id": "250"
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 1 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 2 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 3 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 4 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 5 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10002"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 6 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 7 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "h7d6-yxxk-g5cz"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
         },
         {
           "type": "cve",
@@ -2197,12 +1857,1352 @@
           "id": "2024-10002"
         },
         {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 8 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
           "type": "ghsa",
-          "id": "22xv-d5k5-wmc5"
+          "id": "4g4r-r5gj-9we8"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
         },
         {
           "type": "cve",
-          "id": "2024-10004"
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 9 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 1 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 2 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 3 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 4 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 5 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10002"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 6 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 7 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "h7d6-yxxk-g5cz"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 8 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 9 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 1 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 2 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 3 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 4 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 5 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10002"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 6 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 7 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "h7d6-yxxk-g5cz"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 8 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 9 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 1 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 2 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 3 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 4 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 5 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10002"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 6 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 7 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "h7d6-yxxk-g5cz"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 8 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 9 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 1 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 2 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 3 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 4 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 5 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10002"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "cz6g-rv66-pkdk"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 6 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "5wrs-ca62-qqzr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 7 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "h7d6-yxxk-g5cz"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 8 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "4g4r-r5gj-9we8"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 9 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "nfh5-8ck8-84m8"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10000"
         }
       ]
     }
