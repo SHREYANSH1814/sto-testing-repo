@@ -48,6 +48,7 @@ jobs:
           show-summary: true
 
       - name: Use scan output variables
+        if: always()
         shell: bash
         run: |
           echo "===== STO Scan Output Variables ====="
