@@ -37,6 +37,8 @@ jobs:
           scan-mode: orchestration
           image-name: "nginx:latest"  
           image-tag: "latest"
+          scan-config: fs
+          target-type: repository
 
 
           workspace: .
