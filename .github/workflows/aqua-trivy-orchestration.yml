@@ -45,10 +45,11 @@ jobs:
           docker-image-tag: "dev"
           image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
           image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          image-domain: "jfrog"
         
 
           fail-on-severity: None
-          show-summary: false
+          show-summary: True
 
       - name: Use scan output variables
         if: always()
