@@ -41,7 +41,8 @@ jobs:
           scan-config: default
           target-type: container
           target-name: "shreyansh/container1"
-          target-variant: "dev"
+          target-variant: "latest"
+          docker-image-tag: "dev"
 
           fail-on-severity: NONE
           show-summary: true
