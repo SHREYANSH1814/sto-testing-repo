@@ -35,7 +35,7 @@ jobs:
 
           scanner: aqua_trivy
           scan-mode: orchestration
-          image-name: "nginx:latest"  
+          image-name: "nginx"  
           image-tag: "latest"
           scan-config: default
           target-type: container
