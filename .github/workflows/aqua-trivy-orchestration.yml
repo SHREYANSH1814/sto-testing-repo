@@ -40,6 +40,8 @@ jobs:
           image-tag: "latest"
           scan-config: default
           target-type: container
+          target-name: "shreyansh/container1"
+          target-variant: "dev"
 
           fail-on-severity: NONE
           show-summary: true
