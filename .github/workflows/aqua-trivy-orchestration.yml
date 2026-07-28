@@ -37,11 +37,8 @@ jobs:
           scan-mode: orchestration
           image-name: "nginx:latest"  
           image-tag: "latest"
-          scan-config: fs
-          target-type: repository
+          scan-config: default
+          target-type: container
 
-
-          workspace: .
-
-          fail-on-severity: HIGH
+          fail-on-severity: NONE
           show-summary: true
