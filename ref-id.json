@@ -13,7 +13,7 @@
       "fileName": "src/module0/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 5,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -425,7 +425,7 @@
       "fileName": "src/module1/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 3,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -837,7 +837,7 @@
       "fileName": "src/module2/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 0,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -1249,7 +1249,7 @@
       "fileName": "src/module3/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 3,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -2073,7 +2073,7 @@
       "fileName": "src/module5/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 4,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -2485,7 +2485,7 @@
       "fileName": "src/module6/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 6,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -2897,7 +2897,7 @@
       "fileName": "src/module7/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 2,
       "status": "open",
       "referenceIdentifiers": [
         {
@@ -3721,7 +3721,7 @@
       "fileName": "src/module9/file0.java",
       "remediationSteps": "Upgrade to latest version.",
       "risk": "critical",
-      "severity": 10,
+      "severity": 8,
       "status": "open",
       "referenceIdentifiers": [
         {
