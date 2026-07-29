@@ -1,0 +1,8130 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fqj5-yp63-dje3"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400164"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10032"
+        },
+        {
+          "type": "ghsa",
+          "id": "57j6-7fw4-tv4n"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10008"
+        },
+        {
+          "type": "ghsa",
+          "id": "5czt-99k4-qtzh"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400170"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10050"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10146"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400166"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10106"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400206"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10042"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "x96s-7e7x-sepr"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400224"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "3b3g-xh3h-v44v"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kev-b8sm-bfph"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400236"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10018"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10098"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400200"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10128"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10040"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10072"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400212"
+        },
+        {
+          "type": "ghsa",
+          "id": "nda4-schp-vb2w"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10016"
+        },
+        {
+          "type": "ghsa",
+          "id": "tte3-xkq8-gwn6"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400168"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10028"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10112"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400180"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10036"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10076"
+        },
+        {
+          "type": "ghsa",
+          "id": "pwvw-s8tp-fjx5"
+        },
+        {
+          "type": "ghsa",
+          "id": "66pk-dkg9-jyp5"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400214"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10092"
+        },
+        {
+          "type": "ghsa",
+          "id": "syrn-anm4-y9bt"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400218"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10026"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10024"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10150"
+        },
+        {
+          "type": "ghsa",
+          "id": "szvv-dfv6-cpqp"
+        },
+        {
+          "type": "ghsa",
+          "id": "xzjx-kn4e-w79b"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400178"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400230"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10080"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10030"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400190"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400216"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10068"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10116"
+        },
+        {
+          "type": "ghsa",
+          "id": "95nf-xy2m-j4jh"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400196"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400222"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10108"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10088"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10134"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10140"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10094"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10148"
+        },
+        {
+          "type": "ghsa",
+          "id": "vh9x-3nt3-c5z6"
+        },
+        {
+          "type": "ghsa",
+          "id": "5mvh-7d6y-xxkg"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400232"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10056"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10074"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10022"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10004"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10114"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "e4nc-ev3n-n3qt"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10120"
+        },
+        {
+          "type": "ghsa",
+          "id": "6vfr-vasg-9fq9"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10104"
+        },
+        {
+          "type": "ghsa",
+          "id": "cxz3-cppc-jwzr"
+        },
+        {
+          "type": "ghsa",
+          "id": "jrsw-gagd-psqv"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400192"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10048"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10132"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "5ny6-hmyx-rpqd"
+        },
+        {
+          "type": "ghsa",
+          "id": "9kz3-kcsf-z5w7"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10152"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10070"
+        },
+        {
+          "type": "ghsa",
+          "id": "xsap-qsng-783r"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10066"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "ghsa",
+          "id": "5c49-afjb-zthp"
+        },
+        {
+          "type": "ghsa",
+          "id": "dsy2-wkgy-adwv"
+        },
+        {
+          "type": "ghsa",
+          "id": "42bh-agjq-wk9g"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10046"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-SPRING-400188"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400228"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400176"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10086"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10096"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10156"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10144"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10118"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400174"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10062"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10142"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10044"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400162"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10136"
+        },
+        {
+          "type": "ghsa",
+          "id": "jx5w-9wr6-a8cp"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-SPRING-400204"
+        },
+        {
+          "type": "ghsa",
+          "id": "6rjr-ekcz-6grv"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10138"
+        },
+        {
+          "type": "ghsa",
+          "id": "j24r-9egv-x62d"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10090"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400220"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "287"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400184"
+        },
+        {
+          "type": "ghsa",
+          "id": "wrsc-a62q-qzrh"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10006"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "ghsa",
+          "id": "pdwf-932j-k2q3"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-RAILS-400238"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400202"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "ghsa",
+          "id": "eykk-34nj-b9pb"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400234"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400208"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10060"
+        },
+        {
+          "type": "ghsa",
+          "id": "6fhj-brft-wexf"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10154"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10052"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10124"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-LODASH-400160"
+        },
+        {
+          "type": "ghsa",
+          "id": "63zm-sfwk-qdd6"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10038"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10100"
+        },
+        {
+          "type": "cwe",
+          "id": "352"
+        },
+        {
+          "type": "cwe",
+          "id": "79"
+        },
+        {
+          "type": "ghsa",
+          "id": "3fht-pyr7-eyxm"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400186"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10012"
+        },
+        {
+          "type": "ghsa",
+          "id": "n5xh-pbpj-7ndr"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10054"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10158"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10082"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-MIXINDEEP-400210"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-MIXINDEEP-400194"
+        },
+        {
+          "type": "ghsa",
+          "id": "cw46-d68e-bf3t"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10084"
+        },
+        {
+          "type": "cwe",
+          "id": "502"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10130"
+        },
+        {
+          "type": "snyk",
+          "id": "JS-RAILS-400198"
+        },
+        {
+          "type": "cwe",
+          "id": "798"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10110"
+        },
+        {
+          "type": "ghsa",
+          "id": "96qd-3g7x-ctw8"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10058"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-RAILS-400182"
+        },
+        {
+          "type": "ghsa",
+          "id": "4nj9-faxp-8bs3"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10064"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10122"
+        },
+        {
+          "type": "cve",
+          "id": "2025-10078"
+        },
+        {
+          "type": "ghsa",
+          "id": "fcwa-yevg-r3y8"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10010"
+        },
+        {
+          "type": "cve",
+          "id": "2022-10102"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10126"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10014"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400226"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10020"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400172"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10034"
+        }
+      ]
+    }
+  ]
+}
