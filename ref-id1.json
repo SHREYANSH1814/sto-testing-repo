@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    }
+  ]
+}
