@@ -1,0 +1,8010 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 1 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 2 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 3 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0",
+      "issueDescription": "Occurrence 4 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 1 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 2 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 3 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1",
+      "issueDescription": "Occurrence 4 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 1 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 2 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 3 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2",
+      "issueDescription": "Occurrence 4 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 1 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 2 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 3 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3",
+      "issueDescription": "Occurrence 4 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 1 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 2 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 3 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4",
+      "issueDescription": "Occurrence 4 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 1 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 2 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 3 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5",
+      "issueDescription": "Occurrence 4 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 1 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 2 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 3 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6",
+      "issueDescription": "Occurrence 4 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 1 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 2 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 3 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7",
+      "issueDescription": "Occurrence 4 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 1 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 2 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 3 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8",
+      "issueDescription": "Occurrence 4 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 1 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 2 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 3 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9",
+      "issueDescription": "Occurrence 4 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10",
+      "issueDescription": "Occurrence 0 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10",
+      "issueDescription": "Occurrence 1 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10",
+      "issueDescription": "Occurrence 2 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10",
+      "issueDescription": "Occurrence 3 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10",
+      "issueDescription": "Occurrence 4 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11",
+      "issueDescription": "Occurrence 0 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11",
+      "issueDescription": "Occurrence 1 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11",
+      "issueDescription": "Occurrence 2 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11",
+      "issueDescription": "Occurrence 3 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11",
+      "issueDescription": "Occurrence 4 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12",
+      "issueDescription": "Occurrence 0 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12",
+      "issueDescription": "Occurrence 1 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12",
+      "issueDescription": "Occurrence 2 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12",
+      "issueDescription": "Occurrence 3 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12",
+      "issueDescription": "Occurrence 4 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13",
+      "issueDescription": "Occurrence 0 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13",
+      "issueDescription": "Occurrence 1 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13",
+      "issueDescription": "Occurrence 2 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13",
+      "issueDescription": "Occurrence 3 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13",
+      "issueDescription": "Occurrence 4 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14",
+      "issueDescription": "Occurrence 0 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14",
+      "issueDescription": "Occurrence 1 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14",
+      "issueDescription": "Occurrence 2 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14",
+      "issueDescription": "Occurrence 3 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14",
+      "issueDescription": "Occurrence 4 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15",
+      "issueDescription": "Occurrence 0 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15",
+      "issueDescription": "Occurrence 1 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15",
+      "issueDescription": "Occurrence 2 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15",
+      "issueDescription": "Occurrence 3 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15",
+      "issueDescription": "Occurrence 4 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16",
+      "issueDescription": "Occurrence 0 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16",
+      "issueDescription": "Occurrence 1 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16",
+      "issueDescription": "Occurrence 2 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16",
+      "issueDescription": "Occurrence 3 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16",
+      "issueDescription": "Occurrence 4 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17",
+      "issueDescription": "Occurrence 0 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17",
+      "issueDescription": "Occurrence 1 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17",
+      "issueDescription": "Occurrence 2 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17",
+      "issueDescription": "Occurrence 3 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17",
+      "issueDescription": "Occurrence 4 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18",
+      "issueDescription": "Occurrence 0 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18",
+      "issueDescription": "Occurrence 1 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18",
+      "issueDescription": "Occurrence 2 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18",
+      "issueDescription": "Occurrence 3 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18",
+      "issueDescription": "Occurrence 4 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19",
+      "issueDescription": "Occurrence 0 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19",
+      "issueDescription": "Occurrence 1 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19",
+      "issueDescription": "Occurrence 2 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19",
+      "issueDescription": "Occurrence 3 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19",
+      "issueDescription": "Occurrence 4 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20",
+      "issueDescription": "Occurrence 0 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20",
+      "issueDescription": "Occurrence 1 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20",
+      "issueDescription": "Occurrence 2 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20",
+      "issueDescription": "Occurrence 3 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20",
+      "issueDescription": "Occurrence 4 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21",
+      "issueDescription": "Occurrence 0 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21",
+      "issueDescription": "Occurrence 1 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21",
+      "issueDescription": "Occurrence 2 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21",
+      "issueDescription": "Occurrence 3 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21",
+      "issueDescription": "Occurrence 4 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22",
+      "issueDescription": "Occurrence 0 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22",
+      "issueDescription": "Occurrence 1 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22",
+      "issueDescription": "Occurrence 2 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22",
+      "issueDescription": "Occurrence 3 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22",
+      "issueDescription": "Occurrence 4 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23",
+      "issueDescription": "Occurrence 0 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23",
+      "issueDescription": "Occurrence 1 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23",
+      "issueDescription": "Occurrence 2 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23",
+      "issueDescription": "Occurrence 3 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23",
+      "issueDescription": "Occurrence 4 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24",
+      "issueDescription": "Occurrence 0 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24",
+      "issueDescription": "Occurrence 1 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24",
+      "issueDescription": "Occurrence 2 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24",
+      "issueDescription": "Occurrence 3 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24",
+      "issueDescription": "Occurrence 4 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25",
+      "issueDescription": "Occurrence 0 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25",
+      "issueDescription": "Occurrence 1 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25",
+      "issueDescription": "Occurrence 2 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25",
+      "issueDescription": "Occurrence 3 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25",
+      "issueDescription": "Occurrence 4 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26",
+      "issueDescription": "Occurrence 0 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26",
+      "issueDescription": "Occurrence 1 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26",
+      "issueDescription": "Occurrence 2 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26",
+      "issueDescription": "Occurrence 3 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26",
+      "issueDescription": "Occurrence 4 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27",
+      "issueDescription": "Occurrence 0 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27",
+      "issueDescription": "Occurrence 1 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27",
+      "issueDescription": "Occurrence 2 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27",
+      "issueDescription": "Occurrence 3 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27",
+      "issueDescription": "Occurrence 4 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28",
+      "issueDescription": "Occurrence 0 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28",
+      "issueDescription": "Occurrence 1 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28",
+      "issueDescription": "Occurrence 2 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28",
+      "issueDescription": "Occurrence 3 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28",
+      "issueDescription": "Occurrence 4 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29",
+      "issueDescription": "Occurrence 0 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29",
+      "issueDescription": "Occurrence 1 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29",
+      "issueDescription": "Occurrence 2 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29",
+      "issueDescription": "Occurrence 3 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29",
+      "issueDescription": "Occurrence 4 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30",
+      "issueDescription": "Occurrence 0 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30",
+      "issueDescription": "Occurrence 1 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30",
+      "issueDescription": "Occurrence 2 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30",
+      "issueDescription": "Occurrence 3 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30",
+      "issueDescription": "Occurrence 4 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31",
+      "issueDescription": "Occurrence 0 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31",
+      "issueDescription": "Occurrence 1 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31",
+      "issueDescription": "Occurrence 2 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31",
+      "issueDescription": "Occurrence 3 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31",
+      "issueDescription": "Occurrence 4 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32",
+      "issueDescription": "Occurrence 0 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32",
+      "issueDescription": "Occurrence 1 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32",
+      "issueDescription": "Occurrence 2 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32",
+      "issueDescription": "Occurrence 3 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32",
+      "issueDescription": "Occurrence 4 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33",
+      "issueDescription": "Occurrence 0 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33",
+      "issueDescription": "Occurrence 1 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33",
+      "issueDescription": "Occurrence 2 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33",
+      "issueDescription": "Occurrence 3 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33",
+      "issueDescription": "Occurrence 4 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34",
+      "issueDescription": "Occurrence 0 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34",
+      "issueDescription": "Occurrence 1 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34",
+      "issueDescription": "Occurrence 2 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34",
+      "issueDescription": "Occurrence 3 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34",
+      "issueDescription": "Occurrence 4 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35",
+      "issueDescription": "Occurrence 0 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35",
+      "issueDescription": "Occurrence 1 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35",
+      "issueDescription": "Occurrence 2 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35",
+      "issueDescription": "Occurrence 3 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35",
+      "issueDescription": "Occurrence 4 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36",
+      "issueDescription": "Occurrence 0 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36",
+      "issueDescription": "Occurrence 1 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36",
+      "issueDescription": "Occurrence 2 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36",
+      "issueDescription": "Occurrence 3 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36",
+      "issueDescription": "Occurrence 4 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37",
+      "issueDescription": "Occurrence 0 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37",
+      "issueDescription": "Occurrence 1 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37",
+      "issueDescription": "Occurrence 2 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37",
+      "issueDescription": "Occurrence 3 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37",
+      "issueDescription": "Occurrence 4 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38",
+      "issueDescription": "Occurrence 0 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38",
+      "issueDescription": "Occurrence 1 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38",
+      "issueDescription": "Occurrence 2 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38",
+      "issueDescription": "Occurrence 3 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38",
+      "issueDescription": "Occurrence 4 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39",
+      "issueDescription": "Occurrence 0 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39",
+      "issueDescription": "Occurrence 1 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39",
+      "issueDescription": "Occurrence 2 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39",
+      "issueDescription": "Occurrence 3 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39",
+      "issueDescription": "Occurrence 4 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40",
+      "issueDescription": "Occurrence 0 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40",
+      "issueDescription": "Occurrence 1 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40",
+      "issueDescription": "Occurrence 2 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40",
+      "issueDescription": "Occurrence 3 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40",
+      "issueDescription": "Occurrence 4 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41",
+      "issueDescription": "Occurrence 0 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41",
+      "issueDescription": "Occurrence 1 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41",
+      "issueDescription": "Occurrence 2 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41",
+      "issueDescription": "Occurrence 3 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41",
+      "issueDescription": "Occurrence 4 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42",
+      "issueDescription": "Occurrence 0 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42",
+      "issueDescription": "Occurrence 1 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42",
+      "issueDescription": "Occurrence 2 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42",
+      "issueDescription": "Occurrence 3 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42",
+      "issueDescription": "Occurrence 4 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43",
+      "issueDescription": "Occurrence 0 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43",
+      "issueDescription": "Occurrence 1 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43",
+      "issueDescription": "Occurrence 2 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43",
+      "issueDescription": "Occurrence 3 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43",
+      "issueDescription": "Occurrence 4 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44",
+      "issueDescription": "Occurrence 0 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44",
+      "issueDescription": "Occurrence 1 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44",
+      "issueDescription": "Occurrence 2 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44",
+      "issueDescription": "Occurrence 3 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44",
+      "issueDescription": "Occurrence 4 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45",
+      "issueDescription": "Occurrence 0 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45",
+      "issueDescription": "Occurrence 1 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45",
+      "issueDescription": "Occurrence 2 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45",
+      "issueDescription": "Occurrence 3 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45",
+      "issueDescription": "Occurrence 4 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46",
+      "issueDescription": "Occurrence 0 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46",
+      "issueDescription": "Occurrence 1 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46",
+      "issueDescription": "Occurrence 2 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46",
+      "issueDescription": "Occurrence 3 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46",
+      "issueDescription": "Occurrence 4 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47",
+      "issueDescription": "Occurrence 0 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47",
+      "issueDescription": "Occurrence 1 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47",
+      "issueDescription": "Occurrence 2 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47",
+      "issueDescription": "Occurrence 3 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47",
+      "issueDescription": "Occurrence 4 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48",
+      "issueDescription": "Occurrence 0 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48",
+      "issueDescription": "Occurrence 1 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48",
+      "issueDescription": "Occurrence 2 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48",
+      "issueDescription": "Occurrence 3 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48",
+      "issueDescription": "Occurrence 4 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49",
+      "issueDescription": "Occurrence 0 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49",
+      "issueDescription": "Occurrence 1 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "ghsa",
+          "id": "t2tp-c6yc-44vm"
+        },
+        {
+          "type": "cve",
+          "id": "2023-10000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49",
+      "issueDescription": "Occurrence 2 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2022-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "jtmv-kq38-a485"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49",
+      "issueDescription": "Occurrence 3 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        },
+        {
+          "type": "ghsa",
+          "id": "cpqp-4nj9-faxp"
+        },
+        {
+          "type": "cve",
+          "id": "2020-10000"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2021-10002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49",
+      "issueDescription": "Occurrence 4 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-10000"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        },
+        {
+          "type": "ghsa",
+          "id": "te3x-kq8g-wn66"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
+        }
+      ]
+    }
+  ]
+}
