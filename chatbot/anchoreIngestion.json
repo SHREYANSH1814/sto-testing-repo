@@ -1,0 +1,3541 @@
+{
+    "metadata": {
+        "registry": "docker.io",
+        "repository": "harness/manager-signed",
+        "tag": "79231",
+        "imageDigest": "sha256:5dc235f12895f047c2f6810cf2ca329a2262d559693375bb7238b6cd068cae39",
+        "timestamp": "2023-07-18T15:41:23.574Z"
+    },
+    "securityEvaluation": [
+        {
+            "vulnerabilityId": "CVE-2021-21696",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21696"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000362",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000362"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000353",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000353"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21685",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21685"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-7658",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-7658"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21689",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21689"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-20445",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-20445"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-7768",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:grpc-google-iam-v1",
+            "package": "grpc-google-iam-v1-1.6.7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7768"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21687",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21687"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-7657",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-7657"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21692",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21692"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-27853",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-27853"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-0788",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0788"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21694",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21694"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000861",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000861"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-0791",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0791"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-26291",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:maven-model",
+            "package": "maven-model-3.6.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-26291"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-9299",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-9299"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21697",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21697"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-41093",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-41093"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21693",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21693"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-20444",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-20444"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21691",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21691"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21690",
+            "severity": "Critical",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21690"
+        },
+        {
+            "vulnerabilityId": "GHSA-3vqj-43w4-2q58",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:json",
+            "package": "json-20160810",
+            "fixAvailable": "20230227",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://github.com/advisories/GHSA-3vqj-43w4-2q58"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2048",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2048"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2048",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2048"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21605",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21605"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-0785",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-0785"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10353",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10353"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000356",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000356"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-37136",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-37136"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-1003003",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003003"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5325",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5325"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21695",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21695"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-34174",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-34174"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21604",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21604"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-28165",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28165"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-15258",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-15258"
+        },
+        {
+            "vulnerabilityId": "CVE-2011-5034",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:geronimo-ws-metadata_2.0_spec",
+            "package": "geronimo-ws-metadata_2.0_spec-1.1.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2011-5034"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2063",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2063"
+        },
+        {
+            "vulnerabilityId": "CVE-2009-5045",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2009-5045"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27901",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27901"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-41881",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-41881"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2099",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2099"
+        },
+        {
+            "vulnerabilityId": "CVE-2011-5034",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:geronimo-jta_1.1_spec",
+            "package": "geronimo-jta_1.1_spec-1.1.1",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2011-5034"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999002",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999002"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3726",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3726"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999043",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999043"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3666",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3666"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-8103",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-8103"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-7537",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-7537"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000394",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000394"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-1003049",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003049"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-7656",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-7656"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2048",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27899",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27899"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000391",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000391"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000504",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000504"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27900",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27900"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-0792",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0792"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000863",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000863"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2048",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2048"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000410",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000410"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1814",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1814"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-8909",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-8909"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-27216",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-27216"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-7539",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-7539"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000393",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000393"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0329",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0329"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2608",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2608"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-0538",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-0538"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2048",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2048"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10384",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10384"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-2156",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-2156"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2160",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2160"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21686",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21686"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999001",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999001"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-4438",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-4438"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000354",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000354"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-37137",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-37137"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21688",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21688"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-1003004",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003004"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-9735",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-9735"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-7538",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-7538"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000194",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000194"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-16869",
+            "severity": "High",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16869"
+        },
+        {
+            "vulnerabilityId": "GHSA-qw69-rqj8-6qw8",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-server",
+            "package": "jetty-server-9.4.48.v20220622",
+            "fixAvailable": "9.4.51.v20230217",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://github.com/advisories/GHSA-qw69-rqj8-6qw8"
+        },
+        {
+            "vulnerabilityId": "GHSA-7g45-4rm6-3mm3",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:guava",
+            "package": "guava-31.1-jre",
+            "fixAvailable": "32.0.0",
+            "detectedAt": "2023-06-15T13:57:08+00:00",
+            "link": "https://github.com/advisories/GHSA-7g45-4rm6-3mm3"
+        },
+        {
+            "vulnerabilityId": "GHSA-jgvc-jfgh-rjvv",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jose4j",
+            "package": "jose4j-0.7.0",
+            "fixAvailable": "0.9.3",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://github.com/advisories/GHSA-jgvc-jfgh-rjvv"
+        },
+        {
+            "vulnerabilityId": "GHSA-g8ph-74m6-8m7r",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:clickhouse-jdbc",
+            "package": "clickhouse-jdbc-0.3.2-patch11",
+            "fixAvailable": "0.4.6",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://github.com/advisories/GHSA-g8ph-74m6-8m7r"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27535",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8_8.2",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27535"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27535",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8_8.2",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27535"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3663",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3663"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999046",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999046"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29383",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libblkid-2.32.1-39.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29383"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2062",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2062"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10354",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10354"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-32665",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-32665"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2100",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2100"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1810",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1810"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2231",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2231"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2101",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2101"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21608",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21608"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1812",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1812"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5318",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5318"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21409",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21409"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-1667",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libssh-0.9.6-3.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-1667"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-23625",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23625"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3664",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3664"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5324",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5324"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21301",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21301"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2598",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2598"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-43797",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-43797"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3488",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3488"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3665",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3665"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10405",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10405"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-0790",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0790"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000068",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000068"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000169",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000169"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-28169",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28169"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000192",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000192"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2223",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2223"
+        },
+        {
+            "vulnerabilityId": "CVE-2009-5046",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2009-5046"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21640",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21640"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3662",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3662"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5320",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5320"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10383",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10383"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3723",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3723"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000193",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000193"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-webapp",
+            "package": "jetty-webapp-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2064",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2064"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999006",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999006"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2251",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2251"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999045",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999045"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2601",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2601"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2221",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2221"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-security",
+            "package": "jetty-security-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-28169",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28169"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-http",
+            "package": "jetty-http-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35939",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35939"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1813",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1813"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26604",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "systemd-libs-239-68.el8_7.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-26604"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34429",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34429"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27904",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27904"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29469",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libxml2-2.9.7-15.el8_7.1",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29469"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-28169",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28169"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-4439",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-4439"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2606",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2606"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-28321",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-28321"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-security",
+            "package": "jetty-security-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21606",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21606"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21602",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21602"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-28169",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28169"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000395",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000395"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21682",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21682"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-30571",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libarchive-3.3.3-4.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-30571"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27902",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27902"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29383",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libmount-2.32.1-39.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29383"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-32755",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-32755"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3725",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3725"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-32732",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:grpc-google-iam-v1",
+            "package": "grpc-google-iam-v1-1.6.7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-16T15:30:05+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-32732"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999005",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999005"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000399",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000399"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2610",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2610"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000396",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000396"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21670",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21670"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000400",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000400"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-6073",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-6073"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999044",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999044"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5321",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5321"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21639",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21639"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-server",
+            "package": "jetty-alpn-server-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35938",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35938"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-2603",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcap-2.48-4.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-2603"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-0789",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0789"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3667",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3667"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2104",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2104"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-util",
+            "package": "jetty-util-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-7330",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-7330"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3722",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3722"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3724",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3724"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-http",
+            "package": "jetty-http-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000355",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000355"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21610",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21610"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-9634",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-9634"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999042",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999042"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-servlet",
+            "package": "jetty-servlet-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2612",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2612"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-client",
+            "package": "jetty-client-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-xml",
+            "package": "jetty-xml-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35937",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-libs-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35937"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3681",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3681"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0687",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "glibc-common-2.28-225.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0687"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-2283",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libssh-config-0.9.6-3.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-2283"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999007",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999007"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21603",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21603"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-9635",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-9635"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000392",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000392"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-6356",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-6356"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3661",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3661"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-1667",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libssh-config-0.9.6-3.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-1667"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2105",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2105"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10401",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10401"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3727",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3727"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0330",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0330"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27536",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27536"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29491",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "ncurses-base-6.1-9.20180224.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29491"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2599",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2599"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35937",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35937"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-17383",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-17383"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000997",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000997"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0328",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0328"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000406",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000406"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-20612",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-20612"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999003",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999003"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-28321",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-28321"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29383",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libsmartcols-2.32.1-39.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29383"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5317",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5317"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999004",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999004"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2058",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2058"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2600",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2600"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1806",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1806"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2061",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2061"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0687",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "glibc-langpack-en-2.28-225.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0687"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-continuation",
+            "package": "jetty-continuation-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-client",
+            "package": "jetty-client-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000195",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000195"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-4440",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-4440"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2162",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2162"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2161",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2161"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2609",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2609"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-servlets",
+            "package": "jetty-servlets-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5326",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5326"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2230",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2230"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000864",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000864"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27536",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27536"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0687",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "glibc-minimal-langpack-2.28-225.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0687"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0327",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0327"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-xml",
+            "package": "jetty-xml-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1999047",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1999047"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5319",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5319"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21607",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21607"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29383",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libuuid-2.32.1-39.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29383"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2604",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2604"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-43673",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-43673"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-servlet",
+            "package": "jetty-servlet-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-util-ajax",
+            "package": "jetty-util-ajax-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2016-3721",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3721"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-continuation",
+            "package": "jetty-continuation-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-servlets",
+            "package": "jetty-servlets-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000398",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000398"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-util-ajax",
+            "package": "jetty-util-ajax-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27903",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-27903"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-32666",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-32666"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5323",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5323"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-24823",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24823"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2613",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2613"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2103",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2103"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-29491",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "ncurses-libs-6.1-9.20180224.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-29491"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2102",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2102"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21609",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21609"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10403",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10403"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-22737",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-22737"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-31009",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:wire-runtime",
+            "package": "wire-runtime-2.2.0",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-31009"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000408",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000408"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2163",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2163"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2611",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2611"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-util",
+            "package": "jetty-util-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-5322",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5322"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-3680",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3680"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2607",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2607"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21615",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21615"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10406",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10406"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34429",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34429"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000170",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000170"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21290",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21290"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-4441",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-4441"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34429",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34429"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21295",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:netty-reactive-streams",
+            "package": "netty-reactive-streams-2.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21295"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2060",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2060"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2066",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2066"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-io",
+            "package": "jetty-io-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-7536",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-7536"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0331",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0331"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-2283",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libssh-0.9.6-3.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-2283"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-1003050",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003050"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0687",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "glibc-2.28-225.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0687"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-6072",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-6072"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10402",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10402"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-server",
+            "package": "jetty-alpn-server-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2065",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2065"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35938",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-libs-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35938"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000067",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000067"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2602",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2602"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000862",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000862"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2222",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2222"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-webapp",
+            "package": "jetty-webapp-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000407",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000407"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21611",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21611"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-35939",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "rpm-libs-4.14.3-24.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-35939"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10352",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10352"
+        },
+        {
+            "vulnerabilityId": "CVE-2018-1000409",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000409"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0687",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "glibc-gconv-extra-2.28-225.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0687"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2059",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2059"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-28484",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libxml2-2.9.7-15.el8_7.1",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-28484"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-21683",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21683"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-24736",
+            "severity": "Medium",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "sqlite-libs-3.26.0-17.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2020-24736"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26048",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26048"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-26049",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-io",
+            "package": "jetty-io-9.4.48.v20220622",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26049"
+        },
+        {
+            "vulnerabilityId": "CVE-2019-10404",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10404"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2229",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2229"
+        },
+        {
+            "vulnerabilityId": "CVE-2020-2220",
+            "severity": "Medium",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-2220"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-43552",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-43552"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-35252",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-35252"
+        },
+        {
+            "vulnerabilityId": "GHSA-p26g-97m4-6q7c",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-server",
+            "package": "jetty-server-9.4.48.v20220622",
+            "fixAvailable": "9.4.51.v20230217",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://github.com/advisories/GHSA-p26g-97m4-6q7c"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-36227",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libarchive-3.3.3-4.el8",
+            "fixAvailable": "0:3.3.3-5.el8",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-36227"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-35252",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-35252"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-43552",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "0:7.61.1-30.el8",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-43552"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-2953",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "openldap-2.4.46-18.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-2953"
+        },
+        {
+            "vulnerabilityId": "CVE-2008-0732",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:geronimo-jta_1.1_spec",
+            "package": "geronimo-jta_1.1_spec-1.1.1",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2008-0732"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-0464",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "openssl-libs-1:1.1.1k-9.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-0464"
+        },
+        {
+            "vulnerabilityId": "CVE-2011-4344",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2011-4344"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1808",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1808"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-4899",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libzstd-1.4.4-1.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2022-4899"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-1000401",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000401"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2068",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2068"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-2602",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcap-2.48-4.el8",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-2602"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-0158",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0158"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27538",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libcurl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27538"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-44568",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "libsolv-0.7.20-4.el8_7",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2021-44568"
+        },
+        {
+            "vulnerabilityId": "CVE-2015-1807",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1807"
+        },
+        {
+            "vulnerabilityId": "CVE-2014-2067",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-2067"
+        },
+        {
+            "vulnerabilityId": "CVE-2008-0732",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:geronimo-ws-metadata_2.0_spec",
+            "package": "geronimo-ws-metadata_2.0_spec-1.1.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2008-0732"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34428",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34428"
+        },
+        {
+            "vulnerabilityId": "CVE-2013-2033",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-2033"
+        },
+        {
+            "vulnerabilityId": "CVE-2012-6074",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-6074"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2047",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2047"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2047",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-server",
+            "package": "jetty-alpn-java-server-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2047"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34428",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34428"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2047",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2047"
+        },
+        {
+            "vulnerabilityId": "CVE-2023-27538",
+            "severity": "Low",
+            "packageType": "rpm",
+            "path": "pkgdb",
+            "package": "curl-7.61.1-25.el8_7.3",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://access.redhat.com/security/cve/CVE-2023-27538"
+        },
+        {
+            "vulnerabilityId": "CVE-2022-2047",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-java-client",
+            "package": "jetty-alpn-java-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2047"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34428",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-setuid-java",
+            "package": "jetty-setuid-java-1.0.4",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34428"
+        },
+        {
+            "vulnerabilityId": "CVE-2021-34428",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jetty-alpn-client",
+            "package": "jetty-alpn-client-9.4.39.v20210325",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-34428"
+        },
+        {
+            "vulnerabilityId": "CVE-2017-2603",
+            "severity": "Low",
+            "packageType": "java",
+            "path": "/opt/harness/rest-capsule.jar:jenkins-client",
+            "package": "jenkins-client-0.3.9",
+            "fixAvailable": "None",
+            "detectedAt": "2023-06-13T18:45:54+00:00",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2603"
+        }
+    ]
+}

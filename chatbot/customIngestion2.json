@@ -1,0 +1,84 @@
+
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "MyCustomScanner"
+  },
+  "issues": [
+     {
+      "packageName": "package hassan/repo1112",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Civa issue one occurence Remediate civa yes",
+      "issueDescription": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 5,
+      "status": "open",
+      
+      "referenceIdentifiers": [
+        {
+          "type": "CVe",
+          "id": "2025-6204"
+        }
+      ]
+    },
+    {
+      "packageName": "package hassan/repo1112",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Civa issue one occurence Reemdiate civa yes",
+      "issueDescription": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 5,
+      "status": "open",
+      
+      "referenceIdentifiers": [
+        {
+          "type": "CVe",
+          "id": "2026-2311"
+        }
+      ]
+    },
+    {
+      "packageName": "package hassan/repo1114",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Civa issue one occurence Remediate no",
+      "issueDescription": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 5,
+      "status": "open",
+      
+      "referenceIdentifiers": [
+        {
+          "type": "CVe",
+          "id": "2024-6299"
+        }
+      ]
+    },
+    {
+      "packageName": "package hassan/repo1114",
+      "subproduct": "MyCustomScanTool",
+      "issueName": "Civa issue one occurence Reemdiate no",
+      "issueDescription": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "fileName": "file1.java",
+      "remediationSteps": "Fix me fast.",
+      "risk": "low",
+      "severity": 5,
+      "status": "open",
+      
+      "referenceIdentifiers": [
+        {
+          "type": "CVe",
+          "id": "2026-2311"
+        }
+      ]
+    }
+
+  ]
+}
