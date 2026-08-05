@@ -46,6 +46,36 @@
         }
       ],
       "results": [
+         {
+          "fingerprints": {
+            "matchBasedId/v1": "9d7250372d35e052fb8b1b1c2b34bd06485b0ac22eabe9eb973970341bd0fecce7fd4f569fd932ecc9a4d9298af3b2658eb77070d4121576afe931df25a41c58_0"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app/routes/contributions.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 45,
+                  "endLine": 32,
+                  "snippet": {
+                    "text": "        const preTax = eval(req.body.preTax);"
+                  },
+                  "startColumn": 24,
+                  "startLine": 32
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources."
+          },
+          "properties": {},
+          "ruleId": "javascript.browser.security.eval-detected.eval-detected"
+        }
+
       ],
       "tool": {
         "driver": {
