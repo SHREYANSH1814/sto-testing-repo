@@ -68,7 +68,7 @@
           ]
         },
         {
-          "ruleId": "verify.sca.lodash-prototype-pollution",
+          "ruleId": "verify.sca.bson-property-tampering",
           "level": "error",
           "message": {
             "text": "lodash@4.17.11 Prototype Pollution. See CVE-2019-10744 and GHSA-jf85-6pfh-95jw."
