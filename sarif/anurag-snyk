@@ -1,0 +1,97 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/os/schemas/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "sto-verify-old-flow-sca",
+          "rules": [
+            {
+              "id": "verify.sca.bson-property-tampering",
+              "name": "BSON Internal Property Tampering",
+              "shortDescription": {
+                "text": "bson Internal Property Tampering"
+              },
+              "fullDescription": {
+                "text": "Affected versions of bson are vulnerable to Internal Property Tampering. CVE-2019-2391 GHSA-v8w9-2789-6hhr CWE-642"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "cwe": ["CWE-642"]
+              }
+            },
+            {
+              "id": "verify.sca.lodash-prototype-pollution",
+              "name": "Lodash Prototype Pollution",
+              "shortDescription": {
+                "text": "lodash Prototype Pollution"
+              },
+              "fullDescription": {
+                "text": "Affected versions of lodash are vulnerable to Prototype Pollution. CVE-2019-10744 GHSA-jf85-6pfh-95jw CWE-1321"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "cwe": ["CWE-1321"]
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "verify.sca.bson-property-tampering",
+          "level": "error",
+          "message": {
+            "text": "bson@1.0.9 Internal Property Tampering. See CVE-2019-2391 and GHSA-v8w9-2789-6hhr."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json"
+                },
+                "region": {
+                  "startLine": 120,
+                  "endLine": 120,
+                  "startColumn": 1,
+                  "snippet": {
+                    "text": "\"bson\": { \"version\": \"1.0.9\" }"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "verify.sca.lodash-prototype-pollution",
+          "level": "error",
+          "message": {
+            "text": "lodash@4.17.11 Prototype Pollution. See CVE-2019-10744 and GHSA-jf85-6pfh-95jw."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json"
+                },
+                "region": {
+                  "startLine": 440,
+                  "endLine": 440,
+                  "startColumn": 1,
+                  "snippet": {
+                    "text": "\"lodash\": { \"version\": \"4.17.11\" }"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
