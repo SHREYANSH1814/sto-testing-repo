@@ -6,26 +6,7 @@
     "subproduct": "RefIdPerfScanner"
   },
   "issues": [
-    {
-      "packageName": "pkg-issue0",
-      "issueName": "Issue 0",
-      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
-      "fileName": "src/module0/file0.java",
-      "remediationSteps": "Upgrade to latest version.",
-      "risk": "critical",
-      "severity": 10,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "94"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
-        }
-      ]
-    },
+  
     {
       "packageName": "pkg-issue0",
       "issueName": "Issue 0",
@@ -45,46 +26,6 @@
           "id": "DOTNET-SPRING-400004"
         }
        
-      ]
-    },
-    {
-      "packageName": "pkg-issue1",
-      "issueName": "Issue 0",
-      "issueDescription": "Occurrence 2 of issue 0 for ref-ID performance testing",
-      "fileName": "src/module0/file2.java",
-      "remediationSteps": "Upgrade to latest version.",
-      "risk": "medium",
-      "severity": 4,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "94"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
-        }
-      ]
-    },
-    {
-      "packageName": "pkg-issue1",
-      "issueName": "Issue 0",
-      "issueDescription": "Occurrence 3 of issue 0 for ref-ID performance testing",
-      "fileName": "src/module0/file3.java",
-      "remediationSteps": "Upgrade to latest version.",
-      "risk": "low",
-      "severity": 3,
-      "status": "open",
-      "referenceIdentifiers": [
-         {
-          "type": "cve",
-          "id": "2021-10002"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
-        }
       ]
     }
   ]
