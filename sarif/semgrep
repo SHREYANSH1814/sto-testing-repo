@@ -94,7 +94,7 @@
             "id": "SNYK-JS-BSON-561052",
             "identifiers": {
                 "CVE": [
-                    "CVE-2019-2391",
+                    "CVE-2019-2391"
                 ],
                 "CWE": [
                     "CWE-642",
