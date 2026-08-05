@@ -24,8 +24,7 @@
                     "CVE-2020-7610"
                 ],
                 "CWE": [
-                    "CWE-642",
-                    "CWE-315"
+                    "CWE-642"
                 ],
                 "GHSA": [
                     "GHSA-v8w9-2789-6hhr"
@@ -76,7 +75,7 @@
             "version": "1.0.9"
         },
         {
-            "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+            "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:",
             "alternativeIds": [],
             "creationTime": "2020-03-24T15:37:36.850403Z",
             "credit": [
