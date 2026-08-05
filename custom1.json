@@ -58,12 +58,12 @@
       "status": "open",
       "referenceIdentifiers": [
         {
-          "type": "cve",
-          "id": "2022-10000"
+          "type": "cwe",
+          "id": "94"
         },
         {
-          "type": "cve",
-          "id": "2019-10002"
+          "type": "snyk",
+          "id": "DOTNET-SPRING-400004"
         }
       ]
     },
@@ -77,13 +77,13 @@
       "severity": 3,
       "status": "open",
       "referenceIdentifiers": [
+         {
+          "type": "cve",
+          "id": "2021-10002"
+        },
         {
           "type": "snyk",
           "id": "DOTNET-SPRING-400004"
-        },
-        {
-          "type": "ghsa",
-          "id": "cpqp-4nj9-faxp"
         }
       ]
     }
