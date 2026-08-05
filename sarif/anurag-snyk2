@@ -111,7 +111,7 @@
           "ruleId": "verify.sca.bson-property-tampering",
           "level": "error",
           "message": {
-            "text": "Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here."
+            "text": "lodash@4.17.11 Prototype Pollution. See CVE-2019-10744 and CWE-798."
           },
           "locations": [
             {
