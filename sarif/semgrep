@@ -74,6 +74,7 @@
             "version": "1.0.9"
         }
         ],
+
         "upgrade": {
             "helmet@2.3.0": {
                 "upgradeTo": "helmet@3.21.1",
@@ -136,15 +137,9 @@
             }
         },
         "ignore": {},
-        "pin": {}
-    },
-    "filesystemPolicy": false,
-    "filtered": {
-        "ignore": [],
-        "patch": []
-    },
-    "uniqueCount": 19,
-    "projectName": "owasp-nodejs-goat",
-    "displayTargetFile": "package-lock.json",
-    "path": "/Users/andrewmollohan/ZN/testable/NodeGoat"
-}
+        "pin": {},
+        "uniqueCount": 19,
+        "projectName": "owasp-nodejs-goat",
+        "displayTargetFile": "package-lock.json",
+        "path": "/Users/andrewmollohan/ZN/testable/NodeGoat"
+    }
