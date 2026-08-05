@@ -130,6 +130,30 @@
               }
             }
           ]
+        },
+        {
+          "ruleId": "verify.sca.bson-property-tampering",
+          "level": "error",
+          "message": {
+            "text": "lodash@4.17.1234 Prototype Pollution. See CVE-2019-10744."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/env/all.js"
+                },
+                "region": {
+                  "startLine": 8,
+                  "endLine": 8,
+                  "startColumn": 5,
+                  "snippet": {
+                    "text": "var SECRET = '_csrfSecret';"
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     }
