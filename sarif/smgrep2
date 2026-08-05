@@ -154,7 +154,7 @@
                 "xiaofen9"
             ],
             "cvssScore": 8.10000001,
-            "description": "## Overview\n[bson](https://www.npmjs.com/package/bson) is a BSON Parser for node and browser.\n\nAffected versions of this package are vulnerable to Internal Property Tampering. The package will ignore an unknown value for an object's `_bsotype`, leading to cases where an object is serialized as a document rather than the intended BSON type.\n## Remediation\nUpgrade `bson` to version 1.1.4 or higher.\n## References\n- [GitHub Commit](https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a8)\n- [Release Note](https://github.com/mongodb/js-bson/releases/tag/v1.1.4)\n",
+            "description": "## Overview\n Secret Hardcoded [bson](https://www.npmjs.com/package/bson) is a BSON Parser for node and browser.\n\nAffected versions of this package are vulnerable to Internal Property Tampering. The package will ignore an unknown value for an object's `_bsotype`, leading to cases where an object is serialized as a document rather than the intended BSON type.\n## Remediation\nUpgrade `bson` to version 1.1.4 or higher.\n## References\n- [GitHub Commit](https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a8)\n- [Release Note](https://github.com/mongodb/js-bson/releases/tag/v1.1.4)\n",
             "disclosureTime": "2020-03-24T15:35:27Z",
             "exploit": "Unproven",
             "fixedIn": [
@@ -185,7 +185,7 @@
             "publicationTime": "2020-03-24T17:18:18Z",
             "references": [
                 {
-                    "title": "GitHub Commit",
+                    "title": "Secret Hardcode GitHub Commit",
                     "url": "https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a8"
                 },
                 {
