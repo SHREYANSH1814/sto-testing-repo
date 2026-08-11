@@ -6,22 +6,7 @@
     "subproduct": "RefIdPerfScanner"
   },
   "issues": [
-    {
-      "packageName": "pkg-issue-shreyansh-0",
-      "issueName": "Issue-shreyansh 1",
-      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
-      "fileName": "src/module0/file0.java",
-      "remediationSteps": "Upgrade to latest version.",
-      "risk": "critical",
-      "severity": 10,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "94"
-        }
-      ]
-      },
+
       {
       "packageName": "pkg-issue-shreyansh-0",
       "issueName": "Issue-shreyansh 2",
