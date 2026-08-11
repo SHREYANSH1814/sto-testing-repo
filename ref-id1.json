@@ -7,8 +7,8 @@
   },
   "issues": [
     {
-      "packageName": "pkg-issue0",
-      "issueName": "Issue 0",
+      "packageName": "pkg-issue-shreyansh-0",
+      "issueName": "Issue-shreyansh 1",
       "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
       "fileName": "src/module0/file0.java",
       "remediationSteps": "Upgrade to latest version.",
@@ -19,34 +19,29 @@
         {
           "type": "cwe",
           "id": "94"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
-        },
-        {
-      "packageName": "pkg-issue0",
-      "issueName": "Issue 0",
-      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
-      "fileName": "src/module0/file0.java",
-      "remediationSteps": "Upgrade to latest version.",
-      "risk": "critical",
-      "severity": 10,
-      "status": "open",
-      "referenceIdentifiers": [
-        {
-          "type": "cwe",
-          "id": "94"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
         }
+      ]
+      },
+      {
+      "packageName": "pkg-issue-shreyansh-0",
+      "issueName": "Issue-shreyansh 2",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cwe",
+          "id": "95"
+        },
+       
       ]
     },
       {
-      "packageName": "pkg-issue0",
-      "issueName": "Issue 0",
+      "packageName": "pkg-issue-shreyansh-0",
+      "issueName": "Issue-shreyansh 3",
       "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
       "fileName": "src/module0/file0.java",
       "remediationSteps": "Upgrade to latest version.",
@@ -56,13 +51,11 @@
       "referenceIdentifiers": [
         {
           "type": "cwe",
-          "id": "94"
-        },
-        {
-          "type": "snyk",
-          "id": "DOTNET-SPRING-400004"
+          "id": "96"
         }
       ]
     }
   ]
-    }
+}
+
+  
