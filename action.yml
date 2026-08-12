@@ -431,7 +431,10 @@ runs:
         # GitHub Enterprise Cloud, and GitHub Enterprise Server with no config.
         # ======================================================================
         BUILD_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        BUILD_ID="${{ github.run_id }}"
         DOCKER_CMD="$DOCKER_CMD -e BUILD_URL=$BUILD_URL"
+        DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
@@ -519,10 +522,13 @@ runs:
         DOCKER_CMD="$DOCKER_CMD ${{ steps.config.outputs.scanner-image }}"
 
         echo "Running: $DOCKER_CMD"
+        set +e
         eval $DOCKER_CMD
+        SCAN_EXIT=$?
+        set -e
 
         # ======================================================================
-        # PARSE OUTPUT
+        # PARSE OUTPUT (always when file exists — including fail_on_severity)
         # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ] && [ -f "${{ steps.config.outputs.output-path }}" ]; then
           # Extract values
@@ -545,11 +551,13 @@ runs:
           echo "output-file-path=${{ steps.config.outputs.output-path }}" >> $GITHUB_OUTPUT
         fi
 
+        exit $SCAN_EXIT
+
     - name: Display Scan Summary
       shell: bash
-      if: inputs.show-summary == 'true' && inputs.capture-output == 'true'
+      if: always() && inputs.show-summary == 'true' && inputs.capture-output == 'true'
       run: |
-        if [ -f "${{ steps.scan.outputs.output-file-path }}" ]; then
+        if [ -f "${{ steps.config.outputs.output-path }}" ]; then
           echo "============================================================"
           echo "HARNESS STO SCAN RESULTS"
           echo "============================================================"
