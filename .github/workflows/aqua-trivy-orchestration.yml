@@ -36,7 +36,7 @@ jobs:
 
           scanner: aqua_trivy
           scan-mode: orchestration
-          image-name: "autosscauserqa/nodegoat"
+          image-name: "nirocr/nodegoat"
           image-tag: "latest"
           scan-config: default
           target-type: container
