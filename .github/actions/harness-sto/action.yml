@@ -11,8 +11,9 @@ inputs:
   # HARNESS PLATFORM AUTHENTICATION
   # ============================================================================
   harness-token:
-    description: 'Harness Personal Access Token or Service Account Token'
-    required: true
+    description: 'Harness Personal Access Token or Service Account Token. Falls back to HARNESS_TOKEN env if unset.'
+    required: false
+    default: ''
 
   harness-domain:
     description: 'Harness domain (e.g., https://app.harness.io)'
@@ -20,12 +21,14 @@ inputs:
     default: 'https://app.harness.io'
 
   harness-org-id:
-    description: 'Harness Organization ID'
-    required: true
+    description: 'Harness Organization ID. Falls back to HARNESS_ORG_ID env if unset.'
+    required: false
+    default: ''
 
   harness-project-id:
-    description: 'Harness Project ID'
-    required: true
+    description: 'Harness Project ID. Falls back to HARNESS_PROJECT_ID env if unset.'
+    required: false
+    default: ''
 
   # ============================================================================
   # SCANNER CONFIGURATION
@@ -239,6 +242,10 @@ outputs:
     description: 'Full path to the output file'
     value: ${{ steps.scan.outputs.output-file-path }}
 
+  execution-url:
+    description: 'URL of the GitHub Actions run that orchestrated this scan'
+    value: ${{ steps.scan.outputs.execution-url }}
+
 runs:
   using: 'composite'
   steps:
@@ -408,10 +415,38 @@ runs:
         # ======================================================================
         # HARNESS PLATFORM AUTHENTICATION
         # ======================================================================
+        HARNESS_TOKEN_INPUT="${{ inputs.harness-token }}"
+        if [ -n "$HARNESS_TOKEN_INPUT" ]; then
+          HARNESS_TOKEN="$HARNESS_TOKEN_INPUT"
+        fi
+        if [ -z "$HARNESS_TOKEN" ]; then
+          echo "Error: set harness-token input or HARNESS_TOKEN env from a GitHub Actions secret"
+          exit 1
+        fi
+        export HARNESS_TOKEN
+
+        HARNESS_ORG_ID_INPUT="${{ inputs.harness-org-id }}"
+        if [ -n "$HARNESS_ORG_ID_INPUT" ]; then
+          HARNESS_ORG_ID="$HARNESS_ORG_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_ORG_ID" ]; then
+          echo "Error: set harness-org-id input or HARNESS_ORG_ID env"
+          exit 1
+        fi
+
+        HARNESS_PROJECT_ID_INPUT="${{ inputs.harness-project-id }}"
+        if [ -n "$HARNESS_PROJECT_ID_INPUT" ]; then
+          HARNESS_PROJECT_ID="$HARNESS_PROJECT_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_PROJECT_ID" ]; then
+          echo "Error: set harness-project-id input or HARNESS_PROJECT_ID env"
+          exit 1
+        fi
+
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=${{ inputs.harness-domain }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=${{ inputs.harness-token }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=${{ inputs.harness-org-id }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=${{ inputs.harness-project-id }}"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=$HARNESS_ORG_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=$HARNESS_PROJECT_ID"
 
         # ======================================================================
         # SCANNER CONFIGURATION
@@ -420,6 +455,16 @@ runs:
         DOCKER_CMD="$DOCKER_CMD -e SCAN_MODE=${{ inputs.scan-mode }}"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_CONFIG=${{ inputs.scan-config }}"
         DOCKER_CMD="$DOCKER_CMD -e TARGET_TYPE=${{ inputs.target-type }}"
+
+        # ======================================================================
+        # EXECUTION CONTEXT
+        # ======================================================================
+        BUILD_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        BUILD_ID="${{ github.run_id }}"
+        DOCKER_CMD="$DOCKER_CMD -e BUILD_URL=$BUILD_URL"
+        DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
+        echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
         # TARGET METADATA (auto-detect from GitHub context if not provided)
@@ -475,7 +520,7 @@ runs:
         # ======================================================================
         # BUILD BEHAVIOR
         # ======================================================================
-        FAIL_ON_SEVERITY="${{ inputs.fail-on-severity }}"
+        FAIL_ON_SEVERITY=$(printf '%s' "${{ inputs.fail-on-severity }}" | tr '[:lower:]' '[:upper:]')
         if [ "$FAIL_ON_SEVERITY" = "NONE" ]; then
           FAIL_ON_SEVERITY="0"
         fi
@@ -506,10 +551,13 @@ runs:
         DOCKER_CMD="$DOCKER_CMD ${{ steps.config.outputs.scanner-image }}"
 
         echo "Running: $DOCKER_CMD"
+        set +e
         eval $DOCKER_CMD
+        SCAN_EXIT=$?
+        set -e
 
         # ======================================================================
-        # PARSE OUTPUT
+        # PARSE OUTPUT (including fail_on_severity)
         # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ] && [ -f "${{ steps.config.outputs.output-path }}" ]; then
           # Extract values
@@ -532,11 +580,13 @@ runs:
           echo "output-file-path=${{ steps.config.outputs.output-path }}" >> $GITHUB_OUTPUT
         fi
 
+        exit $SCAN_EXIT
+
     - name: Display Scan Summary
       shell: bash
-      if: inputs.show-summary == 'true' && inputs.capture-output == 'true'
+      if: always() && inputs.show-summary == 'true' && inputs.capture-output == 'true'
       run: |
-        if [ -f "${{ steps.scan.outputs.output-file-path }}" ]; then
+        if [ -f "${{ steps.config.outputs.output-path }}" ]; then
           echo "============================================================"
           echo "HARNESS STO SCAN RESULTS"
           echo "============================================================"
@@ -550,5 +600,6 @@ runs:
           echo ""
           echo "Scan ID: ${{ steps.scan.outputs.scan-id }}"
           echo "Status: ${{ steps.scan.outputs.status }}"
+          echo "Execution URL: ${{ steps.scan.outputs.execution-url }}"
           echo "============================================================"
         fi

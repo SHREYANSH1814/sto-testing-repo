@@ -28,7 +28,7 @@ jobs:
       - name: Run Harness STO Scan
         uses: ./.github/actions/harness-sto
         with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
           harness-org-id: ${{ inputs.harness-org-id }}
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
@@ -40,4 +40,4 @@ jobs:
           workspace: .
 
           fail-on-severity: HIGH
-          show-summary: true
+          show-summary: 'true'

@@ -34,7 +34,7 @@ jobs:
         id: sto-scan
         uses: ./.github/actions/harness-sto
         with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
           harness-org-id: ${{ inputs.harness-org-id }}
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
@@ -50,7 +50,7 @@ jobs:
           image-tag: ${{ github.sha }}
           image-type: local_image
 
-          show-summary: true
+          show-summary: 'true'
 
       - name: Use scan output variables
         if: always()
@@ -67,7 +67,7 @@ jobs:
           echo "Output File Path: ${{ steps.sto-scan.outputs.output-file-path }}"
 
       - name: Archive scan output
-        if: always()
+        if: always() && steps.sto-scan.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
         with:
           name: sto-scan-results
