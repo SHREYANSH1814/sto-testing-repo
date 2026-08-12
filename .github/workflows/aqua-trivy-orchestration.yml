@@ -47,7 +47,7 @@ jobs:
           image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
           
 
-          fail-on-severity: NONE
+          fail-on-severity: CRITICAL
           show-summary: 'true'
 
       - name: Use scan output variables
