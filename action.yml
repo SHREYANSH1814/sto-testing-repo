@@ -11,21 +11,33 @@ inputs:
   # HARNESS PLATFORM AUTHENTICATION
   # ============================================================================
   harness-token:
-    description: 'Harness Personal Access Token or Service Account Token'
-    required: true
+    description: |
+      Harness Personal Access Token or Service Account Token.
+      Composite actions cannot read secrets.* directly — pass a repo/org secret:
+
+        harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+
+      Or omit this input and set job/step env (Jenkins withCredentials equivalent):
+
+        env:
+          HARNESS_TOKEN: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+    required: false
+    default: ''
 
   harness-domain:
-    description: 'Harness domain (e.g., https://app.harness.io)'
+    description: 'Harness domain (e.g., https://app.harness.io). Falls back to HARNESS_DOMAIN env if unset.'
     required: false
     default: 'https://app.harness.io'
 
   harness-org-id:
-    description: 'Harness Organization ID'
-    required: true
+    description: 'Harness Organization ID. Falls back to HARNESS_ORG_ID env if unset.'
+    required: false
+    default: ''
 
   harness-project-id:
-    description: 'Harness Project ID'
-    required: true
+    description: 'Harness Project ID. Falls back to HARNESS_PROJECT_ID env if unset.'
+    required: false
+    default: ''
 
   # ============================================================================
   # SCANNER CONFIGURATION
@@ -411,11 +423,45 @@ runs:
 
         # ======================================================================
         # HARNESS PLATFORM AUTHENTICATION
+        # Prefer action inputs; else job/step env (e.g. secrets.HARNESS_PAT_TOKEN_STO_LAB).
         # ======================================================================
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=${{ inputs.harness-domain }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=${{ inputs.harness-token }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=${{ inputs.harness-org-id }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=${{ inputs.harness-project-id }}"
+        HARNESS_TOKEN_INPUT="${{ inputs.harness-token }}"
+        if [ -n "$HARNESS_TOKEN_INPUT" ]; then
+          HARNESS_TOKEN="$HARNESS_TOKEN_INPUT"
+        fi
+        if [ -z "$HARNESS_TOKEN" ]; then
+          echo "Error: set harness-token input or HARNESS_TOKEN env from a GitHub Actions secret (e.g. HARNESS_PAT_TOKEN_STO_LAB)"
+          exit 1
+        fi
+
+        HARNESS_DOMAIN_INPUT="${{ inputs.harness-domain }}"
+        if [ -n "$HARNESS_DOMAIN_INPUT" ]; then
+          HARNESS_DOMAIN="$HARNESS_DOMAIN_INPUT"
+        fi
+        HARNESS_DOMAIN="${HARNESS_DOMAIN:-https://app.harness.io}"
+
+        HARNESS_ORG_ID_INPUT="${{ inputs.harness-org-id }}"
+        if [ -n "$HARNESS_ORG_ID_INPUT" ]; then
+          HARNESS_ORG_ID="$HARNESS_ORG_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_ORG_ID" ]; then
+          echo "Error: set harness-org-id input or HARNESS_ORG_ID env"
+          exit 1
+        fi
+
+        HARNESS_PROJECT_ID_INPUT="${{ inputs.harness-project-id }}"
+        if [ -n "$HARNESS_PROJECT_ID_INPUT" ]; then
+          HARNESS_PROJECT_ID="$HARNESS_PROJECT_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_PROJECT_ID" ]; then
+          echo "Error: set harness-project-id input or HARNESS_PROJECT_ID env"
+          exit 1
+        fi
+
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=$HARNESS_DOMAIN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=$HARNESS_TOKEN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=$HARNESS_ORG_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=$HARNESS_PROJECT_ID"
 
         # ======================================================================
         # SCANNER CONFIGURATION
