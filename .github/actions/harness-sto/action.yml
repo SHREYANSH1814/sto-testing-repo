@@ -177,6 +177,11 @@ inputs:
     required: false
     default: 'true'
 
+  log-level:
+    description: 'STO plugin log level (DEBUG, INFO, WARN, ERROR)'
+    required: false
+    default: 'INFO'
+
   # ============================================================================
   # DOCKER IMAGE
   # ============================================================================
@@ -525,6 +530,9 @@ runs:
           FAIL_ON_SEVERITY="0"
         fi
         DOCKER_CMD="$DOCKER_CMD -e FAIL_ON_SEVERITY=$FAIL_ON_SEVERITY"
+
+        LOG_LEVEL=$(printf '%s' "${{ inputs.log-level }}" | tr '[:lower:]' '[:upper:]')
+        DOCKER_CMD="$DOCKER_CMD -e PLUGIN_LOG_LEVEL=$LOG_LEVEL"
 
         # ======================================================================
         # OUTPUT FILE
