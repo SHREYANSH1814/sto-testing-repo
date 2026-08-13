@@ -542,7 +542,7 @@ runs:
         # ======================================================================
         # BUILD BEHAVIOR
         # ======================================================================
-        FAIL_ON_SEVERITY="${{ inputs.fail-on-severity }}"
+        FAIL_ON_SEVERITY=$(printf '%s' "${{ inputs.fail-on-severity }}" | tr '[:lower:]' '[:upper:]')
         if [ "$FAIL_ON_SEVERITY" = "NONE" ]; then
           FAIL_ON_SEVERITY="0"
         fi

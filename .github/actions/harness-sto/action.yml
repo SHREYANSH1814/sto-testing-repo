@@ -11,12 +11,21 @@ inputs:
   # HARNESS PLATFORM AUTHENTICATION
   # ============================================================================
   harness-token:
-    description: 'Harness Personal Access Token or Service Account Token. Falls back to HARNESS_TOKEN env if unset.'
+    description: |
+      Harness Personal Access Token or Service Account Token.
+      Composite actions cannot read secrets.* directly — pass a repo/org secret:
+
+        harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+
+      Or omit this input and set job/step env (Jenkins withCredentials equivalent):
+
+        env:
+          HARNESS_TOKEN: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
     required: false
     default: ''
 
   harness-domain:
-    description: 'Harness domain (e.g., https://app.harness.io)'
+    description: 'Harness domain (e.g., https://app.harness.io). Falls back to HARNESS_DOMAIN env if unset.'
     required: false
     default: 'https://app.harness.io'
 
@@ -419,16 +428,22 @@ runs:
 
         # ======================================================================
         # HARNESS PLATFORM AUTHENTICATION
+        # Prefer action inputs; else job/step env (e.g. secrets.HARNESS_PAT_TOKEN_STO_LAB).
         # ======================================================================
         HARNESS_TOKEN_INPUT="${{ inputs.harness-token }}"
         if [ -n "$HARNESS_TOKEN_INPUT" ]; then
           HARNESS_TOKEN="$HARNESS_TOKEN_INPUT"
         fi
         if [ -z "$HARNESS_TOKEN" ]; then
-          echo "Error: set harness-token input or HARNESS_TOKEN env from a GitHub Actions secret"
+          echo "Error: set harness-token input or HARNESS_TOKEN env from a GitHub Actions secret (e.g. HARNESS_PAT_TOKEN_STO_LAB)"
           exit 1
         fi
-        export HARNESS_TOKEN
+
+        HARNESS_DOMAIN_INPUT="${{ inputs.harness-domain }}"
+        if [ -n "$HARNESS_DOMAIN_INPUT" ]; then
+          HARNESS_DOMAIN="$HARNESS_DOMAIN_INPUT"
+        fi
+        HARNESS_DOMAIN="${HARNESS_DOMAIN:-https://app.harness.io}"
 
         HARNESS_ORG_ID_INPUT="${{ inputs.harness-org-id }}"
         if [ -n "$HARNESS_ORG_ID_INPUT" ]; then
@@ -448,8 +463,8 @@ runs:
           exit 1
         fi
 
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=${{ inputs.harness-domain }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=$HARNESS_DOMAIN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=$HARNESS_TOKEN"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=$HARNESS_ORG_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=$HARNESS_PROJECT_ID"
 
@@ -462,7 +477,9 @@ runs:
         DOCKER_CMD="$DOCKER_CMD -e TARGET_TYPE=${{ inputs.target-type }}"
 
         # ======================================================================
-        # EXECUTION CONTEXT
+        # EXECUTION CONTEXT (link back to the GHA run that orchestrated this)
+        # Composed from runner context so it resolves correctly on github.com,
+        # GitHub Enterprise Cloud, and GitHub Enterprise Server with no config.
         # ======================================================================
         BUILD_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
         BUILD_ID="${{ github.run_id }}"
@@ -565,7 +582,7 @@ runs:
         set -e
 
         # ======================================================================
-        # PARSE OUTPUT (including fail_on_severity)
+        # PARSE OUTPUT (always when file exists — including fail_on_severity)
         # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ] && [ -f "${{ steps.config.outputs.output-path }}" ]; then
           # Extract values
