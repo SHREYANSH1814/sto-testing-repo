@@ -252,6 +252,10 @@ outputs:
     description: 'Number of LOW issues'
     value: ${{ steps.scan.outputs.low }}
 
+  info:
+    description: 'Number of INFO issues'
+    value: ${{ steps.scan.outputs.info }}
+
   output-file-path:
     description: 'Full path to the output file'
     value: ${{ steps.scan.outputs.output-file-path }}
@@ -593,6 +597,7 @@ runs:
           HIGH=$(grep "^HIGH=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
           MEDIUM=$(grep "^MEDIUM=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
           LOW=$(grep "^LOW=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
+          INFO=$(grep "^INFO=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
 
           # Set outputs
           echo "scan-id=$SCAN_ID" >> $GITHUB_OUTPUT
@@ -602,6 +607,7 @@ runs:
           echo "high=$HIGH" >> $GITHUB_OUTPUT
           echo "medium=$MEDIUM" >> $GITHUB_OUTPUT
           echo "low=$LOW" >> $GITHUB_OUTPUT
+          echo "info=$INFO" >> $GITHUB_OUTPUT
           echo "output-file-path=${{ steps.config.outputs.output-path }}" >> $GITHUB_OUTPUT
         fi
 
@@ -621,6 +627,7 @@ runs:
           echo "  HIGH: ${{ steps.scan.outputs.high }}"
           echo "  MEDIUM: ${{ steps.scan.outputs.medium }}"
           echo "  LOW: ${{ steps.scan.outputs.low }}"
+          echo "  INFO: ${{ steps.scan.outputs.info }}"
           echo "  TOTAL: ${{ steps.scan.outputs.total-issues }}"
           echo ""
           echo "Scan ID: ${{ steps.scan.outputs.scan-id }}"

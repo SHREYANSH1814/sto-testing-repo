@@ -62,6 +62,7 @@ jobs:
           echo "High: ${{ steps.sto-scan.outputs.high }}"
           echo "Medium: ${{ steps.sto-scan.outputs.medium }}"
           echo "Low: ${{ steps.sto-scan.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan.outputs.output-file-path }}"
 
       - name: Archive scan output
