@@ -522,8 +522,8 @@ runs:
         if [ "${{ inputs.target-type }}" = "container" ]; then
           [ -n "${{ inputs.image-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_NAME=${{ inputs.image-name }}"
           [ -n "${{ inputs.image-tag }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TAG=${{ inputs.image-tag }}"
-          [ -n "${{ inputs.image-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_DOMAIN=${{ inputs.image-domain }}"
-          [ -n "${{ inputs.image-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TYPE=${{ inputs.image-type }}"
+          [ -n "${{ inputs.image-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONTAINER_DOMAIN=${{ inputs.image-domain }}"
+          [ -n "${{ inputs.image-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONTAINER_TYPE=${{ inputs.image-type }}"
           [ -n "${{ inputs.image-access-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_ACCESS_ID=${{ inputs.image-access-id }}"
           [ -n "${{ inputs.image-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_ACCESS_TOKEN=${{ inputs.image-access-token }}"
         fi
