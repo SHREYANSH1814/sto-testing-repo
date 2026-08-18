@@ -11,21 +11,33 @@ inputs:
   # HARNESS PLATFORM AUTHENTICATION
   # ============================================================================
   harness-token:
-    description: 'Harness Personal Access Token or Service Account Token'
-    required: true
+    description: |
+      Harness Personal Access Token or Service Account Token.
+      Composite actions cannot read secrets.* directly — pass a repo/org secret:
+
+        harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+
+      Or omit this input and set job/step env (Jenkins withCredentials equivalent):
+
+        env:
+          HARNESS_TOKEN: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+    required: false
+    default: ''
 
   harness-domain:
-    description: 'Harness domain (e.g., https://app.harness.io)'
+    description: 'Harness domain (e.g., https://app.harness.io). Falls back to HARNESS_DOMAIN env if unset.'
     required: false
     default: 'https://app.harness.io'
 
   harness-org-id:
-    description: 'Harness Organization ID'
-    required: true
+    description: 'Harness Organization ID. Falls back to HARNESS_ORG_ID env if unset.'
+    required: false
+    default: ''
 
   harness-project-id:
-    description: 'Harness Project ID'
-    required: true
+    description: 'Harness Project ID. Falls back to HARNESS_PROJECT_ID env if unset.'
+    required: false
+    default: ''
 
   # ============================================================================
   # SCANNER CONFIGURATION
@@ -174,6 +186,11 @@ inputs:
     required: false
     default: 'true'
 
+  log-level:
+    description: 'STO plugin log level (DEBUG, INFO, WARN, ERROR)'
+    required: false
+    default: 'INFO'
+
   # ============================================================================
   # DOCKER IMAGE
   # ============================================================================
@@ -234,6 +251,10 @@ outputs:
   low:
     description: 'Number of LOW issues'
     value: ${{ steps.scan.outputs.low }}
+
+  info:
+    description: 'Number of INFO issues'
+    value: ${{ steps.scan.outputs.info }}
 
   output-file-path:
     description: 'Full path to the output file'
@@ -411,11 +432,45 @@ runs:
 
         # ======================================================================
         # HARNESS PLATFORM AUTHENTICATION
+        # Prefer action inputs; else job/step env (e.g. secrets.HARNESS_PAT_TOKEN_STO_LAB).
         # ======================================================================
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=${{ inputs.harness-domain }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=${{ inputs.harness-token }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=${{ inputs.harness-org-id }}"
-        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=${{ inputs.harness-project-id }}"
+        HARNESS_TOKEN_INPUT="${{ inputs.harness-token }}"
+        if [ -n "$HARNESS_TOKEN_INPUT" ]; then
+          HARNESS_TOKEN="$HARNESS_TOKEN_INPUT"
+        fi
+        if [ -z "$HARNESS_TOKEN" ]; then
+          echo "Error: set harness-token input or HARNESS_TOKEN env from a GitHub Actions secret (e.g. HARNESS_PAT_TOKEN_STO_LAB)"
+          exit 1
+        fi
+
+        HARNESS_DOMAIN_INPUT="${{ inputs.harness-domain }}"
+        if [ -n "$HARNESS_DOMAIN_INPUT" ]; then
+          HARNESS_DOMAIN="$HARNESS_DOMAIN_INPUT"
+        fi
+        HARNESS_DOMAIN="${HARNESS_DOMAIN:-https://app.harness.io}"
+
+        HARNESS_ORG_ID_INPUT="${{ inputs.harness-org-id }}"
+        if [ -n "$HARNESS_ORG_ID_INPUT" ]; then
+          HARNESS_ORG_ID="$HARNESS_ORG_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_ORG_ID" ]; then
+          echo "Error: set harness-org-id input or HARNESS_ORG_ID env"
+          exit 1
+        fi
+
+        HARNESS_PROJECT_ID_INPUT="${{ inputs.harness-project-id }}"
+        if [ -n "$HARNESS_PROJECT_ID_INPUT" ]; then
+          HARNESS_PROJECT_ID="$HARNESS_PROJECT_ID_INPUT"
+        fi
+        if [ -z "$HARNESS_PROJECT_ID" ]; then
+          echo "Error: set harness-project-id input or HARNESS_PROJECT_ID env"
+          exit 1
+        fi
+
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_DOMAIN=$HARNESS_DOMAIN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_TOKEN=$HARNESS_TOKEN"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=$HARNESS_ORG_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=$HARNESS_PROJECT_ID"
 
         # ======================================================================
         # SCANNER CONFIGURATION
@@ -431,7 +486,10 @@ runs:
         # GitHub Enterprise Cloud, and GitHub Enterprise Server with no config.
         # ======================================================================
         BUILD_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        BUILD_ID="${{ github.run_id }}"
         DOCKER_CMD="$DOCKER_CMD -e BUILD_URL=$BUILD_URL"
+        DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
@@ -464,8 +522,8 @@ runs:
         if [ "${{ inputs.target-type }}" = "container" ]; then
           [ -n "${{ inputs.image-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_NAME=${{ inputs.image-name }}"
           [ -n "${{ inputs.image-tag }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TAG=${{ inputs.image-tag }}"
-          [ -n "${{ inputs.image-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_DOMAIN=${{ inputs.image-domain }}"
-          [ -n "${{ inputs.image-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TYPE=${{ inputs.image-type }}"
+          [ -n "${{ inputs.image-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONTAINER_DOMAIN=${{ inputs.image-domain }}"
+          [ -n "${{ inputs.image-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONTAINER_TYPE=${{ inputs.image-type }}"
           [ -n "${{ inputs.image-access-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_ACCESS_ID=${{ inputs.image-access-id }}"
           [ -n "${{ inputs.image-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_ACCESS_TOKEN=${{ inputs.image-access-token }}"
         fi
@@ -488,11 +546,14 @@ runs:
         # ======================================================================
         # BUILD BEHAVIOR
         # ======================================================================
-        FAIL_ON_SEVERITY="${{ inputs.fail-on-severity }}"
+        FAIL_ON_SEVERITY=$(printf '%s' "${{ inputs.fail-on-severity }}" | tr '[:lower:]' '[:upper:]')
         if [ "$FAIL_ON_SEVERITY" = "NONE" ]; then
           FAIL_ON_SEVERITY="0"
         fi
         DOCKER_CMD="$DOCKER_CMD -e FAIL_ON_SEVERITY=$FAIL_ON_SEVERITY"
+
+        LOG_LEVEL=$(printf '%s' "${{ inputs.log-level }}" | tr '[:lower:]' '[:upper:]')
+        DOCKER_CMD="$DOCKER_CMD -e PLUGIN_LOG_LEVEL=$LOG_LEVEL"
 
         # ======================================================================
         # OUTPUT FILE
@@ -519,10 +580,13 @@ runs:
         DOCKER_CMD="$DOCKER_CMD ${{ steps.config.outputs.scanner-image }}"
 
         echo "Running: $DOCKER_CMD"
+        set +e
         eval $DOCKER_CMD
+        SCAN_EXIT=$?
+        set -e
 
         # ======================================================================
-        # PARSE OUTPUT
+        # PARSE OUTPUT (always when file exists — including fail_on_severity)
         # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ] && [ -f "${{ steps.config.outputs.output-path }}" ]; then
           # Extract values
@@ -533,6 +597,7 @@ runs:
           HIGH=$(grep "^HIGH=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
           MEDIUM=$(grep "^MEDIUM=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
           LOW=$(grep "^LOW=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
+          INFO=$(grep "^INFO=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
 
           # Set outputs
           echo "scan-id=$SCAN_ID" >> $GITHUB_OUTPUT
@@ -542,14 +607,17 @@ runs:
           echo "high=$HIGH" >> $GITHUB_OUTPUT
           echo "medium=$MEDIUM" >> $GITHUB_OUTPUT
           echo "low=$LOW" >> $GITHUB_OUTPUT
+          echo "info=$INFO" >> $GITHUB_OUTPUT
           echo "output-file-path=${{ steps.config.outputs.output-path }}" >> $GITHUB_OUTPUT
         fi
 
+        exit $SCAN_EXIT
+
     - name: Display Scan Summary
       shell: bash
-      if: inputs.show-summary == 'true' && inputs.capture-output == 'true'
+      if: always() && inputs.show-summary == 'true' && inputs.capture-output == 'true'
       run: |
-        if [ -f "${{ steps.scan.outputs.output-file-path }}" ]; then
+        if [ -f "${{ steps.config.outputs.output-path }}" ]; then
           echo "============================================================"
           echo "HARNESS STO SCAN RESULTS"
           echo "============================================================"
@@ -559,6 +627,7 @@ runs:
           echo "  HIGH: ${{ steps.scan.outputs.high }}"
           echo "  MEDIUM: ${{ steps.scan.outputs.medium }}"
           echo "  LOW: ${{ steps.scan.outputs.low }}"
+          echo "  INFO: ${{ steps.scan.outputs.info }}"
           echo "  TOTAL: ${{ steps.scan.outputs.total-issues }}"
           echo ""
           echo "Scan ID: ${{ steps.scan.outputs.scan-id }}"
