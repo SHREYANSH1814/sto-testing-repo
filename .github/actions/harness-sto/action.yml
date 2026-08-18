@@ -15,12 +15,12 @@ inputs:
       Harness Personal Access Token or Service Account Token.
       Composite actions cannot read secrets.* directly — pass a repo/org secret:
 
-        harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+        harness-token: <repository or organization secret>
 
       Or omit this input and set job/step env (Jenkins withCredentials equivalent):
 
         env:
-          HARNESS_TOKEN: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+          HARNESS_TOKEN: <repository or organization secret>
     required: false
     default: ''
 
