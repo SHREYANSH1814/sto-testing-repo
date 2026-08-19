@@ -1,3 +1,3 @@
 FROM alpine
-USER root
+USER appuser
 ADD . /app
