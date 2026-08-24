@@ -17,12 +17,12 @@ inputs:
       secret from the calling workflow (drop the backslash when copying —
       it only stops GitHub evaluating these examples as expressions):
 
-        harness-token: $\{{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+        harness-token: <repository or organization secret>
 
       Or omit this input and set job/step env (Jenkins withCredentials equivalent):
 
         env:
-          HARNESS_TOKEN: $\{{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+          HARNESS_TOKEN: <repository or organization secret>
     required: false
     default: ''
 

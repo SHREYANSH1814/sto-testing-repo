@@ -1,0 +1,61 @@
+name: Aqua Trivy Invalid Image Scan
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Run Harness STO Scan
+        id: sto-scan
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+          scanner: aqua_trivy
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: nginx
+          image-tag: latest
+          image-domain: jfrog
+          image-type: jfrog_artifactory
+          show-summary: 'true'
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables ====="
+          echo "Scan ID: ${{ steps.sto-scan.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan.outputs.output-file-path }}"
+      - name: Archive scan output
+        if: always() && steps.sto-scan.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results
+          path: ${{ steps.sto-scan.outputs.output-file-path }}
+          retention-days: 1
