@@ -13,7 +13,9 @@ inputs:
   harness-token:
     description: |
       Harness Personal Access Token or Service Account Token.
-      Composite actions cannot read secrets.* directly — pass a repo/org secret:
+      Composite actions cannot read the secrets context, so pass a repo/org
+      secret from the calling workflow (drop the backslash when copying —
+      it only stops GitHub evaluating these examples as expressions):
 
         harness-token: <repository or organization secret>
 
