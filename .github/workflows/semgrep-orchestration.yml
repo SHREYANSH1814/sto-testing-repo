@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Run Semgrep scan-third-party-dependencies scan with default target
         id: sto-scan-third-party-default
