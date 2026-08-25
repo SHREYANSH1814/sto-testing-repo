@@ -1,0 +1,13 @@
+{
+  "name": "sto-testing-repo",
+  "version": "1.0.0",
+  "description": "Dependency manifest so Snyk Open Source and other SCA scanners have resolvable dependencies. Versions are pinned to older releases with known advisories so scans produce findings.",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "0.21.0",
+    "express": "4.16.0",
+    "lodash": "4.17.15",
+    "minimist": "1.2.0"
+  }
+}
