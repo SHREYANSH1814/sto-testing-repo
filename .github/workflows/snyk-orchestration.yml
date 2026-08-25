@@ -1,0 +1,349 @@
+name: Snyk Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Snyk default scan with default target
+        id: sto-scan-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-default.env
+          show-summary: 'true'
+
+      - name: Run Snyk default scan with named target
+        id: sto-scan-default-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          target-name: "shreyansh/snykdefault"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-default-named.env
+          show-summary: 'true'
+
+      - name: Run Snyk iac scan with default target
+        id: sto-scan-iac-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: iac
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-iac-default.env
+          show-summary: 'true'
+
+      - name: Run Snyk iac scan with named target
+        id: sto-scan-iac
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: iac
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          target-name: "shreyansh/snykiac"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-iac.env
+          show-summary: 'true'
+
+      - name: Run Snyk code scan with default target
+        id: sto-scan-code-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: code
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-code-default.env
+          show-summary: 'true'
+
+      - name: Run Snyk code scan with named target
+        id: sto-scan-code
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: code
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          target-name: "shreyansh/snykcode"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-code.env
+          show-summary: 'true'
+
+      - name: Run Snyk oss scan with default target
+        id: sto-scan-oss-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: oss
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-oss-default.env
+          show-summary: 'true'
+
+      - name: Run Snyk oss scan with named target
+        id: sto-scan-oss
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: snyk
+          scan-mode: orchestration
+          scan-config: oss
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SNYK_TOKEN }}
+          target-name: "shreyansh/snykoss"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-oss.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (default named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (iac default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (iac) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (code default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-code-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-code-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-code-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-code-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-code-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-code-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-code-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-code-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-code-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (code) ====="
+          echo "Scan ID: ${{ steps.sto-scan-code.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-code.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-code.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-code.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-code.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-code.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-code.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-code.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-code.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (oss default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-oss-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-oss-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-oss-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-oss-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-oss-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-oss-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-oss-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-oss-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-oss-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (oss) ====="
+          echo "Scan ID: ${{ steps.sto-scan-oss.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-oss.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-oss.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-oss.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-oss.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-oss.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-oss.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-oss.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-oss.outputs.output-file-path }}"
+
+      - name: Archive scan output (default)
+        if: always() && steps.sto-scan-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default
+          path: ${{ steps.sto-scan-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (default named)
+        if: always() && steps.sto-scan-default-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default-named
+          path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (iac default)
+        if: always() && steps.sto-scan-iac-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac-default
+          path: ${{ steps.sto-scan-iac-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (iac)
+        if: always() && steps.sto-scan-iac.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac
+          path: ${{ steps.sto-scan-iac.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (code default)
+        if: always() && steps.sto-scan-code-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-code-default
+          path: ${{ steps.sto-scan-code-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (code)
+        if: always() && steps.sto-scan-code.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-code
+          path: ${{ steps.sto-scan-code.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (oss default)
+        if: always() && steps.sto-scan-oss-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-oss-default
+          path: ${{ steps.sto-scan-oss-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (oss)
+        if: always() && steps.sto-scan-oss.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-oss
+          path: ${{ steps.sto-scan-oss.outputs.output-file-path }}
+          retention-days: 1
