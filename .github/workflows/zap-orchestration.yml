@@ -1,0 +1,180 @@
+name: Zap Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Zap orchestration scan with default scan config
+        id: sto-scan-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: zap
+          scan-mode: orchestration
+          instance-domain: "google-gruyere.appspot.com"
+          instance-protocol: "http"
+          instance-path: "/435433807708005776736997120918226188991"
+          target-type: "instance"
+          scan-config: default
+
+      - name: Run Zap orchestration scan with attack scan config
+        id: sto-scan-attack
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: zap
+          scan-mode: orchestration
+          instance-domain: "google-gruyere.appspot.com"
+          instance-protocol: "http"
+          instance-path: "/435433807708005776736997120918226188991"
+          target-type: "instance"
+          scan-config: "attack"
+          target-name: "shreyansh/zapattack"
+          target-variant: "main"
+
+      - name: Run Zap orchestration scan with standard scan config
+        id: sto-scan-standard
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: zap
+          scan-mode: orchestration
+          instance-domain: "google-gruyere.appspot.com"
+          instance-protocol: "http"
+          instance-path: "/435433807708005776736997120918226188991"
+          target-type: "instance"
+          scan-config: "standard"
+          target-name: "shreyansh/zapstandard"
+          target-variant: "main"
+
+      - name: Run Zap orchestration scan with quick scan config
+        id: sto-scan-quick
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: zap
+          scan-mode: orchestration
+          instance-domain: "google-gruyere.appspot.com"
+          instance-protocol: "http"
+          instance-path: "/435433807708005776736997120918226188991"
+          target-type: "instance"
+          scan-config: "quick"
+          target-name: "shreyansh/zapquick"
+          target-variant: "main"
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (attack) ====="
+          echo "Scan ID: ${{ steps.sto-scan-attack.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-attack.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-attack.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-attack.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-attack.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-attack.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-attack.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-attack.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-attack.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (standard) ====="
+          echo "Scan ID: ${{ steps.sto-scan-standard.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-standard.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-standard.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-standard.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-standard.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-standard.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-standard.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-standard.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-standard.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (quick) ====="
+          echo "Scan ID: ${{ steps.sto-scan-quick.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-quick.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-quick.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-quick.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-quick.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-quick.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-quick.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-quick.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-quick.outputs.output-file-path }}"
+
+      - name: Archive scan output (default)
+        if: always() && steps.sto-scan-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default
+          path: ${{ steps.sto-scan-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (attack)
+        if: always() && steps.sto-scan-attack.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-attack
+          path: ${{ steps.sto-scan-attack.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (standard)
+        if: always() && steps.sto-scan-standard.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-standard
+          path: ${{ steps.sto-scan-standard.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (quick)
+        if: always() && steps.sto-scan-quick.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-quick
+          path: ${{ steps.sto-scan-quick.outputs.output-file-path }}
+          retention-days: 1
