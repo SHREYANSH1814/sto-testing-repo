@@ -1,0 +1,62 @@
+# Intentionally misconfigured so Snyk IaC and other IaC scanners report findings.
+# Do not deploy this manifest anywhere real.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sto-testing-app
+  namespace: default
+  labels:
+    app: sto-testing-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sto-testing-app
+  template:
+    metadata:
+      labels:
+        app: sto-testing-app
+    spec:
+      hostNetwork: true
+      hostPID: true
+      containers:
+        - name: app
+          image: node:14
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          securityContext:
+            privileged: true
+            runAsNonRoot: false
+            runAsUser: 0
+            allowPrivilegeEscalation: true
+            readOnlyRootFilesystem: false
+            capabilities:
+              add:
+                - SYS_ADMIN
+                - NET_ADMIN
+          env:
+            - name: DB_PASSWORD
+              value: "SuperSecret123"
+          volumeMounts:
+            - name: host-root
+              mountPath: /host
+      volumes:
+        - name: host-root
+          hostPath:
+            path: /
+            type: Directory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sto-testing-app
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app: sto-testing-app
+  ports:
+    - port: 80
+      targetPort: 3000
