@@ -24,6 +24,11 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          ref: main
+          
+
+
 
       - name: Run Snyk default scan with default target
         id: sto-scan-default
