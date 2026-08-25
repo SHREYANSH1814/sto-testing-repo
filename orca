@@ -1,0 +1,485 @@
+{
+  "should_fail": false,
+  "results_url": "https://app.orcasecurity.io/shift-left/image-scan/scan-log/3904aa95-39e0-4d56-9d49-6518e68b720f",
+  "controls_count": {
+    "total": 15,
+    "failed": 0,
+    "warning": 4,
+    "passed": 11
+  },
+  "vulnerabilities_count": {
+    "total": 2590,
+    "critical": 138,
+    "high": 672,
+    "medium": 1295,
+    "low": 473,
+    "unknown": 12
+  },
+  "policies_summary": [
+    {
+      "policy_id": "019def76-8609-767f-953c-122ca0e79851",
+      "policy_name": "Image_Scanning",
+      "failed": false,
+      "warn_mode": false
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "target": "OS Packages",
+      "category": "os-pkgs",
+      "type": "debian",
+      "vulnerabilities": [
+        {
+          "vulnerability_id": "CVE-2026-8927",
+          "severity": "CRITICAL",
+          "pkg_name": "curl",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-10536",
+          "severity": "CRITICAL",
+          "pkg_name": "curl",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-11856",
+          "severity": "CRITICAL",
+          "pkg_name": "curl",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8924",
+          "severity": "CRITICAL",
+          "pkg_name": "curl",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-9079",
+          "severity": "CRITICAL",
+          "pkg_name": "curl",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8927",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl3t64-gnutls",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-10536",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl3t64-gnutls",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-11856",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl3t64-gnutls",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8924",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl3t64-gnutls",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-9079",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl3t64-gnutls",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8927",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4-openssl-dev",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-10536",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4-openssl-dev",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-11856",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4-openssl-dev",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8924",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4-openssl-dev",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-9079",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4-openssl-dev",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8927",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4t64",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-10536",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4t64",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-11856",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4t64",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-8924",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4t64",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.1",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        },
+        {
+          "vulnerability_id": "CVE-2026-9079",
+          "severity": "CRITICAL",
+          "pkg_name": "libcurl4t64",
+          "pkg_path": "",
+          "installed_version": "8.14.1-2+deb13u4",
+          "fixed_version": "",
+          "cvss_v2_score": "",
+          "cvss_v3_score": "9.8",
+          "status_summary": {
+            "priority": "INFO",
+            "status": "SKIPPED",
+            "exception": {
+              "expiration": ""
+            }
+          }
+        }
+      ],
+      "vulnerabilities_count": {
+        "total": 2582,
+        "critical": 138,
+        "high": 670,
+        "medium": 1289,
+        "low": 473,
+        "unknown": 12
+      }
+    },
+    {
+      "target": "Java",
+      "category": "lang-pkgs",
+      "type": "jar",
+      "vulnerabilities": [],
+      "vulnerabilities_count": {
+        "total": 8,
+        "critical": 0,
+        "high": 2,
+        "medium": 6,
+        "low": 0,
+        "unknown": 0
+      }
+    }
+  ],
+  "os_vulnerabilities_miss_detection": false,
+  "vulnerabilities_missing_os_required_dirs": false,
+  "os_end_of_support": false,
+  "newer_version_available_msg": "Important Note: Newer CLI version 1.119.0 is now available!",
+  "deprecated_version_used_msg": "",
+  "results": {
+    "vulnerabilities": {
+      "findings_summary": {},
+      "results": [],
+      "status": "scanned"
+    },
+    "container_image_best_practices": {
+      "findings_summary": {
+        "LOW": 2,
+        "MEDIUM": 2
+      },
+      "results": [
+        {
+          "catalog_control": {
+            "id": "4dda4ce0-ebbc-4f4c-8285-7f55287c229e",
+            "title": "Ensure Content trust for Docker is Enabled",
+            "recommendation": "Content Trust is disabled by default. To enable Content Trust for signing and verifying images, set the DOCKER_CONTENT_TRUST environment variable to 1. See - https://docs.docker.com/engine/security/trust/"
+          },
+          "priority": "MEDIUM",
+          "status": "WARNING",
+          "findings": null
+        },
+        {
+          "catalog_control": {
+            "id": "dd6e59e1-9665-4a21-893e-57da793cbe8f",
+            "title": "Ensure that HEALTHCHECK instruction is defined",
+            "recommendation": "Add HEALTHCHECK instruction in the dockerfile."
+          },
+          "priority": "LOW",
+          "status": "WARNING",
+          "findings": null
+        },
+        {
+          "catalog_control": {
+            "id": "16bedbb4-3df1-4c2e-a464-b8c79d62be3b",
+            "title": "Ensure 'apt-get' caches are cleared",
+            "recommendation": "Use 'apt-get clean \u0026\u0026 rm -rf /var/lib/apt/lists/*' after 'apt-get install'"
+          },
+          "priority": "MEDIUM",
+          "status": "WARNING",
+          "findings": null
+        },
+        {
+          "catalog_control": {
+            "id": "88a6ff29-a015-4980-b347-8402cf38e49a",
+            "title": "Ensure setuid and setgid permissions are removed",
+            "recommendation": "You should allow setuid and setgid permissions only on executables which require them. You could remove these permissions at build time by adding the following command in your Dockerfile, preferably towards the end of the Dockerfile: 'RUN find / -perm /6000 -type f -exec chmod a-s {} \\; || true'"
+          },
+          "priority": "LOW",
+          "status": "WARNING",
+          "findings": [
+            "setuid file: urwxr-xr-x usr/lib/openssh/ssh-keysign",
+            "setuid file: urwxr-xr-x usr/bin/newgrp",
+            "setuid file: urwxr-xr-x usr/bin/passwd",
+            "setuid file: urwxr-xr-x usr/bin/chsh",
+            "setgid file: grwxr-xr-x usr/bin/expiry",
+            "setuid file: urwxr-xr-x usr/bin/su",
+            "setuid file: urwxr-xr-x usr/bin/chfn",
+            "setgid file: grwxr-xr-x usr/bin/chage",
+            "setuid file: urwxr-xr-x usr/bin/gpasswd",
+            "setgid file: grwxr-xr-x usr/bin/ssh-agent",
+            "setgid file: grwxr-xr-x usr/sbin/unix_chkpwd",
+            "setuid file: urwxr-xr-x usr/bin/umount",
+            "setuid file: urwxr-xr-x usr/bin/mount"
+          ]
+        }
+      ],
+      "status": "scanned"
+    },
+    "secret_detection": {
+      "findings_summary": {},
+      "results": [],
+      "status": "scanned"
+    },
+    "custom": {
+      "findings_summary": null,
+      "results": null
+    },
+    "findings_summary": {
+      "LOW": 2,
+      "MEDIUM": 2
+    }
+  }
+}
