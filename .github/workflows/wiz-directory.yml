@@ -56,13 +56,54 @@ jobs:
           scanner: wiz
           scan-mode: orchestration
           target-type: repository
-          scan-config: directory
+          scan-config: wiz-directory
           workspace: .
           scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
           scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
           target-name: "shreyansh/wizdirectory"
           target-variant: "main"
           output-file: scan-output-directory.env
+          show-summary: 'true'
+
+      - name: Run Wiz IaC templates scan with default target
+        id: sto-scan-iac-templates-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-iac-templates
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          output-file: scan-output-iac-templates-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz IaC templates scan with named target
+        id: sto-scan-iac-templates
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-iac-templates
+          workspace: .
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wiziactemplates"
+          target-variant: "main"
+          output-file: scan-output-iac-templates.env
           show-summary: 'true'
 
       - name: Use scan output variables
@@ -91,6 +132,28 @@ jobs:
           echo "Info: ${{ steps.sto-scan-directory.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-directory.outputs.output-file-path }}"
 
+          echo "===== STO Scan Output Variables (wiz-iac-templates default target) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac-templates-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac-templates-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac-templates-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac-templates-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac-templates-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac-templates-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac-templates-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac-templates-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac-templates-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (wiz-iac-templates) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac-templates.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac-templates.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac-templates.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac-templates.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac-templates.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac-templates.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac-templates.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac-templates.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac-templates.outputs.output-file-path }}"
+
       - name: Archive scan output (default)
         if: always() && steps.sto-scan-default.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
@@ -105,4 +168,20 @@ jobs:
         with:
           name: sto-scan-results-directory
           path: ${{ steps.sto-scan-directory.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (wiz-iac-templates default target)
+        if: always() && steps.sto-scan-iac-templates-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac-templates-default
+          path: ${{ steps.sto-scan-iac-templates-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (wiz-iac-templates)
+        if: always() && steps.sto-scan-iac-templates.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac-templates
+          path: ${{ steps.sto-scan-iac-templates.outputs.output-file-path }}
           retention-days: 1
