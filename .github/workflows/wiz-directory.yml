@@ -1,0 +1,108 @@
+name: Wiz Directory Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Wiz directory scan with default scan config
+        id: sto-scan-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-directory
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          output-file: scan-output-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz directory scan with directory scan config
+        id: sto-scan-directory
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: directory
+          workspace: .
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wizdirectory"
+          target-variant: "main"
+          output-file: scan-output-directory.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (directory) ====="
+          echo "Scan ID: ${{ steps.sto-scan-directory.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-directory.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-directory.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-directory.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-directory.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-directory.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-directory.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-directory.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-directory.outputs.output-file-path }}"
+
+      - name: Archive scan output (default)
+        if: always() && steps.sto-scan-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default
+          path: ${{ steps.sto-scan-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (directory)
+        if: always() && steps.sto-scan-directory.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-directory
+          path: ${{ steps.sto-scan-directory.outputs.output-file-path }}
+          retention-days: 1
