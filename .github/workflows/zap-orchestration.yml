@@ -44,6 +44,7 @@ jobs:
 
       - name: Run Zap orchestration scan with attack scan config
         id: sto-scan-attack
+        if: always()
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
@@ -63,6 +64,7 @@ jobs:
 
       - name: Run Zap orchestration scan with standard scan config
         id: sto-scan-standard
+        if: always()
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
@@ -82,6 +84,7 @@ jobs:
 
       - name: Run Zap orchestration scan with quick scan config
         id: sto-scan-quick
+        if: always()
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
