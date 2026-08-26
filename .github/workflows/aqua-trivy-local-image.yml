@@ -34,7 +34,7 @@ jobs:
         id: sto-scan
         uses: ./.github/actions/harness-sto
         with:
-          harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
@@ -44,11 +44,14 @@ jobs:
           scan-config: default
           target-type: container
           # target-name: "myapp"
-          # target-variant: ${{ github.ref_name }}
+          # target-variant: ${{ github.ref_naautome }}
 
           image-name: "sg123"
           image-tag: ${{ github.sha }}
           image-type: local_image
+          fail-on-severity: LOW
+
+          
 
           show-summary: 'true'
 
