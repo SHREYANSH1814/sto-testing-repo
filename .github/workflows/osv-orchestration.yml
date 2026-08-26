@@ -36,7 +36,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: osv-scanner
+          scanner: osv
           scan-mode: orchestration
           scan-config: default
           target-type: repository
@@ -55,7 +55,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: osv-scanner
+          scanner: osv
           scan-mode: orchestration
           scan-config: default
           target-type: repository
