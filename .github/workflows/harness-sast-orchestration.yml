@@ -1,0 +1,265 @@
+name: Harness SAST Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Run Harness SAST sast scan with default target
+        id: sto-scan-sast-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sast
+          target-type: repository
+          workspace: .
+          docker-image-tag: "dev"
+          output-file: scan-output-sast-default.env
+          show-summary: 'true'
+
+      - name: Run Harness SAST sast scan with named target
+        id: sto-scan-sast
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sast
+          target-type: repository
+          workspace: .
+          target-name: "shreyansh/harnesssastsast"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-sast.env
+          show-summary: 'true'
+
+      - name: Run Harness SAST sast_sca scan with default target
+        id: sto-scan-sast-sca-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sast_sca
+          target-type: repository
+          workspace: .
+          docker-image-tag: "dev"
+          output-file: scan-output-sast-sca-default.env
+          show-summary: 'true'
+
+      - name: Run Harness SAST sast_sca scan with named target
+        id: sto-scan-sast-sca
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sast_sca
+          target-type: repository
+          workspace: .
+          target-name: "shreyansh/harnesssastsastsca"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-sast-sca.env
+          show-summary: 'true'
+
+      - name: Run Harness SAST sca scan with default target
+        id: sto-scan-sca-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sca
+          target-type: repository
+          workspace: .
+          docker-image-tag: "dev"
+          output-file: scan-output-sca-default.env
+          show-summary: 'true'
+
+      - name: Run Harness SAST sca scan with named target
+        id: sto-scan-sca
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: harnesssast
+          scan-mode: orchestration
+          scan-config: sca
+          target-type: repository
+          workspace: .
+          target-name: "shreyansh/harnesssastsca"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-sca.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (sast default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sast-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sast-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sast-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sast-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sast-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sast-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sast-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sast-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sast-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (sast named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sast.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sast.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sast.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sast.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sast.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sast.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sast.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sast.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sast.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (sast_sca default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sast-sca-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sast-sca-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sast-sca-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sast-sca-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sast-sca-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sast-sca-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sast-sca-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sast-sca-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sast-sca-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (sast_sca named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sast-sca.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sast-sca.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sast-sca.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sast-sca.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sast-sca.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sast-sca.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sast-sca.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sast-sca.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sast-sca.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (sca default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sca-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sca-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sca-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sca-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sca-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sca-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sca-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sca-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sca-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (sca named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-sca.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-sca.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-sca.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-sca.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-sca.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-sca.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-sca.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-sca.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-sca.outputs.output-file-path }}"
+
+      - name: Archive scan output (sast default)
+        if: always() && steps.sto-scan-sast-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sast-default
+          path: ${{ steps.sto-scan-sast-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (sast named)
+        if: always() && steps.sto-scan-sast.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sast
+          path: ${{ steps.sto-scan-sast.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (sast_sca default)
+        if: always() && steps.sto-scan-sast-sca-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sast-sca-default
+          path: ${{ steps.sto-scan-sast-sca-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (sast_sca named)
+        if: always() && steps.sto-scan-sast-sca.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sast-sca
+          path: ${{ steps.sto-scan-sast-sca.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (sca default)
+        if: always() && steps.sto-scan-sca-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sca-default
+          path: ${{ steps.sto-scan-sca-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (sca named)
+        if: always() && steps.sto-scan-sca.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-sca
+          path: ${{ steps.sto-scan-sca.outputs.output-file-path }}
+          retention-days: 1
