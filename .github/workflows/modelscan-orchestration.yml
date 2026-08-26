@@ -40,7 +40,7 @@ jobs:
           scan-mode: orchestration
           scan-config: default
           target-type: repository
-          workspace: ./model_scanner
+          workspace: ./model_scanner_supported
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
@@ -59,7 +59,7 @@ jobs:
           scan-mode: orchestration
           scan-config: default
           target-type: repository
-          workspace: ./model_scanner
+          workspace: ./model_scanner_supported
           target-name: "shreyansh/modelscandefault"
           target-variant: "main"
           docker-image-tag: "dev"
