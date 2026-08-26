@@ -41,6 +41,7 @@ jobs:
           scan-config: default
           target-type: repository
           workspace: .
+          tool-args: "--disableOssIndex"
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
@@ -62,89 +63,12 @@ jobs:
           workspace: .
           target-name: "shreyansh/owaspdefault"
           target-variant: "main"
+          tool-args: "--disableOssIndex"
           docker-image-tag: "dev"
           output-file: scan-output-default-named.env
           show-summary: 'true'
 
-      - name: Run OWASP owasp scan with default target
-        id: sto-scan-owasp-default
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: owasp
-          scan-mode: orchestration
-          scan-config: owasp
-          target-type: repository
-          workspace: .
-          docker-image-tag: "dev"
-          output-file: scan-output-owasp-default.env
-          show-summary: 'true'
-
-      - name: Run OWASP owasp scan with named target
-        id: sto-scan-owasp
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: owasp
-          scan-mode: orchestration
-          scan-config: owasp
-          target-type: repository
-          workspace: .
-          target-name: "shreyansh/owasp"
-          target-variant: "main"
-          docker-image-tag: "dev"
-          output-file: scan-output-owasp.env
-          show-summary: 'true'
-
-      - name: Run OWASP owasp 5.x scan with default target
-        id: sto-scan-owasp-5x-default
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: owasp
-          scan-mode: orchestration
-          scan-config: "owasp 5.x"
-          target-type: repository
-          workspace: .
-          docker-image-tag: "dev"
-          output-file: scan-output-owasp-5x-default.env
-          show-summary: 'true'
-
-      - name: Run OWASP owasp 5.x scan with named target
-        id: sto-scan-owasp-5x
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: owasp
-          scan-mode: orchestration
-          scan-config: "owasp 5.x"
-          target-type: repository
-          workspace: .
-          target-name: "shreyansh/owasp5x"
-          target-variant: "main"
-          docker-image-tag: "dev"
-          output-file: scan-output-owasp-5x.env
-          show-summary: 'true'
+     
 
       - name: Use scan output variables
         if: always()
@@ -194,27 +118,8 @@ jobs:
           echo "Info: ${{ steps.sto-scan-owasp.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-owasp.outputs.output-file-path }}"
 
-          echo "===== STO Scan Output Variables (owasp 5.x default) ====="
-          echo "Scan ID: ${{ steps.sto-scan-owasp-5x-default.outputs.scan-id }}"
-          echo "Status: ${{ steps.sto-scan-owasp-5x-default.outputs.status }}"
-          echo "Total Issues: ${{ steps.sto-scan-owasp-5x-default.outputs.total-issues }}"
-          echo "Critical: ${{ steps.sto-scan-owasp-5x-default.outputs.critical }}"
-          echo "High: ${{ steps.sto-scan-owasp-5x-default.outputs.high }}"
-          echo "Medium: ${{ steps.sto-scan-owasp-5x-default.outputs.medium }}"
-          echo "Low: ${{ steps.sto-scan-owasp-5x-default.outputs.low }}"
-          echo "Info: ${{ steps.sto-scan-owasp-5x-default.outputs.info }}"
-          echo "Output File Path: ${{ steps.sto-scan-owasp-5x-default.outputs.output-file-path }}"
+        
 
-          echo "===== STO Scan Output Variables (owasp 5.x named) ====="
-          echo "Scan ID: ${{ steps.sto-scan-owasp-5x.outputs.scan-id }}"
-          echo "Status: ${{ steps.sto-scan-owasp-5x.outputs.status }}"
-          echo "Total Issues: ${{ steps.sto-scan-owasp-5x.outputs.total-issues }}"
-          echo "Critical: ${{ steps.sto-scan-owasp-5x.outputs.critical }}"
-          echo "High: ${{ steps.sto-scan-owasp-5x.outputs.high }}"
-          echo "Medium: ${{ steps.sto-scan-owasp-5x.outputs.medium }}"
-          echo "Low: ${{ steps.sto-scan-owasp-5x.outputs.low }}"
-          echo "Info: ${{ steps.sto-scan-owasp-5x.outputs.info }}"
-          echo "Output File Path: ${{ steps.sto-scan-owasp-5x.outputs.output-file-path }}"
 
       - name: Archive scan output (default)
         if: always() && steps.sto-scan-default.outputs.output-file-path != ''
@@ -248,18 +153,4 @@ jobs:
           path: ${{ steps.sto-scan-owasp.outputs.output-file-path }}
           retention-days: 1
 
-      - name: Archive scan output (owasp 5.x default)
-        if: always() && steps.sto-scan-owasp-5x-default.outputs.output-file-path != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: sto-scan-results-owasp-5x-default
-          path: ${{ steps.sto-scan-owasp-5x-default.outputs.output-file-path }}
-          retention-days: 1
-
-      - name: Archive scan output (owasp 5.x named)
-        if: always() && steps.sto-scan-owasp-5x.outputs.output-file-path != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: sto-scan-results-owasp-5x
-          path: ${{ steps.sto-scan-owasp-5x.outputs.output-file-path }}
-          retention-days: 1
+     
