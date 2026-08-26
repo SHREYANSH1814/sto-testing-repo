@@ -1,0 +1,265 @@
+name: Bandit Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Run Bandit default scan with default target
+        id: sto-scan-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: ./python
+          docker-image-tag: "dev"
+          output-file: scan-output-default.env
+          show-summary: 'true'
+
+      - name: Run Bandit default scan with named target
+        id: sto-scan-default-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: ./python
+          target-name: "shreyansh/banditdefault"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-default-named.env
+          show-summary: 'true'
+
+      - name: Run Bandit bandit-default scan with default target
+        id: sto-scan-bandit-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: bandit-default
+          target-type: repository
+          workspace: ./python
+          docker-image-tag: "dev"
+          output-file: scan-output-bandit-default.env
+          show-summary: 'true'
+
+      - name: Run Bandit bandit-default scan with named target
+        id: sto-scan-bandit-default-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: bandit-default
+          target-type: repository
+          workspace: ./python
+          target-name: "shreyansh/banditbanditdefault"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-bandit-default-named.env
+          show-summary: 'true'
+
+      - name: Run Bandit bandit scan with default target
+        id: sto-scan-bandit
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: bandit
+          target-type: repository
+          workspace: ./python
+          docker-image-tag: "dev"
+          output-file: scan-output-bandit.env
+          show-summary: 'true'
+
+      - name: Run Bandit bandit scan with named target
+        id: sto-scan-bandit-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: bandit
+          scan-mode: orchestration
+          scan-config: bandit
+          target-type: repository
+          workspace: ./python
+          target-name: "shreyansh/banditbandit"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-bandit-named.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (default target) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (default named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (bandit-default target) ====="
+          echo "Scan ID: ${{ steps.sto-scan-bandit-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-bandit-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-bandit-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-bandit-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-bandit-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-bandit-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-bandit-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-bandit-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-bandit-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (bandit-default named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-bandit-default-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-bandit-default-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-bandit-default-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-bandit-default-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-bandit-default-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-bandit-default-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-bandit-default-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-bandit-default-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-bandit-default-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (bandit target) ====="
+          echo "Scan ID: ${{ steps.sto-scan-bandit.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-bandit.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-bandit.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-bandit.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-bandit.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-bandit.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-bandit.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-bandit.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-bandit.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (bandit named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-bandit-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-bandit-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-bandit-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-bandit-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-bandit-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-bandit-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-bandit-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-bandit-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-bandit-named.outputs.output-file-path }}"
+
+      - name: Archive scan output (default)
+        if: always() && steps.sto-scan-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default
+          path: ${{ steps.sto-scan-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (default named)
+        if: always() && steps.sto-scan-default-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default-named
+          path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (bandit-default)
+        if: always() && steps.sto-scan-bandit-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-bandit-default
+          path: ${{ steps.sto-scan-bandit-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (bandit-default named)
+        if: always() && steps.sto-scan-bandit-default-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-bandit-default-named
+          path: ${{ steps.sto-scan-bandit-default-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (bandit)
+        if: always() && steps.sto-scan-bandit.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-bandit
+          path: ${{ steps.sto-scan-bandit.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (bandit named)
+        if: always() && steps.sto-scan-bandit-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-bandit-named
+          path: ${{ steps.sto-scan-bandit-named.outputs.output-file-path }}
+          retention-days: 1
