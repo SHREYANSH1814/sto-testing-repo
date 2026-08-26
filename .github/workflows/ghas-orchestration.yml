@@ -1,0 +1,426 @@
+name: GHAS Orchestration and Extraction Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Run GHAS CodeQL orchestration with default target
+        id: sto-scan-orch-codeql
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: orchestration
+          scan-config: codeql
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-orch-codeql.env
+          show-summary: 'true'
+
+      - name: Run GHAS CodeQL orchestration with named target
+        id: sto-scan-orch-codeql-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: orchestration
+          scan-config: codeql
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          target-name: "shreyansh/ghascodeql"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-orch-codeql-named.env
+          show-summary: 'true'
+
+      - name: Run GHAS Dependabot orchestration with default target
+        id: sto-scan-orch-dependabot
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: orchestration
+          scan-config: dependabot
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-orch-dependabot.env
+          show-summary: 'true'
+
+      - name: Run GHAS Dependabot orchestration with named target
+        id: sto-scan-orch-dependabot-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: orchestration
+          scan-config: dependabot
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          target-name: "shreyansh/ghasdependabot"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-orch-dependabot-named.env
+          show-summary: 'true'
+
+      - name: Run GHAS CodeQL extraction with default target
+        id: sto-scan-extract-codeql
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: codeql
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-codeql.env
+          show-summary: 'true'
+
+      - name: Run GHAS CodeQL extraction with named target
+        id: sto-scan-extract-codeql-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: codeql
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          target-name: "shreyansh/ghascodeqlextract"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-codeql-named.env
+          show-summary: 'true'
+
+      - name: Run GHAS Dependabot extraction with default target
+        id: sto-scan-extract-dependabot
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: dependabot
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-dependabot.env
+          show-summary: 'true'
+
+      - name: Run GHAS Dependabot extraction with named target
+        id: sto-scan-extract-dependabot-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: dependabot
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          target-name: "shreyansh/ghasdependabotextract"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-dependabot-named.env
+          show-summary: 'true'
+
+      - name: Run GHAS secret extraction with default target
+        id: sto-scan-extract-secret
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: secret
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-secret.env
+          show-summary: 'true'
+
+      - name: Run GHAS secret extraction with named target
+        id: sto-scan-extract-secret-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: github_advanced_security
+          scan-mode: extraction
+          scan-config: secret
+          target-type: repository
+          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+          target-name: "shreyansh/ghassecretextract"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-extract-secret-named.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (orchestration codeql default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orch-codeql.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orch-codeql.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orch-codeql.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orch-codeql.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orch-codeql.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orch-codeql.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orch-codeql.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orch-codeql.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orch-codeql.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (orchestration codeql named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orch-codeql-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orch-codeql-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orch-codeql-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orch-codeql-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orch-codeql-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orch-codeql-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orch-codeql-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orch-codeql-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orch-codeql-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (orchestration dependabot default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orch-dependabot.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orch-dependabot.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orch-dependabot.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orch-dependabot.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orch-dependabot.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orch-dependabot.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orch-dependabot.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orch-dependabot.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orch-dependabot.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (orchestration dependabot named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orch-dependabot-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orch-dependabot-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orch-dependabot-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orch-dependabot-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orch-dependabot-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orch-dependabot-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orch-dependabot-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orch-dependabot-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orch-dependabot-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction codeql default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-codeql.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-codeql.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-codeql.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-codeql.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-codeql.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-codeql.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-codeql.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-codeql.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-codeql.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction codeql named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-codeql-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-codeql-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-codeql-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-codeql-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-codeql-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-codeql-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-codeql-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-codeql-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-codeql-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction dependabot default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-dependabot.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-dependabot.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-dependabot.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-dependabot.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-dependabot.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-dependabot.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-dependabot.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-dependabot.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-dependabot.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction dependabot named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-dependabot-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-dependabot-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-dependabot-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-dependabot-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-dependabot-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-dependabot-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-dependabot-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-dependabot-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-dependabot-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction secret default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-secret.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-secret.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-secret.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-secret.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-secret.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-secret.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-secret.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-secret.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-secret.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction secret named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extract-secret-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extract-secret-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extract-secret-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extract-secret-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extract-secret-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extract-secret-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extract-secret-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extract-secret-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extract-secret-named.outputs.output-file-path }}"
+
+      - name: Archive scan output (orchestration codeql)
+        if: always() && steps.sto-scan-orch-codeql.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orch-codeql
+          path: ${{ steps.sto-scan-orch-codeql.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (orchestration codeql named)
+        if: always() && steps.sto-scan-orch-codeql-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orch-codeql-named
+          path: ${{ steps.sto-scan-orch-codeql-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (orchestration dependabot)
+        if: always() && steps.sto-scan-orch-dependabot.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orch-dependabot
+          path: ${{ steps.sto-scan-orch-dependabot.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (orchestration dependabot named)
+        if: always() && steps.sto-scan-orch-dependabot-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orch-dependabot-named
+          path: ${{ steps.sto-scan-orch-dependabot-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction codeql)
+        if: always() && steps.sto-scan-extract-codeql.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-codeql
+          path: ${{ steps.sto-scan-extract-codeql.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction codeql named)
+        if: always() && steps.sto-scan-extract-codeql-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-codeql-named
+          path: ${{ steps.sto-scan-extract-codeql-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction dependabot)
+        if: always() && steps.sto-scan-extract-dependabot.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-dependabot
+          path: ${{ steps.sto-scan-extract-dependabot.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction dependabot named)
+        if: always() && steps.sto-scan-extract-dependabot-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-dependabot-named
+          path: ${{ steps.sto-scan-extract-dependabot-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction secret)
+        if: always() && steps.sto-scan-extract-secret.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-secret
+          path: ${{ steps.sto-scan-extract-secret.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction secret named)
+        if: always() && steps.sto-scan-extract-secret-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extract-secret-named
+          path: ${{ steps.sto-scan-extract-secret-named.outputs.output-file-path }}
+          retention-days: 1
