@@ -1,0 +1,109 @@
+name: OSV Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Run OSV repository scan with default target
+        id: sto-scan-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: osv-scanner
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          docker-image-tag: "dev"
+          output-file: scan-output-default.env
+          show-summary: 'true'
+
+      - name: Run OSV repository scan with named target
+        id: sto-scan-default-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: osv-scanner
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          target-name: "shreyansh/osvdefault"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-default-named.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (repository default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (repository named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-default-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-default-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-default-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-default-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-default-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-default-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-default-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-default-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}"
+
+      - name: Archive scan output (repository default)
+        if: always() && steps.sto-scan-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default
+          path: ${{ steps.sto-scan-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (repository named)
+        if: always() && steps.sto-scan-default-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-default-named
+          path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}
+          retention-days: 1
