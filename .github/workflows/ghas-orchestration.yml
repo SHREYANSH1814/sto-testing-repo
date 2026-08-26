@@ -37,7 +37,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: orchestration
           scan-config: codeql
           target-type: repository
@@ -57,7 +57,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: orchestration
           scan-config: codeql
           target-type: repository
@@ -79,7 +79,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: orchestration
           scan-config: dependabot
           target-type: repository
@@ -99,7 +99,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: orchestration
           scan-config: dependabot
           target-type: repository
@@ -121,7 +121,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: codeql
           target-type: repository
@@ -140,7 +140,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: codeql
           target-type: repository
@@ -161,7 +161,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: dependabot
           target-type: repository
@@ -180,7 +180,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: dependabot
           target-type: repository
@@ -201,7 +201,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: secret
           target-type: repository
@@ -220,7 +220,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: github_advanced_security
+          scanner: githubadvancedsecurity
           scan-mode: extraction
           scan-config: secret
           target-type: repository
