@@ -85,7 +85,7 @@ resource "aws_db_instance" "unencrypted" {
 resource "aws_ebs_volume" "unencrypted" {
   availability_zone = "us-east-1a"
   size              = 10
-  encrypted         = false
+  encrypted         = true
 }
 
 resource "aws_cloudtrail" "no_validation" {
