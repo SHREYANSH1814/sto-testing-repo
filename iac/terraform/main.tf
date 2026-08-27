@@ -93,4 +93,12 @@ resource "aws_cloudtrail" "no_validation" {
   s3_bucket_name                = aws_s3_bucket.public_data.id
   enable_log_file_validation    = false
   include_global_service_events = false
+
+  kms_key_id = aws_kms_key.cloudtrail_key.arn
+}
+
+resource "aws_kms_key" "cloudtrail_key" {
+  description             = "KMS key for encrypting CloudTrail logs"
+  deletion_window_in_days = 10
+  enable_key_rotation     = true
 }
