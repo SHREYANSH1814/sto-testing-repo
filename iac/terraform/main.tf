@@ -77,7 +77,7 @@ resource "aws_db_instance" "unencrypted" {
   allocated_storage   = 20
   username            = "admin"
   password            = "SuperSecret123"
-  storage_encrypted   = false
+  storage_encrypted   = true
   publicly_accessible = true
   skip_final_snapshot = true
 }
@@ -85,7 +85,7 @@ resource "aws_db_instance" "unencrypted" {
 resource "aws_ebs_volume" "unencrypted" {
   availability_zone = "us-east-1a"
   size              = 10
-  encrypted         = false
+  encrypted         = true
 }
 
 resource "aws_cloudtrail" "no_validation" {
