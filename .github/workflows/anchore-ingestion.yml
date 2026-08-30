@@ -36,6 +36,8 @@ jobs:
           harness-domain: ${{ inputs.harness-domain }}
           scanner: anchore
           scan-mode: ingestion
+          target-type: container
+          ingestion-file: ghas-ingestion/anchore-ingestion.json
           target-name: "shreyansh/anchore"
           target-variant: "main"
           show-summary: 'true'

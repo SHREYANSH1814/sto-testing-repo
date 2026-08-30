@@ -15,12 +15,12 @@ inputs:
       Harness Personal Access Token or Service Account Token.
       Composite actions cannot read secrets.* directly — pass a repo/org secret:
 
-        harness-token: <repository or organization secret>
+        harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
 
       Or omit this input and set job/step env (Jenkins withCredentials equivalent):
 
         env:
-          HARNESS_TOKEN: <repository or organization secret>
+          HARNESS_TOKEN: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
     required: false
     default: ''
 
@@ -54,6 +54,13 @@ inputs:
       • extraction - Fetch results from scanner's API/platform
     required: false
     default: 'orchestration'
+
+  ingestion-file:
+    description: |
+      Path to a pre-generated scanner results file (required when scan-mode is ingestion).
+      Relative to the GitHub workspace. Mapped to INGESTION_FILE inside the scanner container.
+    required: false
+    default: ''
 
   scan-config:
     description: |
@@ -101,11 +108,15 @@ inputs:
     default: '.'
 
   target-name:
-    description: 'Target name for tracking (auto-detected from repository if not provided)'
+    description: |
+      Target name in Harness STO. Required with target-variant for ingestion and for manual targeting.
+      Omit both fields to let the plugin auto-detect.
     required: false
 
   target-variant:
-    description: 'Target variant/branch for tracking (auto-detected from branch if not provided)'
+    description: |
+      Target variant in Harness STO (branch, tag, or image tag). Required with target-name.
+      Omit both fields to let the plugin auto-detect.
     required: false
 
   # ============================================================================
@@ -430,6 +441,41 @@ runs:
           echo "Mounted Docker socket for local image scanning"
         fi
 
+        SCAN_MODE="${{ inputs.scan-mode }}"
+        INGESTION_FILE_INPUT="${{ inputs.ingestion-file }}"
+
+        if [ "$SCAN_MODE" != "ingestion" ] && [ -n "$INGESTION_FILE_INPUT" ]; then
+          echo "Error: ingestion-file is only valid when scan-mode is ingestion"
+          exit 1
+        fi
+
+        if [ "$SCAN_MODE" = "ingestion" ]; then
+          if [ -z "$INGESTION_FILE_INPUT" ]; then
+            echo "Error: ingestion-file is required when scan-mode is ingestion"
+            exit 1
+          fi
+          WORKSPACE_ROOT="$(cd "${{ github.workspace }}" && pwd)"
+          case "$INGESTION_FILE_INPUT" in
+            /*) CANDIDATE="$INGESTION_FILE_INPUT" ;;
+            *) CANDIDATE="$WORKSPACE_ROOT/$INGESTION_FILE_INPUT" ;;
+          esac
+          if [ ! -f "$CANDIDATE" ]; then
+            echo "Error: ingestion file not found: $CANDIDATE"
+            exit 1
+          fi
+          HOST_INGEST="$(cd "$(dirname "$CANDIDATE")" && pwd)/$(basename "$CANDIDATE")"
+          case "$HOST_INGEST" in
+            "$WORKSPACE_ROOT"|"$WORKSPACE_ROOT"/*) ;;
+            *)
+              echo "Error: ingestion-file must be under the GitHub workspace ($WORKSPACE_ROOT)"
+              exit 1
+              ;;
+          esac
+          INGESTION_CONTAINER="/harness-ingestion/results"
+          DOCKER_CMD="$DOCKER_CMD -v ${HOST_INGEST}:${INGESTION_CONTAINER}:ro"
+          DOCKER_CMD="$DOCKER_CMD -e INGESTION_FILE=${INGESTION_CONTAINER}"
+        fi
+
         # ======================================================================
         # HARNESS PLATFORM AUTHENTICATION
         # Prefer action inputs; else job/step env (e.g. secrets.HARNESS_PAT_TOKEN_STO_LAB).
@@ -493,18 +539,35 @@ runs:
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
-        # TARGET METADATA (auto-detect from GitHub context if not provided)
+        # TARGET METADATA
+        # PAT/SAT on-prem Docker rewrites lowercase "manual" to auto; emit MANUAL.
         # ======================================================================
-        if [ -n "${{ inputs.target-name }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=${{ inputs.target-name }}"
-        elif [ "${{ inputs.target-type }}" = "repository" ] && [ -n "${{ github.repository }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=${{ github.repository }}"
+        TARGET_NAME="${{ inputs.target-name }}"
+        TARGET_VARIANT="${{ inputs.target-variant }}"
+
+        if [ -n "$TARGET_NAME" ] && [ -z "$TARGET_VARIANT" ]; then
+          echo "Error: target-variant is required when target-name is set"
+          exit 1
+        fi
+        if [ -z "$TARGET_NAME" ] && [ -n "$TARGET_VARIANT" ]; then
+          echo "Error: target-name is required when target-variant is set"
+          exit 1
         fi
 
-        if [ -n "${{ inputs.target-variant }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=${{ inputs.target-variant }}"
-        elif [ "${{ inputs.target-type }}" = "repository" ] && [ -n "${{ github.ref_name }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=${{ github.ref_name }}"
+        if [ "$SCAN_MODE" = "ingestion" ]; then
+          if [ -z "$TARGET_NAME" ] || [ -z "$TARGET_VARIANT" ]; then
+            echo "Error: target-name and target-variant are required when scan-mode is ingestion"
+            exit 1
+          fi
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=MANUAL"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=$TARGET_NAME"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=$TARGET_VARIANT"
+        elif [ -n "$TARGET_NAME" ] && [ -n "$TARGET_VARIANT" ]; then
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=MANUAL"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=$TARGET_NAME"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=$TARGET_VARIANT"
+        else
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=auto"
         fi
 
         # ======================================================================
