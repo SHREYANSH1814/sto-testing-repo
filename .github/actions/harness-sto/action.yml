@@ -159,6 +159,10 @@ inputs:
     required: false
     default: 'https'
 
+  instance-port:
+    description: 'Instance port to scan (for instance scans, e.g., 443)'
+    required: false
+
   instance-path:
     description: 'Instance path (for instance scans, e.g., /api)'
     required: false
@@ -597,6 +601,7 @@ runs:
         if [ "${{ inputs.target-type }}" = "instance" ]; then
           [ -n "${{ inputs.instance-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_DOMAIN=${{ inputs.instance-domain }}"
           [ -n "${{ inputs.instance-protocol }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PROTOCOL=${{ inputs.instance-protocol }}"
+          [ -n "${{ inputs.instance-port }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PORT=${{ inputs.instance-port }}"
           [ -n "${{ inputs.instance-path }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PATH=${{ inputs.instance-path }}"
         fi
 
