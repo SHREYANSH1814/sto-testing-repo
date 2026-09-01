@@ -13,7 +13,9 @@ inputs:
   harness-token:
     description: |
       Harness Personal Access Token or Service Account Token.
-      Composite actions cannot read secrets.* directly — pass a repo/org secret:
+      Composite actions cannot read the secrets context, so pass a repo/org
+      secret from the calling workflow (drop the backslash when copying —
+      it only stops GitHub evaluating these examples as expressions):
 
         harness-token: <repository or organization secret>
 
@@ -51,9 +53,16 @@ inputs:
       Scanner execution mode:
       • orchestration - Plugin runs scanner and ingests results (default)
       • ingestion - Upload pre-generated scan results file
-      • extraction - Fetch results from scanner's API/platform
+      • extraction - Fetch results from scanner's API/platform (not supported for Prowler)
     required: false
     default: 'orchestration'
+
+  ingestion-file:
+    description: |
+      Path to a pre-generated scanner results file (required when scan-mode is ingestion).
+      Relative to the GitHub workspace. Mapped to INGESTION_FILE inside the scanner container.
+    required: false
+    default: ''
 
   scan-config:
     description: |
@@ -65,7 +74,10 @@ inputs:
     default: 'default'
 
   target-type:
-    description: 'Type of scan: repository, container, instance, or configuration'
+    description: |
+      Type of scan: repository, container, instance, or configuration.
+      Prowler uses configuration only (empty or repository is remapped).
+      Traceable uses instance only (empty or repository is remapped).
     required: false
     default: 'repository'
 
@@ -89,7 +101,89 @@ inputs:
     required: false
 
   scanner-project-name:
-    description: 'Project name in scanner (for Checkmarx, SonarQube, etc.)'
+    description: 'Project name in scanner (for Checkmarx, SonarQube, Mend, etc.)'
+    required: false
+
+  scanner-project-key:
+    description: 'SonarQube project key (SCANNER_PROJECT_KEY).'
+    required: false
+
+  scanner-analysis-detection:
+    description: |
+      SonarQube branch analysis detection: auto or manual (PRODUCT_ANALYSIS_DETECTION).
+      Optional. Unset leaves plugin default (no auto branch fill). auto fills branch from git variant.
+    required: false
+
+  scanner-branch-name:
+    description: 'SonarQube branch name (SCANNER_BRANCH_NAME → -Dsonar.branch.name).'
+    required: false
+
+  scanner-exclude:
+    description: 'Paths to exclude (SCANNER_EXCLUDE). SonarQube exclusions; Mend SAST/SCA path exclusions and legacy agent.'
+    required: false
+
+  scanner-java-binaries:
+    description: 'SonarQube Java binaries path (SCANNER_JAVA_BINARIES → -Dsonar.java.binaries).'
+    required: false
+
+  scanner-java-libraries:
+    description: 'SonarQube Java libraries path (SCANNER_JAVA_LIBRARIES → -Dsonar.java.libraries).'
+    required: false
+
+  scanner-verify-ssl:
+    description: 'Verify TLS when the plugin talks to the scanner API (SCANNER_VERIFY_SSL). Applies to any scanner that uses product_verify_ssl. No default; omit to use plugin default.'
+    required: false
+
+  scanner-organization-id:
+    description: 'SonarCloud organization key (SCANNER_ORGANIZATION_ID). Plugin warns or fails without it for SonarCloud.'
+    required: false
+
+  scanner-product-name:
+    description: 'Mend product name (SCANNER_PRODUCT_NAME). Plugin infers lookup from name vs token.'
+    required: false
+
+  scanner-product-token:
+    description: 'Mend product token (SCANNER_PRODUCT_TOKEN). Plugin infers lookup from name vs token.'
+    required: false
+
+  scanner-project-token:
+    description: 'Mend project token (SCANNER_PROJECT_TOKEN). Used with product token for extraction.'
+    required: false
+
+  scanner-suite-id:
+    description: 'Traceable suite ID (SCANNER_SUITE_ID). Required for orchestration; extraction may use suite ID or scan ID.'
+    required: false
+
+  scanner-scan-id:
+    description: 'Traceable scan ID (SCANNER_SCAN_ID). Extraction alternative to suite ID.'
+    required: false
+
+  scanner-scan-name:
+    description: 'Traceable scan name (SCANNER_SCAN_NAME). Optional for orchestration.'
+    required: false
+
+  scanner-runner-id:
+    description: 'Traceable runner ID (SCANNER_RUNNER_ID). Optional for orchestration.'
+    required: false
+
+  configuration-type:
+    description: |
+      Configuration secret type (CONFIGURATION_TYPE). Prowler uses aws_account.
+      When scanner is prowler and this is empty, the action sets aws_account.
+    required: false
+
+  configuration-region:
+    description: |
+      AWS region stored on configuration secrets as awsRegion (CONFIGURATION_REGION).
+      Does not set Prowler CLI region or AWS_DEFAULT_REGION.
+    required: false
+
+  configuration-access-id:
+    description: 'AWS access key ID for configuration scans (CONFIGURATION_ACCESS_ID). Required for Prowler. Distinct from scanner-access-id (PRODUCT_ACCESS_ID).'
+    required: false
+
+  configuration-access-token:
+    description: 'AWS secret access key for configuration scans (CONFIGURATION_ACCESS_TOKEN). Required for Prowler. Distinct from scanner-access-token (PRODUCT_ACCESS_TOKEN).'
     required: false
 
   # ============================================================================
@@ -101,11 +195,15 @@ inputs:
     default: '.'
 
   target-name:
-    description: 'Target name for tracking (auto-detected from repository if not provided)'
+    description: |
+      Target name in Harness STO. Required with target-variant for ingestion and for manual targeting.
+      Omit both fields to let the plugin auto-detect.
     required: false
 
   target-variant:
-    description: 'Target variant/branch for tracking (auto-detected from branch if not provided)'
+    description: |
+      Target variant in Harness STO (branch, tag, or image tag). Required with target-name.
+      Omit both fields to let the plugin auto-detect.
     required: false
 
   # ============================================================================
@@ -148,8 +246,16 @@ inputs:
     required: false
     default: 'https'
 
+  instance-port:
+    description: 'Instance port to scan (for instance scans, e.g., 443)'
+    required: false
+
   instance-path:
     description: 'Instance path (for instance scans, e.g., /api)'
+    required: false
+
+  zap-port:
+    description: 'ZAP daemon listen port (ZAP_PORT). Defaults to 8981 in the plugin if unset.'
     required: false
 
   # ============================================================================
@@ -209,17 +315,15 @@ inputs:
 
       Common advanced variables:
       • SCANNER_TEAM_NAME - Team name in scanner platform
-      • SCANNER_VERIFY_SSL - SSL verification (true/false)
       • SCANNER_AUTH_TYPE - Authentication method
       • SCANNER_API_VERSION - Scanner API version
-      • SCANNER_EXCLUDE - Files/paths to exclude from scan
+      • PRODUCT_INCLUDE - Legacy Mend/WhiteSource agent include globs (platform sast/sca/container ignore include)
       • TOOL_TIMEOUT - Scanner timeout in seconds
 
       Example:
         scanner-env: |
           SCANNER_TEAM_NAME=security-team
-          SCANNER_VERIFY_SSL=false
-          SCANNER_EXCLUDE=*.test.js,docs/**
+          PRODUCT_INCLUDE=**/*.java
           TOOL_TIMEOUT=600
     required: false
 
@@ -274,8 +378,31 @@ runs:
         # Map scanner name to Docker image name
         # Based on STO plugin configuration: stoStepConfig.images
         SCANNER="${{ inputs.scanner }}"
+        SCANNER_LC=$(printf '%s' "$SCANNER" | tr '[:upper:]' '[:lower:]')
+        PRODUCT_SCANNER="$SCANNER"
+        if [ "$SCANNER_LC" = "mend" ]; then
+          PRODUCT_SCANNER="whitesource"
+        fi
 
-        case "$SCANNER" in
+        TARGET_TYPE="${{ inputs.target-type }}"
+        TARGET_TYPE_LC=$(printf '%s' "$TARGET_TYPE" | tr '[:upper:]' '[:lower:]')
+        if [ "$SCANNER_LC" = "prowler" ]; then
+          if [ -z "$TARGET_TYPE_LC" ] || [ "$TARGET_TYPE_LC" = "repository" ]; then
+            TARGET_TYPE="configuration"
+          elif [ "$TARGET_TYPE_LC" != "configuration" ]; then
+            echo "Error: prowler supports target-type configuration only (got: $TARGET_TYPE)"
+            exit 1
+          fi
+        elif [ "$SCANNER_LC" = "traceable" ]; then
+          if [ -z "$TARGET_TYPE_LC" ] || [ "$TARGET_TYPE_LC" = "repository" ]; then
+            TARGET_TYPE="instance"
+          elif [ "$TARGET_TYPE_LC" != "instance" ]; then
+            echo "Error: traceable supports target-type instance only (got: $TARGET_TYPE)"
+            exit 1
+          fi
+        fi
+
+        case "$SCANNER_LC" in
           anchore)
             IMAGE_NAME="anchore-job-runner"
             ;;
@@ -392,10 +519,14 @@ runs:
 
         SCANNER_IMAGE="harness/${IMAGE_NAME}:${{ inputs.docker-image-tag }}"
         echo "scanner-image=$SCANNER_IMAGE" >> $GITHUB_OUTPUT
+        echo "product-scanner=$PRODUCT_SCANNER" >> $GITHUB_OUTPUT
+        echo "target-type=$TARGET_TYPE" >> $GITHUB_OUTPUT
         echo "Using Docker image: $SCANNER_IMAGE"
+        echo "Product scanner: $PRODUCT_SCANNER"
+        echo "Target type: $TARGET_TYPE"
 
         # Set workspace path
-        if [ "${{ inputs.target-type }}" = "repository" ]; then
+        if [ "$TARGET_TYPE" = "repository" ]; then
           WORKSPACE_PATH="${{ github.workspace }}/${{ inputs.workspace }}"
           echo "workspace-path=$WORKSPACE_PATH" >> $GITHUB_OUTPUT
         fi
@@ -415,7 +546,7 @@ runs:
         DOCKER_CMD="docker run --rm"
 
         # Add volume mounts for repository scans
-        if [ "${{ inputs.target-type }}" = "repository" ]; then
+        if [ "${{ steps.config.outputs.target-type }}" = "repository" ]; then
           DOCKER_CMD="$DOCKER_CMD -v ${{ steps.config.outputs.workspace-path }}:/harness"
         fi
 
@@ -428,6 +559,41 @@ runs:
         if [ "${{ inputs.image-type }}" = "local_image" ]; then
           DOCKER_CMD="$DOCKER_CMD -v /var/run/docker.sock:/var/run/docker.sock"
           echo "Mounted Docker socket for local image scanning"
+        fi
+
+        SCAN_MODE="${{ inputs.scan-mode }}"
+        INGESTION_FILE_INPUT="${{ inputs.ingestion-file }}"
+
+        if [ "$SCAN_MODE" != "ingestion" ] && [ -n "$INGESTION_FILE_INPUT" ]; then
+          echo "Error: ingestion-file is only valid when scan-mode is ingestion"
+          exit 1
+        fi
+
+        if [ "$SCAN_MODE" = "ingestion" ]; then
+          if [ -z "$INGESTION_FILE_INPUT" ]; then
+            echo "Error: ingestion-file is required when scan-mode is ingestion"
+            exit 1
+          fi
+          WORKSPACE_ROOT="$(cd "${{ github.workspace }}" && pwd)"
+          case "$INGESTION_FILE_INPUT" in
+            /*) CANDIDATE="$INGESTION_FILE_INPUT" ;;
+            *) CANDIDATE="$WORKSPACE_ROOT/$INGESTION_FILE_INPUT" ;;
+          esac
+          if [ ! -f "$CANDIDATE" ]; then
+            echo "Error: ingestion file not found: $CANDIDATE"
+            exit 1
+          fi
+          HOST_INGEST="$(cd "$(dirname "$CANDIDATE")" && pwd)/$(basename "$CANDIDATE")"
+          case "$HOST_INGEST" in
+            "$WORKSPACE_ROOT"|"$WORKSPACE_ROOT"/*) ;;
+            *)
+              echo "Error: ingestion-file must be under the GitHub workspace ($WORKSPACE_ROOT)"
+              exit 1
+              ;;
+          esac
+          INGESTION_CONTAINER="/harness-ingestion/results"
+          DOCKER_CMD="$DOCKER_CMD -v ${HOST_INGEST}:${INGESTION_CONTAINER}:ro"
+          DOCKER_CMD="$DOCKER_CMD -e INGESTION_FILE=${INGESTION_CONTAINER}"
         fi
 
         # ======================================================================
@@ -475,10 +641,18 @@ runs:
         # ======================================================================
         # SCANNER CONFIGURATION
         # ======================================================================
-        DOCKER_CMD="$DOCKER_CMD -e SCANNER=${{ inputs.scanner }}"
+        PRODUCT_SCANNER="${{ steps.config.outputs.product-scanner }}"
+        TARGET_TYPE="${{ steps.config.outputs.target-type }}"
+        DOCKER_CMD="$DOCKER_CMD -e SCANNER=$PRODUCT_SCANNER"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_MODE=${{ inputs.scan-mode }}"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_CONFIG=${{ inputs.scan-config }}"
-        DOCKER_CMD="$DOCKER_CMD -e TARGET_TYPE=${{ inputs.target-type }}"
+        DOCKER_CMD="$DOCKER_CMD -e TARGET_TYPE=$TARGET_TYPE"
+
+        if [ "$(printf '%s' "${{ inputs.scanner }}" | tr '[:upper:]' '[:lower:]')" = "prowler" ]; then
+          CONFIGURATION_TYPE="${{ inputs.configuration-type }}"
+          CONFIGURATION_TYPE="${CONFIGURATION_TYPE:-aws_account}"
+          DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_TYPE=$CONFIGURATION_TYPE"
+        fi
 
         # ======================================================================
         # EXECUTION CONTEXT (link back to the GHA run that orchestrated this)
@@ -493,18 +667,34 @@ runs:
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
-        # TARGET METADATA (auto-detect from GitHub context if not provided)
+        # TARGET METADATA
         # ======================================================================
-        if [ -n "${{ inputs.target-name }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=${{ inputs.target-name }}"
-        elif [ "${{ inputs.target-type }}" = "repository" ] && [ -n "${{ github.repository }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=${{ github.repository }}"
+        TARGET_NAME="${{ inputs.target-name }}"
+        TARGET_VARIANT="${{ inputs.target-variant }}"
+
+        if [ -n "$TARGET_NAME" ] && [ -z "$TARGET_VARIANT" ]; then
+          echo "Error: target-variant is required when target-name is set"
+          exit 1
+        fi
+        if [ -z "$TARGET_NAME" ] && [ -n "$TARGET_VARIANT" ]; then
+          echo "Error: target-name is required when target-variant is set"
+          exit 1
         fi
 
-        if [ -n "${{ inputs.target-variant }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=${{ inputs.target-variant }}"
-        elif [ "${{ inputs.target-type }}" = "repository" ] && [ -n "${{ github.ref_name }}" ]; then
-          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=${{ github.ref_name }}"
+        if [ "$SCAN_MODE" = "ingestion" ]; then
+          if [ -z "$TARGET_NAME" ] || [ -z "$TARGET_VARIANT" ]; then
+            echo "Error: target-name and target-variant are required when scan-mode is ingestion"
+            exit 1
+          fi
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=MANUAL"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=$TARGET_NAME"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=$TARGET_VARIANT"
+        elif [ -n "$TARGET_NAME" ] && [ -n "$TARGET_VARIANT" ]; then
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=MANUAL"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_NAME=$TARGET_NAME"
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_VARIANT=$TARGET_VARIANT"
+        else
+          DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=auto"
         fi
 
         # ======================================================================
@@ -515,11 +705,30 @@ runs:
         [ -n "${{ inputs.scanner-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_DOMAIN=${{ inputs.scanner-domain }}"
         [ -n "${{ inputs.scanner-region }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_REGION=${{ inputs.scanner-region }}"
         [ -n "${{ inputs.scanner-project-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_NAME=${{ inputs.scanner-project-name }}"
+        [ -n "${{ inputs.scanner-project-key }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=${{ inputs.scanner-project-key }}"
+        [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
+        [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
+        [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=${{ inputs.scanner-exclude }}"
+        [ -n "${{ inputs.scanner-java-binaries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_BINARIES=${{ inputs.scanner-java-binaries }}"
+        [ -n "${{ inputs.scanner-java-libraries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_LIBRARIES=${{ inputs.scanner-java-libraries }}"
+        [ -n "${{ inputs.scanner-verify-ssl }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_VERIFY_SSL=${{ inputs.scanner-verify-ssl }}"
+        [ -n "${{ inputs.scanner-organization-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_ORGANIZATION_ID=${{ inputs.scanner-organization-id }}"
+        [ -n "${{ inputs.scanner-product-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PRODUCT_NAME=${{ inputs.scanner-product-name }}"
+        [ -n "${{ inputs.scanner-product-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PRODUCT_TOKEN=${{ inputs.scanner-product-token }}"
+        [ -n "${{ inputs.scanner-project-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_TOKEN=${{ inputs.scanner-project-token }}"
+        [ -n "${{ inputs.scanner-suite-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SUITE_ID=${{ inputs.scanner-suite-id }}"
+        [ -n "${{ inputs.scanner-scan-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SCAN_ID=${{ inputs.scanner-scan-id }}"
+        [ -n "${{ inputs.scanner-scan-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SCAN_NAME=${{ inputs.scanner-scan-name }}"
+        [ -n "${{ inputs.scanner-runner-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_RUNNER_ID=${{ inputs.scanner-runner-id }}"
+        [ -n "${{ inputs.configuration-region }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_REGION=${{ inputs.configuration-region }}"
+        [ -n "${{ inputs.configuration-access-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_ACCESS_ID=${{ inputs.configuration-access-id }}"
+        [ -n "${{ inputs.configuration-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_ACCESS_TOKEN=${{ inputs.configuration-access-token }}"
+        [ -n "${{ inputs.zap-port }}" ] && DOCKER_CMD="$DOCKER_CMD -e ZAP_PORT=${{ inputs.zap-port }}"
 
         # ======================================================================
         # CONTAINER SCAN CONFIGURATION
         # ======================================================================
-        if [ "${{ inputs.target-type }}" = "container" ]; then
+        if [ "$TARGET_TYPE" = "container" ]; then
           [ -n "${{ inputs.image-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_NAME=${{ inputs.image-name }}"
           [ -n "${{ inputs.image-tag }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TAG=${{ inputs.image-tag }}"
           [ -n "${{ inputs.image-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONTAINER_DOMAIN=${{ inputs.image-domain }}"
@@ -531,9 +740,10 @@ runs:
         # ======================================================================
         # INSTANCE SCAN CONFIGURATION (DAST)
         # ======================================================================
-        if [ "${{ inputs.target-type }}" = "instance" ]; then
+        if [ "$TARGET_TYPE" = "instance" ]; then
           [ -n "${{ inputs.instance-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_DOMAIN=${{ inputs.instance-domain }}"
           [ -n "${{ inputs.instance-protocol }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PROTOCOL=${{ inputs.instance-protocol }}"
+          [ -n "${{ inputs.instance-port }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PORT=${{ inputs.instance-port }}"
           [ -n "${{ inputs.instance-path }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PATH=${{ inputs.instance-path }}"
         fi
 
