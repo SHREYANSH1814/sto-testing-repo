@@ -101,7 +101,31 @@ inputs:
     required: false
 
   scanner-project-name:
-    description: 'Project name in scanner (for Checkmarx, SonarQube, Mend, etc.)'
+    description: 'Project name in scanner (for Checkmarx, SonarQube, Mend, Black Duck, etc.)'
+    required: false
+
+  scanner-project-version:
+    description: |
+      Scanner project version (SCANNER_PROJECT_VERSION → PRODUCT_PROJECT_VERSION).
+      Black Duck Hub project version as defined in the scanner.
+    required: false
+
+  scanner-api-version:
+    description: |
+      Scanner API version (SCANNER_API_VERSION → PRODUCT_API_VERSION).
+      Black Duck Hub: 5.0.2, 4.2.0, or 4.1.0.
+    required: false
+
+  scanner-auth-type:
+    description: |
+      Scanner authentication type (SCANNER_AUTH_TYPE → PRODUCT_AUTH_TYPE).
+      Black Duck Hub: apiKey or usernamePassword.
+    required: false
+
+  scanner-context:
+    description: |
+      Scanner context name (SCANNER_CONTEXT → PRODUCT_CONTEXT_NAME).
+      ZAP context name for orchestrated instance scans.
     required: false
 
   scanner-project-key:
@@ -269,6 +293,26 @@ inputs:
     description: 'Docker execution mode: with-docker-in-docker or without-docker-in-docker'
     required: false
 
+  ingest-tool-severity:
+    description: |
+      Use the scanner's original severity ratings instead of Harness normalization
+      (INGEST_TOOL_SEVERITY). Matches "Use Raw Scanner Severity" in the Harness UI.
+      true/false. Applies to Snyk, Checkmarx, Prisma Cloud, Anchore, and others.
+    required: false
+
+  include-raw:
+    description: |
+      Include raw scanner findings in output (INCLUDE_RAW).
+      true/false. Plugin default is true if unset.
+    required: false
+
+  privileged:
+    description: |
+      Run the scanner container with Docker --privileged.
+      Same as the Privileged toggle on Harness STO step templates.
+    required: false
+    default: 'false'
+
   # ============================================================================
   # OUTPUT & BUILD BEHAVIOR
   # ============================================================================
@@ -315,10 +359,10 @@ inputs:
 
       Common advanced variables:
       • SCANNER_TEAM_NAME - Team name in scanner platform
-      • SCANNER_AUTH_TYPE - Authentication method
-      • SCANNER_API_VERSION - Scanner API version
       • PRODUCT_INCLUDE - Legacy Mend/WhiteSource agent include globs (platform sast/sca/container ignore include)
       • TOOL_TIMEOUT - Scanner timeout in seconds
+      Prefer first-class inputs for SCANNER_AUTH_TYPE, SCANNER_API_VERSION, SCANNER_CONTEXT,
+      SCANNER_PROJECT_VERSION, INGEST_TOOL_SEVERITY, and INCLUDE_RAW.
 
       Example:
         scanner-env: |
@@ -383,6 +427,9 @@ runs:
         if [ "$SCANNER_LC" = "mend" ]; then
           PRODUCT_SCANNER="whitesource"
         fi
+        if [ "$SCANNER_LC" = "customingest" ] || [ "$SCANNER_LC" = "custom_ingest" ]; then
+          PRODUCT_SCANNER="custom"
+        fi
 
         TARGET_TYPE="${{ inputs.target-type }}"
         TARGET_TYPE_LC=$(printf '%s' "$TARGET_TYPE" | tr '[:upper:]' '[:lower:]')
@@ -439,7 +486,7 @@ runs:
           checkov)
             IMAGE_NAME="checkov-job-runner"
             ;;
-          codeql|coverity|custom)
+          codeql|coverity|custom|customingest|custom_ingest)
             IMAGE_NAME="sto-plugin"
             ;;
           fossa)
@@ -544,6 +591,10 @@ runs:
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
+        if [ "${{ inputs.privileged }}" = "true" ]; then
+          DOCKER_CMD="$DOCKER_CMD --privileged"
+          echo "Running scanner container as privileged"
+        fi
 
         # Add volume mounts for repository scans
         if [ "${{ steps.config.outputs.target-type }}" = "repository" ]; then
@@ -705,6 +756,10 @@ runs:
         [ -n "${{ inputs.scanner-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_DOMAIN=${{ inputs.scanner-domain }}"
         [ -n "${{ inputs.scanner-region }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_REGION=${{ inputs.scanner-region }}"
         [ -n "${{ inputs.scanner-project-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_NAME=${{ inputs.scanner-project-name }}"
+        [ -n "${{ inputs.scanner-project-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_VERSION=${{ inputs.scanner-project-version }}"
+        [ -n "${{ inputs.scanner-api-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_API_VERSION=${{ inputs.scanner-api-version }}"
+        [ -n "${{ inputs.scanner-auth-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_AUTH_TYPE=${{ inputs.scanner-auth-type }}"
+        [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=${{ inputs.scanner-context }}"
         [ -n "${{ inputs.scanner-project-key }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=${{ inputs.scanner-project-key }}"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
@@ -752,6 +807,8 @@ runs:
         # ======================================================================
         [ -n "${{ inputs.tool-args }}" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=${{ inputs.tool-args }}"
         [ -n "${{ inputs.docker-mode }}" ] && DOCKER_CMD="$DOCKER_CMD -e DOCKER_MODE=${{ inputs.docker-mode }}"
+        [ -n "${{ inputs.ingest-tool-severity }}" ] && DOCKER_CMD="$DOCKER_CMD -e INGEST_TOOL_SEVERITY=${{ inputs.ingest-tool-severity }}"
+        [ -n "${{ inputs.include-raw }}" ] && DOCKER_CMD="$DOCKER_CMD -e INCLUDE_RAW=${{ inputs.include-raw }}"
 
         # ======================================================================
         # BUILD BEHAVIOR
