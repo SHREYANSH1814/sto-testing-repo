@@ -41,6 +41,9 @@ jobs:
           instance-path: "/435433807708005776736997120918226188991"
           target-type: "instance"
           scan-config: default
+          instance-port: "80"
+          zap-port: "8981"
+          scanner-context: "Default Context"
 
       - name: Run Zap orchestration scan with attack scan config
         id: sto-scan-attack
