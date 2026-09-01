@@ -823,7 +823,7 @@ runs:
         [ -n "${{ inputs.scanner-project-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_VERSION=${{ inputs.scanner-project-version }}"
         [ -n "${{ inputs.scanner-api-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_API_VERSION=${{ inputs.scanner-api-version }}"
         [ -n "${{ inputs.scanner-auth-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_AUTH_TYPE=${{ inputs.scanner-auth-type }}"
-        [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=${{ inputs.scanner-context }}"
+        [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=$(printf '%q' "${{ inputs.scanner-context }}")"
         [ -n "${{ inputs.scanner-project-key }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=${{ inputs.scanner-project-key }}"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
@@ -915,7 +915,7 @@ runs:
 
         echo "Running: $DOCKER_CMD"
         set +e
-        eval $DOCKER_CMD
+        eval "$DOCKER_CMD"
         SCAN_EXIT=$?
         set -e
 
