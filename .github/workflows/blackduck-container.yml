@@ -1,0 +1,92 @@
+name: Black Duck Container Security Scan
+
+# Mirrors Harness pipeline `blackduck` (STO_API_AUTO_ORG_REG_TEST / STO_API_AUTO_PROJ_REG_TEST):
+# BlackDuck orchestration, container auto-detect, johnkday/nodegoat:latest, apiKey 5.0.2.
+# GHA has no K8s docker:dind sidecar — ubuntu-latest dockerd + action auto-mounts docker.sock
+# for Black Duck container scans (STO-12751 / STO-12712).
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://sto.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Black Duck container scan
+        id: sto-scan
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: blackduck
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          log-level: INFO
+          privileged: 'true'
+
+          image-name: johnkday/nodegoat
+          image-tag: latest
+          image-domain: docker.io
+          image-type: docker_v2
+
+          scanner-domain: ${{ secrets.BLACKDUCK_DOMAIN }}
+          scanner-access-id: ${{ secrets.BLACKDUCK_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.BLACKDUCK_ACCESS_TOKEN }}
+          scanner-auth-type: apiKey
+          scanner-api-version: '5.0.2'
+          scanner-verify-ssl: 'false'
+          scanner-project-name: mudit
+          scanner-project-version: test
+
+          tool-args: '--blackduck.trust.cert=true'
+          scanner-env: |
+            GENERATE_SBOM=true
+            SBOM_TYPE=spdx-json
+
+          show-summary: 'true'
+          output-file: scan-output-blackduck.env
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables ====="
+          echo "Scan ID: ${{ steps.sto-scan.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan.outputs.output-file-path }}"
+
+      - name: Archive scan output
+        if: always() && steps.sto-scan.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-blackduck
+          path: ${{ steps.sto-scan.outputs.output-file-path }}
+          retention-days: 1
