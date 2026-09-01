@@ -290,7 +290,14 @@ inputs:
     required: false
 
   docker-mode:
-    description: 'Docker execution mode: with-docker-in-docker or without-docker-in-docker'
+    description: |
+      How the scanner talks to Docker (DOCKER_MODE). Plugin values:
+      • docker-in-docker (aliases: with-docker-in-docker) — use the GitHub runner
+        Docker daemon via /var/run/docker.sock. Required for Black Duck container
+        scans (Detect's DOCKER inspector). Skopeo image-copy is not enough.
+      • without-docker-in-docker — Skopeo only (Grype, Trivy, and similar).
+      Black Duck / Twistlock / Prisma / Cortex container orchestration enables
+      host Docker automatically when this input is unset.
     required: false
 
   ingest-tool-severity:
@@ -310,6 +317,9 @@ inputs:
     description: |
       Run the scanner container with Docker --privileged.
       Same as the Privileged toggle on Harness STO step templates.
+      Host-Docker scans (Black Duck container, local_image, docker-mode
+      docker-in-docker) always run privileged so Detect can start inspector
+      containers. Set true to force it for other scanners.
     required: false
     default: 'false'
 
@@ -568,9 +578,52 @@ runs:
         echo "scanner-image=$SCANNER_IMAGE" >> $GITHUB_OUTPUT
         echo "product-scanner=$PRODUCT_SCANNER" >> $GITHUB_OUTPUT
         echo "target-type=$TARGET_TYPE" >> $GITHUB_OUTPUT
+
+        # Host Docker (docker.sock): Detect-style inspectors cannot use Skopeo alone.
+        # Plugin factory wants DOCKER_MODE=docker-in-docker (not with-docker-in-docker).
+        SCAN_MODE_LC=$(printf '%s' "${{ inputs.scan-mode }}" | tr '[:upper:]' '[:lower:]')
+        IMAGE_TYPE_LC=$(printf '%s' "${{ inputs.image-type }}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+        DOCKER_MODE_LC=$(printf '%s' "${{ inputs.docker-mode }}" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+        PLUGIN_DOCKER_MODE=""
+        USE_HOST_DOCKER="false"
+
+        case "$DOCKER_MODE_LC" in
+          with-docker-in-docker|docker-in-docker)
+            PLUGIN_DOCKER_MODE="docker-in-docker"
+            USE_HOST_DOCKER="true"
+            ;;
+          without-docker-in-docker)
+            PLUGIN_DOCKER_MODE="without-docker-in-docker"
+            ;;
+        esac
+
+        if [ "$IMAGE_TYPE_LC" = "local-image" ] || [ "$IMAGE_TYPE_LC" = "local_image" ]; then
+          USE_HOST_DOCKER="true"
+          if [ -z "$PLUGIN_DOCKER_MODE" ]; then
+            PLUGIN_DOCKER_MODE="docker-in-docker"
+          fi
+        fi
+
+        if [ "$TARGET_TYPE" = "container" ] && [ "$SCAN_MODE_LC" != "ingestion" ] && [ "$SCAN_MODE_LC" != "extraction" ]; then
+          case "$SCANNER_LC" in
+            blackduck|blackduckhub|twistlock|prisma|prismacloud|prisma_cloud|cortex|cortexcloud|cortex_cloud)
+              USE_HOST_DOCKER="true"
+              if [ "$PLUGIN_DOCKER_MODE" != "without-docker-in-docker" ]; then
+                PLUGIN_DOCKER_MODE="docker-in-docker"
+              fi
+              ;;
+          esac
+        fi
+
+        echo "use-host-docker=$USE_HOST_DOCKER" >> $GITHUB_OUTPUT
+        echo "plugin-docker-mode=$PLUGIN_DOCKER_MODE" >> $GITHUB_OUTPUT
         echo "Using Docker image: $SCANNER_IMAGE"
         echo "Product scanner: $PRODUCT_SCANNER"
         echo "Target type: $TARGET_TYPE"
+        echo "Host Docker (docker.sock): $USE_HOST_DOCKER"
+        if [ -n "$PLUGIN_DOCKER_MODE" ]; then
+          echo "Plugin DOCKER_MODE: $PLUGIN_DOCKER_MODE"
+        fi
 
         # Set workspace path
         if [ "$TARGET_TYPE" = "repository" ]; then
@@ -591,7 +644,8 @@ runs:
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
-        if [ "${{ inputs.privileged }}" = "true" ]; then
+        USE_HOST_DOCKER="${{ steps.config.outputs.use-host-docker }}"
+        if [ "${{ inputs.privileged }}" = "true" ] || [ "$USE_HOST_DOCKER" = "true" ]; then
           DOCKER_CMD="$DOCKER_CMD --privileged"
           echo "Running scanner container as privileged"
         fi
@@ -606,10 +660,20 @@ runs:
           DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness-output"
         fi
 
-        # Add Docker socket mount for local_image scans
-        if [ "${{ inputs.image-type }}" = "local_image" ]; then
+        # Share the GitHub runner Docker daemon with the scanner (DooD).
+        # Same-path ADDON_PATH so Black Duck Detect helper containers can bind-mount.
+        if [ "$USE_HOST_DOCKER" = "true" ]; then
+          if [ ! -S /var/run/docker.sock ]; then
+            echo "Error: this scan needs the host Docker daemon but /var/run/docker.sock was not found."
+            echo "Use ubuntu-latest or a self-hosted runner with Docker installed."
+            exit 1
+          fi
+          HOST_ADDON="${{ runner.temp }}/sto-addon"
+          mkdir -p "$HOST_ADDON/bdh"
           DOCKER_CMD="$DOCKER_CMD -v /var/run/docker.sock:/var/run/docker.sock"
-          echo "Mounted Docker socket for local image scanning"
+          DOCKER_CMD="$DOCKER_CMD -v $HOST_ADDON:$HOST_ADDON"
+          DOCKER_CMD="$DOCKER_CMD -e ADDON_PATH=$HOST_ADDON"
+          echo "Mounted Docker socket and shared addon path $HOST_ADDON"
         fi
 
         SCAN_MODE="${{ inputs.scan-mode }}"
@@ -806,7 +870,10 @@ runs:
         # ADVANCED SCANNER OPTIONS
         # ======================================================================
         [ -n "${{ inputs.tool-args }}" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=${{ inputs.tool-args }}"
-        [ -n "${{ inputs.docker-mode }}" ] && DOCKER_CMD="$DOCKER_CMD -e DOCKER_MODE=${{ inputs.docker-mode }}"
+        PLUGIN_DOCKER_MODE="${{ steps.config.outputs.plugin-docker-mode }}"
+        if [ -n "$PLUGIN_DOCKER_MODE" ]; then
+          DOCKER_CMD="$DOCKER_CMD -e DOCKER_MODE=$PLUGIN_DOCKER_MODE"
+        fi
         [ -n "${{ inputs.ingest-tool-severity }}" ] && DOCKER_CMD="$DOCKER_CMD -e INGEST_TOOL_SEVERITY=${{ inputs.ingest-tool-severity }}"
         [ -n "${{ inputs.include-raw }}" ] && DOCKER_CMD="$DOCKER_CMD -e INCLUDE_RAW=${{ inputs.include-raw }}"
 
