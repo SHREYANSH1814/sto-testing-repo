@@ -650,9 +650,12 @@ runs:
           echo "Running scanner container as privileged"
         fi
 
-        # Add volume mounts for repository scans
+        # Plugin auto-detect (instance/container) only runs if /harness exists.
+        # Repository scans mount the configured workspace; other types mount the checkout.
         if [ "${{ steps.config.outputs.target-type }}" = "repository" ]; then
           DOCKER_CMD="$DOCKER_CMD -v ${{ steps.config.outputs.workspace-path }}:/harness"
+        else
+          DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness"
         fi
 
         # Add volume mount for output file
