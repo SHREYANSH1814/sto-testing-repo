@@ -25,8 +25,10 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      # QA: skip private nirocr/nodegoat (needs PRIVATE_DOCKER_*). Revert before merge.
       - name: Run Prisma Cloud private registry scan with default target
         id: sto-scan-default
+        if: false
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
@@ -52,7 +54,7 @@ jobs:
 
       - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
-        if: always()
+        if: false
         uses: ./.github/actions/harness-sto
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
@@ -99,6 +101,7 @@ jobs:
           scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
           scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
           scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
+          ingest-tool-severity: "true"
           docker-image-tag: "dev"
           output-file: scan-output-dockerhub-default.env
           show-summary: 'true'
