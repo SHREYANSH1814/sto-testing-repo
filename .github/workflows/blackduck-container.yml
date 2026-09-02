@@ -61,9 +61,6 @@ jobs:
           scanner-project-version: test
 
           tool-args: '--blackduck.trust.cert=true'
-          scanner-env: |
-            GENERATE_SBOM=true
-            SBOM_TYPE=spdx-json
 
           show-summary: 'true'
           output-file: scan-output-blackduck.env
