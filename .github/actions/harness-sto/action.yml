@@ -665,6 +665,8 @@ runs:
 
         # Share the GitHub runner Docker daemon with the scanner (DooD).
         # Same-path ADDON_PATH so Black Duck Detect helper containers can bind-mount.
+        # Host network so Detect's localhost:9002 reaches the Docker Inspector sibling
+        # on the runner (Harness dind shares pod localhost; GHA bridge does not).
         if [ "$USE_HOST_DOCKER" = "true" ]; then
           if [ ! -S /var/run/docker.sock ]; then
             echo "Error: this scan needs the host Docker daemon but /var/run/docker.sock was not found."
@@ -673,10 +675,12 @@ runs:
           fi
           HOST_ADDON="${{ runner.temp }}/sto-addon"
           mkdir -p "$HOST_ADDON/bdh"
+          DOCKER_CMD="$DOCKER_CMD --network host"
           DOCKER_CMD="$DOCKER_CMD -v /var/run/docker.sock:/var/run/docker.sock"
           DOCKER_CMD="$DOCKER_CMD -v $HOST_ADDON:$HOST_ADDON"
           DOCKER_CMD="$DOCKER_CMD -e ADDON_PATH=$HOST_ADDON"
           echo "Mounted Docker socket and shared addon path $HOST_ADDON"
+          echo "Using host network so Detect can reach Docker Inspector on localhost"
         fi
 
         SCAN_MODE="${{ inputs.scan-mode }}"
