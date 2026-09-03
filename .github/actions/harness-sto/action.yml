@@ -765,7 +765,11 @@ runs:
         # ======================================================================
         PRODUCT_SCANNER="${{ steps.config.outputs.product-scanner }}"
         TARGET_TYPE="${{ steps.config.outputs.target-type }}"
+        # PRODUCT_NAME is required for the generic sto-plugin image (custom, codeql,
+        # coverity, metasploit). Job-runner images bake it; SCANNER is aliased too late
+        # for path_safe_product_name, so SCANNER alone fails those scanners.
         DOCKER_CMD="$DOCKER_CMD -e SCANNER=$PRODUCT_SCANNER"
+        DOCKER_CMD="$DOCKER_CMD -e PRODUCT_NAME=$PRODUCT_SCANNER"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_MODE=${{ inputs.scan-mode }}"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_CONFIG=${{ inputs.scan-config }}"
         DOCKER_CMD="$DOCKER_CMD -e TARGET_TYPE=$TARGET_TYPE"
