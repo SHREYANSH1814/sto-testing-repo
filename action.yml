@@ -360,6 +360,64 @@ inputs:
     default: 'latest'
 
   # ============================================================================
+  # STEP RUNTIME CONTROLS (STO-12759) — parity with Harness CI step settings.
+  # All are opt-in; defaults keep the previous docker run behavior.
+  # ============================================================================
+  image-pull-policy:
+    description: |
+      When to pull the scanner image. Maps to Docker --pull.
+      • missing (default) - pull only if not present locally (previous behavior)
+      • always  - always pull, picks up a republished tag
+      • never   - never pull, use only the local image (self-hosted runners)
+    required: false
+    default: 'missing'
+
+  run-as-user:
+    description: |
+      Run the scanner container as this numeric user ID (Docker --user).
+      Maps to the Run as User setting on Harness STO step templates.
+      Empty (default) keeps the image default user (root). Java-based scanners
+      (Black Duck, Mend) may fail with a random UID; set only when needed.
+    required: false
+    default: ''
+
+  memory-limit:
+    description: |
+      Hard memory cap for the scanner container (Docker --memory), e.g. 4g or 2048m.
+      Maps to Limit Memory on Harness STO step templates. Empty (default) = no limit.
+    required: false
+    default: ''
+
+  cpu-limit:
+    description: |
+      Hard CPU cap for the scanner container (Docker --cpus), e.g. 2 or 1.5.
+      Maps to Limit CPU on Harness STO step templates. Empty (default) = no limit.
+    required: false
+    default: ''
+
+  registry-username:
+    description: |
+      Registry username used to docker login before the pull. Pair with registry-token.
+      GHA equivalent of the Override Image Connector on Harness STO step templates.
+      Only needed for private registries; Harness images are public.
+    required: false
+    default: ''
+
+  registry-token:
+    description: |
+      Registry password/token for docker login. Pass a secret from the calling
+      workflow. Used only when registry-username is set.
+    required: false
+    default: ''
+
+  registry-domain:
+    description: |
+      Registry server for docker login (e.g. myregistry.myco.com).
+      Empty (default) = Docker Hub. Only used with registry-username/registry-token.
+    required: false
+    default: ''
+
+  # ============================================================================
   # ADVANCED: PASS-THROUGH ENVIRONMENT VARIABLES
   # ============================================================================
   scanner-env:
@@ -690,6 +748,35 @@ runs:
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
+
+        # Runtime controls (STO-12759). All default to previous behavior.
+        PULL_POLICY="${{ inputs.image-pull-policy }}"
+        case "$PULL_POLICY" in
+          missing|always|never) ;;
+          *) echo "Error: image-pull-policy must be missing, always, or never (got: $PULL_POLICY)"; exit 1 ;;
+        esac
+        DOCKER_CMD="$DOCKER_CMD --pull $PULL_POLICY"
+
+        if [ -n "${{ inputs.run-as-user }}" ]; then
+          DOCKER_CMD="$DOCKER_CMD --user ${{ inputs.run-as-user }}"
+          echo "Running scanner container as user ${{ inputs.run-as-user }}"
+        fi
+        if [ -n "${{ inputs.memory-limit }}" ]; then
+          DOCKER_CMD="$DOCKER_CMD --memory ${{ inputs.memory-limit }}"
+          echo "Memory limit: ${{ inputs.memory-limit }}"
+        fi
+        if [ -n "${{ inputs.cpu-limit }}" ]; then
+          DOCKER_CMD="$DOCKER_CMD --cpus ${{ inputs.cpu-limit }}"
+          echo "CPU limit: ${{ inputs.cpu-limit }}"
+        fi
+
+        # Registry login for private mirrors (GHA equivalent of Override Image
+        # Connector). Only when credentials are provided; Harness images are public.
+        if [ -n "${{ inputs.registry-username }}" ] && [ -n "${{ inputs.registry-token }}" ]; then
+          REGISTRY_DOMAIN="${{ inputs.registry-domain }}"
+          echo "${{ inputs.registry-token }}" | docker login ${REGISTRY_DOMAIN:+$REGISTRY_DOMAIN} --username "${{ inputs.registry-username }}" --password-stdin
+        fi
+
         USE_HOST_DOCKER="${{ steps.config.outputs.use-host-docker }}"
         if [ "${{ inputs.privileged }}" = "true" ] || [ "$USE_HOST_DOCKER" = "true" ]; then
           DOCKER_CMD="$DOCKER_CMD --privileged"
