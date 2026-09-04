@@ -440,6 +440,18 @@ runs:
         if [ "$SCANNER_LC" = "customingest" ] || [ "$SCANNER_LC" = "custom_ingest" ]; then
           PRODUCT_SCANNER="custom"
         fi
+        # Brand aliases → internal product modules. PRODUCT_NAME is snapshotted
+        # into path_safe_product_name before plugin aliases run, so harnesssast
+        # must already be shiftleftsast here or policy import fails.
+        if [ "$SCANNER_LC" = "harnesssast" ] || [ "$SCANNER_LC" = "harness-sast" ] || [ "$SCANNER_LC" = "harness_sast" ]; then
+          PRODUCT_SCANNER="shiftleftsast"
+        fi
+        if [ "$SCANNER_LC" = "harnesssca" ] || [ "$SCANNER_LC" = "harness-sca" ] || [ "$SCANNER_LC" = "harness_sca" ]; then
+          PRODUCT_SCANNER="shiftleftsca"
+        fi
+        if [ "$SCANNER_LC" = "qwiet" ]; then
+          PRODUCT_SCANNER="shiftleft"
+        fi
 
         TARGET_TYPE="${{ inputs.target-type }}"
         TARGET_TYPE_LC=$(printf '%s' "$TARGET_TYPE" | tr '[:upper:]' '[:lower:]')
