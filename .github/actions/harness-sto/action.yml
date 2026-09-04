@@ -433,25 +433,59 @@ runs:
         # Based on STO plugin configuration: stoStepConfig.images
         SCANNER="${{ inputs.scanner }}"
         SCANNER_LC=$(printf '%s' "$SCANNER" | tr '[:upper:]' '[:lower:]')
+        # Brand / compact aliases → internal product modules.
+        # PR #20 passes PRODUCT_NAME into the container, which overwrites the
+        # job-runner baked ENV. Plugin snapshots path_safe_product_name before
+        # aliases, so compact names (harnesssast, blackduck, osv) fail policy
+        # import unless remapped here. Image selection still uses SCANNER_LC.
         PRODUCT_SCANNER="$SCANNER"
-        if [ "$SCANNER_LC" = "mend" ]; then
-          PRODUCT_SCANNER="whitesource"
-        fi
-        if [ "$SCANNER_LC" = "customingest" ] || [ "$SCANNER_LC" = "custom_ingest" ]; then
-          PRODUCT_SCANNER="custom"
-        fi
-        # Brand aliases → internal product modules. PRODUCT_NAME is snapshotted
-        # into path_safe_product_name before plugin aliases run, so harnesssast
-        # must already be shiftleftsast here or policy import fails.
-        if [ "$SCANNER_LC" = "harnesssast" ] || [ "$SCANNER_LC" = "harness-sast" ] || [ "$SCANNER_LC" = "harness_sast" ]; then
-          PRODUCT_SCANNER="shiftleftsast"
-        fi
-        if [ "$SCANNER_LC" = "harnesssca" ] || [ "$SCANNER_LC" = "harness-sca" ] || [ "$SCANNER_LC" = "harness_sca" ]; then
-          PRODUCT_SCANNER="shiftleftsca"
-        fi
-        if [ "$SCANNER_LC" = "qwiet" ]; then
-          PRODUCT_SCANNER="shiftleft"
-        fi
+        case "$SCANNER_LC" in
+          mend)
+            PRODUCT_SCANNER="whitesource"
+            ;;
+          customingest|custom_ingest)
+            PRODUCT_SCANNER="custom"
+            ;;
+          harnesssast|harness-sast|harness_sast)
+            PRODUCT_SCANNER="shiftleftsast"
+            ;;
+          harnesssca|harness-sca|harness_sca)
+            PRODUCT_SCANNER="shiftleftsca"
+            ;;
+          qwiet)
+            PRODUCT_SCANNER="shiftleft"
+            ;;
+          blackduck)
+            PRODUCT_SCANNER="blackduckhub"
+            ;;
+          prisma|prismacloud|prisma_cloud|prisma-cloud)
+            PRODUCT_SCANNER="twistlock"
+            ;;
+          osv)
+            PRODUCT_SCANNER="osv_scanner"
+            ;;
+          githubadvancedsecurity)
+            PRODUCT_SCANNER="github_advanced_security"
+            ;;
+          checkmarxone)
+            PRODUCT_SCANNER="checkmarx_one"
+            ;;
+          aquasecurity)
+            PRODUCT_SCANNER="aqua_security"
+            ;;
+          aquatrivy|trivy)
+            PRODUCT_SCANNER="aqua_trivy"
+            ;;
+          awsecr)
+            PRODUCT_SCANNER="aws_ecr"
+            ;;
+          awssecurityhub)
+            PRODUCT_SCANNER="aws_security_hub"
+            ;;
+          owaspzap)
+            PRODUCT_SCANNER="zap"
+            ;;
+        esac
 
         TARGET_TYPE="${{ inputs.target-type }}"
         TARGET_TYPE_LC=$(printf '%s' "$TARGET_TYPE" | tr '[:upper:]' '[:lower:]')
