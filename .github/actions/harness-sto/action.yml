@@ -151,7 +151,16 @@ inputs:
     required: false
 
   scanner-exclude:
-    description: 'Paths to exclude (SCANNER_EXCLUDE). SonarQube exclusions; Mend SAST/SCA path exclusions and legacy agent.'
+    description: |
+      Paths to exclude (SCANNER_EXCLUDE → PRODUCT_EXCLUDE).
+      Mend: optional glob patterns for SAST/SCA path exclusions and the legacy agent.
+      SonarQube: exclusion paths.
+    required: false
+
+  scanner-include:
+    description: |
+      Paths to include (SCANNER_INCLUDE → PRODUCT_INCLUDE).
+      Mend: optional glob patterns for files to scan.
     required: false
 
   scanner-java-binaries:
@@ -170,12 +179,24 @@ inputs:
     description: 'SonarCloud organization key (SCANNER_ORGANIZATION_ID). Plugin warns or fails without it for SonarCloud.'
     required: false
 
+  scanner-lookup-type:
+    description: |
+      Scanner lookup type (SCANNER_LOOKUP_TYPE → PRODUCT_LOOKUP_TYPE).
+      Mend: byTokens or byNames (matches template-library mendStep). Orchestration remaps to
+      appendToProductByToken / appendToProductByName; extraction keeps byTokens / byNames.
+      Also used by NexusIQ and Fortify on Demand.
+    required: false
+
   scanner-product-name:
-    description: 'Mend product name (SCANNER_PRODUCT_NAME). Plugin infers lookup from name vs token.'
+    description: |
+      Mend product name (SCANNER_PRODUCT_NAME → PRODUCT_PRODUCT_NAME).
+      Use with scanner-lookup-type byNames. Plugin also infers lookup from name vs token if lookup type is omitted.
     required: false
 
   scanner-product-token:
-    description: 'Mend product token (SCANNER_PRODUCT_TOKEN). Plugin infers lookup from name vs token.'
+    description: |
+      Mend product token (SCANNER_PRODUCT_TOKEN → PRODUCT_PRODUCT_TOKEN).
+      Use with scanner-lookup-type byTokens. Plugin also infers lookup from name vs token if lookup type is omitted.
     required: false
 
   scanner-project-token:
@@ -989,7 +1010,29 @@ runs:
         [ -n "$SCANNER_PROJECT_KEY" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=$SCANNER_PROJECT_KEY"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
-        [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=${{ inputs.scanner-exclude }}"
+        # Template-library mendStep remaps byTokens/byNames for orchestration.
+        # Pass through for other scanners (NexusIQ, Fortify on Demand).
+        LOOKUP="${{ inputs.scanner-lookup-type }}"
+        if [ -n "$LOOKUP" ]; then
+          if [ "$PRODUCT_SCANNER" = "whitesource" ]; then
+            LOOKUP_LC=$(printf '%s' "$LOOKUP" | tr '[:upper:]' '[:lower:]')
+            SCAN_MODE_LC=$(printf '%s' "$SCAN_MODE" | tr '[:upper:]' '[:lower:]')
+            if [ "$SCAN_MODE_LC" = "orchestration" ]; then
+              case "$LOOKUP_LC" in
+                bytokens|appendtoproductbytoken) LOOKUP="appendToProductByToken" ;;
+                bynames|appendtoproductbyname) LOOKUP="appendToProductByName" ;;
+              esac
+            else
+              case "$LOOKUP_LC" in
+                bytokens|appendtoproductbytoken) LOOKUP="byTokens" ;;
+                bynames|appendtoproductbyname) LOOKUP="byNames" ;;
+              esac
+            fi
+          fi
+          DOCKER_CMD="$DOCKER_CMD -e SCANNER_LOOKUP_TYPE=$LOOKUP"
+        fi
+        [ -n "${{ inputs.scanner-include }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_INCLUDE=$(printf '%q' "${{ inputs.scanner-include }}")"
+        [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=$(printf '%q' "${{ inputs.scanner-exclude }}")"
         [ -n "${{ inputs.scanner-java-binaries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_BINARIES=${{ inputs.scanner-java-binaries }}"
         [ -n "${{ inputs.scanner-java-libraries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_LIBRARIES=${{ inputs.scanner-java-libraries }}"
         [ -n "${{ inputs.scanner-verify-ssl }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_VERIFY_SSL=${{ inputs.scanner-verify-ssl }}"
