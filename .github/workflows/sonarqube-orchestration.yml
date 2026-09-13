@@ -41,7 +41,9 @@ jobs:
           workspace: .
           scanner-access-token: ${{ secrets.SONAR_TOKEN }}
           scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
           scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
@@ -63,7 +65,9 @@ jobs:
           workspace: .
           scanner-access-token: ${{ secrets.SONAR_TOKEN }}
           scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
           scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
           target-name: "shreyansh/sonarorchestration"
           target-variant: "main"
           docker-image-tag: "dev"

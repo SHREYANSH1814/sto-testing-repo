@@ -101,7 +101,11 @@ inputs:
     required: false
 
   scanner-project-name:
-    description: 'Project name in scanner (for Checkmarx, SonarQube, Mend, Black Duck, etc.)'
+    description: |
+      Project name in the scanner (SCANNER_PROJECT_NAME → PRODUCT_PROJECT_NAME).
+      Checkmarx, Mend, Black Duck: scanner project identity.
+      SonarQube: display name (sonar.projectName). SonarQube identity is scanner-project-key.
+      If scanner is sonarqube and scanner-project-key is empty, this value is also used as the project key.
     required: false
 
   scanner-project-version:
@@ -129,7 +133,11 @@ inputs:
     required: false
 
   scanner-project-key:
-    description: 'SonarQube project key (SCANNER_PROJECT_KEY).'
+    description: |
+      SonarQube project key (SCANNER_PROJECT_KEY → PRODUCT_PROJECT_KEY → sonar.projectKey).
+      This is the SonarQube project identity, matching template-library project_key and the NG Project Key field.
+      Required for extraction. For orchestration, omit to auto-derive from the git target.
+      When this is empty and scanner-project-name is set, the action copies the name onto the key.
     required: false
 
   scanner-analysis-detection:
@@ -968,7 +976,17 @@ runs:
         [ -n "${{ inputs.scanner-api-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_API_VERSION=${{ inputs.scanner-api-version }}"
         [ -n "${{ inputs.scanner-auth-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_AUTH_TYPE=${{ inputs.scanner-auth-type }}"
         [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=$(printf '%q' "${{ inputs.scanner-context }}")"
-        [ -n "${{ inputs.scanner-project-key }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=${{ inputs.scanner-project-key }}"
+        SCANNER_PROJECT_KEY="${{ inputs.scanner-project-key }}"
+        # Template library / NG / Jenkins map SonarQube identity through project_key
+        # (PRODUCT_PROJECT_KEY). Plugin uses product_project_name only as sonar.projectName
+        # and, when the key is unset, derives projectKey from the git target. GHA users
+        # often set scanner-project-name alone, so copy it onto the key for sonarqube.
+        if [ -z "$SCANNER_PROJECT_KEY" ] && [ -n "${{ inputs.scanner-project-name }}" ]; then
+          if [ "$PRODUCT_SCANNER" = "sonarqube" ]; then
+            SCANNER_PROJECT_KEY="${{ inputs.scanner-project-name }}"
+          fi
+        fi
+        [ -n "$SCANNER_PROJECT_KEY" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=$SCANNER_PROJECT_KEY"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
         [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=${{ inputs.scanner-exclude }}"
@@ -1013,7 +1031,17 @@ runs:
         # ======================================================================
         # ADVANCED SCANNER OPTIONS
         # ======================================================================
-        [ -n "${{ inputs.tool-args }}" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=${{ inputs.tool-args }}"
+        TOOL_ARGS="${{ inputs.tool-args }}"
+        SCANNER_ORGANIZATION_ID="${{ inputs.scanner-organization-id }}"
+        # sonar-scanner requires -Dsonar.organization on SonarCloud. Plugin uses
+        # SCANNER_ORGANIZATION_ID for API calls but does not add the CLI flag.
+        if [ "$PRODUCT_SCANNER" = "sonarqube" ] && [ -n "$SCANNER_ORGANIZATION_ID" ]; then
+          case " $TOOL_ARGS " in
+            *" -Dsonar.organization="*|*" sonar.organization="*) ;;
+            *) TOOL_ARGS="${TOOL_ARGS:+$TOOL_ARGS }-Dsonar.organization=$SCANNER_ORGANIZATION_ID" ;;
+          esac
+        fi
+        [ -n "$TOOL_ARGS" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=$(printf '%q' "$TOOL_ARGS")"
         PLUGIN_DOCKER_MODE="${{ steps.config.outputs.plugin-docker-mode }}"
         if [ -n "$PLUGIN_DOCKER_MODE" ]; then
           DOCKER_CMD="$DOCKER_CMD -e DOCKER_MODE=$PLUGIN_DOCKER_MODE"
