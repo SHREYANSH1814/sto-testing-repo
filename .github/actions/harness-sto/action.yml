@@ -101,7 +101,11 @@ inputs:
     required: false
 
   scanner-project-name:
-    description: 'Project name in scanner (for Checkmarx, SonarQube, Mend, Black Duck, etc.)'
+    description: |
+      Project name in the scanner (SCANNER_PROJECT_NAME → PRODUCT_PROJECT_NAME).
+      Checkmarx, Mend, Black Duck: scanner project identity.
+      SonarQube: display name (sonar.projectName). SonarQube identity is scanner-project-key.
+      If scanner is sonarqube and scanner-project-key is empty, this value is also used as the project key.
     required: false
 
   scanner-project-version:
@@ -129,7 +133,11 @@ inputs:
     required: false
 
   scanner-project-key:
-    description: 'SonarQube project key (SCANNER_PROJECT_KEY).'
+    description: |
+      SonarQube project key (SCANNER_PROJECT_KEY → PRODUCT_PROJECT_KEY → sonar.projectKey).
+      This is the SonarQube project identity, matching template-library project_key and the NG Project Key field.
+      Required for extraction. For orchestration, omit to auto-derive from the git target.
+      When this is empty and scanner-project-name is set, the action copies the name onto the key.
     required: false
 
   scanner-analysis-detection:
@@ -143,7 +151,16 @@ inputs:
     required: false
 
   scanner-exclude:
-    description: 'Paths to exclude (SCANNER_EXCLUDE). SonarQube exclusions; Mend SAST/SCA path exclusions and legacy agent.'
+    description: |
+      Paths to exclude (SCANNER_EXCLUDE → PRODUCT_EXCLUDE).
+      Mend: optional glob patterns for SAST/SCA path exclusions and the legacy agent.
+      SonarQube: exclusion paths.
+    required: false
+
+  scanner-include:
+    description: |
+      Paths to include (SCANNER_INCLUDE → PRODUCT_INCLUDE).
+      Mend: optional glob patterns for files to scan.
     required: false
 
   scanner-java-binaries:
@@ -162,12 +179,24 @@ inputs:
     description: 'SonarCloud organization key (SCANNER_ORGANIZATION_ID). Plugin warns or fails without it for SonarCloud.'
     required: false
 
+  scanner-lookup-type:
+    description: |
+      Scanner lookup type (SCANNER_LOOKUP_TYPE → PRODUCT_LOOKUP_TYPE).
+      Mend: byTokens or byNames (matches template-library mendStep). Orchestration remaps to
+      appendToProductByToken / appendToProductByName; extraction keeps byTokens / byNames.
+      Also used by NexusIQ and Fortify on Demand.
+    required: false
+
   scanner-product-name:
-    description: 'Mend product name (SCANNER_PRODUCT_NAME). Plugin infers lookup from name vs token.'
+    description: |
+      Mend product name (SCANNER_PRODUCT_NAME → PRODUCT_PRODUCT_NAME).
+      Use with scanner-lookup-type byNames. Plugin also infers lookup from name vs token if lookup type is omitted.
     required: false
 
   scanner-product-token:
-    description: 'Mend product token (SCANNER_PRODUCT_TOKEN). Plugin infers lookup from name vs token.'
+    description: |
+      Mend product token (SCANNER_PRODUCT_TOKEN → PRODUCT_PRODUCT_TOKEN).
+      Use with scanner-lookup-type byTokens. Plugin also infers lookup from name vs token if lookup type is omitted.
     required: false
 
   scanner-project-token:
@@ -968,10 +997,42 @@ runs:
         [ -n "${{ inputs.scanner-api-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_API_VERSION=${{ inputs.scanner-api-version }}"
         [ -n "${{ inputs.scanner-auth-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_AUTH_TYPE=${{ inputs.scanner-auth-type }}"
         [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=$(printf '%q' "${{ inputs.scanner-context }}")"
-        [ -n "${{ inputs.scanner-project-key }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=${{ inputs.scanner-project-key }}"
+        SCANNER_PROJECT_KEY="${{ inputs.scanner-project-key }}"
+        # Template library / NG / Jenkins map SonarQube identity through project_key
+        # (PRODUCT_PROJECT_KEY). Plugin uses product_project_name only as sonar.projectName
+        # and, when the key is unset, derives projectKey from the git target. GHA users
+        # often set scanner-project-name alone, so copy it onto the key for sonarqube.
+        if [ -z "$SCANNER_PROJECT_KEY" ] && [ -n "${{ inputs.scanner-project-name }}" ]; then
+          if [ "$PRODUCT_SCANNER" = "sonarqube" ]; then
+            SCANNER_PROJECT_KEY="${{ inputs.scanner-project-name }}"
+          fi
+        fi
+        [ -n "$SCANNER_PROJECT_KEY" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=$SCANNER_PROJECT_KEY"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
-        [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=${{ inputs.scanner-exclude }}"
+        # Template-library mendStep remaps byTokens/byNames for orchestration.
+        # Pass through for other scanners (NexusIQ, Fortify on Demand).
+        LOOKUP="${{ inputs.scanner-lookup-type }}"
+        if [ -n "$LOOKUP" ]; then
+          if [ "$PRODUCT_SCANNER" = "whitesource" ]; then
+            LOOKUP_LC=$(printf '%s' "$LOOKUP" | tr '[:upper:]' '[:lower:]')
+            SCAN_MODE_LC=$(printf '%s' "$SCAN_MODE" | tr '[:upper:]' '[:lower:]')
+            if [ "$SCAN_MODE_LC" = "orchestration" ]; then
+              case "$LOOKUP_LC" in
+                bytokens|appendtoproductbytoken) LOOKUP="appendToProductByToken" ;;
+                bynames|appendtoproductbyname) LOOKUP="appendToProductByName" ;;
+              esac
+            else
+              case "$LOOKUP_LC" in
+                bytokens|appendtoproductbytoken) LOOKUP="byTokens" ;;
+                bynames|appendtoproductbyname) LOOKUP="byNames" ;;
+              esac
+            fi
+          fi
+          DOCKER_CMD="$DOCKER_CMD -e SCANNER_LOOKUP_TYPE=$LOOKUP"
+        fi
+        [ -n "${{ inputs.scanner-include }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_INCLUDE=$(printf '%q' "${{ inputs.scanner-include }}")"
+        [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=$(printf '%q' "${{ inputs.scanner-exclude }}")"
         [ -n "${{ inputs.scanner-java-binaries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_BINARIES=${{ inputs.scanner-java-binaries }}"
         [ -n "${{ inputs.scanner-java-libraries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_LIBRARIES=${{ inputs.scanner-java-libraries }}"
         [ -n "${{ inputs.scanner-verify-ssl }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_VERIFY_SSL=${{ inputs.scanner-verify-ssl }}"
@@ -1013,7 +1074,17 @@ runs:
         # ======================================================================
         # ADVANCED SCANNER OPTIONS
         # ======================================================================
-        [ -n "${{ inputs.tool-args }}" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=${{ inputs.tool-args }}"
+        TOOL_ARGS="${{ inputs.tool-args }}"
+        SCANNER_ORGANIZATION_ID="${{ inputs.scanner-organization-id }}"
+        # sonar-scanner requires -Dsonar.organization on SonarCloud. Plugin uses
+        # SCANNER_ORGANIZATION_ID for API calls but does not add the CLI flag.
+        if [ "$PRODUCT_SCANNER" = "sonarqube" ] && [ -n "$SCANNER_ORGANIZATION_ID" ]; then
+          case " $TOOL_ARGS " in
+            *" -Dsonar.organization="*|*" sonar.organization="*) ;;
+            *) TOOL_ARGS="${TOOL_ARGS:+$TOOL_ARGS }-Dsonar.organization=$SCANNER_ORGANIZATION_ID" ;;
+          esac
+        fi
+        [ -n "$TOOL_ARGS" ] && DOCKER_CMD="$DOCKER_CMD -e TOOL_ARGS=$(printf '%q' "$TOOL_ARGS")"
         PLUGIN_DOCKER_MODE="${{ steps.config.outputs.plugin-docker-mode }}"
         if [ -n "$PLUGIN_DOCKER_MODE" ]; then
           DOCKER_CMD="$DOCKER_CMD -e DOCKER_MODE=$PLUGIN_DOCKER_MODE"
