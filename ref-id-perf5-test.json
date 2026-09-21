@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Package 0",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 1 Package 0.",
+      "issueDescription": "Occurrence 1 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 0 Package 1",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Package 1",
+      "issueDescription": "Occurrence 1 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 0 Package 2",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 1 Package 2 ",
+      "issueDescription": "Occurrence 1 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 0 Package 3",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 1 Package 3",
+      "issueDescription": "Occurrence 1 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 0 Package 4",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 1 Package 4",
+      "issueDescription": "Occurrence 1 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 0 Package 5",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 1 Package 5",
+      "issueDescription": "Occurrence 1 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    }
+  ]
+}
