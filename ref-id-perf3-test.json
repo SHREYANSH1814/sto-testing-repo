@@ -1,0 +1,5210 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "27nj-8kt2-tpc6"
+        },
+        {
+          "type": "ghsa",
+          "id": "n2a8-rpw4-e28h"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "tqjz-djtm-vkq3"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "8a48-5anc-d8ay"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 2 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file2.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "pvs8-2ba8-ywbn"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "ghsa",
+          "id": "dxf9-9j9k-wd8z"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 3 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file3.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "an5f-fyw9-h7xw"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "ghsa",
+          "id": "se3d-zhzv-2qpj"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 4 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file4.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "h5ny-6hmy-xrpq"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "g5cz-t99k-4qtz"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 5 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file5.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "ck88-4m8x-v49p"
+        },
+        {
+          "type": "ghsa",
+          "id": "85yk-gst7-4eeg"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 6 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file6.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "medium",
+      "severity": 4,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "7fea-9xfv-j3zv"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "ghsa",
+          "id": "zxv6-g8e3-dz9s"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 7 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file7.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "low",
+      "severity": 3,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "ghsa",
+          "id": "7kp9-5w9k-mekh"
+        },
+        {
+          "type": "ghsa",
+          "id": "azkj-r3kh-v6y4"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 8 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file8.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "fxy2-mj4j-h5c4"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "ghsa",
+          "id": "9afj-bzth-pjx5"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 9 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file9.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "ghsa",
+          "id": "mq8n-9gxv-4ea2"
+        },
+        {
+          "type": "cwe",
+          "id": "200"
+        },
+        {
+          "type": "cwe",
+          "id": "259"
+        },
+        {
+          "type": "ghsa",
+          "id": "sn9r-je24-wxjv"
+        },
+        {
+          "type": "cve",
+          "id": "2017-1130"
+        },
+        {
+          "type": "cve",
+          "id": "2005-4155"
+        },
+        {
+          "type": "cve",
+          "id": "2025-6204"
+        },
+        {
+          "type": "cve",
+          "id": "1999-0002"
+        },
+        {
+          "type": "snyk",
+          "id": "PYTHON-LODASH-400008"
+        },
+        {
+          "type": "snyk",
+          "id": "DOTNET-MIXINDEEP-400010"
+        }
+      ]
+    }
+  ]
+}
