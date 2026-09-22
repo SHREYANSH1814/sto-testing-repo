@@ -1,0 +1,3210 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue20",
+      "issueName": "Issue 20 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 20 for ref-ID performance testing",
+      "fileName": "src/module20/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue21",
+      "issueName": "Issue 21 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 21 for ref-ID performance testing",
+      "fileName": "src/module21/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue22",
+      "issueName": "Issue 22 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 22 for ref-ID performance testing",
+      "fileName": "src/module22/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue23",
+      "issueName": "Issue 23 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 23 for ref-ID performance testing",
+      "fileName": "src/module23/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue24",
+      "issueName": "Issue 24 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 24 for ref-ID performance testing",
+      "fileName": "src/module24/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue25",
+      "issueName": "Issue 25 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 25 for ref-ID performance testing",
+      "fileName": "src/module25/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue26",
+      "issueName": "Issue 26 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 26 for ref-ID performance testing",
+      "fileName": "src/module26/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue27",
+      "issueName": "Issue 27 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 27 for ref-ID performance testing",
+      "fileName": "src/module27/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue28",
+      "issueName": "Issue 28 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 28 for ref-ID performance testing",
+      "fileName": "src/module28/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue29",
+      "issueName": "Issue 29 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 29 for ref-ID performance testing",
+      "fileName": "src/module29/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue30",
+      "issueName": "Issue 30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 30 for ref-ID performance testing",
+      "fileName": "src/module30/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue31",
+      "issueName": "Issue 31 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 31 for ref-ID performance testing",
+      "fileName": "src/module31/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue32",
+      "issueName": "Issue 32 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 32 for ref-ID performance testing",
+      "fileName": "src/module32/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue33",
+      "issueName": "Issue 33 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 33 for ref-ID performance testing",
+      "fileName": "src/module33/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue34",
+      "issueName": "Issue 34 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 34 for ref-ID performance testing",
+      "fileName": "src/module34/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue35",
+      "issueName": "Issue 35 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 35 for ref-ID performance testing",
+      "fileName": "src/module35/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue36",
+      "issueName": "Issue 36 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 36 for ref-ID performance testing",
+      "fileName": "src/module36/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue37",
+      "issueName": "Issue 37 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 37 for ref-ID performance testing",
+      "fileName": "src/module37/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue38",
+      "issueName": "Issue 38 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 38 for ref-ID performance testing",
+      "fileName": "src/module38/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue39",
+      "issueName": "Issue 39 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 39 for ref-ID performance testing",
+      "fileName": "src/module39/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue40",
+      "issueName": "Issue 40 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 40 for ref-ID performance testing",
+      "fileName": "src/module40/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue41",
+      "issueName": "Issue 41 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 41 for ref-ID performance testing",
+      "fileName": "src/module41/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue42",
+      "issueName": "Issue 42 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 42 for ref-ID performance testing",
+      "fileName": "src/module42/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue43",
+      "issueName": "Issue 43 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 43 for ref-ID performance testing",
+      "fileName": "src/module43/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue44",
+      "issueName": "Issue 44 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 44 for ref-ID performance testing",
+      "fileName": "src/module44/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue45",
+      "issueName": "Issue 45 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 45 for ref-ID performance testing",
+      "fileName": "src/module45/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue46",
+      "issueName": "Issue 46 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 46 for ref-ID performance testing",
+      "fileName": "src/module46/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue47",
+      "issueName": "Issue 47 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 47 for ref-ID performance testing",
+      "fileName": "src/module47/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue48",
+      "issueName": "Issue 48 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 48 for ref-ID performance testing",
+      "fileName": "src/module48/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue49",
+      "issueName": "Issue 49 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 49 for ref-ID performance testing",
+      "fileName": "src/module49/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue50",
+      "issueName": "Issue 50 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 50 for ref-ID performance testing",
+      "fileName": "src/module50/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue50",
+      "issueName": "Issue 50 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 50 for ref-ID performance testing",
+      "fileName": "src/module50/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue51",
+      "issueName": "Issue 51 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 51 for ref-ID performance testing",
+      "fileName": "src/module51/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue51",
+      "issueName": "Issue 51 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 51 for ref-ID performance testing",
+      "fileName": "src/module51/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue52",
+      "issueName": "Issue 52 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 52 for ref-ID performance testing",
+      "fileName": "src/module52/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue52",
+      "issueName": "Issue 52 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 52 for ref-ID performance testing",
+      "fileName": "src/module52/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue53",
+      "issueName": "Issue 53 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 53 for ref-ID performance testing",
+      "fileName": "src/module53/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue53",
+      "issueName": "Issue 53 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 53 for ref-ID performance testing",
+      "fileName": "src/module53/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue54",
+      "issueName": "Issue 54 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 54 for ref-ID performance testing",
+      "fileName": "src/module54/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue54",
+      "issueName": "Issue 54 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 54 for ref-ID performance testing",
+      "fileName": "src/module54/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue55",
+      "issueName": "Issue 55 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 55 for ref-ID performance testing",
+      "fileName": "src/module55/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue55",
+      "issueName": "Issue 55 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 55 for ref-ID performance testing",
+      "fileName": "src/module55/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue56",
+      "issueName": "Issue 56 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 56 for ref-ID performance testing",
+      "fileName": "src/module56/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue56",
+      "issueName": "Issue 56 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 56 for ref-ID performance testing",
+      "fileName": "src/module56/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue57",
+      "issueName": "Issue 57 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 57 for ref-ID performance testing",
+      "fileName": "src/module57/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue57",
+      "issueName": "Issue 57 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 57 for ref-ID performance testing",
+      "fileName": "src/module57/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue58",
+      "issueName": "Issue 58 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 58 for ref-ID performance testing",
+      "fileName": "src/module58/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue58",
+      "issueName": "Issue 58 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 58 for ref-ID performance testing",
+      "fileName": "src/module58/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue59",
+      "issueName": "Issue 59 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 59 for ref-ID performance testing",
+      "fileName": "src/module59/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue59",
+      "issueName": "Issue 59 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 59 for ref-ID performance testing",
+      "fileName": "src/module59/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue60",
+      "issueName": "Issue 60 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 60 for ref-ID performance testing",
+      "fileName": "src/module60/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue60",
+      "issueName": "Issue 60 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 60 for ref-ID performance testing",
+      "fileName": "src/module60/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue61",
+      "issueName": "Issue 61 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 61 for ref-ID performance testing",
+      "fileName": "src/module61/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue61",
+      "issueName": "Issue 61 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 61 for ref-ID performance testing",
+      "fileName": "src/module61/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue62",
+      "issueName": "Issue 62 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 62 for ref-ID performance testing",
+      "fileName": "src/module62/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue62",
+      "issueName": "Issue 62 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 62 for ref-ID performance testing",
+      "fileName": "src/module62/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue63",
+      "issueName": "Issue 63 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 63 for ref-ID performance testing",
+      "fileName": "src/module63/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue63",
+      "issueName": "Issue 63 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 63 for ref-ID performance testing",
+      "fileName": "src/module63/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue64",
+      "issueName": "Issue 64 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 64 for ref-ID performance testing",
+      "fileName": "src/module64/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue64",
+      "issueName": "Issue 64 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 64 for ref-ID performance testing",
+      "fileName": "src/module64/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue65",
+      "issueName": "Issue 65 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 65 for ref-ID performance testing",
+      "fileName": "src/module65/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue65",
+      "issueName": "Issue 65 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 65 for ref-ID performance testing",
+      "fileName": "src/module65/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue66",
+      "issueName": "Issue 66 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 66 for ref-ID performance testing",
+      "fileName": "src/module66/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue66",
+      "issueName": "Issue 66 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 66 for ref-ID performance testing",
+      "fileName": "src/module66/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue67",
+      "issueName": "Issue 67 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 67 for ref-ID performance testing",
+      "fileName": "src/module67/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue67",
+      "issueName": "Issue 67 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 67 for ref-ID performance testing",
+      "fileName": "src/module67/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue68",
+      "issueName": "Issue 68 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 68 for ref-ID performance testing",
+      "fileName": "src/module68/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue68",
+      "issueName": "Issue 68 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 68 for ref-ID performance testing",
+      "fileName": "src/module68/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue69",
+      "issueName": "Issue 69 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 69 for ref-ID performance testing",
+      "fileName": "src/module69/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue69",
+      "issueName": "Issue 69 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 69 for ref-ID performance testing",
+      "fileName": "src/module69/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue70",
+      "issueName": "Issue 70 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 70 for ref-ID performance testing",
+      "fileName": "src/module70/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue70",
+      "issueName": "Issue 70 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 70 for ref-ID performance testing",
+      "fileName": "src/module70/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue71",
+      "issueName": "Issue 71 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 71 for ref-ID performance testing",
+      "fileName": "src/module71/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue71",
+      "issueName": "Issue 71 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 71 for ref-ID performance testing",
+      "fileName": "src/module71/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue72",
+      "issueName": "Issue 72 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 72 for ref-ID performance testing",
+      "fileName": "src/module72/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue72",
+      "issueName": "Issue 72 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 72 for ref-ID performance testing",
+      "fileName": "src/module72/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue73",
+      "issueName": "Issue 73 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 73 for ref-ID performance testing",
+      "fileName": "src/module73/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue73",
+      "issueName": "Issue 73 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 73 for ref-ID performance testing",
+      "fileName": "src/module73/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue74",
+      "issueName": "Issue 74 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 74 for ref-ID performance testing",
+      "fileName": "src/module74/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue74",
+      "issueName": "Issue 74 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 74 for ref-ID performance testing",
+      "fileName": "src/module74/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue75",
+      "issueName": "Issue 75 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 75 for ref-ID performance testing",
+      "fileName": "src/module75/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue75",
+      "issueName": "Issue 75 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 75 for ref-ID performance testing",
+      "fileName": "src/module75/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue76",
+      "issueName": "Issue 76 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 76 for ref-ID performance testing",
+      "fileName": "src/module76/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue76",
+      "issueName": "Issue 76 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 76 for ref-ID performance testing",
+      "fileName": "src/module76/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue77",
+      "issueName": "Issue 77 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 77 for ref-ID performance testing",
+      "fileName": "src/module77/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue77",
+      "issueName": "Issue 77 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 77 for ref-ID performance testing",
+      "fileName": "src/module77/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue78",
+      "issueName": "Issue 78 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 78 for ref-ID performance testing",
+      "fileName": "src/module78/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue78",
+      "issueName": "Issue 78 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 78 for ref-ID performance testing",
+      "fileName": "src/module78/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue79",
+      "issueName": "Issue 79 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 79 for ref-ID performance testing",
+      "fileName": "src/module79/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue79",
+      "issueName": "Issue 79 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 79 for ref-ID performance testing",
+      "fileName": "src/module79/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue80",
+      "issueName": "Issue 80 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 80 for ref-ID performance testing",
+      "fileName": "src/module80/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue80",
+      "issueName": "Issue 80 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 80 for ref-ID performance testing",
+      "fileName": "src/module80/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue81",
+      "issueName": "Issue 81 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 81 for ref-ID performance testing",
+      "fileName": "src/module81/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue81",
+      "issueName": "Issue 81 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 81 for ref-ID performance testing",
+      "fileName": "src/module81/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue82",
+      "issueName": "Issue 82 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 82 for ref-ID performance testing",
+      "fileName": "src/module82/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue82",
+      "issueName": "Issue 82 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 82 for ref-ID performance testing",
+      "fileName": "src/module82/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue83",
+      "issueName": "Issue 83 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 83 for ref-ID performance testing",
+      "fileName": "src/module83/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue83",
+      "issueName": "Issue 83 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 83 for ref-ID performance testing",
+      "fileName": "src/module83/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue84",
+      "issueName": "Issue 84 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 84 for ref-ID performance testing",
+      "fileName": "src/module84/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue84",
+      "issueName": "Issue 84 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 84 for ref-ID performance testing",
+      "fileName": "src/module84/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue85",
+      "issueName": "Issue 85 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 85 for ref-ID performance testing",
+      "fileName": "src/module85/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue85",
+      "issueName": "Issue 85 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 85 for ref-ID performance testing",
+      "fileName": "src/module85/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue86",
+      "issueName": "Issue 86 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 86 for ref-ID performance testing",
+      "fileName": "src/module86/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue86",
+      "issueName": "Issue 86 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 86 for ref-ID performance testing",
+      "fileName": "src/module86/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue87",
+      "issueName": "Issue 87 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 87 for ref-ID performance testing",
+      "fileName": "src/module87/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue87",
+      "issueName": "Issue 87 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 87 for ref-ID performance testing",
+      "fileName": "src/module87/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue88",
+      "issueName": "Issue 88 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 88 for ref-ID performance testing",
+      "fileName": "src/module88/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue88",
+      "issueName": "Issue 88 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 88 for ref-ID performance testing",
+      "fileName": "src/module88/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue89",
+      "issueName": "Issue 89 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 89 for ref-ID performance testing",
+      "fileName": "src/module89/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue89",
+      "issueName": "Issue 89 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 89 for ref-ID performance testing",
+      "fileName": "src/module89/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue90",
+      "issueName": "Issue 90 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 90 for ref-ID performance testing",
+      "fileName": "src/module90/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue90",
+      "issueName": "Issue 90 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 90 for ref-ID performance testing",
+      "fileName": "src/module90/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue91",
+      "issueName": "Issue 91 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 91 for ref-ID performance testing",
+      "fileName": "src/module91/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue91",
+      "issueName": "Issue 91 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 91 for ref-ID performance testing",
+      "fileName": "src/module91/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue92",
+      "issueName": "Issue 92 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 92 for ref-ID performance testing",
+      "fileName": "src/module92/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue92",
+      "issueName": "Issue 92 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 92 for ref-ID performance testing",
+      "fileName": "src/module92/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue93",
+      "issueName": "Issue 93 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 93 for ref-ID performance testing",
+      "fileName": "src/module93/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue93",
+      "issueName": "Issue 93 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 93 for ref-ID performance testing",
+      "fileName": "src/module93/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue94",
+      "issueName": "Issue 94 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 94 for ref-ID performance testing",
+      "fileName": "src/module94/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue94",
+      "issueName": "Issue 94 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 94 for ref-ID performance testing",
+      "fileName": "src/module94/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue95",
+      "issueName": "Issue 95 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 95 for ref-ID performance testing",
+      "fileName": "src/module95/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue95",
+      "issueName": "Issue 95 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 95 for ref-ID performance testing",
+      "fileName": "src/module95/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue96",
+      "issueName": "Issue 96 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 96 for ref-ID performance testing",
+      "fileName": "src/module96/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue96",
+      "issueName": "Issue 96 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 96 for ref-ID performance testing",
+      "fileName": "src/module96/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue97",
+      "issueName": "Issue 97 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 97 for ref-ID performance testing",
+      "fileName": "src/module97/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue97",
+      "issueName": "Issue 97 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 97 for ref-ID performance testing",
+      "fileName": "src/module97/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue98",
+      "issueName": "Issue 98 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 98 for ref-ID performance testing",
+      "fileName": "src/module98/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue98",
+      "issueName": "Issue 98 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 98 for ref-ID performance testing",
+      "fileName": "src/module98/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue99",
+      "issueName": "Issue 99 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 99 for ref-ID performance testing",
+      "fileName": "src/module99/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    },
+    {
+      "packageName": "pkg-issue99",
+      "issueName": "Issue 99 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 1 of issue 99 for ref-ID performance testing",
+      "fileName": "src/module99/file1.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "high",
+      "severity": 7,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "snyk",
+          "id": "JS-LODASH-400000"
+        }
+      ]
+    }
+  ]
+}
