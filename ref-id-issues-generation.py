@@ -3,13 +3,13 @@ import random
 
 
 # ==================== CONFIGURATION ====================
-ISSUE_COUNT = 100
+ISSUE_COUNT = 50
 OCCURRENCES_PER_ISSUE = 100
 REF_IDS_PER_OCCURRENCE = 50
 SHARED_OCCURRENCES = True  # All issues share same ref-IDs at each occurrence position
 DISTRIBUTION = {"cve": 40, "cwe": 20, "ghsa": 20, "snyk": 20}
-OUTPUT_FILE = "ref-id-perf-test.json"
-TARGET_NAME = "refid-perf-target"
+OUTPUT_FILE = "ref-id-perf2-test.json"
+TARGET_NAME = "refid-perf2-target"
 NULL_RATIO = 0.0   # 0.0-1.0: ratio of occurrences with absent referenceIdentifiers
 EMPTY_RATIO = 0.0  # 0.0-1.0: ratio of occurrences with empty [] referenceIdentifiers
 SEED = 42          # Set to None for random each run
