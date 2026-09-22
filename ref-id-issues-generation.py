@@ -3,9 +3,9 @@ import random
 
 
 # ==================== CONFIGURATION ====================
-ISSUE_COUNT = 50
-OCCURRENCES_PER_ISSUE = 20
-REF_IDS_PER_OCCURRENCE = 5
+ISSUE_COUNT = 100
+OCCURRENCES_PER_ISSUE = 100
+REF_IDS_PER_OCCURRENCE = 50
 SHARED_OCCURRENCES = True  # All issues share same ref-IDs at each occurrence position
 DISTRIBUTION = {"cve": 40, "cwe": 20, "ghsa": 20, "snyk": 20}
 OUTPUT_FILE = "ref-id-perf-test.json"
