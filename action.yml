@@ -960,6 +960,16 @@ runs:
         fi
         DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
+        # Synthetic pipeline identity: without these the plugin falls back to
+        # _pipeline/_stage/_step placeholders in the STO UI.
+        # workflow → pipeline, job → stage, scanner → step (sanitized to id-safe chars).
+        PIPELINE_ID="${{ github.workflow }}"
+        PIPELINE_ID="${PIPELINE_ID//[^a-zA-Z0-9_-]/_}"
+        STAGE_ID="${{ github.job }}"
+        STAGE_ID="${STAGE_ID//[^a-zA-Z0-9_-]/_}"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PIPELINE_ID=$PIPELINE_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_STAGE_ID=$STAGE_ID"
+        DOCKER_CMD="$DOCKER_CMD -e STEP_ID=$PRODUCT_SCANNER"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
