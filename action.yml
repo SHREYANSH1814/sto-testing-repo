@@ -771,9 +771,17 @@ runs:
           echo "container-output-path=/harness-output/${{ inputs.output-file }}" >> $GITHUB_OUTPUT
         fi
 
+        # Plugin defaults pipelineId to "_pipeline" when HARNESS_PIPELINE_ID is unset.
+        # Send the workflow name; STO MachineNamePattern is ^[A-Za-z_][A-Za-z0-9_]*$ (no hyphens).
+        PIPELINE_ID="${GITHUB_WORKFLOW//[^a-zA-Z0-9_]/_}"
+        PIPELINE_ID="${PIPELINE_ID:0:128}"
+        echo "pipeline-id=$PIPELINE_ID" >> $GITHUB_OUTPUT
+
     - name: Run STO Scan
       shell: bash
       id: scan
+      env:
+        HARNESS_PIPELINE_ID: ${{ steps.config.outputs.pipeline-id }}
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
@@ -960,6 +968,7 @@ runs:
         fi
         DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PIPELINE_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
