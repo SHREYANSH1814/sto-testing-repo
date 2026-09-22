@@ -772,9 +772,20 @@ runs:
         fi
 
         # Synthetic pipeline identity for STO UI (plugin falls back to _pipeline/_stage/_step).
-        # Native GITHUB_* env. workflow → pipeline, job → stage.
-        echo "pipeline-id=${GITHUB_WORKFLOW//[^a-zA-Z0-9_-]/_}" >> $GITHUB_OUTPUT
-        echo "stage-id=${GITHUB_JOB//[^a-zA-Z0-9_-]/_}" >> $GITHUB_OUTPUT
+        # Must match STO MachineNamePattern: ^[A-Za-z_][A-Za-z0-9_]*$ (no hyphens).
+        sto_id() {
+          local v="${1//[^a-zA-Z0-9_]/_}"
+          v="${v:0:128}"
+          case "$v" in
+            [A-Za-z_]*) ;;
+            *) v="_$v" ;;
+          esac
+          [ -n "$v" ] || v="_unknown"
+          printf '%s' "$v"
+        }
+        echo "pipeline-id=$(sto_id "$GITHUB_WORKFLOW")" >> $GITHUB_OUTPUT
+        echo "stage-id=$(sto_id "$GITHUB_JOB")" >> $GITHUB_OUTPUT
+        echo "step-id=$(sto_id "$PRODUCT_SCANNER")" >> $GITHUB_OUTPUT
 
     - name: Run STO Scan
       shell: bash
@@ -782,7 +793,7 @@ runs:
       env:
         HARNESS_PIPELINE_ID: ${{ steps.config.outputs.pipeline-id }}
         HARNESS_STAGE_ID: ${{ steps.config.outputs.stage-id }}
-        STEP_ID: ${{ steps.config.outputs.product-scanner }}
+        STEP_ID: ${{ steps.config.outputs.step-id }}
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
