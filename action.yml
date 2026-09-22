@@ -953,6 +953,11 @@ runs:
         # Plugin reads EXECUTION_URL only (BUILD_URL is ignored for scan metadata).
         DOCKER_CMD="$DOCKER_CMD -e EXECUTION_URL=$BUILD_URL"
         DOCKER_CMD="$DOCKER_CMD -e EXECUTION_SOURCE=github_actions"
+        # Plugin maps DRONE_REPO_SCM → gitMetadata.provider → STO "Source" field.
+        # Without it, repository targets show Source "Other" in the STO UI.
+        if [ "$TARGET_TYPE" = "repository" ]; then
+          DOCKER_CMD="$DOCKER_CMD -e DRONE_REPO_SCM=Github"
+        fi
         DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
