@@ -771,9 +771,18 @@ runs:
           echo "container-output-path=/harness-output/${{ inputs.output-file }}" >> $GITHUB_OUTPUT
         fi
 
+        # Synthetic pipeline identity for STO UI (plugin falls back to _pipeline/_stage/_step).
+        # Native GITHUB_* env. workflow → pipeline, job → stage.
+        echo "pipeline-id=${GITHUB_WORKFLOW//[^a-zA-Z0-9_-]/_}" >> $GITHUB_OUTPUT
+        echo "stage-id=${GITHUB_JOB//[^a-zA-Z0-9_-]/_}" >> $GITHUB_OUTPUT
+
     - name: Run STO Scan
       shell: bash
       id: scan
+      env:
+        HARNESS_PIPELINE_ID: ${{ steps.config.outputs.pipeline-id }}
+        HARNESS_STAGE_ID: ${{ steps.config.outputs.stage-id }}
+        STEP_ID: ${{ steps.config.outputs.product-scanner }}
       run: |
         # Build Docker command
         DOCKER_CMD="docker run --rm"
@@ -960,6 +969,8 @@ runs:
         fi
         DOCKER_CMD="$DOCKER_CMD -e BUILD_ID=$BUILD_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_BUILD_ID=$BUILD_ID"
+        # Inherit GHA-step env (set above) into the scanner container.
+        DOCKER_CMD="$DOCKER_CMD -e HARNESS_PIPELINE_ID -e HARNESS_STAGE_ID -e STEP_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
         # ======================================================================
