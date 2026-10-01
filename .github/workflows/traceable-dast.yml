@@ -45,6 +45,7 @@ jobs:
           target-name: "shreyansh/traceabledast"
           target-variant: "main"
           output-file: scan-output-extraction.env
+          log-level: Debug
           show-summary: 'true'
    
 
