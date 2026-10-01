@@ -25,6 +25,25 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      - name: Run Traceable DAST orchestration scan (auto target)
+        id: sto-scan-orchestration
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: traceable
+          scan-mode: orchestration
+          scan-config: default
+          target-type: instance
+          scanner-domain: ${{ secrets.TRACEABLE_DOMAIN }}
+          scanner-access-token: ${{ secrets.TRACEABLE_ACCESS_TOKEN }}
+          scanner-scan-id: ${{ secrets.TRACEABLE_SCAN_ID }}
+          output-file: scan-output-orchestration.env
+          show-summary: 'true'  
+
       - name: Run Traceable DAST extraction scan 
         id: sto-scan-extraction
         if: always()
@@ -49,24 +68,7 @@ jobs:
           show-summary: 'true'
    
 
-      - name: Run Traceable DAST orchestration scan (auto target)
-        id: sto-scan-orchestration
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: traceable
-          scan-mode: orchestration
-          scan-config: default
-          target-type: instance
-          scanner-domain: ${{ secrets.TRACEABLE_DOMAIN }}
-          scanner-access-token: ${{ secrets.TRACEABLE_ACCESS_TOKEN }}
-          scanner-scan-id: ${{ secrets.TRACEABLE_SCAN_ID }}
-          output-file: scan-output-orchestration.env
-          show-summary: 'true'
+     
 
    
       - name: Use scan output variables
