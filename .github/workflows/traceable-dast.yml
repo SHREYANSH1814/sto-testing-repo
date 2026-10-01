@@ -25,7 +25,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Run Traceable DAST extraction scan (auto target)
+      - name: Run Traceable DAST extraction scan 
         id: sto-scan-extraction
         if: always()
         uses: ./.github/actions/harness-sto
@@ -42,11 +42,13 @@ jobs:
           scanner-domain: ${{ secrets.TRACEABLE_DOMAIN }}
           scanner-access-token: ${{ secrets.TRACEABLE_ACCESS_TOKEN }}
           scanner-scan-id: ${{ secrets.TRACEABLE_SCAN_ID }}
+          target-name: "shreyansh/traceabledast"
+          target-variant: "main"
           output-file: scan-output-extraction.env
           show-summary: 'true'
    
 
-      - name: Run Traceable DAST orchestration scan (manual target)
+      - name: Run Traceable DAST orchestration scan (auto target)
         id: sto-scan-orchestration
         uses: ./.github/actions/harness-sto
         with:
@@ -62,8 +64,6 @@ jobs:
           scanner-domain: ${{ secrets.TRACEABLE_DOMAIN }}
           scanner-access-token: ${{ secrets.TRACEABLE_ACCESS_TOKEN }}
           scanner-scan-id: ${{ secrets.TRACEABLE_SCAN_ID }}
-          target-name: "shreyansh/traceabledast"
-          target-variant: "main"
           output-file: scan-output-orchestration.env
           show-summary: 'true'
 
