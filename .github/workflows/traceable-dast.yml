@@ -22,7 +22,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     
+      - name: Checkout source
+        uses: actions/checkout@v4
 
       - name: Run Traceable DAST extraction scan (auto target)
         id: sto-scan-extraction
