@@ -203,12 +203,12 @@ inputs:
     description: 'Mend project token (SCANNER_PROJECT_TOKEN). Used with product token for extraction.'
     required: false
 
-  scanner-suite-id:
-    description: 'Traceable suite ID (SCANNER_SUITE_ID). Required for orchestration; extraction may use suite ID or scan ID.'
+  scanner-scan-id:
+    description: 'Traceable scan ID (SCANNER_SUITE_ID). Shown as "Scan ID" in the Harness UI. Required for orchestration; default for extraction.'
     required: false
 
-  scanner-scan-id:
-    description: 'Traceable scan ID (SCANNER_SCAN_ID). Extraction alternative to suite ID.'
+  scanner-scan-execution-id:
+    description: 'Traceable scan execution ID (SCANNER_SCAN_ID). Extraction alternative to scanner-scan-id.'
     required: false
 
   scanner-scan-name:
@@ -1057,8 +1057,8 @@ runs:
         [ -n "${{ inputs.scanner-product-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PRODUCT_NAME=${{ inputs.scanner-product-name }}"
         [ -n "${{ inputs.scanner-product-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PRODUCT_TOKEN=${{ inputs.scanner-product-token }}"
         [ -n "${{ inputs.scanner-project-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_TOKEN=${{ inputs.scanner-project-token }}"
-        [ -n "${{ inputs.scanner-suite-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SUITE_ID=${{ inputs.scanner-suite-id }}"
-        [ -n "${{ inputs.scanner-scan-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SCAN_ID=${{ inputs.scanner-scan-id }}"
+        [ -n "${{ inputs.scanner-scan-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SUITE_ID=${{ inputs.scanner-scan-id }}"
+        [ -n "${{ inputs.scanner-scan-execution-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SCAN_ID=${{ inputs.scanner-scan-execution-id }}"
         [ -n "${{ inputs.scanner-scan-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SCAN_NAME=${{ inputs.scanner-scan-name }}"
         [ -n "${{ inputs.scanner-runner-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_RUNNER_ID=${{ inputs.scanner-runner-id }}"
         [ -n "${{ inputs.configuration-region }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_REGION=${{ inputs.configuration-region }}"
