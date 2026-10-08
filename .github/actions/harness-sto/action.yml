@@ -123,7 +123,11 @@ inputs:
   scanner-auth-type:
     description: |
       Scanner authentication type (SCANNER_AUTH_TYPE → PRODUCT_AUTH_TYPE).
-      Black Duck Hub: apiKey or usernamePassword.
+      Black Duck Hub: apiKey or usernamePassword. Veracode: apiKey or usernamePassword.
+    required: false
+
+  scanner-sandbox-id:
+    description: 'Veracode sandbox ID (SCANNER_SANDBOX_ID → PRODUCT_SANDBOX_ID).'
     required: false
 
   scanner-context:
@@ -1013,6 +1017,7 @@ runs:
         [ -n "${{ inputs.scanner-project-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_VERSION=${{ inputs.scanner-project-version }}"
         [ -n "${{ inputs.scanner-api-version }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_API_VERSION=${{ inputs.scanner-api-version }}"
         [ -n "${{ inputs.scanner-auth-type }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_AUTH_TYPE=${{ inputs.scanner-auth-type }}"
+        [ -n "${{ inputs.scanner-sandbox-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SANDBOX_ID=${{ inputs.scanner-sandbox-id }}"
         [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=$(printf '%q' "${{ inputs.scanner-context }}")"
         SCANNER_PROJECT_KEY="${{ inputs.scanner-project-key }}"
         # Template library / NG / Jenkins map SonarQube identity through project_key
