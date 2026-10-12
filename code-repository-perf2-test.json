@@ -1,0 +1,1990 @@
+{
+  "meta": {
+    "key": [
+      "packageName"
+    ],
+    "subproduct": "RefIdPerfScanner"
+  },
+  "issues": [
+    {
+      "packageName": "pkg-issue0",
+      "issueName": "Issue 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 0 for ref-ID performance testing",
+      "fileName": "src/module0/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 5.3,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#0-0",
+      "epssScore": 0.1477,
+      "exploitAvailable": false,
+      "fixedVersion": "1.0.13",
+      "packageManager": "maven",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-0-0-498382",
+      "rawDescription": "[issue 0 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.7,
+        "temporalScore": 8.4,
+        "environmentalScore": 5.8,
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-0-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "0.0.0",
+          "fixed": "0.0.2",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "0.1.0",
+          "fixed": "0.1.2",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.2.0",
+          "fixed": "0.2.5",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.3.0",
+          "fixed": "0.3.6",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.4.0",
+          "fixed": "0.4.4",
+          "ecosystem": "Maven"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-0-0-0",
+          "actor": "triage-bot",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 0 for finding 0-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-0-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "fixed",
+          "note": "Automated transition 1 for finding 0-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.0.0",
+        "ruleId": "RULE-0-0",
+        "scanDurationMs": 425,
+        "host": "runner-0-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue1",
+      "issueName": "Issue 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 1 for ref-ID performance testing",
+      "fileName": "src/module1/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 6.1,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#1-0",
+      "epssScore": 0.7924,
+      "exploitAvailable": true,
+      "fixedVersion": "2.0.47",
+      "packageManager": "pip",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-1-0-319684",
+      "rawDescription": "[issue 1 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 7.6,
+        "temporalScore": 7.3,
+        "environmentalScore": 6.5,
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-1-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "1.0.0",
+          "fixed": "1.0.4",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.1.0",
+          "fixed": "1.1.8",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "1.2.0",
+          "fixed": "1.2.5",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "1.3.0",
+          "fixed": "1.3.4",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "1.4.0",
+          "fixed": "1.4.1",
+          "ecosystem": "npm"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-1-0-0",
+          "actor": "analyst",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 0 for finding 1-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-1-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 1 for finding 1-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.1.0",
+        "ruleId": "RULE-1-0",
+        "scanDurationMs": 312,
+        "host": "runner-1-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue2",
+      "issueName": "Issue 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 2 for ref-ID performance testing",
+      "fileName": "src/module2/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 4.5,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#2-0",
+      "epssScore": 0.4743,
+      "exploitAvailable": false,
+      "fixedVersion": "3.0.18",
+      "packageManager": "pip",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-2-0-246413",
+      "rawDescription": "[issue 2 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 4.7,
+        "temporalScore": 6.2,
+        "environmentalScore": 3.1,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-2-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "2.0.0",
+          "fixed": "2.0.4",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "2.1.0",
+          "fixed": "2.1.9",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "2.2.0",
+          "fixed": "2.2.2",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "2.3.0",
+          "fixed": "2.3.2",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "2.4.0",
+          "fixed": "2.4.3",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-2-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 2-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-2-0-1",
+          "actor": "triage-bot",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 1 for finding 2-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.2.0",
+        "ruleId": "RULE-2-0",
+        "scanDurationMs": 4935,
+        "host": "runner-2-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue3",
+      "issueName": "Issue 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 3 for ref-ID performance testing",
+      "fileName": "src/module3/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 7.7,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#3-0",
+      "epssScore": 0.1088,
+      "exploitAvailable": false,
+      "fixedVersion": "4.0.98",
+      "packageManager": "gem",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-3-0-456699",
+      "rawDescription": "[issue 3 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.8,
+        "temporalScore": 5.3,
+        "environmentalScore": 4.6,
+        "attackVector": "LOCAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-3-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "3.0.0",
+          "fixed": "3.0.2",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "3.1.0",
+          "fixed": "3.1.9",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "3.2.0",
+          "fixed": "3.2.4",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.3.0",
+          "fixed": "3.3.6",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.4.0",
+          "fixed": "3.4.9",
+          "ecosystem": "NuGet"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-3-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "fixed",
+          "note": "Automated transition 0 for finding 3-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-3-0-1",
+          "actor": "analyst",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "open",
+          "note": "Automated transition 1 for finding 3-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.3.0",
+        "ruleId": "RULE-3-0",
+        "scanDurationMs": 54,
+        "host": "runner-3-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue4",
+      "issueName": "Issue 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 4 for ref-ID performance testing",
+      "fileName": "src/module4/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 3.4,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#4-0",
+      "epssScore": 0.8341,
+      "exploitAvailable": true,
+      "fixedVersion": "5.0.10",
+      "packageManager": "gem",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-4-0-609597",
+      "rawDescription": "[issue 4 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 8.6,
+        "temporalScore": 9.3,
+        "environmentalScore": 5.3,
+        "attackVector": "ADJACENT",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-4-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "4.0.0",
+          "fixed": "4.0.8",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "4.1.0",
+          "fixed": "4.1.3",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "4.2.0",
+          "fixed": "4.2.9",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "4.3.0",
+          "fixed": "4.3.7",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "4.4.0",
+          "fixed": "4.4.9",
+          "ecosystem": "npm"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-4-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 4-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-4-0-1",
+          "actor": "analyst",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 4-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.4.0",
+        "ruleId": "RULE-4-0",
+        "scanDurationMs": 2603,
+        "host": "runner-4-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue5",
+      "issueName": "Issue 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 5 for ref-ID performance testing",
+      "fileName": "src/module5/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 3.4,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#5-0",
+      "epssScore": 0.02,
+      "exploitAvailable": true,
+      "fixedVersion": "1.0.75",
+      "packageManager": "npm",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-5-0-107540",
+      "rawDescription": "[issue 5 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.5,
+        "temporalScore": 6.7,
+        "environmentalScore": 2.8,
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "sourceId": "cvss-5-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "0.0.0",
+          "fixed": "0.0.9",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "0.1.0",
+          "fixed": "0.1.5",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "0.2.0",
+          "fixed": "0.2.4",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.3.0",
+          "fixed": "0.3.3",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.4.0",
+          "fixed": "0.4.8",
+          "ecosystem": "npm"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-5-0-0",
+          "actor": "analyst",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "fixed",
+          "note": "Automated transition 0 for finding 5-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-5-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 5-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.5.0",
+        "ruleId": "RULE-5-0",
+        "scanDurationMs": 3924,
+        "host": "runner-5-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue6",
+      "issueName": "Issue 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 6 for ref-ID performance testing",
+      "fileName": "src/module6/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 5.8,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#6-0",
+      "epssScore": 0.8206,
+      "exploitAvailable": true,
+      "fixedVersion": "2.0.86",
+      "packageManager": "gem",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-6-0-777568",
+      "rawDescription": "[issue 6 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.7,
+        "temporalScore": 5.0,
+        "environmentalScore": 3.7,
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "NONE",
+        "sourceId": "cvss-6-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "1.0.0",
+          "fixed": "1.0.4",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "1.1.0",
+          "fixed": "1.1.8",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.2.0",
+          "fixed": "1.2.7",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.3.0",
+          "fixed": "1.3.5",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "1.4.0",
+          "fixed": "1.4.4",
+          "ecosystem": "Maven"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-6-0-0",
+          "actor": "triage-bot",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 6-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-6-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "fixed",
+          "note": "Automated transition 1 for finding 6-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.6.0",
+        "ruleId": "RULE-6-0",
+        "scanDurationMs": 3680,
+        "host": "runner-6-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue7",
+      "issueName": "Issue 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 7 for ref-ID performance testing",
+      "fileName": "src/module7/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 5.8,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#7-0",
+      "epssScore": 0.4573,
+      "exploitAvailable": false,
+      "fixedVersion": "3.0.7",
+      "packageManager": "npm",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-7-0-497382",
+      "rawDescription": "[issue 7 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.0,
+        "temporalScore": 4.9,
+        "environmentalScore": 8.4,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-7-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "2.0.0",
+          "fixed": "2.0.9",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "2.1.0",
+          "fixed": "2.1.3",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "2.2.0",
+          "fixed": "2.2.5",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "2.3.0",
+          "fixed": "2.3.1",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "2.4.0",
+          "fixed": "2.4.9",
+          "ecosystem": "Maven"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-7-0-0",
+          "actor": "scanner",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 7-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-7-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 7-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.7.0",
+        "ruleId": "RULE-7-0",
+        "scanDurationMs": 2619,
+        "host": "runner-7-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue8",
+      "issueName": "Issue 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 8 for ref-ID performance testing",
+      "fileName": "src/module8/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 8.9,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#8-0",
+      "epssScore": 0.0651,
+      "exploitAvailable": true,
+      "fixedVersion": "4.0.86",
+      "packageManager": "npm",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-8-0-523389",
+      "rawDescription": "[issue 8 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 3.8,
+        "temporalScore": 8.7,
+        "environmentalScore": 3.0,
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-8-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "3.0.0",
+          "fixed": "3.0.9",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "3.1.0",
+          "fixed": "3.1.5",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.2.0",
+          "fixed": "3.2.6",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.3.0",
+          "fixed": "3.3.5",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "3.4.0",
+          "fixed": "3.4.3",
+          "ecosystem": "PyPI"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-8-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "triaged",
+          "note": "Automated transition 0 for finding 8-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-8-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "open",
+          "note": "Automated transition 1 for finding 8-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.8.0",
+        "ruleId": "RULE-8-0",
+        "scanDurationMs": 3795,
+        "host": "runner-8-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue9",
+      "issueName": "Issue 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 9 for ref-ID performance testing",
+      "fileName": "src/module9/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 6.5,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#9-0",
+      "epssScore": 0.1258,
+      "exploitAvailable": false,
+      "fixedVersion": "5.0.8",
+      "packageManager": "npm",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-9-0-487477",
+      "rawDescription": "[issue 9 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 5.0,
+        "temporalScore": 5.3,
+        "environmentalScore": 5.3,
+        "attackVector": "LOCAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-9-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "4.0.0",
+          "fixed": "4.0.9",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "4.1.0",
+          "fixed": "4.1.2",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "4.2.0",
+          "fixed": "4.2.5",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "4.3.0",
+          "fixed": "4.3.2",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "4.4.0",
+          "fixed": "4.4.3",
+          "ecosystem": "PyPI"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-9-0-0",
+          "actor": "scanner",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "fixed",
+          "note": "Automated transition 0 for finding 9-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-9-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 9-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.9.0",
+        "ruleId": "RULE-9-0",
+        "scanDurationMs": 2358,
+        "host": "runner-9-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue10",
+      "issueName": "Issue 10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 10 for ref-ID performance testing",
+      "fileName": "src/module10/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 3.6,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#10-0",
+      "epssScore": 0.4024,
+      "exploitAvailable": false,
+      "fixedVersion": "1.0.5",
+      "packageManager": "maven",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-10-0-449759",
+      "rawDescription": "[issue 10 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 8.3,
+        "temporalScore": 6.8,
+        "environmentalScore": 3.1,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-10-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "0.0.0",
+          "fixed": "0.0.1",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "0.1.0",
+          "fixed": "0.1.2",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "0.2.0",
+          "fixed": "0.2.9",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "0.3.0",
+          "fixed": "0.3.6",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.4.0",
+          "fixed": "0.4.9",
+          "ecosystem": "npm"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-10-0-0",
+          "actor": "analyst",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 0 for finding 10-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-10-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 1 for finding 10-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.10.0",
+        "ruleId": "RULE-10-0",
+        "scanDurationMs": 3570,
+        "host": "runner-10-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue11",
+      "issueName": "Issue 11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 11 for ref-ID performance testing",
+      "fileName": "src/module11/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 7.6,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#11-0",
+      "epssScore": 0.336,
+      "exploitAvailable": false,
+      "fixedVersion": "2.0.79",
+      "packageManager": "gem",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-11-0-262060",
+      "rawDescription": "[issue 11 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 9.4,
+        "temporalScore": 3.8,
+        "environmentalScore": 2.3,
+        "attackVector": "ADJACENT",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "sourceId": "cvss-11-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "1.0.0",
+          "fixed": "1.0.3",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "1.1.0",
+          "fixed": "1.1.7",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.2.0",
+          "fixed": "1.2.5",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.3.0",
+          "fixed": "1.3.2",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "1.4.0",
+          "fixed": "1.4.1",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-11-0-0",
+          "actor": "analyst",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 11-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-11-0-1",
+          "actor": "analyst",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 11-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.11.0",
+        "ruleId": "RULE-11-0",
+        "scanDurationMs": 1872,
+        "host": "runner-11-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue12",
+      "issueName": "Issue 12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 12 for ref-ID performance testing",
+      "fileName": "src/module12/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 7.6,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#12-0",
+      "epssScore": 0.3785,
+      "exploitAvailable": false,
+      "fixedVersion": "3.0.8",
+      "packageManager": "pip",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-12-0-468203",
+      "rawDescription": "[issue 12 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 7.4,
+        "temporalScore": 5.0,
+        "environmentalScore": 8.8,
+        "attackVector": "LOCAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "NONE",
+        "sourceId": "cvss-12-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "2.0.0",
+          "fixed": "2.0.5",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "2.1.0",
+          "fixed": "2.1.5",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "2.2.0",
+          "fixed": "2.2.2",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "2.3.0",
+          "fixed": "2.3.7",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "2.4.0",
+          "fixed": "2.4.6",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-12-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 0 for finding 12-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-12-0-1",
+          "actor": "triage-bot",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "open",
+          "note": "Automated transition 1 for finding 12-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.12.0",
+        "ruleId": "RULE-12-0",
+        "scanDurationMs": 4239,
+        "host": "runner-12-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue13",
+      "issueName": "Issue 13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 13 for ref-ID performance testing",
+      "fileName": "src/module13/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 5.5,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#13-0",
+      "epssScore": 0.0665,
+      "exploitAvailable": false,
+      "fixedVersion": "4.0.79",
+      "packageManager": "pip",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-13-0-795612",
+      "rawDescription": "[issue 13 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 8.9,
+        "temporalScore": 7.4,
+        "environmentalScore": 3.4,
+        "attackVector": "LOCAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-13-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "3.0.0",
+          "fixed": "3.0.7",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "3.1.0",
+          "fixed": "3.1.9",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.2.0",
+          "fixed": "3.2.4",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "3.3.0",
+          "fixed": "3.3.7",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.4.0",
+          "fixed": "3.4.5",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-13-0-0",
+          "actor": "triage-bot",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 13-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-13-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 13-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.13.0",
+        "ruleId": "RULE-13-0",
+        "scanDurationMs": 4538,
+        "host": "runner-13-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue14",
+      "issueName": "Issue 14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 14 for ref-ID performance testing",
+      "fileName": "src/module14/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 6.2,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#14-0",
+      "epssScore": 0.4201,
+      "exploitAvailable": true,
+      "fixedVersion": "5.0.65",
+      "packageManager": "gomod",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-14-0-932291",
+      "rawDescription": "[issue 14 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 9.2,
+        "temporalScore": 8.0,
+        "environmentalScore": 2.4,
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-14-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "4.0.0",
+          "fixed": "4.0.6",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "4.1.0",
+          "fixed": "4.1.4",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "4.2.0",
+          "fixed": "4.2.4",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "4.3.0",
+          "fixed": "4.3.3",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "4.4.0",
+          "fixed": "4.4.1",
+          "ecosystem": "npm"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-14-0-0",
+          "actor": "analyst",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "triaged",
+          "note": "Automated transition 0 for finding 14-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-14-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "wont-fix",
+          "note": "Automated transition 1 for finding 14-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.14.0",
+        "ruleId": "RULE-14-0",
+        "scanDurationMs": 3942,
+        "host": "runner-14-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue15",
+      "issueName": "Issue 15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 15 for ref-ID performance testing",
+      "fileName": "src/module15/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 6.4,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#15-0",
+      "epssScore": 0.2318,
+      "exploitAvailable": true,
+      "fixedVersion": "1.0.96",
+      "packageManager": "maven",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-15-0-916232",
+      "rawDescription": "[issue 15 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 5.9,
+        "temporalScore": 3.3,
+        "environmentalScore": 8.7,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-15-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "0.0.0",
+          "fixed": "0.0.4",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "0.1.0",
+          "fixed": "0.1.8",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "0.2.0",
+          "fixed": "0.2.8",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.3.0",
+          "fixed": "0.3.9",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "0.4.0",
+          "fixed": "0.4.6",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-15-0-0",
+          "actor": "scanner",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "fixed",
+          "note": "Automated transition 0 for finding 15-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-15-0-1",
+          "actor": "triage-bot",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "fixed",
+          "note": "Automated transition 1 for finding 15-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.15.0",
+        "ruleId": "RULE-15-0",
+        "scanDurationMs": 4185,
+        "host": "runner-15-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue16",
+      "issueName": "Issue 16 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 16 for ref-ID performance testing",
+      "fileName": "src/module16/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 8.8,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#16-0",
+      "epssScore": 0.2634,
+      "exploitAvailable": false,
+      "fixedVersion": "2.0.80",
+      "packageManager": "npm",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-16-0-387936",
+      "rawDescription": "[issue 16 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 6.0,
+        "temporalScore": 7.4,
+        "environmentalScore": 2.9,
+        "attackVector": "LOCAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "HIGH",
+        "sourceId": "cvss-16-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "1.0.0",
+          "fixed": "1.0.2",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.1.0",
+          "fixed": "1.1.3",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.2.0",
+          "fixed": "1.2.7",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "1.3.0",
+          "fixed": "1.3.4",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "1.4.0",
+          "fixed": "1.4.7",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-16-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "fixed",
+          "note": "Automated transition 0 for finding 16-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-16-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "triaged",
+          "note": "Automated transition 1 for finding 16-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.16.0",
+        "ruleId": "RULE-16-0",
+        "scanDurationMs": 2760,
+        "host": "runner-16-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue17",
+      "issueName": "Issue 17 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 17 for ref-ID performance testing",
+      "fileName": "src/module17/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 8.9,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#17-0",
+      "epssScore": 0.7273,
+      "exploitAvailable": false,
+      "fixedVersion": "3.0.61",
+      "packageManager": "maven",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-17-0-468845",
+      "rawDescription": "[issue 17 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 5.1,
+        "temporalScore": 4.9,
+        "environmentalScore": 8.1,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-17-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "2.0.0",
+          "fixed": "2.0.4",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "2.1.0",
+          "fixed": "2.1.7",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "2.2.0",
+          "fixed": "2.2.1",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "2.3.0",
+          "fixed": "2.3.6",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "2.4.0",
+          "fixed": "2.4.3",
+          "ecosystem": "Go"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-17-0-0",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 0 for finding 17-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-17-0-1",
+          "actor": "ci-pipeline",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 1 for finding 17-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.17.0",
+        "ruleId": "RULE-17-0",
+        "scanDurationMs": 1095,
+        "host": "runner-17-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue18",
+      "issueName": "Issue 18 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 18 for ref-ID performance testing",
+      "fileName": "src/module18/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 3.9,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#18-0",
+      "epssScore": 0.4386,
+      "exploitAvailable": true,
+      "fixedVersion": "4.0.33",
+      "packageManager": "gomod",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-18-0-443254",
+      "rawDescription": "[issue 18 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 4.5,
+        "temporalScore": 4.5,
+        "environmentalScore": 7.1,
+        "attackVector": "PHYSICAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-18-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "3.0.0",
+          "fixed": "3.0.5",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "3.1.0",
+          "fixed": "3.1.8",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "3.2.0",
+          "fixed": "3.2.9",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "3.3.0",
+          "fixed": "3.3.6",
+          "ecosystem": "npm"
+        },
+        {
+          "introduced": "3.4.0",
+          "fixed": "3.4.2",
+          "ecosystem": "Maven"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-18-0-0",
+          "actor": "scanner",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "open",
+          "toStatus": "open",
+          "note": "Automated transition 0 for finding 18-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-18-0-1",
+          "actor": "scanner",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "reopened",
+          "toStatus": "fixed",
+          "note": "Automated transition 1 for finding 18-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.18.0",
+        "ruleId": "RULE-18-0",
+        "scanDurationMs": 304,
+        "host": "runner-18-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    },
+    {
+      "packageName": "pkg-issue19",
+      "issueName": "Issue 19 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "issueDescription": "Occurrence 0 of issue 19 for ref-ID performance testing",
+      "fileName": "src/module19/file0.java",
+      "remediationSteps": "Upgrade to latest version.",
+      "risk": "critical",
+      "severity": 10,
+      "status": "open",
+      "referenceIdentifiers": [
+        {
+          "type": "cve",
+          "id": "2024-10000"
+        },
+        {
+          "type": "ghsa",
+          "id": "2a8r-pw4e-28h2"
+        },
+        {
+          "type": "cwe",
+          "id": "94"
+        },
+        {
+          "type": "cve",
+          "id": "2019-10002"
+        }
+      ],
+      "cvssScore": 7.6,
+      "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H#19-0",
+      "epssScore": 0.5358,
+      "exploitAvailable": true,
+      "fixedVersion": "5.0.59",
+      "packageManager": "gem",
+      "scannerVendor": "RefIdPerfScanner",
+      "discoveredDate": "2025-01-01",
+      "rawFindingId": "RAW-19-0-368690",
+      "rawDescription": "[issue 19 / occurrence 0 / para 0] Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "cvssDetails": {
+        "baseScore": 8.3,
+        "temporalScore": 3.3,
+        "environmentalScore": 5.9,
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "sourceId": "cvss-19-0"
+      },
+      "affectedRanges": [
+        {
+          "introduced": "4.0.0",
+          "fixed": "4.0.2",
+          "ecosystem": "NuGet"
+        },
+        {
+          "introduced": "4.1.0",
+          "fixed": "4.1.1",
+          "ecosystem": "PyPI"
+        },
+        {
+          "introduced": "4.2.0",
+          "fixed": "4.2.7",
+          "ecosystem": "Go"
+        },
+        {
+          "introduced": "4.3.0",
+          "fixed": "4.3.4",
+          "ecosystem": "Maven"
+        },
+        {
+          "introduced": "4.4.0",
+          "fixed": "4.4.4",
+          "ecosystem": "Maven"
+        }
+      ],
+      "changeHistory": [
+        {
+          "revision": "rev-19-0-0",
+          "actor": "triage-bot",
+          "timestamp": "2025-01-01T00:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "triaged",
+          "note": "Automated transition 0 for finding 19-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "revision": "rev-19-0-1",
+          "actor": "triage-bot",
+          "timestamp": "2025-02-01T01:00:00Z",
+          "fromStatus": "new",
+          "toStatus": "fixed",
+          "note": "Automated transition 1 for finding 19-0: Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "scannerMetadata": {
+        "engineVersion": "3.19.0",
+        "ruleId": "RULE-19-0",
+        "scanDurationMs": 2520,
+        "host": "runner-19-0.internal",
+        "notes": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      }
+    }
+  ]
+}
