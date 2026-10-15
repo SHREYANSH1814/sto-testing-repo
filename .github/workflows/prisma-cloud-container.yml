@@ -49,6 +49,9 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpipleine,account.anurag
 
       - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
@@ -77,6 +80,9 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-container.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpipleine,account.anurag
 
       - name: Run Prisma Cloud public Docker Hub scan with default target
         id: sto-scan-dockerhub-default
@@ -102,6 +108,9 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-dockerhub-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpipleine,account.anurag
 
       - name: Run Prisma Cloud public Docker Hub scan with named target
         id: sto-scan-dockerhub
@@ -129,6 +138,9 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-dockerhub.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpipleine,account.anurag
 
       - name: Build local Docker image
         if: always()
@@ -159,6 +171,9 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-local-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpipleine,account.anurag
 
       - name: Run Prisma Cloud local image scan with named target
         id: sto-scan-local
