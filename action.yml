@@ -184,7 +184,13 @@ inputs:
       Scanner lookup type (SCANNER_LOOKUP_TYPE → PRODUCT_LOOKUP_TYPE).
       Mend: byTokens or byNames (matches template-library mendStep). Orchestration remaps to
       appendToProductByToken / appendToProductByName; extraction keeps byTokens / byNames.
-      Also used by NexusIQ and Fortify on Demand.
+      Nexus IQ: byPublicId or byPrivateId. Also used by Fortify on Demand.
+    required: false
+
+  scanner-lookup-id:
+    description: |
+      Scanner lookup identifier (SCANNER_LOOKUP_ID → PRODUCT_LOOKUP_ID).
+      Nexus IQ: public or private application ID; pair with scanner-lookup-type.
     required: false
 
   scanner-product-name:
@@ -1048,6 +1054,7 @@ runs:
           fi
           DOCKER_CMD="$DOCKER_CMD -e SCANNER_LOOKUP_TYPE=$LOOKUP"
         fi
+        [ -n "${{ inputs.scanner-lookup-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_LOOKUP_ID=${{ inputs.scanner-lookup-id }}"
         [ -n "${{ inputs.scanner-include }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_INCLUDE=$(printf '%q' "${{ inputs.scanner-include }}")"
         [ -n "${{ inputs.scanner-exclude }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_EXCLUDE=$(printf '%q' "${{ inputs.scanner-exclude }}")"
         [ -n "${{ inputs.scanner-java-binaries }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_JAVA_BINARIES=${{ inputs.scanner-java-binaries }}"
