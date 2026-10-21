@@ -1,0 +1,86 @@
+name: Master STO Orchestration Security Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+      run-aqua-trivy:
+        description: 'Run Aqua Trivy orchestration scan'
+        required: false
+        type: boolean
+        default: true
+      run-gitleaks:
+        description: 'Run Gitleaks orchestration scan'
+        required: false
+        type: boolean
+        default: true
+      run-bandit:
+        description: 'Run Bandit orchestration scan'
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+  aqua-trivy:
+    if: ${{ inputs.run-aqua-trivy }}
+    uses: ./.github/workflows/aqua-trivy-orchestration.yml
+    with:
+      harness-org-id: ${{ inputs.harness-org-id }}
+      harness-project-id: ${{ inputs.harness-project-id }}
+      harness-domain: ${{ inputs.harness-domain }}
+    secrets: inherit
+
+  gitleaks:
+    if: ${{ inputs.run-gitleaks }}
+    uses: ./.github/workflows/gitleaks-orchestration.yml
+    with:
+      harness-org-id: ${{ inputs.harness-org-id }}
+      harness-project-id: ${{ inputs.harness-project-id }}
+      harness-domain: ${{ inputs.harness-domain }}
+    secrets: inherit
+
+  bandit:
+    if: ${{ inputs.run-bandit }}
+    uses: ./.github/workflows/bandit-orchestration.yml
+    with:
+      harness-org-id: ${{ inputs.harness-org-id }}
+      harness-project-id: ${{ inputs.harness-project-id }}
+      harness-domain: ${{ inputs.harness-domain }}
+    secrets: inherit
+
+  summary:
+    runs-on: ubuntu-latest
+    needs: [aqua-trivy, gitleaks, bandit]
+    if: always()
+    steps:
+      - name: Summarize results
+        shell: bash
+        run: |
+          {
+            echo "## Master STO Scan Results"
+            echo ""
+            echo "| Scanner | Result |"
+            echo "|---|---|"
+            echo "| Aqua Trivy | ${{ needs.aqua-trivy.result }} |"
+            echo "| Gitleaks | ${{ needs.gitleaks.result }} |"
+            echo "| Bandit | ${{ needs.bandit.result }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail if any scan failed
+        if: contains(needs.*.result, 'failure')
+        shell: bash
+        run: |
+          echo "One or more scans failed."
+          exit 1
