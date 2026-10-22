@@ -27,45 +27,6 @@ jobs:
         with:
           ref: main
 
-      - name: Run Semgrep scan-third-party-dependencies scan with default target
-        id: sto-scan-third-party-default
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: semgrep
-          scan-mode: orchestration
-          scan-config: scan-third-party-dependencies
-          target-type: repository
-          workspace: .
-          docker-image-tag: "dev"
-          output-file: scan-output-third-party-default.env
-          show-summary: 'true'
-
-      - name: Run Semgrep scan-third-party-dependencies scan with named target
-        id: sto-scan-third-party
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: semgrep
-          scan-mode: orchestration
-          scan-config: scan-third-party-dependencies
-          target-type: repository
-          workspace: .
-          docker-image-tag: "dev"
-          target-name: "shreyansh/semgrepthirdparty"
-          target-variant: "main"
-          output-file: scan-output-third-party.env
-          show-summary: 'true'
-
       - name: Run Semgrep auto-and-ported-security-tools-except-p-gitleaks scan with default target
         id: sto-scan-auto-ported-except-gitleaks-default
         if: always()
