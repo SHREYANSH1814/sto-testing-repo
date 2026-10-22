@@ -768,10 +768,28 @@ runs:
           echo "Plugin DOCKER_MODE: $PLUGIN_DOCKER_MODE"
         fi
 
-        # Set workspace path
+        # Mount the checkout (has .git) at /harness. WORKSPACE is the scan subdir
+        # so git auto-detect can walk up to .git. Same as Jenkins pluginWorkspace().
         if [ "$TARGET_TYPE" = "repository" ]; then
-          WORKSPACE_PATH="${{ github.workspace }}/${{ inputs.workspace }}"
-          echo "workspace-path=$WORKSPACE_PATH" >> $GITHUB_OUTPUT
+          REL="${{ inputs.workspace }}"
+          REL="${REL#./}"
+          REL="${REL#/}"
+          case "$REL" in
+            ""|".")
+              PLUGIN_WS="/harness"
+              ;;
+            harness)
+              PLUGIN_WS="/harness/harness"
+              ;;
+            harness/*)
+              PLUGIN_WS="/${REL}"
+              ;;
+            *)
+              PLUGIN_WS="/harness/${REL}"
+              ;;
+          esac
+          echo "plugin-workspace=$PLUGIN_WS" >> $GITHUB_OUTPUT
+          echo "Plugin WORKSPACE: $PLUGIN_WS"
         fi
 
         # Set output file path
@@ -831,11 +849,15 @@ runs:
         fi
 
         # Plugin auto-detect (instance/container) only runs if /harness exists.
-        # Repository scans mount the configured workspace; other types mount the checkout.
+        # Always mount the checkout so repository git metadata is visible.
+        # Repository scans set WORKSPACE to the subdir (or /harness when workspace is .).
+        DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness"
         if [ "${{ steps.config.outputs.target-type }}" = "repository" ]; then
-          DOCKER_CMD="$DOCKER_CMD -v ${{ steps.config.outputs.workspace-path }}:/harness"
-        else
-          DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness"
+          DOCKER_CMD="$DOCKER_CMD -e WORKSPACE=${{ steps.config.outputs.plugin-workspace }}"
+          # Checkout files are owned by the runner user; the container runs as root.
+          DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_COUNT=1"
+          DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_KEY_0=safe.directory"
+          DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_VALUE_0='*'"
         fi
 
         # Add volume mount for output file
