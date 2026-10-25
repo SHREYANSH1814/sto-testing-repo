@@ -23,15 +23,15 @@ resource "aws_s3_bucket" "public_data" {
 resource "aws_s3_bucket_public_access_block" "public_data" {
   bucket = aws_s3_bucket.public_data.id
 
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
 }
 
 resource "aws_s3_bucket_acl" "public_data" {
   bucket = aws_s3_bucket.public_data.id
-  acl    = "public-read"
+  acl    = "private"
 }
 
 resource "aws_s3_bucket_versioning" "public_data" {
