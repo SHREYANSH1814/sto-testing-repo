@@ -17,12 +17,12 @@ on:
         type: string
         default: 'https://app.harness.io'
       scanners:
-        description: "Use 'all', or a JSON array of scanner names (e.g. [\"gitleaks-orchestration\",\"bandit-orchestration\"])."
+        description: "Use 'all', or a JSON array of scanner names (e.g. [\"gitleaks-scanner\",\"bandit-scanner\"])."
         required: true
         type: string
         default: 'all'
       exclude:
-        description: "Scanners to skip: comma-separated or JSON array (e.g. aqua-trivy-invalid-image,snyk-orchestration). Applied after 'scanners'. Blank = none."
+        description: "Scanners to skip: comma-separated or JSON array (e.g. aquatrivy-scanner,snyk-scanner). Applied after 'scanners'. Blank = none."
         required: false
         type: string
         default: ''
@@ -64,49 +64,36 @@ jobs:
           # name (workflow file stem) -> actual workflow filename.
           # Only real, dispatchable scan workflows on this branch.
           NAME_TO_FILE = {
-              "anchore-ingestion": "anchore-ingestion.yml",
-              "aqua-trivy-invalid-image": "aqua-trivy-invalid-image.yaml",
-              "aqua-trivy-local-image-arm": "aqua-trivy-local-image-arm.yml",
-              "aqua-trivy-local-image": "aqua-trivy-local-image.yml",
-              "aqua-trivy-orchestration": "aqua-trivy-orchestration.yml",
-              "bandit-orchestration": "bandit-orchestration.yml",
-              "blackduck-container": "blackduck-container.yml",
-              "brakeman-orchestration": "brakeman-orchestration.yml",
-              "checkov-orchestration": "checkov-orchestration.yml",
-              "ghas-orchestration": "ghas-orchestration.yml",
-              "gitleaks-orchestration": "gitleaks-orchestration.yml",
-              "grype-container": "grype-container.yml",
-              "grype-orchestration": "grype-orchestration.yml",
-              "harness-sast-orchestration": "harness-sast-orchestration.yml",
-              "harness-sca-container": "harness-sca-container.yml",
-              "modelscan-orchestration": "modelscan-orchestration.yml",
-              "nikto-orchestration": "nikto-orchestration.yml",
-              "osv-orchestration": "osv-orchestration.yml",
-              "owasp-orchestration-policy": "owasp-orchestration-policy.yml",
-              "owasp-orchestration": "owasp-orchestration.yml",
-              "prisma-cloud-container": "prisma-cloud-container.yml",
+              "anchore-scanner": "anchore-scanner.yml",
+              "aquatrivy-scanner": "aquatrivy-scanner.yml",
+              "bandit-scanner": "bandit-scanner.yml",
+              "blackduck-scanner": "blackduck-scanner.yml",
+              "brakeman-scanner": "brakeman-scanner.yml",
+              "checkov-scanner": "checkov-scanner.yml",
+              "codeql-scanner": "codeql-scanner.yml",
+              "ghas-scanner": "ghas-scanner.yml",
+              "gitleaks-scanner": "gitleaks-scanner.yml",
+              "grype-scanner": "grype-scanner.yml",
+              "harness-sast-scanner": "harness-sast-scanner.yml",
+              "harness-sca-scanner": "harness-sca-scanner.yml",
+              "modelscan-scanner": "modelscan-scanner.yml",
+              "nikto-scanner": "nikto-scanner.yml",
+              "osv-scanner": "osv-scanner.yml",
+              "owasp-scanner": "owasp-scanner.yml",
+              "prisma-cloud-scanner": "prisma-cloud-scanner.yml",
               "security-scan": "security-scan.yml",
-              "semgrep-orchestration": "semgrep-orchestration.yml",
-              "snyk-orchestration": "snyk-orchestration.yml",
-              "sonarqube-extraction": "sonarqube-extraction.yml",
-              "sonarqube-orchestration": "sonarqube-orchestration.yml",
-              "traceable-dast": "traceable-dast.yml",
-              "wiz-container": "wiz-container.yml",
-              "wiz-directory-arm": "wiz-directory-arm.yml",
-              "wiz-directory": "wiz-directory.yml",
-              "zap-orchestration": "zap-orchestration.yml",
+              "semgrep-scanner": "semgrep-scanner.yml",
+              "snyk-scanner": "snyk-scanner.yml",
+              "sonarqube-scanner": "sonarqube-scanner.yml",
+              "traceable-scanner": "traceable-scanner.yml",
+              "wiz-scanner": "wiz-scanner.yml",
+              "zap-scanner": "zap-scanner.yml",
           }
 
           # Negative-scenario workflows: EXPECTED to fail. A child-run
           # conclusion of "failure" is treated as PASSED; "success" as FAILED.
           # >>> Add any other negative-test workflow names here. <<<
-          EXPECT_FAIL = {
-              "aqua-trivy-invalid-image",
-              "aqua-trivy-local-image-arm",
-              "aqua-trivy-local-image",
-              "aqua-trivy-orchestration",
-              "owasp-orchestration-policy"
-          }
+          EXPECT_FAIL = set()
 
           def norm(x):
               """Normalize an entry: drop any path and a .yml/.yaml suffix.

@@ -1,0 +1,405 @@
+name: Grype Scanner
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Run Grype repository scan with default target
+        id: sto-scan-repo-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          docker-image-tag: "dev"
+          output-file: scan-output-repo-default.env
+          show-summary: 'true'
+
+      - name: Run Grype repository scan with named target
+        id: sto-scan-repo-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          target-name: "shreyansh/grypedefault"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-repo-named.env
+          show-summary: 'true'
+
+      - name: Run Grype private registry scan with default target
+        id: sto-scan-private-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nirocr/nodegoat"
+          image-tag: "latest"
+          image-type: docker_v2
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-private-default.env
+          show-summary: 'true'
+
+      - name: Run Grype private registry scan with named target
+        id: sto-scan-private-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nirocr/nodegoat"
+          image-tag: "latest"
+          image-type: docker_v2
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          target-name: "shreyansh/grypecontainer"
+          target-variant: "latest"
+          docker-image-tag: "dev"
+          output-file: scan-output-private-named.env
+          show-summary: 'true'
+
+      - name: Run Grype public Docker Hub scan with default target
+        id: sto-scan-dockerhub-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nginx"
+          image-tag: "latest"
+          image-domain: "docker.io"
+          image-type: docker_v2
+          docker-image-tag: "dev"
+          output-file: scan-output-dockerhub-default.env
+          show-summary: 'true'
+
+      - name: Run Grype public Docker Hub scan with named target
+        id: sto-scan-dockerhub-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nginx"
+          image-tag: "latest"
+          image-domain: "docker.io"
+          image-type: docker_v2
+          target-name: "shreyansh/grypepublicdockerhub"
+          target-variant: "latest"
+          docker-image-tag: "dev"
+          output-file: scan-output-dockerhub-named.env
+          show-summary: 'true'
+
+      - name: Build local Docker image
+        if: always()
+        run: |
+          docker pull node:14
+          docker tag node:14 sg123:${{ github.sha }}
+
+      - name: Run Grype local image scan with default target
+        id: sto-scan-local-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "sg123"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          docker-image-tag: "dev"
+          output-file: scan-output-local-default.env
+          show-summary: 'true'
+
+      - name: Run Grype local image scan with named target
+        id: sto-scan-local-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "sg123"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          target-name: "shreyansh/grypelocalimage"
+          target-variant: ${{ github.sha }}
+          docker-image-tag: "dev"
+          output-file: scan-output-local-named.env
+          show-summary: 'true'
+
+      - name: Run Grype ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: grype
+          scan-mode: ingestion
+          target-type: container
+          ingestion-file: ingestionfiles/grype-ingestion.json
+          target-name: "scanner/grype"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (repo default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-repo-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-repo-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-repo-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-repo-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-repo-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-repo-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-repo-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-repo-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-repo-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (repo named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-repo-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-repo-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-repo-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-repo-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-repo-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-repo-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-repo-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-repo-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-repo-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (private default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-private-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-private-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-private-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-private-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-private-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-private-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-private-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-private-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-private-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (private named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-private-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-private-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-private-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-private-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-private-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-private-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-private-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-private-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-private-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (public Docker Hub default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-dockerhub-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-dockerhub-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-dockerhub-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-dockerhub-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-dockerhub-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-dockerhub-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-dockerhub-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-dockerhub-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-dockerhub-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (public Docker Hub named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-dockerhub-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-dockerhub-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-dockerhub-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-dockerhub-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-dockerhub-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-dockerhub-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-dockerhub-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-dockerhub-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-dockerhub-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local image default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local image named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
+      - name: Archive scan output (repo default)
+        if: always() && steps.sto-scan-repo-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-repo-default
+          path: ${{ steps.sto-scan-repo-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (repo named)
+        if: always() && steps.sto-scan-repo-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-repo-named
+          path: ${{ steps.sto-scan-repo-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (private default)
+        if: always() && steps.sto-scan-private-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-private-default
+          path: ${{ steps.sto-scan-private-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (private named)
+        if: always() && steps.sto-scan-private-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-private-named
+          path: ${{ steps.sto-scan-private-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (public Docker Hub default)
+        if: always() && steps.sto-scan-dockerhub-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-dockerhub-default
+          path: ${{ steps.sto-scan-dockerhub-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (public Docker Hub named)
+        if: always() && steps.sto-scan-dockerhub-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-dockerhub-named
+          path: ${{ steps.sto-scan-dockerhub-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local image default)
+        if: always() && steps.sto-scan-local-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-default
+          path: ${{ steps.sto-scan-local-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local image named)
+        if: always() && steps.sto-scan-local-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-named
+          path: ${{ steps.sto-scan-local-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
+          retention-days: 1

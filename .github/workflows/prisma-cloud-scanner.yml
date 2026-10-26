@@ -1,4 +1,4 @@
-name: Grype Container Security Scan
+name: Prisma Cloud Container Security Scan
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Run Grype private registry scan with default target
+      - name: Run Prisma Cloud private registry scan with default target
         id: sto-scan-default
         uses: ./.github/actions/harness-sto
         with:
@@ -34,7 +34,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
@@ -43,11 +43,17 @@ jobs:
           image-type: docker_v2
           image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
           image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
-      - name: Run Grype private registry scan with named target
+      - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
         if: always()
         uses: ./.github/actions/harness-sto
@@ -57,7 +63,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
@@ -66,13 +72,19 @@ jobs:
           image-type: docker_v2
           image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
           image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
-          target-name: "shreyansh/grypecontainer"
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
+          target-name: "shreyansh/prismacontainer"
           target-variant: "latest"
           docker-image-tag: "dev"
           output-file: scan-output-container.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
-      - name: Run Grype public Docker Hub scan with default target
+      - name: Run Prisma Cloud public Docker Hub scan with default target
         id: sto-scan-dockerhub-default
         if: always()
         uses: ./.github/actions/harness-sto
@@ -82,7 +94,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
@@ -90,11 +102,17 @@ jobs:
           image-tag: "latest"
           image-domain: "docker.io"
           image-type: docker_v2
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
           docker-image-tag: "dev"
           output-file: scan-output-dockerhub-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
-      - name: Run Grype public Docker Hub scan with named target
+      - name: Run Prisma Cloud public Docker Hub scan with named target
         id: sto-scan-dockerhub
         if: always()
         uses: ./.github/actions/harness-sto
@@ -104,7 +122,7 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
@@ -112,11 +130,17 @@ jobs:
           image-tag: "latest"
           image-domain: "docker.io"
           image-type: docker_v2
-          target-name: "shreyansh/grypepublicdockerhub"
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
+          target-name: "shreyansh/prismapublicdockerhub"
           target-variant: "latest"
           docker-image-tag: "dev"
           output-file: scan-output-dockerhub.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
       - name: Build local Docker image
         if: always()
@@ -124,7 +148,7 @@ jobs:
           docker pull node:14
           docker tag node:14 sg123:${{ github.sha }}
 
-      - name: Run Grype local image scan with default target
+      - name: Run Prisma Cloud local image scan with default target
         id: sto-scan-local-default
         if: always()
         uses: ./.github/actions/harness-sto
@@ -134,18 +158,24 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
           image-name: "sg123"
           image-tag: ${{ github.sha }}
           image-type: local_image
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
           docker-image-tag: "dev"
           output-file: scan-output-local-default.env
           show-summary: 'true'
+          scanner-env: |
+            EVALUATE_POLICIES=true
+            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
-      - name: Run Grype local image scan with named target
+      - name: Run Prisma Cloud local image scan with named target
         id: sto-scan-local
         if: always()
         uses: ./.github/actions/harness-sto
@@ -155,17 +185,39 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: grype
+          scanner: prismacloud
           scan-mode: orchestration
           scan-config: default
           target-type: container
           image-name: "sg123"
           image-tag: ${{ github.sha }}
           image-type: local_image
-          target-name: "shreyansh/grypelocalimage"
+          scanner-access-id: ${{ secrets.PRISMA_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.PRISMA_ACCESS_TOKEN }}
+          scanner-domain: ${{ secrets.PRISMA_DOMAIN }}
+          target-name: "shreyansh/prismalocalimage"
           target-variant: ${{ github.sha }}
           docker-image-tag: "dev"
           output-file: scan-output-local.env
+          show-summary: 'true'
+
+      - name: Run Prisma Cloud ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: prismacloud
+          scan-mode: ingestion
+          target-type: container
+          ingestion-file: ingestionfiles/prisma-cloud-ingestion.json
+          target-name: "scanner/prismacloud"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
           show-summary: 'true'
 
       - name: Use scan output variables
@@ -238,6 +290,17 @@ jobs:
           echo "Info: ${{ steps.sto-scan-local.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-local.outputs.output-file-path }}"
 
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
       - name: Archive scan output (private default)
         if: always() && steps.sto-scan-default.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
@@ -284,4 +347,12 @@ jobs:
         with:
           name: sto-scan-results-local
           path: ${{ steps.sto-scan-local.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
           retention-days: 1

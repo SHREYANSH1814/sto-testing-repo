@@ -1,0 +1,208 @@
+name: Aqua Trivy Scanner
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image (local)
+        run: |
+          docker pull node:14
+          docker tag node:14 sg123:${{ github.sha }}
+
+      - name: Build Docker Image (linux/arm64)
+        if: always()
+        run: |
+          docker pull --platform linux/arm64 node:14
+          docker tag node:14 sg123-arm:${{ github.sha }}
+          docker image inspect sg123-arm:${{ github.sha }} --format 'platform={{.Os}}/{{.Architecture}}'
+
+      - name: Run Aqua Trivy orchestration scan
+        id: sto-scan-orchestration
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: aqua_trivy
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nirocr/nodegoat"
+          image-tag: "latest"
+          target-name: "shreyansh/privatecontainer1"
+          target-variant: "latest"
+          docker-image-tag: "dev"
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+
+          fail-on-severity: NONE
+          output-file: scan-output-orchestration.env
+          show-summary: 'true'
+
+      - name: Run Aqua Trivy local-image scan
+        id: sto-scan-local-image
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: aqua_trivy
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+
+          image-name: "sg123"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          fail-on-severity: NONE
+          output-file: scan-output-local-image.env
+          show-summary: 'true'
+
+      - name: Run Aqua Trivy local-image scan (arm)
+        id: sto-scan-local-image-arm
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: aqua_trivy
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+
+          image-name: "sg123-arm"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          fail-on-severity: NONE
+          docker-image-tag: "dev"
+          output-file: scan-output-local-image-arm.env
+          show-summary: 'true'
+
+      - name: Run Aqua Trivy ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: aqua_trivy
+          scan-mode: ingestion
+          target-type: container
+          ingestion-file: ingestionfiles/aquatrivy-ingestion.json
+          target-name: "scanner/aquatrivy"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (orchestration) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orchestration.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orchestration.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orchestration.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orchestration.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orchestration.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orchestration.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orchestration.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orchestration.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orchestration.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local-image) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-image.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-image.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-image.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-image.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-image.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-image.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-image.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-image.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-image.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local-image arm) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-image-arm.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-image-arm.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-image-arm.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-image-arm.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-image-arm.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-image-arm.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-image-arm.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-image-arm.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-image-arm.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
+      - name: Archive scan output (orchestration)
+        if: always() && steps.sto-scan-orchestration.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orchestration
+          path: ${{ steps.sto-scan-orchestration.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local-image)
+        if: always() && steps.sto-scan-local-image.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-image
+          path: ${{ steps.sto-scan-local-image.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local-image arm)
+        if: always() && steps.sto-scan-local-image-arm.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-image-arm
+          path: ${{ steps.sto-scan-local-image-arm.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
+          retention-days: 1

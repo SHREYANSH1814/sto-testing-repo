@@ -1,4 +1,4 @@
-name: Gitleaks Orchestration Security Scan
+name: OWASP Dependency Check Scanner
 
 on:
   workflow_dispatch:
@@ -24,11 +24,8 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
 
-      - name: Run Gitleaks scan with default target
+      - name: Run OWASP default scan with default target
         id: sto-scan-default
         uses: ./.github/actions/harness-sto
         with:
@@ -37,16 +34,17 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: gitleaks
+          scanner: owasp
           scan-mode: orchestration
           scan-config: default
           target-type: repository
           workspace: .
+          tool-args: "--disableOssIndex"
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
 
-      - name: Run Gitleaks scan with named target
+      - name: Run OWASP default scan with named target
         id: sto-scan-default-named
         if: always()
         uses: ./.github/actions/harness-sto
@@ -56,15 +54,35 @@ jobs:
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: gitleaks
+          scanner: owasp
           scan-mode: orchestration
           scan-config: default
           target-type: repository
           workspace: .
-          target-name: "shreyansh/gitleaksdefault"
+          target-name: "shreyansh/owaspdefault"
           target-variant: "main"
+          tool-args: "--disableOssIndex"
           docker-image-tag: "dev"
           output-file: scan-output-default-named.env
+          show-summary: 'true'
+
+      - name: Run OWASP ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: owasp
+          scan-mode: ingestion
+          target-type: repository
+          ingestion-file: ingestionfiles/owasp-ingestion.json
+          target-name: "scanner/owasp"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
           show-summary: 'true'
 
       - name: Use scan output variables
@@ -82,7 +100,7 @@ jobs:
           echo "Info: ${{ steps.sto-scan-default.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-default.outputs.output-file-path }}"
 
-          echo "===== STO Scan Output Variables (named target) ====="
+          echo "===== STO Scan Output Variables (default named) ====="
           echo "Scan ID: ${{ steps.sto-scan-default-named.outputs.scan-id }}"
           echo "Status: ${{ steps.sto-scan-default-named.outputs.status }}"
           echo "Total Issues: ${{ steps.sto-scan-default-named.outputs.total-issues }}"
@@ -93,6 +111,17 @@ jobs:
           echo "Info: ${{ steps.sto-scan-default-named.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}"
 
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
       - name: Archive scan output (default)
         if: always() && steps.sto-scan-default.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
@@ -101,10 +130,18 @@ jobs:
           path: ${{ steps.sto-scan-default.outputs.output-file-path }}
           retention-days: 1
 
-      - name: Archive scan output (named)
+      - name: Archive scan output (default named)
         if: always() && steps.sto-scan-default-named.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
         with:
           name: sto-scan-results-default-named
           path: ${{ steps.sto-scan-default-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
           retention-days: 1

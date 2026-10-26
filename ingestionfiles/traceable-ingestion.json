@@ -1,0 +1,137 @@
+{
+  "issues": [
+    {
+      "name": {
+        "value": "JWT Missing Audience Claim",
+        "type": "STRING"
+      },
+      "description": {
+        "value": "JWT token is missing the audience claim. This claim is used to limit the scope of the token to a specific audience. If the audience claim is missing, the token can be used by any service sharing the same signing key.\n",
+        "type": "STRING"
+      },
+      "category": {
+        "value": "jwt_missing_audience_claim",
+        "type": "STRING"
+      },
+      "cvss_score": {
+        "value": 4.9,
+        "type": "DOUBLE"
+      },
+      "severity": {
+        "value": "VULNERABILITY_SEVERITY_LOW",
+        "type": "STRING"
+      },
+      "mitigation": {
+        "value": "Add the audience claim to the JWT token.\n",
+        "type": "STRING"
+      },
+      "impact": {
+        "value": "The attacker can use the token to access other services that share the same signing key. This can lead to token hijacking, cross service relay attack, and privilege escalation leading to data leakage and data tampering.\n",
+        "type": "STRING"
+      },
+      "references": {
+        "value": "JWT documentation - https://jwt.io/introduction\nJWT Authentication Bypass via unverified signature - https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-unverified-signature",
+        "type": "STRING"
+      },
+      "cve": null,
+      "cwe": {
+        "value": [
+          "CWE-287"
+        ],
+        "type": "STRING_ARRAY"
+      },
+      "path": {
+        "value": "POST /api/acl",
+        "type": "STRING"
+      }
+    },
+    {
+      "name": {
+        "value": "TLS Not Implemented",
+        "type": "STRING"
+      },
+      "description": {
+        "value": "Traceable identified there is no TLS support for the domain in test. \nTLS (Transport Layer Security) is a protocol that provides secure communication over the Internet and is used to encrypt communication between web browsers and web servers. If a web/API server does not support TLS, any communication with that server is not encrypted and can be intercepted by a malicious third party. This vulnerability can lead to data theft, account hijacking, and other security risks.\n",
+        "type": "STRING"
+      },
+      "category": {
+        "value": "tls_not_implemented",
+        "type": "STRING"
+      },
+      "cvss_score": {
+        "value": 5.3,
+        "type": "DOUBLE"
+      },
+      "severity": {
+        "value": "VULNERABILITY_SEVERITY_MEDIUM",
+        "type": "STRING"
+      },
+      "mitigation": {
+        "value": "The best way to mitigate this vulnerability is to ensure that the web server is configured to support TLS. This can be done by ensuring that the web server is running a supported version of TLS, and that any webpages that require secure communication are enabled to use TLS. Additionally, web administrators should ensure that the server is regularly updated and that any vulnerabilities that may have been discovered are patched. Finally, web administrators should ensure that all sensitive data is encrypted using TLS before it is transmitted.\n",
+        "type": "STRING"
+      },
+      "impact": {
+        "value": "The impact of a TLS not implemented vulnerability can be quite severe. If an attacker is able to intercept communication between a web server and a user, they may be able to gain access to sensitive information such as passwords, credit card numbers, or other personal data. Furthermore, attackers may be able to hijack user accounts or launch attacks against the web server itself. This can lead to significant financial losses or reputational damage for the organization.\nModern browsers will display a warning to users when they attempt to access a website that does not support TLS. This warning may cause users to distrust the website and may lead to a loss of business for the organization.\n",
+        "type": "STRING"
+      },
+      "references": {
+        "value": "OWASP API Top 10 - 2019 - API7:2019 Security Misconfiguration - https://github.com/OWASP/API-Security/blob/master/editions/2019/en/0xa7-security-misconfiguration.md\nOWASP Top 10 - 2021 - A02:2021 Cryptographic Failures - https://owasp.org/Top10/A02_2021-Cryptographic_Failures/\nOWASP Top 10 - 2017 - A3:2017 Sensitive Data Exposure - https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure\nCommon Weakness Enumeration (CWE) - CWE-310:Cryptographic Issues - https://cwe.mitre.org/data/definitions/310.html\nTransport Layer Protection Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html\nCommon Attack Pattern Enumerations and Classifications (CAPEC) - CAPEC-217: Exploiting Incorrectly Configured SSL/TLS - https://capec.mitre.org/data/definitions/217.html\nMITRE ATT&CK - T1573: Exploitation of Remote Services - https://attack.mitre.org/techniques/T1573/\n",
+        "type": "STRING"
+      },
+      "cve": null,
+      "cwe": {
+        "value": [
+          "CWE-310"
+        ],
+        "type": "STRING_ARRAY"
+      },
+      "path": {
+        "value": "POST /api/acl",
+        "type": "STRING"
+      }
+    },
+    {
+      "name": {
+        "value": "Testing",
+        "type": "STRING"
+      },
+      "description": {
+        "value": "Traceable identified there is no TLS support for the domain in test. \nTLS (Transport Layer Security) is a protocol that provides secure communication over the Internet and is used to encrypt communication between web browsers and web servers. If a web/API server does not support TLS, any communication with that server is not encrypted and can be intercepted by a malicious third party. This vulnerability can lead to data theft, account hijacking, and other security risks.\n",
+        "type": "STRING"
+      },
+      "category": {
+        "value": "tls_not_implemented",
+        "type": "STRING"
+      },
+      "cvss_score": {
+        "value": 5.3,
+        "type": "DOUBLE"
+      },
+      "severity": {
+        "value": "VULNERABILITY_SEVERITY_MEDIUM",
+        "type": "STRING"
+      },
+      "mitigation": {
+        "value": "The best way to mitigate this vulnerability is to ensure that the web server is configured to support TLS. This can be done by ensuring that the web server is running a supported version of TLS, and that any webpages that require secure communication are enabled to use TLS. Additionally, web administrators should ensure that the server is regularly updated and that any vulnerabilities that may have been discovered are patched. Finally, web administrators should ensure that all sensitive data is encrypted using TLS before it is transmitted.\n",
+        "type": "STRING"
+      },
+      "impact": {
+        "value": "The impact of a TLS not implemented vulnerability can be quite severe. If an attacker is able to intercept communication between a web server and a user, they may be able to gain access to sensitive information such as passwords, credit card numbers, or other personal data. Furthermore, attackers may be able to hijack user accounts or launch attacks against the web server itself. This can lead to significant financial losses or reputational damage for the organization.\nModern browsers will display a warning to users when they attempt to access a website that does not support TLS. This warning may cause users to distrust the website and may lead to a loss of business for the organization.\n",
+        "type": "STRING"
+      },
+      "references": {
+        "value": "OWASP API Top 10 - 2019 - API7:2019 Security Misconfiguration - https://github.com/OWASP/API-Security/blob/master/editions/2019/en/0xa7-security-misconfiguration.md\nOWASP Top 10 - 2021 - A02:2021 Cryptographic Failures - https://owasp.org/Top10/A02_2021-Cryptographic_Failures/\nOWASP Top 10 - 2017 - A3:2017 Sensitive Data Exposure - https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure\nCommon Weakness Enumeration (CWE) - CWE-310:Cryptographic Issues - https://cwe.mitre.org/data/definitions/310.html\nTransport Layer Protection Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html\nCommon Attack Pattern Enumerations and Classifications (CAPEC) - CAPEC-217: Exploiting Incorrectly Configured SSL/TLS - https://capec.mitre.org/data/definitions/217.html\nMITRE ATT&CK - T1573: Exploitation of Remote Services - https://attack.mitre.org/techniques/T1573/\n",
+        "type": "STRING"
+      },
+      "cve": null,
+      "cwe": {
+        "value": "CWE-310",
+        "type": "STRING"
+      },
+      "path": {
+        "value": "POST /api/acl",
+        "type": "STRING"
+      }
+    }
+  ]
+}

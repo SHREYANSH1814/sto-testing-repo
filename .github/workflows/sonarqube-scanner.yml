@@ -1,0 +1,241 @@
+name: SonarQube Scanner
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run SonarQube orchestration scan with default target
+        id: sto-scan-orchestration-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: sonarqube
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SONAR_TOKEN }}
+          scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
+          docker-image-tag: "dev"
+          output-file: scan-output-orchestration-default.env
+          show-summary: 'true'
+
+      - name: Run SonarQube orchestration scan with named target
+        id: sto-scan-orchestration-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: sonarqube
+          scan-mode: orchestration
+          scan-config: default
+          target-type: repository
+          workspace: .
+          scanner-access-token: ${{ secrets.SONAR_TOKEN }}
+          scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
+          target-name: "shreyansh/sonarorchestration"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-orchestration-named.env
+          show-summary: 'true'
+
+      - name: Run SonarQube extraction scan with default target
+        id: sto-scan-extraction-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: sonarqube
+          scan-mode: extraction
+          scan-config: default
+          target-type: repository
+          scanner-access-token: ${{ secrets.SONAR_TOKEN }}
+          scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
+          docker-image-tag: "dev"
+          output-file: scan-output-extraction-default.env
+          show-summary: 'true'
+
+      - name: Run SonarQube extraction scan with named target
+        id: sto-scan-extraction-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: sonarqube
+          scan-mode: extraction
+          scan-config: default
+          target-type: repository
+          scanner-access-token: ${{ secrets.SONAR_TOKEN }}
+          scanner-domain: ${{ secrets.SONAR_DOMAIN }}
+          scanner-project-key: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-project-name: ${{ secrets.SONAR_PROJECT_NAME }}
+          scanner-organization-id: ${{ secrets.SONAR_ORGANIZATION_ID }}
+          target-name: "shreyansh/sonarextraction"
+          target-variant: "main"
+          docker-image-tag: "dev"
+          output-file: scan-output-extraction-named.env
+          show-summary: 'true'
+
+      - name: Run SonarQube ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: sonarqube
+          scan-mode: ingestion
+          target-type: repository
+          ingestion-file: ingestionfiles/sonarqube-ingestion.json
+          target-name: "scanner/sonarqube"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (orchestration default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orchestration-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orchestration-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orchestration-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orchestration-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orchestration-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orchestration-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orchestration-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orchestration-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orchestration-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (orchestration named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-orchestration-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-orchestration-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-orchestration-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-orchestration-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-orchestration-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-orchestration-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-orchestration-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-orchestration-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-orchestration-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extraction-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extraction-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extraction-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extraction-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extraction-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extraction-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extraction-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extraction-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extraction-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (extraction named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-extraction-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-extraction-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-extraction-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-extraction-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-extraction-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-extraction-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-extraction-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-extraction-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-extraction-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
+      - name: Archive scan output (orchestration default)
+        if: always() && steps.sto-scan-orchestration-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orchestration-default
+          path: ${{ steps.sto-scan-orchestration-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (orchestration named)
+        if: always() && steps.sto-scan-orchestration-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-orchestration-named
+          path: ${{ steps.sto-scan-orchestration-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction default)
+        if: always() && steps.sto-scan-extraction-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extraction-default
+          path: ${{ steps.sto-scan-extraction-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (extraction named)
+        if: always() && steps.sto-scan-extraction-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-extraction-named
+          path: ${{ steps.sto-scan-extraction-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
+          retention-days: 1

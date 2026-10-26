@@ -75,6 +75,25 @@ jobs:
      
 
    
+      - name: Run Traceable ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: traceable
+          scan-mode: ingestion
+          target-type: instance
+          ingestion-file: ingestionfiles/traceable-ingestion.json
+          target-name: "scanner/traceable"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
+          show-summary: 'true'
+
       - name: Use scan output variables
         if: always()
         shell: bash
@@ -101,6 +120,17 @@ jobs:
           echo "Info: ${{ steps.sto-scan-extraction.outputs.info }}"
           echo "Output File Path: ${{ steps.sto-scan-extraction.outputs.output-file-path }}"
 
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
       - name: Archive scan output (orchestration)
         if: always() && steps.sto-scan-orchestration.outputs.output-file-path != ''
         uses: actions/upload-artifact@v4
@@ -115,4 +145,12 @@ jobs:
         with:
           name: sto-scan-results-extraction
           path: ${{ steps.sto-scan-extraction.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
           retention-days: 1
