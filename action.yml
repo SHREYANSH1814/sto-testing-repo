@@ -811,10 +811,8 @@ runs:
       env:
         HARNESS_PIPELINE_ID: ${{ steps.config.outputs.pipeline-id }}
       run: |
-        # Build Docker command
         DOCKER_CMD="docker run --rm"
 
-        # Runtime controls (STO-12759). All default to previous behavior.
         PULL_POLICY="${{ inputs.image-pull-policy }}"
         case "$PULL_POLICY" in
           missing|always|never) ;;
@@ -835,8 +833,6 @@ runs:
           echo "CPU limit: ${{ inputs.cpu-limit }}"
         fi
 
-        # Registry login for private mirrors (GHA equivalent of Override Image
-        # Connector). Only when credentials are provided; Harness images are public.
         if [ -n "${{ inputs.registry-username }}" ] && [ -n "${{ inputs.registry-token }}" ]; then
           REGISTRY_DOMAIN="${{ inputs.registry-domain }}"
           echo "${{ inputs.registry-token }}" | docker login ${REGISTRY_DOMAIN:+$REGISTRY_DOMAIN} --username "${{ inputs.registry-username }}" --password-stdin
@@ -848,27 +844,18 @@ runs:
           echo "Running scanner container as privileged"
         fi
 
-        # Plugin auto-detect (instance/container) only runs if /harness exists.
-        # Always mount the checkout so repository git metadata is visible.
-        # Repository scans set WORKSPACE to the subdir (or /harness when workspace is .).
         DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness"
         if [ "${{ steps.config.outputs.target-type }}" = "repository" ]; then
           DOCKER_CMD="$DOCKER_CMD -e WORKSPACE=${{ steps.config.outputs.plugin-workspace }}"
-          # Checkout files are owned by the runner user; the container runs as root.
           DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_COUNT=1"
           DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_KEY_0=safe.directory"
           DOCKER_CMD="$DOCKER_CMD -e GIT_CONFIG_VALUE_0='*'"
         fi
 
-        # Add volume mount for output file
         if [ "${{ inputs.capture-output }}" = "true" ]; then
           DOCKER_CMD="$DOCKER_CMD -v ${{ github.workspace }}:/harness-output"
         fi
 
-        # Share the GitHub runner Docker daemon with the scanner (DooD).
-        # Same-path ADDON_PATH so Black Duck Detect helper containers can bind-mount.
-        # Host network so Detect's localhost:9002 reaches the Docker Inspector sibling
-        # on the runner (Harness dind shares pod localhost; GHA bridge does not).
         if [ "$USE_HOST_DOCKER" = "true" ]; then
           if [ ! -S /var/run/docker.sock ]; then
             echo "Error: this scan needs the host Docker daemon but /var/run/docker.sock was not found."
@@ -920,10 +907,6 @@ runs:
           DOCKER_CMD="$DOCKER_CMD -e INGESTION_FILE=${INGESTION_CONTAINER}"
         fi
 
-        # ======================================================================
-        # HARNESS PLATFORM AUTHENTICATION
-        # Prefer action inputs; else job/step env (e.g. secrets.HARNESS_PAT_TOKEN_STO_LAB).
-        # ======================================================================
         HARNESS_TOKEN_INPUT="${{ inputs.harness-token }}"
         if [ -n "$HARNESS_TOKEN_INPUT" ]; then
           HARNESS_TOKEN="$HARNESS_TOKEN_INPUT"
@@ -962,14 +945,8 @@ runs:
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_ORG_ID=$HARNESS_ORG_ID"
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_PROJECT_ID=$HARNESS_PROJECT_ID"
 
-        # ======================================================================
-        # SCANNER CONFIGURATION
-        # ======================================================================
         PRODUCT_SCANNER="${{ steps.config.outputs.product-scanner }}"
         TARGET_TYPE="${{ steps.config.outputs.target-type }}"
-        # PRODUCT_NAME is required for the generic sto-plugin image (custom, codeql,
-        # coverity, metasploit). Job-runner images bake it; SCANNER is aliased too late
-        # for path_safe_product_name, so SCANNER alone fails those scanners.
         DOCKER_CMD="$DOCKER_CMD -e SCANNER=$PRODUCT_SCANNER"
         DOCKER_CMD="$DOCKER_CMD -e PRODUCT_NAME=$PRODUCT_SCANNER"
         DOCKER_CMD="$DOCKER_CMD -e SCAN_MODE=${{ inputs.scan-mode }}"
@@ -982,19 +959,10 @@ runs:
           DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_TYPE=$CONFIGURATION_TYPE"
         fi
 
-        # ======================================================================
-        # EXECUTION CONTEXT (link back to the GHA run that orchestrated this)
-        # Composed from runner context so it resolves correctly on github.com,
-        # GitHub Enterprise Cloud, and GitHub Enterprise Server with no config.
-        # ======================================================================
         BUILD_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-        # run_number = UI "#2". run_id = unique id in the run URL (not sequential).
         BUILD_ID="${{ github.run_number }}"
-        # Plugin reads EXECUTION_URL only (BUILD_URL is ignored for scan metadata).
         DOCKER_CMD="$DOCKER_CMD -e EXECUTION_URL=$BUILD_URL"
         DOCKER_CMD="$DOCKER_CMD -e EXECUTION_SOURCE=github_actions"
-        # Plugin maps DRONE_REPO_SCM → gitMetadata.provider → STO "Source" field.
-        # Without it, repository targets show Source "Other" in the STO UI.
         if [ "$TARGET_TYPE" = "repository" ]; then
           DOCKER_CMD="$DOCKER_CMD -e DRONE_REPO_SCM=Github"
         fi
@@ -1003,9 +971,6 @@ runs:
         DOCKER_CMD="$DOCKER_CMD -e HARNESS_PIPELINE_ID"
         echo "execution-url=$BUILD_URL" >> $GITHUB_OUTPUT
 
-        # ======================================================================
-        # TARGET METADATA
-        # ======================================================================
         TARGET_NAME="${{ inputs.target-name }}"
         TARGET_VARIANT="${{ inputs.target-variant }}"
 
@@ -1034,9 +999,6 @@ runs:
           DOCKER_CMD="$DOCKER_CMD -e TARGET_DETECTION=auto"
         fi
 
-        # ======================================================================
-        # SCANNER AUTHENTICATION
-        # ======================================================================
         [ -n "${{ inputs.scanner-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_ACCESS_TOKEN=${{ inputs.scanner-access-token }}"
         [ -n "${{ inputs.scanner-access-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_ACCESS_ID=${{ inputs.scanner-access-id }}"
         [ -n "${{ inputs.scanner-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_DOMAIN=${{ inputs.scanner-domain }}"
@@ -1048,10 +1010,6 @@ runs:
         [ -n "${{ inputs.scanner-sandbox-id }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_SANDBOX_ID=${{ inputs.scanner-sandbox-id }}"
         [ -n "${{ inputs.scanner-context }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_CONTEXT=$(printf '%q' "${{ inputs.scanner-context }}")"
         SCANNER_PROJECT_KEY="${{ inputs.scanner-project-key }}"
-        # Template library / NG / Jenkins map SonarQube identity through project_key
-        # (PRODUCT_PROJECT_KEY). Plugin uses product_project_name only as sonar.projectName
-        # and, when the key is unset, derives projectKey from the git target. GHA users
-        # often set scanner-project-name alone, so copy it onto the key for sonarqube.
         if [ -z "$SCANNER_PROJECT_KEY" ] && [ -n "${{ inputs.scanner-project-name }}" ]; then
           if [ "$PRODUCT_SCANNER" = "sonarqube" ]; then
             SCANNER_PROJECT_KEY="${{ inputs.scanner-project-name }}"
@@ -1060,8 +1018,6 @@ runs:
         [ -n "$SCANNER_PROJECT_KEY" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_PROJECT_KEY=$SCANNER_PROJECT_KEY"
         [ -n "${{ inputs.scanner-analysis-detection }}" ] && DOCKER_CMD="$DOCKER_CMD -e PRODUCT_ANALYSIS_DETECTION=${{ inputs.scanner-analysis-detection }}"
         [ -n "${{ inputs.scanner-branch-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e SCANNER_BRANCH_NAME=${{ inputs.scanner-branch-name }}"
-        # Template-library mendStep remaps byTokens/byNames for orchestration.
-        # Pass through for other scanners (NexusIQ, Fortify on Demand).
         LOOKUP="${{ inputs.scanner-lookup-type }}"
         if [ -n "$LOOKUP" ]; then
           if [ "$PRODUCT_SCANNER" = "whitesource" ]; then
@@ -1100,9 +1056,6 @@ runs:
         [ -n "${{ inputs.configuration-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e CONFIGURATION_ACCESS_TOKEN=${{ inputs.configuration-access-token }}"
         [ -n "${{ inputs.zap-port }}" ] && DOCKER_CMD="$DOCKER_CMD -e ZAP_PORT=${{ inputs.zap-port }}"
 
-        # ======================================================================
-        # CONTAINER SCAN CONFIGURATION
-        # ======================================================================
         if [ "$TARGET_TYPE" = "container" ]; then
           [ -n "${{ inputs.image-name }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_NAME=${{ inputs.image-name }}"
           [ -n "${{ inputs.image-tag }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_TAG=${{ inputs.image-tag }}"
@@ -1112,9 +1065,6 @@ runs:
           [ -n "${{ inputs.image-access-token }}" ] && DOCKER_CMD="$DOCKER_CMD -e IMAGE_ACCESS_TOKEN=${{ inputs.image-access-token }}"
         fi
 
-        # ======================================================================
-        # INSTANCE SCAN CONFIGURATION (DAST)
-        # ======================================================================
         if [ "$TARGET_TYPE" = "instance" ]; then
           [ -n "${{ inputs.instance-domain }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_DOMAIN=${{ inputs.instance-domain }}"
           [ -n "${{ inputs.instance-protocol }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PROTOCOL=${{ inputs.instance-protocol }}"
@@ -1122,13 +1072,8 @@ runs:
           [ -n "${{ inputs.instance-path }}" ] && DOCKER_CMD="$DOCKER_CMD -e INSTANCE_PATH=${{ inputs.instance-path }}"
         fi
 
-        # ======================================================================
-        # ADVANCED SCANNER OPTIONS
-        # ======================================================================
         TOOL_ARGS="${{ inputs.tool-args }}"
         SCANNER_ORGANIZATION_ID="${{ inputs.scanner-organization-id }}"
-        # sonar-scanner requires -Dsonar.organization on SonarCloud. Plugin uses
-        # SCANNER_ORGANIZATION_ID for API calls but does not add the CLI flag.
         if [ "$PRODUCT_SCANNER" = "sonarqube" ] && [ -n "$SCANNER_ORGANIZATION_ID" ]; then
           case " $TOOL_ARGS " in
             *" -Dsonar.organization="*|*" sonar.organization="*) ;;
@@ -1143,9 +1088,6 @@ runs:
         [ -n "${{ inputs.ingest-tool-severity }}" ] && DOCKER_CMD="$DOCKER_CMD -e INGEST_TOOL_SEVERITY=${{ inputs.ingest-tool-severity }}"
         [ -n "${{ inputs.include-raw }}" ] && DOCKER_CMD="$DOCKER_CMD -e INCLUDE_RAW=${{ inputs.include-raw }}"
 
-        # ======================================================================
-        # BUILD BEHAVIOR
-        # ======================================================================
         FAIL_ON_SEVERITY=$(printf '%s' "${{ inputs.fail-on-severity }}" | tr '[:lower:]' '[:upper:]')
         if [ "$FAIL_ON_SEVERITY" = "NONE" ]; then
           FAIL_ON_SEVERITY="0"
@@ -1155,28 +1097,17 @@ runs:
         LOG_LEVEL=$(printf '%s' "${{ inputs.log-level }}" | tr '[:lower:]' '[:upper:]')
         DOCKER_CMD="$DOCKER_CMD -e PLUGIN_LOG_LEVEL=$LOG_LEVEL"
 
-        # ======================================================================
-        # OUTPUT FILE
-        # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ]; then
           DOCKER_CMD="$DOCKER_CMD -e SUMMARY_OUTPUT_PATH=${{ steps.config.outputs.container-output-path }}"
         fi
 
-        # ======================================================================
-        # PASS-THROUGH SCANNER ENVIRONMENT VARIABLES
-        # ======================================================================
         if [ -n "${{ inputs.scanner-env }}" ]; then
           while IFS= read -r line; do
-            # Skip empty lines and comments
             [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
-            # Add environment variable
             DOCKER_CMD="$DOCKER_CMD -e $line"
           done <<< "${{ inputs.scanner-env }}"
         fi
 
-        # ======================================================================
-        # RUN SCAN
-        # ======================================================================
         DOCKER_CMD="$DOCKER_CMD ${{ steps.config.outputs.scanner-image }}"
 
         echo "Running: $DOCKER_CMD"
@@ -1185,11 +1116,7 @@ runs:
         SCAN_EXIT=$?
         set -e
 
-        # ======================================================================
-        # PARSE OUTPUT (always when file exists — including fail_on_severity)
-        # ======================================================================
         if [ "${{ inputs.capture-output }}" = "true" ] && [ -f "${{ steps.config.outputs.output-path }}" ]; then
-          # Extract values
           SCAN_ID=$(grep "^JOB_ID=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "")
           STATUS=$(grep "^STATUS=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "")
           TOTAL=$(grep "^ISSUES_COUNT=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
@@ -1199,7 +1126,6 @@ runs:
           LOW=$(grep "^LOW=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
           INFO=$(grep "^INFO=" "${{ steps.config.outputs.output-path }}" | cut -d= -f2 || echo "0")
 
-          # Set outputs
           echo "scan-id=$SCAN_ID" >> $GITHUB_OUTPUT
           echo "status=$STATUS" >> $GITHUB_OUTPUT
           echo "total-issues=$TOTAL" >> $GITHUB_OUTPUT
