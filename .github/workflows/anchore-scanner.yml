@@ -1,4 +1,4 @@
-name: Aqua Trivy Orchestration Security Scan
+name: Anchore Scanner
 
 on:
   workflow_dispatch:
@@ -18,37 +18,31 @@ on:
         default: 'https://app.harness.io'
 
 jobs:
-  security-scan:
+  build-and-scan:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Run Harness STO Scan
-        id: sto-scan
+
+      - name: Run Anchore ingestion scan
+        id: sto-scan-ingestion
         uses: ./.github/actions/harness-sto
         with:
-          harness-token: ${{ secrets.HARNESS_PAT_TOKEN_STO_LAB }}
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
           harness-project-id: ${{ inputs.harness-project-id }}
           harness-domain: ${{ inputs.harness-domain }}
-
-          scanner: aqua_trivy
-          scan-mode: orchestration
-          image-name: "nirocr/nodegoat"
-          image-tag: "latest"
-          scan-config: default
+          scanner: anchore
+          scan-mode: ingestion
           target-type: container
-          target-name: "shreyansh/privatecontainer1"
-          target-variant: "latest"
-          docker-image-tag: "dev"
-          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
-          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
-          
-
-          fail-on-severity: CRITICAL
+          ingestion-file: ingestionfiles/anchore-ingestion.json
+          target-name: "scanner/anchore"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
           show-summary: 'true'
+          
 
       - name: Use scan output variables
         if: always()

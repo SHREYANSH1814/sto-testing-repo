@@ -1,0 +1,799 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Checkov",
+          "version": "3.2.141",
+          "informationUri": "https://checkov.io",
+          "rules": [
+            {
+              "id": "CKV_AWS_70",
+              "name": "Ensure S3 bucket does not allow an action with any Principal",
+              "shortDescription": {
+                "text": "Ensure S3 bucket does not allow an action with any Principal"
+              },
+              "fullDescription": {
+                "text": "Ensure S3 bucket does not allow an action with any Principal"
+              },
+              "help": {
+                "text": "Ensure S3 bucket does not allow an action with any Principal\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/bc-aws-s3-23"
+            },
+            {
+              "id": "CKV_AWS_186",
+              "name": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)",
+              "shortDescription": {
+                "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+              },
+              "fullDescription": {
+                "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+              },
+              "help": {
+                "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)\nResource: aws_s3_bucket_object.index_file"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-general-106"
+            },
+            {
+              "id": "CKV2_AWS_39",
+              "name": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones",
+              "shortDescription": {
+                "text": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones"
+              },
+              "fullDescription": {
+                "text": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones"
+              },
+              "help": {
+                "text": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones\nResource: aws_route53_zone.primary"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-39"
+            },
+            {
+              "id": "CKV2_AWS_62",
+              "name": "Ensure S3 buckets should have event notifications enabled",
+              "shortDescription": {
+                "text": "Ensure S3 buckets should have event notifications enabled"
+              },
+              "fullDescription": {
+                "text": "Ensure S3 buckets should have event notifications enabled"
+              },
+              "help": {
+                "text": "Ensure S3 buckets should have event notifications enabled\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62"
+            },
+            {
+              "id": "CKV2_AWS_6",
+              "name": "Ensure that S3 bucket has a Public Access block",
+              "shortDescription": {
+                "text": "Ensure that S3 bucket has a Public Access block"
+              },
+              "fullDescription": {
+                "text": "Ensure that S3 bucket has a Public Access block"
+              },
+              "help": {
+                "text": "Ensure that S3 bucket has a Public Access block\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached"
+            },
+            {
+              "id": "CKV2_AWS_61",
+              "name": "Ensure that an S3 bucket has a lifecycle configuration",
+              "shortDescription": {
+                "text": "Ensure that an S3 bucket has a lifecycle configuration"
+              },
+              "fullDescription": {
+                "text": "Ensure that an S3 bucket has a lifecycle configuration"
+              },
+              "help": {
+                "text": "Ensure that an S3 bucket has a lifecycle configuration\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61"
+            },
+            {
+              "id": "CKV_AWS_18",
+              "name": "Ensure the S3 bucket has access logging enabled",
+              "shortDescription": {
+                "text": "Ensure the S3 bucket has access logging enabled"
+              },
+              "fullDescription": {
+                "text": "Ensure the S3 bucket has access logging enabled"
+              },
+              "help": {
+                "text": "Ensure the S3 bucket has access logging enabled\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging"
+            },
+            {
+              "id": "CKV_AWS_21",
+              "name": "Ensure all data stored in the S3 bucket have versioning enabled",
+              "shortDescription": {
+                "text": "Ensure all data stored in the S3 bucket have versioning enabled"
+              },
+              "fullDescription": {
+                "text": "Ensure all data stored in the S3 bucket have versioning enabled"
+              },
+              "help": {
+                "text": "Ensure all data stored in the S3 bucket have versioning enabled\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning"
+            },
+            {
+              "id": "CKV_AWS_145",
+              "name": "Ensure that S3 buckets are encrypted with KMS by default",
+              "shortDescription": {
+                "text": "Ensure that S3 buckets are encrypted with KMS by default"
+              },
+              "fullDescription": {
+                "text": "Ensure that S3 buckets are encrypted with KMS by default"
+              },
+              "help": {
+                "text": "Ensure that S3 buckets are encrypted with KMS by default\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default"
+            },
+            {
+              "id": "CKV_AWS_144",
+              "name": "Ensure that S3 bucket has cross-region replication enabled",
+              "shortDescription": {
+                "text": "Ensure that S3 bucket has cross-region replication enabled"
+              },
+              "fullDescription": {
+                "text": "Ensure that S3 bucket has cross-region replication enabled"
+              },
+              "help": {
+                "text": "Ensure that S3 bucket has cross-region replication enabled\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled"
+            },
+            {
+              "id": "CKV_AWS_20",
+              "name": "S3 Bucket has an ACL defined which allows public READ access.",
+              "shortDescription": {
+                "text": "S3 Bucket has an ACL defined which allows public READ access."
+              },
+              "fullDescription": {
+                "text": "S3 Bucket has an ACL defined which allows public READ access."
+              },
+              "help": {
+                "text": "S3 Bucket has an ACL defined which allows public READ access.\nResource: aws_s3_bucket.site"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-1-acl-read-permissions-everyone"
+            },
+            {
+              "id": "CKV2_AWS_38",
+              "name": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones",
+              "shortDescription": {
+                "text": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones"
+              },
+              "fullDescription": {
+                "text": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones"
+              },
+              "help": {
+                "text": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones\nResource: aws_route53_zone.primary"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-2-38"
+            }
+          ],
+          "organization": "bridgecrew"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CKV_AWS_70",
+          "ruleIndex": 0,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 bucket does not allow an action with any Principal"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_186",
+          "ruleIndex": 1,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 44,
+                  "endLine": 53,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket_object\" \"index_file\" {\n  bucket = \"${var.domain_name}\"\n  source = \"../dist/index.html\"\n  key = \"index.html\"\n  etag = \"${md5(file(\"../dist/index.html\"))}\"\n  content_type = \"text/html\"\n  depends_on = [\n    \"aws_s3_bucket.site\"\n  ]\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_186",
+          "ruleIndex": 1,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 55,
+                  "endLine": 64,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket_object\" \"error_file\" {\n  bucket = \"${var.domain_name}\"\n  source = \"../dist/error.html\"\n  key = \"error.html\"\n  etag = \"${md5(file(\"../dist/error.html\"))}\"\n  content_type = \"text/html\"\n  depends_on = [\n    \"aws_s3_bucket.site\"\n  ]\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_186",
+          "ruleIndex": 1,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 66,
+                  "endLine": 75,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket_object\" \"css_file\" {\n  bucket = \"${var.domain_name}\"\n  source = \"../dist/assets/stylesheets/application.css\"\n  key = \"assets/stylesheets/application.css\"\n  etag = \"${md5(file(\"../dist/assets/stylesheets/application.css\"))}\"\n  content_type = \"text/css\"\n  depends_on = [\n    \"aws_s3_bucket.site\"\n  ]\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_186",
+          "ruleIndex": 1,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 bucket Object is encrypted by KMS using a customer managed Key (CMK)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 77,
+                  "endLine": 86,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket_object\" \"image_file\" {\n  bucket = \"${var.domain_name}\"\n  source = \"../dist/assets/images/scape_long.png\"\n  key = \"assets/images/scape_long.png\"\n  etag = \"${md5(file(\"../dist/assets/images/scape_long.png\"))}\"\n  content_type = \"image/png\"\n  depends_on = [\n    \"aws_s3_bucket.site\"\n  ]\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_39",
+          "ruleIndex": 2,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 88,
+                  "endLine": 90,
+                  "snippet": {
+                    "text": "resource \"aws_route53_zone\" \"primary\" {\n  name = \"${var.domain_name}\"\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_62",
+          "ruleIndex": 3,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 buckets should have event notifications enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_62",
+          "ruleIndex": 3,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure S3 buckets should have event notifications enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_6",
+          "ruleIndex": 4,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 bucket has a Public Access block"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_6",
+          "ruleIndex": 4,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 bucket has a Public Access block"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_61",
+          "ruleIndex": 5,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that an S3 bucket has a lifecycle configuration"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_61",
+          "ruleIndex": 5,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that an S3 bucket has a lifecycle configuration"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_18",
+          "ruleIndex": 6,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure the S3 bucket has access logging enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_18",
+          "ruleIndex": 6,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure the S3 bucket has access logging enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_21",
+          "ruleIndex": 7,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure all data stored in the S3 bucket have versioning enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_21",
+          "ruleIndex": 7,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure all data stored in the S3 bucket have versioning enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_145",
+          "ruleIndex": 8,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 buckets are encrypted with KMS by default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_145",
+          "ruleIndex": 8,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 buckets are encrypted with KMS by default"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_144",
+          "ruleIndex": 9,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 bucket has cross-region replication enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_144",
+          "ruleIndex": 9,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure that S3 bucket has cross-region replication enabled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_20",
+          "ruleIndex": 10,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "S3 Bucket has an ACL defined which allows public READ access."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 33,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"site\" {\n  bucket = \"${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    index_document = \"index.html\"\n    error_document = \"error.html\"\n  }\n  policy = <<EOF\n{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [{\n    \"Sid\": \"PublicReadForGetBucketObjects\",\n    \"Effect\": \"Allow\",\n    \"Principal\": \"*\",\n    \"Action\": \"s3:GetObject\",\n    \"Resource\": [\"arn:aws:s3:::${var.domain_name}/*\"]\n  }]\n}\nEOF\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV_AWS_20",
+          "ruleIndex": 10,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "S3 Bucket has an ACL defined which allows public READ access."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 35,
+                  "endLine": 42,
+                  "snippet": {
+                    "text": "resource \"aws_s3_bucket\" \"wwwsite\" {\n  bucket = \"www.${var.domain_name}\"\n  region = \"${var.region}\"\n  acl = \"public-read\"\n  website {\n    redirect_all_requests_to = \"${var.domain_name}\"\n  }\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CKV2_AWS_38",
+          "ruleIndex": 11,
+          "level": "error",
+          "attachments": [],
+          "message": {
+            "text": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Users/dheeraj/codebase/foundation/packages/python/sto_plugin/scratch/harness/example.tf"
+                },
+                "region": {
+                  "startLine": 88,
+                  "endLine": 90,
+                  "snippet": {
+                    "text": "resource \"aws_route53_zone\" \"primary\" {\n  name = \"${var.domain_name}\"\n}\n"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

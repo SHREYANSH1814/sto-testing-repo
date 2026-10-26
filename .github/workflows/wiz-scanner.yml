@@ -1,0 +1,544 @@
+name: Wiz Scanner
+
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Wiz directory scan with default scan config
+        id: sto-scan-directory-default
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-directory
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          output-file: scan-output-directory-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz directory scan with named target
+        id: sto-scan-directory-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-directory
+          workspace: .
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wizdirectory"
+          target-variant: "main"
+          output-file: scan-output-directory-named.env
+          show-summary: 'true'
+
+      - name: Run Wiz IaC templates scan with default target
+        id: sto-scan-iac-templates-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-iac-templates
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          output-file: scan-output-iac-templates-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz IaC templates scan with named target
+        id: sto-scan-iac-templates-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          target-type: repository
+          scan-config: wiz-iac-templates
+          workspace: .
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wiziactemplates"
+          target-variant: "main"
+          output-file: scan-output-iac-templates-named.env
+          show-summary: 'true'
+
+      - name: Run Wiz private registry scan with default target
+        id: sto-scan-private-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nirocr/nodegoat"
+          image-tag: "latest"
+          image-type: docker_v2
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-private-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz private registry scan with named target
+        id: sto-scan-private-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nirocr/nodegoat"
+          image-tag: "latest"
+          image-type: docker_v2
+          image-access-id: ${{ secrets.PRIVATE_DOCKER_ACCESS_ID }}
+          image-access-token: ${{ secrets.PRIVATE_DOCKER_ACCESS_TOKEN }}
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wizcontainer"
+          target-variant: "latest"
+          docker-image-tag: "dev"
+          output-file: scan-output-private-named.env
+          show-summary: 'true'
+
+      - name: Run Wiz public Docker Hub scan with default target
+        id: sto-scan-dockerhub-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nginx"
+          image-tag: "latest"
+          image-domain: "docker.io"
+          image-type: docker_v2
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-dockerhub-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz public Docker Hub scan with named target
+        id: sto-scan-dockerhub-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "nginx"
+          image-tag: "latest"
+          image-domain: "docker.io"
+          image-type: docker_v2
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wizpublicdockerhub"
+          target-variant: "latest"
+          docker-image-tag: "dev"
+          output-file: scan-output-dockerhub-named.env
+          show-summary: 'true'
+
+      - name: Build local Docker image
+        if: always()
+        run: |
+          docker pull node:14
+          docker tag node:14 sg123:${{ github.sha }}
+
+      - name: Run Wiz local image scan with default target
+        id: sto-scan-local-default
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "sg123"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          output-file: scan-output-local-default.env
+          show-summary: 'true'
+
+      - name: Run Wiz local image scan with named target
+        id: sto-scan-local-named
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: default
+          target-type: container
+          image-name: "sg123"
+          image-tag: ${{ github.sha }}
+          image-type: local_image
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          target-name: "shreyansh/wizlocalimage"
+          target-variant: ${{ github.sha }}
+          docker-image-tag: "dev"
+          output-file: scan-output-local-named.env
+          show-summary: 'true'
+
+      - name: Run Wiz ingestion scan
+        id: sto-scan-ingestion
+        if: always()
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: ingestion
+          target-type: repository
+          ingestion-file: ingestionfiles/wiz-ingestion.json
+          target-name: "scanner/wiz"
+          target-variant: "main"
+          output-file: scan-output-ingestion.env
+          show-summary: 'true'
+
+      - name: Use scan output variables
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (directory default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-directory-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-directory-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-directory-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-directory-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-directory-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-directory-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-directory-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-directory-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-directory-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (directory named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-directory-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-directory-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-directory-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-directory-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-directory-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-directory-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-directory-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-directory-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-directory-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (iac-templates default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac-templates-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac-templates-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac-templates-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac-templates-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac-templates-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac-templates-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac-templates-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac-templates-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac-templates-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (iac-templates named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-iac-templates-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-iac-templates-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-iac-templates-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-iac-templates-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-iac-templates-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-iac-templates-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-iac-templates-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-iac-templates-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-iac-templates-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (private default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-private-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-private-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-private-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-private-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-private-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-private-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-private-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-private-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-private-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (private named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-private-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-private-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-private-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-private-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-private-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-private-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-private-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-private-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-private-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (dockerhub default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-dockerhub-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-dockerhub-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-dockerhub-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-dockerhub-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-dockerhub-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-dockerhub-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-dockerhub-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-dockerhub-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-dockerhub-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (dockerhub named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-dockerhub-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-dockerhub-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-dockerhub-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-dockerhub-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-dockerhub-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-dockerhub-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-dockerhub-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-dockerhub-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-dockerhub-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local default) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-default.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-default.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-default.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-default.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-default.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-default.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-default.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-default.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-default.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (local named) ====="
+          echo "Scan ID: ${{ steps.sto-scan-local-named.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-local-named.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-local-named.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-local-named.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-local-named.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-local-named.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-local-named.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-local-named.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-local-named.outputs.output-file-path }}"
+
+          echo "===== STO Scan Output Variables (ingestion) ====="
+          echo "Scan ID: ${{ steps.sto-scan-ingestion.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-ingestion.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-ingestion.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-ingestion.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-ingestion.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-ingestion.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-ingestion.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-ingestion.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}"
+
+      - name: Archive scan output (directory default)
+        if: always() && steps.sto-scan-directory-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-directory-default
+          path: ${{ steps.sto-scan-directory-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (directory named)
+        if: always() && steps.sto-scan-directory-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-directory-named
+          path: ${{ steps.sto-scan-directory-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (iac-templates default)
+        if: always() && steps.sto-scan-iac-templates-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac-templates-default
+          path: ${{ steps.sto-scan-iac-templates-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (iac-templates named)
+        if: always() && steps.sto-scan-iac-templates-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-iac-templates-named
+          path: ${{ steps.sto-scan-iac-templates-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (private default)
+        if: always() && steps.sto-scan-private-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-private-default
+          path: ${{ steps.sto-scan-private-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (private named)
+        if: always() && steps.sto-scan-private-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-private-named
+          path: ${{ steps.sto-scan-private-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (dockerhub default)
+        if: always() && steps.sto-scan-dockerhub-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-dockerhub-default
+          path: ${{ steps.sto-scan-dockerhub-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (dockerhub named)
+        if: always() && steps.sto-scan-dockerhub-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-dockerhub-named
+          path: ${{ steps.sto-scan-dockerhub-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local default)
+        if: always() && steps.sto-scan-local-default.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-default
+          path: ${{ steps.sto-scan-local-default.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (local named)
+        if: always() && steps.sto-scan-local-named.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-local-named
+          path: ${{ steps.sto-scan-local-named.outputs.output-file-path }}
+          retention-days: 1
+
+      - name: Archive scan output (ingestion)
+        if: always() && steps.sto-scan-ingestion.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-ingestion
+          path: ${{ steps.sto-scan-ingestion.outputs.output-file-path }}
+          retention-days: 1
+
+  security-scan-arm:
+    runs-on: ubuntu-24.04-arm
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Run Wiz directory scan (arm)
+        id: sto-scan-directory-arm
+        uses: ./.github/actions/harness-sto
+        with:
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-domain: ${{ inputs.harness-domain }}
+
+          scanner: wiz
+          scan-mode: orchestration
+          scan-config: wiz-directory
+          target-type: repository
+          workspace: .
+          scanner-access-id: ${{ secrets.WIZ_ACCESS_ID }}
+          scanner-access-token: ${{ secrets.WIZ_ACCESS_TOKEN }}
+          docker-image-tag: "dev"
+          show-summary: 'true'
+
+      - name: Use scan output variables (arm)
+        if: always()
+        shell: bash
+        run: |
+          echo "===== STO Scan Output Variables (directory arm) ====="
+          echo "Scan ID: ${{ steps.sto-scan-directory-arm.outputs.scan-id }}"
+          echo "Status: ${{ steps.sto-scan-directory-arm.outputs.status }}"
+          echo "Total Issues: ${{ steps.sto-scan-directory-arm.outputs.total-issues }}"
+          echo "Critical: ${{ steps.sto-scan-directory-arm.outputs.critical }}"
+          echo "High: ${{ steps.sto-scan-directory-arm.outputs.high }}"
+          echo "Medium: ${{ steps.sto-scan-directory-arm.outputs.medium }}"
+          echo "Low: ${{ steps.sto-scan-directory-arm.outputs.low }}"
+          echo "Info: ${{ steps.sto-scan-directory-arm.outputs.info }}"
+          echo "Output File Path: ${{ steps.sto-scan-directory-arm.outputs.output-file-path }}"
+
+      - name: Archive scan output (directory arm)
+        if: always() && steps.sto-scan-directory-arm.outputs.output-file-path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: sto-scan-results-directory-arm
+          path: ${{ steps.sto-scan-directory-arm.outputs.output-file-path }}
+          retention-days: 1
