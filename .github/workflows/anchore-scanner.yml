@@ -3,6 +3,10 @@ name: Anchore Scanner
 on:
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Target environment (controls which HARNESS_TOKEN secret is used). Must match a GitHub Environment name.'
+        required: true
+        type: string
       harness-org-id:
         description: 'Harness Organization ID'
         required: true
@@ -16,10 +20,26 @@ on:
         required: false
         type: string
         default: 'https://app.harness.io'
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      harness-org-id:
+        required: true
+        type: string
+      harness-project-id:
+        required: true
+        type: string
+      harness-domain:
+        required: false
+        type: string
+        default: 'https://app.harness.io'
 
 jobs:
   build-and-scan:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
 
     steps:
       - name: Checkout source
