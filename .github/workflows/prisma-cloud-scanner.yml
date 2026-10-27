@@ -54,9 +54,6 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
-          scanner-env: |
-            EVALUATE_POLICIES=true
-            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
       - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
@@ -85,9 +82,6 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-container.env
           show-summary: 'true'
-          scanner-env: |
-            EVALUATE_POLICIES=true
-            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
       - name: Run Prisma Cloud public Docker Hub scan with default target
         id: sto-scan-dockerhub-default
