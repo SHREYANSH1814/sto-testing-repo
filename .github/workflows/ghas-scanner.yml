@@ -74,47 +74,47 @@ jobs:
           output-file: scan-output-orch-codeql-named.env
           show-summary: 'true'
 
-      - name: Run GHAS Dependabot orchestration with default target
-        id: sto-scan-orch-dependabot
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
+      # - name: Run GHAS Dependabot orchestration with default target
+      #   id: sto-scan-orch-dependabot
+      #   if: always()
+      #   uses: ./.github/actions/harness-sto
+      #   with:
+      #     harness-token: ${{ secrets.HARNESS_TOKEN }}
+      #     harness-org-id: ${{ inputs.harness-org-id }}
+      #     harness-project-id: ${{ inputs.harness-project-id }}
+      #     harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: githubadvancedsecurity
-          scan-mode: orchestration
-          scan-config: dependabot
-          target-type: repository
-          workspace: .
-          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
-          docker-image-tag: "dev"
-          output-file: scan-output-orch-dependabot.env
-          show-summary: 'true'
+      #     scanner: githubadvancedsecurity
+      #     scan-mode: orchestration
+      #     scan-config: dependabot
+      #     target-type: repository
+      #     workspace: .
+      #     scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+      #     docker-image-tag: "dev"
+      #     output-file: scan-output-orch-dependabot.env
+      #     show-summary: 'true'
 
-      - name: Run GHAS Dependabot orchestration with named target
-        id: sto-scan-orch-dependabot-named
-        if: always()
-        uses: ./.github/actions/harness-sto
-        with:
-          harness-token: ${{ secrets.HARNESS_TOKEN }}
-          harness-org-id: ${{ inputs.harness-org-id }}
-          harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
+      # - name: Run GHAS Dependabot orchestration with named target
+      #   id: sto-scan-orch-dependabot-named
+      #   if: always()
+      #   uses: ./.github/actions/harness-sto
+      #   with:
+      #     harness-token: ${{ secrets.HARNESS_TOKEN }}
+      #     harness-org-id: ${{ inputs.harness-org-id }}
+      #     harness-project-id: ${{ inputs.harness-project-id }}
+      #     harness-domain: ${{ inputs.harness-domain }}
 
-          scanner: githubadvancedsecurity
-          scan-mode: orchestration
-          scan-config: dependabot
-          target-type: repository
-          workspace: .
-          scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
-          target-name: "shreyansh/ghasdependabot"
-          target-variant: "main"
-          docker-image-tag: "dev"
-          output-file: scan-output-orch-dependabot-named.env
-          show-summary: 'true'
+      #     scanner: githubadvancedsecurity
+      #     scan-mode: orchestration
+      #     scan-config: dependabot
+      #     target-type: repository
+      #     workspace: .
+      #     scanner-access-token: ${{ secrets.GHAS_ACCESS_TOKEN }}
+      #     target-name: "shreyansh/ghasdependabot"
+      #     target-variant: "main"
+      #     docker-image-tag: "dev"
+      #     output-file: scan-output-orch-dependabot-named.env
+      #     show-summary: 'true'
 
       - name: Run GHAS CodeQL extraction with default target
         id: sto-scan-extract-codeql
