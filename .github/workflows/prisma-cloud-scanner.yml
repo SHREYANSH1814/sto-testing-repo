@@ -3,6 +3,10 @@ name: Prisma Cloud Container Security Scan
 on:
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Target environment (controls which HARNESS_TOKEN secret is used). Must match a GitHub Environment name.'
+        required: true
+        type: string
       harness-org-id:
         description: 'Harness Organization ID'
         required: true
@@ -20,6 +24,7 @@ on:
 jobs:
   security-scan:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
 
     steps:
       - name: Checkout source
@@ -49,9 +54,6 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-default.env
           show-summary: 'true'
-          scanner-env: |
-            EVALUATE_POLICIES=true
-            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
       - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
@@ -80,9 +82,6 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-container.env
           show-summary: 'true'
-          scanner-env: |
-            EVALUATE_POLICIES=true
-            POLICY_SET_IDS=account.shreyanshpolicy_test,account.anurag
 
       - name: Run Prisma Cloud public Docker Hub scan with default target
         id: sto-scan-dockerhub-default

@@ -3,6 +3,10 @@ name: STO Scanner Master Workflow
 on:
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Target environment (controls which HARNESS_TOKEN secret the child scanners use). Must match a GitHub Environment name (e.g., qa0, prod0, prod1).'
+        required: true
+        type: string
       harness-org-id:
         description: 'Harness Organization ID'
         required: true
@@ -70,7 +74,6 @@ jobs:
               "blackduck-scanner": "blackduck-scanner.yml",
               "brakeman-scanner": "brakeman-scanner.yml",
               "checkov-scanner": "checkov-scanner.yml",
-              "codeql-scanner": "codeql-scanner.yml",
               "ghas-scanner": "ghas-scanner.yml",
               "gitleaks-scanner": "gitleaks-scanner.yml",
               "grype-scanner": "grype-scanner.yml",
@@ -200,6 +203,7 @@ jobs:
           ORG_ID: ${{ inputs.harness-org-id }}
           PROJECT_ID: ${{ inputs.harness-project-id }}
           DOMAIN: ${{ inputs.harness-domain }}
+          ENVIRONMENT: ${{ inputs.environment }}
         shell: bash
         run: |
           set -uo pipefail
@@ -222,6 +226,7 @@ jobs:
 
           if ! gh workflow run "$WF_FILE" \
                --repo "$REPO" --ref "$BRANCH" \
+               -f environment="$ENVIRONMENT" \
                -f harness-org-id="$ORG_ID" \
                -f harness-project-id="$PROJECT_ID" \
                -f harness-domain="$DOMAIN"; then

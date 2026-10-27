@@ -3,6 +3,10 @@ name: Brakeman Orchestration Security Scan
 on:
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Target environment (controls which HARNESS_TOKEN secret is used). Must match a GitHub Environment name.'
+        required: true
+        type: string
       harness-org-id:
         description: 'Harness Organization ID'
         required: true
@@ -20,6 +24,7 @@ on:
 jobs:
   security-scan:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
 
     steps:
       - name: Checkout source
