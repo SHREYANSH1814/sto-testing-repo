@@ -57,7 +57,6 @@ jobs:
           image-type: docker_v2
 
           scanner-domain: ${{ secrets.BLACKDUCK_DOMAIN }}
-          scanner-access-id: ${{ secrets.BLACKDUCK_ACCESS_ID }}
           scanner-access-token: ${{ secrets.BLACKDUCK_ACCESS_TOKEN }}
           scanner-auth-type: apiKey
           scanner-api-version: '5.0.2'
@@ -78,8 +77,6 @@ jobs:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
           harness-project-id: ${{ inputs.harness-project-id }}
-          harness-domain: ${{ inputs.harness-domain }}
-
           scanner: blackduck
           scan-mode: ingestion
           target-type: repository
