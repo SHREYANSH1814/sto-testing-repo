@@ -87,7 +87,6 @@ jobs:
               "security-scan": "security-scan.yml",
               "semgrep-scanner": "semgrep-scanner.yml",
               "snyk-scanner": "snyk-scanner.yml",
-              "sonarqube-scanner": "sonarqube-scanner.yml",
               "traceable-scanner": "traceable-scanner.yml",
               "wiz-scanner": "wiz-scanner.yml",
               "zap-scanner": "zap-scanner.yml",
