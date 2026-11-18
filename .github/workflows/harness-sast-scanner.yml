@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Harness SAST sast scan with default target
         id: sto-scan-sast-default
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -51,7 +51,7 @@ jobs:
       - name: Run Harness SAST sast scan with named target
         id: sto-scan-sast
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -72,7 +72,7 @@ jobs:
       - name: Run Harness SAST sast_sca scan with default target
         id: sto-scan-sast-sca-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -91,7 +91,7 @@ jobs:
       - name: Run Harness SAST sast_sca scan with named target
         id: sto-scan-sast-sca
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -112,7 +112,7 @@ jobs:
       - name: Run Harness SAST sca scan with default target
         id: sto-scan-sca-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -131,7 +131,7 @@ jobs:
       - name: Run Harness SAST sca scan with named target
         id: sto-scan-sca
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Grype repository scan with default target
         id: sto-scan-repo-default
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -53,7 +53,7 @@ jobs:
       - name: Run Grype repository scan with named target
         id: sto-scan-repo-named
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -74,7 +74,7 @@ jobs:
       - name: Run Grype private registry scan with default target
         id: sto-scan-private-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -97,7 +97,7 @@ jobs:
       - name: Run Grype private registry scan with named target
         id: sto-scan-private-named
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -122,7 +122,7 @@ jobs:
       - name: Run Grype public Docker Hub scan with default target
         id: sto-scan-dockerhub-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -144,7 +144,7 @@ jobs:
       - name: Run Grype public Docker Hub scan with named target
         id: sto-scan-dockerhub-named
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -174,7 +174,7 @@ jobs:
       - name: Run Grype local image scan with default target
         id: sto-scan-local-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -195,7 +195,7 @@ jobs:
       - name: Run Grype local image scan with named target
         id: sto-scan-local-named
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -218,7 +218,7 @@ jobs:
       - name: Run Grype ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

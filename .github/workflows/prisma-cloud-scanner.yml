@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Prisma Cloud private registry scan with default target
         id: sto-scan-default
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -58,7 +58,7 @@ jobs:
       - name: Run Prisma Cloud private registry scan with named target
         id: sto-scan-container
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -86,7 +86,7 @@ jobs:
       - name: Run Prisma Cloud public Docker Hub scan with default target
         id: sto-scan-dockerhub-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -111,7 +111,7 @@ jobs:
       - name: Run Prisma Cloud public Docker Hub scan with named target
         id: sto-scan-dockerhub
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -144,7 +144,7 @@ jobs:
       - name: Run Prisma Cloud local image scan with default target
         id: sto-scan-local-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -168,7 +168,7 @@ jobs:
       - name: Run Prisma Cloud local image scan with named target
         id: sto-scan-local
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -194,7 +194,7 @@ jobs:
       - name: Run Prisma Cloud ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

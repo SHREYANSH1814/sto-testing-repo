@@ -37,7 +37,7 @@ jobs:
 
       - name: Run Snyk default scan with default target
         id: sto-scan-default
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -57,7 +57,7 @@ jobs:
       - name: Run Snyk default scan with named target
         id: sto-scan-default-named
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -79,7 +79,7 @@ jobs:
       - name: Run Snyk iac scan with default target
         id: sto-scan-iac-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -99,7 +99,7 @@ jobs:
       - name: Run Snyk iac scan with named target
         id: sto-scan-iac
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -121,7 +121,7 @@ jobs:
       - name: Run Snyk code scan with default target
         id: sto-scan-code-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -141,7 +141,7 @@ jobs:
       - name: Run Snyk code scan with named target
         id: sto-scan-code
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -163,7 +163,7 @@ jobs:
       - name: Run Snyk oss scan with default target
         id: sto-scan-oss-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -183,7 +183,7 @@ jobs:
       - name: Run Snyk oss scan with named target
         id: sto-scan-oss
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -205,7 +205,7 @@ jobs:
       - name: Run Snyk ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

@@ -45,7 +45,7 @@ jobs:
       - name: Run Aqua Trivy orchestration scan
         id: sto-scan-orchestration
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -71,7 +71,7 @@ jobs:
       - name: Run Aqua Trivy local-image scan
         id: sto-scan-local-image
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -93,7 +93,7 @@ jobs:
       - name: Run Aqua Trivy local-image scan (arm)
         id: sto-scan-local-image-arm
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -116,7 +116,7 @@ jobs:
       - name: Run Aqua Trivy ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
