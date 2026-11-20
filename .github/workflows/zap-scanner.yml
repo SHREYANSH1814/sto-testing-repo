@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Zap orchestration scan with default scan config
         id: sto-scan-default
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -50,7 +50,7 @@ jobs:
       - name: Run Zap orchestration scan with attack scan config
         id: sto-scan-attack
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -70,7 +70,7 @@ jobs:
       - name: Run Zap orchestration scan with standard scan config
         id: sto-scan-standard
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -90,7 +90,7 @@ jobs:
       - name: Run Zap orchestration scan with quick scan config
         id: sto-scan-quick
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -110,7 +110,7 @@ jobs:
       - name: Run Zap ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

@@ -35,7 +35,7 @@ jobs:
       - name: Run Semgrep auto-and-ported-security-tools-except-p-gitleaks scan with default target
         id: sto-scan-auto-ported-except-gitleaks-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -54,7 +54,7 @@ jobs:
       - name: Run Semgrep auto-and-ported-security-tools-except-p-gitleaks scan with named target
         id: sto-scan-auto-ported-except-gitleaks
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -75,7 +75,7 @@ jobs:
       - name: Run Semgrep auto-and-ported-security-tools scan with default target
         id: sto-scan-auto-ported-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -94,7 +94,7 @@ jobs:
       - name: Run Semgrep auto-and-ported-security-tools scan with named target
         id: sto-scan-auto-ported
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -115,7 +115,7 @@ jobs:
       - name: Run Semgrep auto-only scan with default target
         id: sto-scan-auto-only-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -134,7 +134,7 @@ jobs:
       - name: Run Semgrep auto-only scan with named target
         id: sto-scan-auto-only
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -155,7 +155,7 @@ jobs:
       - name: Run Semgrep p-default scan with default target
         id: sto-scan-p-default-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -174,7 +174,7 @@ jobs:
       - name: Run Semgrep p-default scan with named target
         id: sto-scan-p-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -195,7 +195,7 @@ jobs:
       - name: Run Semgrep no-default-cli-flags scan with default target
         id: sto-scan-no-default-cli-flags-default
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -214,7 +214,7 @@ jobs:
       - name: Run Semgrep no-default-cli-flags scan with named target
         id: sto-scan-no-default-cli-flags
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}
@@ -235,7 +235,7 @@ jobs:
       - name: Run Semgrep ingestion scan
         id: sto-scan-ingestion
         if: always()
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

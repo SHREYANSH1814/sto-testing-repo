@@ -48,7 +48,7 @@ jobs:
 
       - name: Run Anchore ingestion scan
         id: sto-scan-ingestion
-        uses: ./.github/actions/harness-sto
+        uses: harness/github-actions/security-scan@2.0.0
         with:
           harness-token: ${{ secrets.HARNESS_TOKEN }}
           harness-org-id: ${{ inputs.harness-org-id }}

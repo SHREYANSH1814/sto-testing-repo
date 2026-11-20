@@ -1,0 +1,39 @@
+name: Security Scan
+on:
+  workflow_dispatch:
+    inputs:
+      harness-org-id:
+        description: 'Harness Organization ID'
+        required: true
+        type: string
+      harness-project-id:
+        description: 'Harness Project ID'
+        required: true
+        type: string
+      harness-domain:
+        description: 'Harness domain (e.g., https://app.harness.io)'
+        required: false
+        type: string
+        default: 'https://app.harness.io'
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          ref: <default-branch>
+
+      - name: Gitleaks Secrets
+        id: sto-gitleaks-secrets
+        uses: harness/github-actions/security-scan@2.0.0
+        with:
+          harness-domain: ${{ inputs.harness-domain }}
+          harness-org-id: ${{ inputs.harness-org-id }}
+          harness-project-id: ${{ inputs.harness-project-id }}
+          harness-token: ${{ secrets.HARNESS_TOKEN }}
+          scan-config: default
+          scan-mode: orchestration
+          scanner: gitleaks
+          target-type: repository
+
