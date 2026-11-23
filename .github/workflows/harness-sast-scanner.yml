@@ -25,6 +25,9 @@ jobs:
   security-scan:
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
+    env:
+      # Plugin CONFIG.get("qwiet_service_endpoint"); default in scanner is https://app.shiftleft.io
+      QWIET_SCANNER_ENV: ${{ inputs.environment == 'qa' && 'QWIET_SERVICE_ENDPOINT=https://app.stg.shiftleft.io' || '' }}
 
     steps:
       - name: Checkout source
@@ -48,6 +51,7 @@ jobs:
           output-file: scan-output-sast-default.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
       - name: Run Harness SAST sast scan with named target
         id: sto-scan-sast
@@ -70,6 +74,7 @@ jobs:
           output-file: scan-output-sast.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
 
       - name: Run Harness SAST sast_sca scan with default target
@@ -91,6 +96,7 @@ jobs:
           output-file: scan-output-sast-sca-default.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
 
       - name: Run Harness SAST sast_sca scan with named target
@@ -114,6 +120,7 @@ jobs:
           output-file: scan-output-sast-sca.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
       - name: Run Harness SAST sca scan with default target
         id: sto-scan-sca-default
@@ -134,6 +141,7 @@ jobs:
           output-file: scan-output-sca-default.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
       - name: Run Harness SAST sca scan with named target
         id: sto-scan-sca
@@ -156,6 +164,7 @@ jobs:
           output-file: scan-output-sca.env
           show-summary: 'true'
           log-level: 'DEBUG'
+          scanner-env: ${{ env.QWIET_SCANNER_ENV }}
 
       - name: Use scan output variables
         if: always()
