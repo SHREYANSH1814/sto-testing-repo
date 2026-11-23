@@ -47,6 +47,7 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sast-default.env
           show-summary: 'true'
+          log-level: 'DEBUG'
 
       - name: Run Harness SAST sast scan with named target
         id: sto-scan-sast
@@ -68,6 +69,8 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sast.env
           show-summary: 'true'
+          log-level: 'DEBUG'
+
 
       - name: Run Harness SAST sast_sca scan with default target
         id: sto-scan-sast-sca-default
@@ -87,6 +90,8 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sast-sca-default.env
           show-summary: 'true'
+          log-level: 'DEBUG'
+
 
       - name: Run Harness SAST sast_sca scan with named target
         id: sto-scan-sast-sca
@@ -108,6 +113,7 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sast-sca.env
           show-summary: 'true'
+          log-level: 'DEBUG'
 
       - name: Run Harness SAST sca scan with default target
         id: sto-scan-sca-default
@@ -127,6 +133,7 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sca-default.env
           show-summary: 'true'
+          log-level: 'DEBUG'
 
       - name: Run Harness SAST sca scan with named target
         id: sto-scan-sca
@@ -148,6 +155,7 @@ jobs:
           docker-image-tag: "dev"
           output-file: scan-output-sca.env
           show-summary: 'true'
+          log-level: 'DEBUG'
 
       - name: Use scan output variables
         if: always()
